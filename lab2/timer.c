@@ -32,8 +32,10 @@ void (timer_int_handler)() {
 }
 
 int (timer_get_conf)(uint8_t timer, uint8_t *st) {
-  /* To be implemented by the students */
-  printf("%s is not yet implemented!\n", __func__);
+  uint8_t aux = 0;
+  aux |= BIT(7) | BIT(6) | BIT(5) | BIT(1);
+  sys_outb(67,aux);
+  
 
   return 1;
 }
