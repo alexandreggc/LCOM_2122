@@ -6,10 +6,8 @@
 #include "i8254.h"
 
 int (timer_set_frequency)(uint8_t timer, uint32_t freq) {
-  /* To be implemented by the students */
-  printf("%s is not yet implemented!\n", __func__);
 
-  return 1;
+  return OK;
 }
 
 int (timer_subscribe_int)(uint8_t *bit_no) {
@@ -32,18 +30,22 @@ void (timer_int_handler)() {
 }
 
 int (timer_get_conf)(uint8_t timer, uint8_t *st) {
-  uint8_t aux = 0;
-  aux |= BIT(7) | BIT(6) | BIT(5) | BIT(1);
-  sys_outb(67,aux);
-  
-
-  return 1;
+  uint8_t word_ctrl;
+  int port;
+  switch(timer){
+    case 0: port = TIMER_0; break;
+    case 1: port = TIMER_1; break;
+    case 2: port = TIMER_2; break;
+  }
+  word_ctrl = TIMER_RB_CMD | TIMER_RB_COUNT_ | TIMER_RB_SEL(timer);
+  sys_outb(TIMER_CTRL, word_ctrl);
+  util_sys_inb(port, st);
+  return OK;
 }
 
-int (timer_display_conf)(uint8_t timer, uint8_t st,
-                        enum timer_status_field field) {
-  /* To be implemented by the students */
-  printf("%s is not yet implemented!\n", __func__);
-
-  return 1;
+int (timer_display_conf)(uint8_t timer, uint8_t st, enum timer_status_field field) {
+  union timer_status_field_val conf;
+  conf.byte = st;
+  timer_print_config(timer, field, conf);
+  return OK;
 }
