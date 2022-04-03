@@ -6,6 +6,7 @@
 #include <stdint.h>
 
 extern uint8_t bb[2];
+uint8_t two_byte = 0;
 
 int main(int argc, char *argv[]) {
   // sets the language of LCF messages (can be either EN-US or PT-PT)
@@ -32,41 +33,48 @@ int main(int argc, char *argv[]) {
 }
 
 int(kbd_test_scan)() {
-  int ipc_status, r;
-  uint8_t keyboard_sel;
-  message msg;
+    int ipc_status, r;
+    uint8_t keyboard_sel;
+    message msg;
+    bool make;
 
-  if(keyboard_subscribe_int(&keyboard_sel)) {
+  if(timer_subscribe_int(&keyboard_sel))
     return 1;
-  }
-
   int irq_set = BIT(keyboard_sel);
 
-  while( time ) { /* You may want to use a different condition */
-    /* Get a request message. */
-    if ( (r = driver_receive(ANY, &msg, &ipc_status)) != 0 ) { 
-        printf("driver_receive failed with: %d", r);
-        continue;
-    }
-    if (is_ipc_notify(ipc_status)) { /* received notification */
-        switch (_ENDPOINT_P(msg.m_source)) {
-            case HARDWARE: /* hardware interrupt notification */				
-                if (msg.m_notify.interrupts & irq_set) { /* subscribed interrupt */
-                    kbc_ih();
-                    if(bb[0]!=0) {
-                      continue;
-                    }
-                    kbd_print_scancode();
-                    bb[0] = 0;
-                }
-                break;
-            default:
-                break; /* no other notifications expected: do nothing */	
-        }
-    } else { /* received a standard message, not a notification */
-        /* no standard messages expected: do nothing */
-    }
+
+    while( true ) { /* You may want to use a different condition */
+     /* Get a request message. */
+     if ( (r = driver_receive(ANY, &msg, &ipc_status)) != 0 ) { 
+         printf("driver_receive failed with: %d", r);
+         continue;
+     }
+     if (is_ipc_notify(ipc_status)) { /* received notification */
+         switch (_ENDPOINT_P(msg.m_source)) {
+             case HARDWARE: /* hardware interrupt notification */       
+                 if (msg.m_notify.interrupts & irq_set) { /* subscribed interrupt */
+                      kbc_ih();/* process it */
+                      if(bb[1] == 0 && two_byte == 1){
+                        continue;
+                      }
+                      keyboard_get_code(&make, bb);
+                      kbd_print_scancode(&make,two_byte, bb);
+                      bb[0] = 0;
+                      two_byte = 0;
+                 }
+                 break;
+             default:
+                 break; /* no other notifications expected: do nothing */ 
+         }
+         if(keyboard_check_esc(bb))
+          break;
+     } else { /* received a standard message, not a notification */
+         /* no standard messages expected: do nothing */
+     }
   }
+  sys_irqrmpolicy(&keyboard_sel);
+
+
   return 1;
 }
 
@@ -83,3 +91,4 @@ int(kbd_test_timed_scan)(uint8_t n) {
 
   return 1;
 }
+
