@@ -5,8 +5,10 @@
 #include <stdbool.h>
 #include <stdint.h>
 
-extern uint8_t bb[2];
-uint8_t two_byte = 0;
+#include "keyboard.h"
+
+//extern uint8_t bb[2];
+//uint8_t two_byte = 0;
 
 int main(int argc, char *argv[]) {
   // sets the language of LCF messages (can be either EN-US or PT-PT)
@@ -54,12 +56,8 @@ int(kbd_test_scan)() {
              case HARDWARE: /* hardware interrupt notification */       
                  if (msg.m_notify.interrupts & irq_set) { /* subscribed interrupt */
                       kbc_ih();/* process it */
-                      if(bb[1] == 0 && two_byte == 1){
-                        continue;
-                      }
                       keyboard_get_code(&make, bb);
-                      kbd_print_scancode(&make,two_byte, bb);
-                      bb[0] = 0;
+                      kbd_print_scancode(make, two_byte+1, bb);
                       two_byte = 0;
                  }
                  break;
@@ -72,9 +70,7 @@ int(kbd_test_scan)() {
          /* no standard messages expected: do nothing */
      }
   }
-  sys_irqrmpolicy(&keyboard_sel);
-
-
+  timer_unsubscribe_int();
   return 1;
 }
 

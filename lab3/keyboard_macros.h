@@ -3,6 +3,8 @@
 
 #include <lcom/lcf.h>
 
+#define KB_IRQ 1 /**< @brief Keyboard IRQ line */
+
 #define OUT_BUF 0x60
 #define TWO_BYTE_CODE 0xE0
 
