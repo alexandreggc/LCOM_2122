@@ -6,9 +6,8 @@
 #include <stdint.h>
 
 #include "keyboard.h"
+#include "utils.h"
 
-//extern uint8_t bb[2];
-//uint8_t two_byte = 0;
 
 int main(int argc, char *argv[]) {
   // sets the language of LCF messages (can be either EN-US or PT-PT)
@@ -71,7 +70,8 @@ int(kbd_test_scan)() {
      }
   }
   timer_unsubscribe_int();
-  return 1;
+  kbd_print_no_sysinb(sys_inb_counter);
+  return OK;
 }
 
 int(kbd_test_poll)() {
