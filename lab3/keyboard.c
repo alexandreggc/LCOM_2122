@@ -11,6 +11,7 @@ int hook_id = 0;
 uint8_t bb[2];
 uint8_t two_byte = 0;
 int size = 1;
+int kbd_error = 0;
 
 int (timer_subscribe_int)(uint8_t *bit_no) {
   *bit_no = hook_id;
@@ -24,13 +25,14 @@ int (timer_unsubscribe_int)() {
 void (kbc_ih)() {
   uint8_t value;
   size = 1;
+  kbd_error = 0;
 
   util_sys_inb(STAT_REG, &value);
 
   value = value >> 6;
   if(value == STATUS_REG_ERR)
-    return;
-
+    kbd_error = 1;
+    
   util_sys_inb(OUT_BUF,&value);
   if(two_byte) {
     bb[1] = value;

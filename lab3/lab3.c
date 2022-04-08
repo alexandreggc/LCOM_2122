@@ -11,6 +11,7 @@
 extern uint8_t bb[];
 extern uint8_t two_byte;
 extern int size;
+extern int kdb_error;
 int main(int argc, char *argv[]) {
   // sets the language of LCF messages (can be either EN-US or PT-PT)
   lcf_set_language("EN-US");
@@ -57,7 +58,7 @@ int(kbd_test_scan)() {
              case HARDWARE: /* hardware interrupt notification */       
                  if (msg.m_notify.interrupts & irq_set) { /* subscribed interrupt */
                       kbc_ih();/* process it */
-                      if(two_byte){
+                      if(two_byte || kbd_error){
                         continue;
                       }
                       keyboard_get_code(&make, bb);
