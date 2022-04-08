@@ -14,6 +14,18 @@
 
 #define STAT_REG 0x64
 
+#define READ_KBC 0x20
+
+#define WRITE_KBC 0x60
+
+#define IBF_FULL BIT(1)
+
+
+#define DELAY_US 20000
+
+#define ENABLE_INT BIT(0)
+
+
 
 
 #endif

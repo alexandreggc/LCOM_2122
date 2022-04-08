@@ -62,3 +62,14 @@ int (keyboard_check_esc)(uint8_t bb[2]){
     return 1;
   return OK;
 }
+
+int(kbd_enable_int)(){
+  uint8_t commandByte;
+  util_sys_inb(STAT_REG, &commandByte);
+  if ()
+  sys_outb(STAT_REG, READ_KBC);
+  util_sys_inb(OUT_BUF, &commandByte)
+  commandByte |= ENABLE_INT;
+  sys_outb(STAT_REG, WRITE_KBC);
+  sys_outb(OUT_BUF, commandByte);
+}

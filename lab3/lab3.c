@@ -80,10 +80,16 @@ int(kbd_test_scan)() {
 }
 
 int(kbd_test_poll)() {
-  /* To be completed by the students */
-  printf("%s is not yet implemented!\n", __func__);
-
-  return 1;
+  int processing = 1;
+  while(processing){
+    if(keyboard_check_esc(bb)) {}
+          processing=0;
+    }
+    tickdelay(micros_to_ticks(DELAY_US));
+  }
+  kbd_enable_int();
+  kbd_print_no_sysinb(getCounter());
+  return OK;
 }
 
 int(kbd_test_timed_scan)(uint8_t n) {
