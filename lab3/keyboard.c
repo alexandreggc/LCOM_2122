@@ -32,9 +32,10 @@ void (kbc_ih)() {
   value = value >> 6;
   if(value == STATUS_REG_ERR)
     kbd_error = 1;
-    
   util_sys_inb(OUT_BUF,&value);
-  if(two_byte) {
+
+  if(!kbd_error){
+    if(two_byte) {
     bb[1] = value;
     two_byte = 0;
     size++;
@@ -45,6 +46,7 @@ void (kbc_ih)() {
   }
   else
     bb[0] = value;
+  }
 }
 
 void (keyboard_get_code)(bool *make, uint8_t bb[2]){
