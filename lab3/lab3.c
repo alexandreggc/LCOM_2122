@@ -8,7 +8,9 @@
 #include "keyboard.h"
 #include "utils.h"
 
-
+extern uint8_t bb[];
+extern uint8_t two_byte;
+extern int size;
 int main(int argc, char *argv[]) {
   // sets the language of LCF messages (can be either EN-US or PT-PT)
   lcf_set_language("EN-US");
@@ -42,9 +44,9 @@ int(kbd_test_scan)() {
   if(timer_subscribe_int(&keyboard_sel))
     return 1;
   int irq_set = BIT(keyboard_sel);
+  int process = 1;
 
-
-    while( true ) { /* You may want to use a different condition */
+    while( process ) { /* You may want to use a different condition */
      /* Get a request message. */
      if ( (r = driver_receive(ANY, &msg, &ipc_status)) != 0 ) { 
          printf("driver_receive failed with: %d", r);
@@ -55,22 +57,24 @@ int(kbd_test_scan)() {
              case HARDWARE: /* hardware interrupt notification */       
                  if (msg.m_notify.interrupts & irq_set) { /* subscribed interrupt */
                       kbc_ih();/* process it */
+                      if(two_byte){
+                        continue;
+                      }
                       keyboard_get_code(&make, bb);
-                      kbd_print_scancode(make, two_byte+1, bb);
-                      two_byte = 0;
+                      kbd_print_scancode(make, size, bb);
                  }
                  break;
              default:
                  break; /* no other notifications expected: do nothing */ 
          }
          if(keyboard_check_esc(bb))
-          break;
+            process=0;
      } else { /* received a standard message, not a notification */
          /* no standard messages expected: do nothing */
      }
   }
   timer_unsubscribe_int();
-  kbd_print_no_sysinb(sys_inb_counter);
+  kbd_print_no_sysinb(getCounter());
   return OK;
 }
 

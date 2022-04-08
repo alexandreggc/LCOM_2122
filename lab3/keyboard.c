@@ -8,8 +8,9 @@
 #include "keyboard.h"
 
 int hook_id = 0;
-//uint8_t bb[2];
-//extern uint8_t two_byte;
+uint8_t bb[2];
+uint8_t two_byte = 0;
+int size = 1;
 
 int (timer_subscribe_int)(uint8_t *bit_no) {
   *bit_no = hook_id;
@@ -22,6 +23,7 @@ int (timer_unsubscribe_int)() {
 
 void (kbc_ih)() {
   uint8_t value;
+  size = 1;
 
   util_sys_inb(STAT_REG, &value);
 
@@ -30,8 +32,13 @@ void (kbc_ih)() {
     return;
 
   util_sys_inb(OUT_BUF,&value);
-  if(value == TWO_BYTE_CODE){
+  if(two_byte) {
     bb[1] = value;
+    two_byte = 0;
+    size++;
+  }
+  else if(value == TWO_BYTE_CODE){
+    bb[0] = value;
     two_byte = 1;
   }
   else
@@ -39,7 +46,11 @@ void (kbc_ih)() {
 }
 
 void (keyboard_get_code)(bool *make, uint8_t bb[2]){
-  *make = !((bb[0] >> 7) == 1);
+  if(size==1)
+    *make = !((bb[0] >> 7) == 1);
+  else
+      *make = !((bb[1] >> 7) == 1);
+
 }
 
 int (keyboard_check_esc)(uint8_t bb[2]){
