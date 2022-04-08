@@ -11,7 +11,7 @@
 extern uint8_t bb[];
 extern uint8_t two_byte;
 extern int size;
-extern int kdb_error;
+extern int kbd_error;
 int main(int argc, char *argv[]) {
   // sets the language of LCF messages (can be either EN-US or PT-PT)
   lcf_set_language("EN-US");
