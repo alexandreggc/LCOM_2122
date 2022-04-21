@@ -12,6 +12,7 @@ uint8_t bb[2];
 uint8_t two_byte = 0;
 int size = 1;
 int kbd_error = 0;
+extern uint8_t kbc_cmd_byte;
 
 int (timer_subscribe_int)(uint8_t *bit_no) {
   *bit_no = hook_id;
@@ -33,20 +34,7 @@ void (kbc_ih)() {
   if(value == STATUS_REG_ERR)
     kbd_error = 1;
   util_sys_inb(OUT_BUF,&value);
-
-  if(!kbd_error){
-    if(two_byte) {
-    bb[1] = value;
-    two_byte = 0;
-    size++;
-  }
-  else if(value == TWO_BYTE_CODE){
-    bb[0] = value;
-    two_byte = 1;
-  }
-  else
-    bb[0] = value;
-  }
+  process_scancode(value);
 }
 
 void (keyboard_get_code)(bool *make, uint8_t bb[2]){
@@ -64,12 +52,65 @@ int (keyboard_check_esc)(uint8_t bb[2]){
 }
 
 int(kbd_enable_int)(){
-  uint8_t commandByte;
-  util_sys_inb(STAT_REG, &commandByte);
-  if ()
-  sys_outb(STAT_REG, READ_KBC);
-  util_sys_inb(OUT_BUF, &commandByte)
-  commandByte |= ENABLE_INT;
-  sys_outb(STAT_REG, WRITE_KBC);
-  sys_outb(OUT_BUF, commandByte);
+  kbc_cmd_byte |= KBC_ENABLE_INT;
+  kbd_write_command(WRITE_CMD_BYTE, kbc_cmd_byte, true);
+  return OK;
+}
+
+int (kbd_write_command)(uint8_t kbc_cmd, uint8_t arg, bool has_arg){
+  uint8_t stat;
+  while(1) {
+    util_sys_inb(STAT_REG, &stat); /* assuming it returns OK */
+    /* loop while 8042 input buffer is not empty */
+    if( (stat & IBF_FULL) == 0 ) {
+      sys_outb(CMD_REG, kbc_cmd); /* no args command */
+      if (has_arg){
+        sys_outb(OUT_BUF, arg);
+      }
+      return OK;
+    }
+    tickdelay(micros_to_ticks(DELAY_US));
+  }
+  return OK;
+}
+
+int (kbd_read_outbuf)(uint8_t *data){
+  uint8_t stat, d_read;
+  while( 1 ) {
+    util_sys_inb(STAT_REG, &stat); /* assuming it returns OK */
+    /* loop while 8042 output buffer is empty */
+    if( stat & OBF_FULL ) {
+      util_sys_inb(OUT_BUF, &d_read); /* ass. it returns OK */
+      if ((stat & (KBC_PAR_ERR | KBC_TO_ERR)) == 0){
+        *data = d_read;
+        return OK;
+      }
+      else return 1;
+    }
+    tickdelay(micros_to_ticks(DELAY_US));
+  }
+  return OK;
+}
+
+void (kbd_polling)(){
+  uint8_t value;
+  size = 1;
+  kbd_error = kbd_read_outbuf(&value);
+  process_scancode(value);
+}
+
+void (process_scancode)(uint8_t value){
+  if(!kbd_error){
+    if(two_byte) {
+      bb[1] = value;
+      two_byte = 0;
+      size++;
+    }
+    else if(value == TWO_BYTE_CODE){
+      bb[0] = value;
+      two_byte = 1;
+    }
+    else
+      bb[0] = value;
+  }
 }

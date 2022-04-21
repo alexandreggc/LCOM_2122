@@ -6,12 +6,15 @@
 #include <stdint.h>
 
 #include "keyboard.h"
+#include "keyboard_macros.h"
 #include "utils.h"
 
 extern uint8_t bb[];
 extern uint8_t two_byte;
 extern int size;
 extern int kbd_error;
+uint8_t kbc_cmd_byte=0;
+
 int main(int argc, char *argv[]) {
   // sets the language of LCF messages (can be either EN-US or PT-PT)
   lcf_set_language("EN-US");
@@ -37,10 +40,10 @@ int main(int argc, char *argv[]) {
 }
 
 int(kbd_test_scan)() {
-    int ipc_status, r;
-    uint8_t keyboard_sel;
-    message msg;
-    bool make;
+  int ipc_status, r;
+  uint8_t keyboard_sel;
+  message msg;
+  bool make;
 
   if(timer_subscribe_int(&keyboard_sel))
     return 1;
@@ -80,13 +83,25 @@ int(kbd_test_scan)() {
 }
 
 int(kbd_test_poll)() {
+  /* reads the command byte and stores it */
+  kbd_write_command(READ_CMD_BYTE, 0, false);
+  kbd_read_outbuf(&kbc_cmd_byte);
+
   int processing = 1;
+  bool make;
+
   while(processing){
-    if(keyboard_check_esc(bb)) {}
-          processing=0;
+    kbd_polling();/* process it */
+    if(two_byte || kbd_error){
+      continue;
     }
-    tickdelay(micros_to_ticks(DELAY_US));
+    keyboard_get_code(&make, bb);
+    kbd_print_scancode(make, size, bb);
+    if(keyboard_check_esc(bb)){
+        processing=0;
+    }
   }
+
   kbd_enable_int();
   kbd_print_no_sysinb(getCounter());
   return OK;
