@@ -1,9 +1,6 @@
 #ifndef KEYBOARD_H_INCLUDED
 #define KEYBOARD_H_INCLUDED
 
-uint8_t bb[2];
-uint8_t two_byte;
-
 int (kbd_subscribe_int)(uint8_t *bit_no);
 int (kbd_unsubscribe_int)();
 

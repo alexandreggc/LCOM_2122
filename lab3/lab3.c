@@ -10,7 +10,7 @@
 #include "utils.h"
 
 extern uint8_t bb[];
-extern uint8_t two_byte;
+extern bool two_byte;
 extern int size;
 extern int kbd_error;
 extern uint32_t no_interrupts;
@@ -84,16 +84,12 @@ int(kbd_test_scan)() {
 }
 
 int(kbd_test_poll)() {
-  /* reads the command byte and stores it */
-  kbd_write_command(READ_CMD_BYTE, 0, false);
-  kbd_read_outbuf(&kbc_cmd_byte);
-
   int processing = 1;
   bool make;
 
   while(processing){
     kbd_polling();/* process it */
-    if(two_byte || kbd_error){
+    if(two_byte|| kbd_error){
       continue;
     }
     keyboard_get_code(&make, bb);

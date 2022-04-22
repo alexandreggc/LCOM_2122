@@ -9,7 +9,7 @@
 
 int kbd_hook_id = 1;
 uint8_t bb[2];
-uint8_t two_byte = 0;
+bool two_byte = 0;
 int size = 1;
 int kbd_error = 0;
 extern uint8_t kbc_cmd_byte;
@@ -52,6 +52,8 @@ int (keyboard_check_esc)(uint8_t bb[2]){
 }
 
 int(kbd_enable_int)(){
+  kbd_write_command(READ_CMD_BYTE, 0, false);
+  kbd_read_outbuf(&kbc_cmd_byte);
   kbc_cmd_byte |= KBC_ENABLE_INT;
   kbd_write_command(WRITE_CMD_BYTE, kbc_cmd_byte, true);
   return OK;
@@ -77,8 +79,7 @@ int (kbd_write_command)(uint8_t kbc_cmd, uint8_t arg, bool has_arg){
 int (kbd_read_outbuf)(uint8_t *data){
   uint8_t stat, d_read;
   while( 1 ) {
-    util_sys_inb(STAT_REG, &stat); /* assuming it returns OK */
-    /* loop while 8042 output buffer is empty */
+    util_sys_inb(STAT_REG, &stat);
     if( stat & OBF_FULL ) {
       util_sys_inb(OUT_BUF, &d_read); /* ass. it returns OK */
       if ((stat & (KBC_PAR_ERR | KBC_TO_ERR)) == 0){
