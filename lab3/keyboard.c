@@ -7,20 +7,20 @@
 #include "keyboard_macros.h"
 #include "keyboard.h"
 
-int hook_id = 0;
+int kbd_hook_id = 1;
 uint8_t bb[2];
 uint8_t two_byte = 0;
 int size = 1;
 int kbd_error = 0;
 extern uint8_t kbc_cmd_byte;
 
-int (timer_subscribe_int)(uint8_t *bit_no) {
-  *bit_no = hook_id;
-  return sys_irqsetpolicy(KB_IRQ, IRQ_REENABLE | IRQ_EXCLUSIVE, &hook_id);
+int (kbd_subscribe_int)(uint8_t *bit_no) {
+  *bit_no = kbd_hook_id;
+  return sys_irqsetpolicy(KB_IRQ, IRQ_REENABLE | IRQ_EXCLUSIVE, &kbd_hook_id);
 }
 
-int (timer_unsubscribe_int)() {
-  return sys_irqrmpolicy(&hook_id);
+int (kbd_unsubscribe_int)() {
+  return sys_irqrmpolicy(&kbd_hook_id);
 }
 
 void (kbc_ih)() {

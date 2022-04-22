@@ -4,6 +4,9 @@
 uint8_t bb[2];
 uint8_t two_byte;
 
+int (kbd_subscribe_int)(uint8_t *bit_no);
+int (kbd_unsubscribe_int)();
+
 void (keyboard_get_code)(bool *make, uint8_t bb[2]);
 int (keyboard_check_esc)(uint8_t bb[2]);
 int(kbd_enable_int)();
