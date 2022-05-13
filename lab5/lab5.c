@@ -6,6 +6,10 @@
 #include <stdint.h>
 #include <stdio.h>
 
+#include "videocard.h"
+#include "graphics_card_macros.h"
+
+
 // Any header files included below this line should have been created by you
 
 int main(int argc, char *argv[]) {
@@ -33,10 +37,11 @@ int main(int argc, char *argv[]) {
 }
 
 int(video_test_init)(uint16_t mode, uint8_t delay) {
-  /* To be completed */
-  printf("%s(0x%03x, %u): under construction\n", __func__, mode, delay);
-
-  return 1;
+  set_graphics_mode(mode);
+  sleep(delay);
+  //tickdelay(micros_to_ticks(delay*1000000));
+  vg_exit();
+  return OK;
 }
 
 int(video_test_rectangle)(uint16_t mode, uint16_t x, uint16_t y,
