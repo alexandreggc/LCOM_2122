@@ -202,6 +202,7 @@ int(video_test_move)(xpm_map_t xpm, uint16_t xi, uint16_t yi, uint16_t xf, uint1
 
   uint16_t frames_to_move_onepx  = (speed <  0 ? -speed : 1);
   uint32_t ticks_per_frame = frequency/(uint32_t)fr_rate;
+  vg_draw_xpm_img(&img, x, y);
 
   while( process ) { /* You may want to use a different condition */
      /* Get a request message. */
