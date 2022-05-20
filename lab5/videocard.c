@@ -1,6 +1,7 @@
 #include <lcom/lcf.h>
 
 #include "videocard.h"
+#include "graphics_card_macros.h"
 
 static void *video_mem;
 static vbe_mode_info_t vbe_mem_info;
@@ -82,5 +83,25 @@ int(vg_draw_rectangle)(uint16_t x, uint16_t y,uint16_t width, uint16_t height,ui
   for(uint16_t line = y; line < y + height; line++){
     vg_draw_hline(x,line, width, color);
   }
+  return OK;
+}
+
+
+int(vg_draw_xpm_img)(xpm_image_t *xpm_img, uint16_t x, uint16_t y){
+  int Xres = vbe_mem_info.XResolution;
+  int Yres = vbe_mem_info.YResolution;
+  for (int w = 0; w < xpm_img->width; w++) {
+        for (int h = 0; h < xpm_img->height; h++) {
+            if (x + w < Xres && y + h < Yres) {
+                vg_draw_pixel(x + w, y + h, xpm_img->bytes[w + h * xpm_img->width]);
+            }
+        }
+    }
+  return OK;
+}
+
+
+int(vg_clear_screen)(){
+  vg_draw_rectangle(0,0,vbe_mem_info.XResolution, vbe_mem_info.YResolution, BLACK);
   return OK;
 }
