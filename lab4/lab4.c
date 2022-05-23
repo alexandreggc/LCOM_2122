@@ -5,11 +5,14 @@
 #include <stdio.h>
 
 #include "mouse.h"
+#include "keyboard.h"
+#include "keyboard_macros.h"
 #include "mouse_macros.h"
 
 // Any header files included below this line should have been created by you
 
 extern int mouse_ih_counter;
+uint8_t kbc_cmd_byte=0;
 
 int main(int argc, char *argv[]) {
   // sets the language of LCF messages (can be either EN-US or PT-PT)
@@ -46,11 +49,8 @@ int (mouse_test_packet)(uint32_t cnt) {
         return 1;
     }
     if (disable_irq()) return 1;
-    if(mouse_enable_data_reporting())
-        return 1;
+    if(mouse_enable_data_reporting()) return 1;
     if (enable_irq()) return 1; // re-enables our interrupts notifications
-
-
 
     int mouse_irq = BIT(mouse_sel);
     int good = cnt != 0;
@@ -84,16 +84,16 @@ int (mouse_test_packet)(uint32_t cnt) {
         }
     }
     if (disable_irq()) return 1; // temporarily disables our interrupts notifications
-
-    uint8_t ctrl = minix_get_dflt_kbc_cmd_byte();
-    sys_outb(CTRL_REG, 0x60);
-
-    sys_outb(IN_BUF, ctrl);
+    disable_data_reporting();
+    uint8_t cmd_byte = minix_get_dflt_kbc_cmd_byte();
+    kbd_write_command(WRITE_CMD_BYTE, cmd_byte, true);
+    
+    if (enable_irq()) return 1;
     if(mouse_unsubscribe_int()){
         return 1;
     }
     
-    return 0;
+    return OK;
 }
 
 int (mouse_test_async)(uint8_t idle_time) {
