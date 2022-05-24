@@ -13,6 +13,7 @@
 
 extern int mouse_ih_counter;
 uint8_t kbc_cmd_byte=0;
+extern int no_interrupts;
 
 int main(int argc, char *argv[]) {
   // sets the language of LCF messages (can be either EN-US or PT-PT)
@@ -97,9 +98,64 @@ int (mouse_test_packet)(uint32_t cnt) {
 }
 
 int (mouse_test_async)(uint8_t idle_time) {
-    /* To be completed */
-    printf("%s(%u): under construction\n", __func__, idle_time);
-    return 1;
+    int ipc_status, r;
+    message msg;
+    uint8_t mouse_sel, timer_sel;
+    uint8_t freq = sys_hz();
+    no_interrupts = 0;
+    
+    if(timer_subscribe_int(&timer_sel)) return 1;
+    if(mouse_subscribe_int(&mouse_sel)) return 1;
+    if (disable_irq()) return 1;
+    if(mouse_enable_data_reporting()) return 1;
+    if (enable_irq()) return 1; // re-enables our interrupts notifications
+
+    int timer_irq = BIT(timer_sel);
+    int mouse_irq = BIT(mouse_sel);
+    int good = idle_time != 0;
+    uint8_t time = idle_time;
+    mouse_ih_counter = 0;
+    while (good) {
+        /* Get a request message. */
+        if ((r = driver_receive(ANY, &msg, &ipc_status)) != 0) {
+            printf("driver_receive failed with %d", r);
+            continue;
+        }
+        if (is_ipc_notify(ipc_status)) { /* received notification */
+            switch (_ENDPOINT_P(msg.m_source)) {
+                case HARDWARE: /* hardware interrupt notification */
+                    if (msg.m_notify.interrupts & mouse_irq) { /* subscribed interrupt */
+                        mouse_ih();
+                        if(mouse_ih_counter >= 3){
+                            struct packet pp;
+                            mouse_parse_packet(&pp);
+                            mouse_print_packet(&pp);
+                            time = idle_time;
+                            no_interrupts = 0;
+                        }
+                    }
+                    if (msg.m_notify.interrupts & timer_irq) {
+                        timer_int_handler();
+                        if(no_interrupts % freq == 0){
+                            time--;
+                            if (time <= 0) good = 0;
+                        }
+                    }
+                    break;
+                default:
+                    break; /* no other notifications expected: do nothing */
+            }
+        } else { /* received standart message, not a notification */
+            /* no standart message expected: do nothing */
+        }
+    }
+    if (disable_irq()) return 1; // temporarily disables our interrupts notifications
+    disable_data_reporting();
+    if (enable_irq()) return 1;
+    if(mouse_unsubscribe_int()) return 1;
+    if(timer_unsubscribe_int()) return 1;
+    
+    return OK;
 }
 
 int (mouse_test_gesture)(uint8_t x_len, uint8_t tolerance){
