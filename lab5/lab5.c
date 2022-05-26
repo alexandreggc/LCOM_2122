@@ -103,11 +103,71 @@ int(video_test_rectangle)(uint16_t mode, uint16_t x, uint16_t y,uint16_t width, 
 }
 
 int(video_test_pattern)(uint16_t mode, uint8_t no_rectangles, uint32_t first, uint8_t step) {
-  /* To be completed */
-  printf("%s(0x%03x, %u, 0x%08x, %d): under construction\n", __func__,
-         mode, no_rectangles, first, step);
+  map_vram(mode);
+  set_graphics_mode(mode);
 
-  return 1;
+  uint16_t rect_width = get_rectangles_width(no_rectangles);
+  uint16_t rect_height = get_rectangles_height(no_rectangles);
+
+  uint32_t color, R, G, B;
+    for(uint8_t row = 0; row < no_rectangles; row++){
+        for(uint8_t col = 0; col < no_rectangles; col++){
+            if(getModeInfo().BitsPerPixel == 8){
+                color = (first + (row * no_rectangles + col) * step) % (1 << getModeInfo().BitsPerPixel);
+            }else{
+                R = (GET_RED(first) + col*step) % (1 << getModeInfo().RedMaskSize);
+                G = (GET_GRE(first) + row*step) % (1 << getModeInfo().GreenMaskSize);
+                B = (GET_BLU(first) + (col+row)*step) % (1 << getModeInfo().BlueMaskSize);
+                color = SET_COLOR(R,G,B);
+            }
+            uint16_t x = col * rect_width;
+            uint16_t y = row * rect_height;
+
+            if (x < getModeInfo().XResolution && y < getModeInfo().YResolution) {
+                if (vg_draw_rectangle(x,y,rect_width,rect_height,color)) {
+                    return 1;
+                }
+            }
+        }
+    }
+  int ipc_status, r;
+  uint8_t keyboard_sel;
+  message msg;
+  bool make;
+
+  if(kbd_subscribe_int(&keyboard_sel))
+    return 1;
+  int irq_set = BIT(keyboard_sel);
+  int process = 1;
+  while( process ) { /* You may want to use a different condition */
+     /* Get a request message. */
+     if ( (r = driver_receive(ANY, &msg, &ipc_status)) != 0 ) { 
+         printf("driver_receive failed with: %d", r);
+         continue;
+     }
+     if (is_ipc_notify(ipc_status)) { /* received notification */
+         switch (_ENDPOINT_P(msg.m_source)) {
+             case HARDWARE: /* hardware interrupt notification */       
+                 if (msg.m_notify.interrupts & irq_set) { /* subscribed interrupt */
+                      kbc_ih();/* process it */
+                      if(two_byte || kbd_error){
+                        continue;
+                      }
+                      keyboard_get_code(&make, bb);
+                 }
+                 break;
+             default:
+                 break; /* no other notifications expected: do nothing */ 
+         }
+         if(keyboard_check_esc(bb))
+            process=0;
+     } else { /* received a standard message, not a notification */
+         /* no standard messages expected: do nothing */
+     }
+  }
+  kbd_unsubscribe_int();
+  vg_exit();
+  return OK;
 }
 
 int(video_test_xpm)(xpm_map_t xpm, uint16_t x, uint16_t y) {

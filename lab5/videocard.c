@@ -105,3 +105,15 @@ int(vg_clear_screen)(){
   vg_draw_rectangle(0,0,vbe_mem_info.XResolution, vbe_mem_info.YResolution, BLACK);
   return OK;
 }
+
+uint8_t (get_rectangles_width)(uint8_t no_rectangles){
+  return vbe_mem_info.XResolution / no_rectangles;
+}
+
+uint8_t (get_rectangles_height)(uint8_t no_rectangles){
+    return vbe_mem_info.YResolution / no_rectangles;
+}
+
+vbe_mode_info_t getModeInfo(){
+  return vbe_mem_info;
+}
