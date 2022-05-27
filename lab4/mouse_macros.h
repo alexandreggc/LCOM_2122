@@ -3,6 +3,10 @@
 
 #include <lcom/lcf.h>
 
+typedef enum { INIT, DRAW_UP, DRAW_DOWN, DETECTED } state_t;
+
+#define MIN_SLOPE 1.0
+
 #define IRQ_LINE 12
 #define STAT_REG 0x64
 #define CTRL_REG 0x64

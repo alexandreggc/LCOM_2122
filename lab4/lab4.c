@@ -159,9 +159,53 @@ int (mouse_test_async)(uint8_t idle_time) {
 }
 
 int (mouse_test_gesture)(uint8_t x_len, uint8_t tolerance){
-    /* To be completed */
-    printf("%s: under construction\n", __func__);
-    return 1;
+    int ipc_status, r;
+    message msg;
+    uint8_t mouse_sel;
+
+    if(mouse_subscribe_int(&mouse_sel)) return 1;
+    if (disable_irq()) return 1;
+    if(mouse_enable_data_reporting()) return 1;
+    if (enable_irq()) return 1; // re-enables our interrupts notifications
+
+    int mouse_irq = BIT(mouse_sel);
+    int good = 1;
+    mouse_ih_counter = 0;
+    while (good) {
+        /* Get a request message. */
+        if ((r = driver_receive(ANY, &msg, &ipc_status)) != 0) {
+            printf("driver_receive failed with %d", r);
+            continue;
+        }
+        if (is_ipc_notify(ipc_status)) { /* received notification */
+            switch (_ENDPOINT_P(msg.m_source)) {
+                case HARDWARE: /* hardware interrupt notification */
+                    if (msg.m_notify.interrupts & mouse_irq) { /* subscribed interrupt */
+                        mouse_ih();
+                        if(mouse_ih_counter >= 3){
+                            struct packet pp;
+                            mouse_parse_packet(&pp);
+                            mouse_print_packet(&pp);
+                            struct mouse_ev *event = mouse_detect_event(&pp);
+                            printf("%X\n\n", event);
+                            good = mouse_check_pattern(*event, x_len);
+                        }
+                    }
+                    break;
+                default:
+                    break; /* no other notifications expected: do nothing */
+            }
+        } else { /* received standart message, not a notification */
+            /* no standart message expected: do nothing */
+        }
+    }
+
+    if (disable_irq()) return 1; // temporarily disables our interrupts notifications
+    disable_data_reporting();
+    if (enable_irq()) return 1;
+    if(mouse_unsubscribe_int()) return 1;
+    
+    return OK;
 }
 
 int (mouse_test_remote)(uint16_t period, uint8_t cnt) {

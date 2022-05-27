@@ -30,7 +30,31 @@ CURDIR := /Users/tiagobranquinho/Desktop/universidade/2ANO/2 semestre/LCOM/MINIX
 # makefile
 SHELL = /bin/sh
 # environment
+<<<<<<< HEAD
 VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
+=======
+SYSTEMD_EXEC_PID = 1403
+# environment
+EDITOR = /usr/bin/nano
+# environment
+DISPLAY = :0
+# environment
+USER = alexandre
+# default
+MAKE_VERSION := 4.3
+# environment
+DISABLE_WAYLAND = 1
+# environment
+SNAP_DATA = /var/snap/code/97
+# environment
+SNAP_CONTEXT = sE3dGMsiInrwMuMNqp1t6wW42HqhiVwxULMlFMIAF33Hvb0BKxoV
+# environment
+MANAGERPID = 1341
+# environment
+LC_MEASUREMENT = pt_PT.UTF-8
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 588711
+>>>>>>> 6aebf3a (Added unfinished gesture function)
 # environment
 _ = /usr/bin/make
 # makefile (from `Makefile', line 9)
@@ -40,7 +64,11 @@ MAKEFILE_LIST :=  Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
+<<<<<<< HEAD
 __CFBundleIdentifier = com.microsoft.VSCode
+=======
+JOURNAL_STREAM = 8:30039
+>>>>>>> 6aebf3a (Added unfinished gesture function)
 # environment
 VSCODE_IPC_HOOK_EXTHOST = /var/folders/v1/yy42rmgd5hsbwthphypsmb0h0000gn/T/vscode-ipc-42731baa-0f04-4483-b472-508d0be74cb9.sock
 # environment
@@ -142,9 +170,20 @@ SUFFIXES :=
 # default
 .INCLUDE_DIRS = /usr/local/include
 # environment
+<<<<<<< HEAD
 MAKELEVEL := 0
 # environment
 LANG = C
+=======
+SNAP_USER_DATA = /home/alexandre/snap/code/97
+# environment
+ 
+Makefile:17: *** missing separator.  Stop.
+
+XDG_MENU_PREFIX = gnome-
+# makefile (from 'Makefile', line 14)
+LDADD = -llcf
+>>>>>>> 6aebf3a (Added unfinished gesture function)
 # environment
 VSCODE_PID = 644
 # variable set hash-table stats:
@@ -204,7 +243,14 @@ Makefile:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
+<<<<<<< HEAD
 # Finished Make data base on Thu May 26 19:06:09 2022
+=======
+# strcache performance: lookups = 31 / hit rate = 12%
+# hash-table stats:
+# Load=27/8192=0%, Rehash=0, Collisions=0/31=0%
+# Finished Make data base on Thu May 26 23:03:49 2022
+>>>>>>> 6aebf3a (Added unfinished gesture function)
 
  
 Makefile:17: *** missing separator.  Stop.

@@ -6,8 +6,6 @@
 
 int mouse_hook_id = 2;
 int mouse_ih_counter;
-
-
 uint8_t bb[3];
 
 int (mouse_subscribe_int)(uint8_t *bit_no) {
@@ -87,4 +85,101 @@ int (mouse_read_byte)(uint8_t *byte) {
         tickdelay(micros_to_ticks(DELAY_US));
     }
     return 1;
+}
+
+/*
+struct mouse_ev* mouse_detect_event(struct packet *pp) {
+    static struct mouse_ev event;
+    static uint8_t last = 0;
+
+    if (pp == NULL) return &event;
+
+    // current button presses
+    uint8_t button_presses = pp->bytes[0] & (LEFT_BUTTON | RIGHT_BUTTON | MIDDLE_BUTTON);
+    int16_t delta_x = pp->delta_x;
+    int16_t delta_y = pp->delta_y;
+
+    if ((button_presses ^ last) == LEFT_BUTTON && !(last & LEFT_BUTTON)) {
+        event.type = LB_PRESSED;
+        last |= LEFT_BUTTON;
+
+    } else if ((button_presses ^ last) == RIGHT_BUTTON && !(last & RIGHT_BUTTON)) {
+        event.type = RB_PRESSED;
+        last |= RIGHT_BUTTON;
+
+    } else if ((button_presses ^ last) == LEFT_BUTTON && (last & LEFT_BUTTON)) {
+        event.type = LB_RELEASED;
+        last &= ~LEFT_BUTTON;
+
+    } else if ((button_presses ^ last) == RIGHT_BUTTON && (last & RIGHT_BUTTON)) {
+        event.type = RB_RELEASED;
+        last &= ~RIGHT_BUTTON;
+
+    } else if ((delta_x || delta_y) && (button_presses == last)) {
+        event.type = MOUSE_MOV;
+
+    } else
+        event.type = BUTTON_EV;
+
+    event.delta_x = delta_x;
+    event.delta_y = delta_y;
+    return &event;
+}
+*/
+
+int mouse_check_pattern(struct mouse_ev evt, uint8_t x_len) {
+  static state_t pattern_state = INIT; // initial state; keep state
+  static int lineXLen = 0; // line movement in X
+  switch (pattern_state) {
+    case INIT:
+      if ((evt.type == LB_PRESSED && evt.type != RB_PRESSED) || (evt.type == MOUSE_MOV && evt.type == LB_PRESSED && evt.type != RB_PRESSED)
+      ){
+        lineXLen = 0;
+        pattern_state = DRAW_UP;
+      } //else we stay on INIT
+      break;
+    case DRAW_UP:
+      if (evt.type == MOUSE_MOV) {
+        lineXLen += evt.delta_x;
+        if (evt.type != LB_PRESSED && evt.type == RB_PRESSED && lineXLen >= x_len) { // although a move type, we allow the button change
+          pattern_state = DRAW_DOWN;
+        }
+        else if (evt.delta_x <= 0 || evt.delta_y <= 0 || (evt.delta_y / evt.delta_x) < MIN_SLOPE || evt.type != LB_PRESSED || (evt.type == RB_PRESSED && lineXLen < x_len)) { // note that lifting left button and pressing right is handled before
+          pattern_state = INIT;
+        }
+      } // evt.type == MOVE
+      else if (evt.type == RB_PRESSED) { // change the line draw
+        if (evt.type != LB_PRESSED && // it was a right click, but we're extra careful
+        evt.type == RB_PRESSED && lineXLen >= x_len) {
+          lineXLen = 0;
+          pattern_state = DRAW_DOWN;
+        }
+        else { // does not comply, right click with other buttons or length of UP too short
+          pattern_state = INIT;
+        }
+      } // evt.type == RBDOWN
+      else { // other event type goes to restart
+        pattern_state = INIT;
+      }
+      break; // from case DRAW_UP
+    case DRAW_DOWN:
+      if (evt.type == MOUSE_MOV){
+        lineXLen += evt.delta_x;
+        if (evt.type != RB_PRESSED || evt.type == LB_PRESSED || (evt.delta_y / evt.delta_x) >= -MIN_SLOPE){
+          pattern_state = INIT;
+        }
+        else if (lineXLen >= x_len){
+          pattern_state = DETECTED;
+        }
+      }
+      else { // other event type goes to restart
+        pattern_state = INIT;
+      }
+      break;
+    case DETECTED:
+      return 0;
+    default:
+      return 1;
+  }
+  return 1;
 }

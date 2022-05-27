@@ -14,5 +14,6 @@ int (enable_irq());
 int (disable_data_reporting)();
 int (mouse_issue_cmd)(uint8_t cmd);
 int (mouse_read_byte)(uint8_t *byte);
+int (mouse_check_pattern)(struct mouse_ev evt, uint8_t x_len);
 
 #endif 
