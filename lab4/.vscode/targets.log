@@ -7,7 +7,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Wed May 25 18:20:14 2022
+# Make data base, printed on Fri May 27 14:14:02 2022
 
 # Variables
 
@@ -42,15 +42,13 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/v1/yy42rmgd5hsbwthphypsmb0h0000gn/T/vscode-ipc-984741b4-3adc-4e41-b620-435d231feb56.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/v1/yy42rmgd5hsbwthphypsmb0h0000gn/T/vscode-ipc-43797383-18e4-416c-869b-014518bdaac5.sock
 # environment
 VSCODE_CWD = /
 # environment
 PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
 # makefile (from `Makefile', line 2)
 PROG = lab4
-# environment
-LaunchInstanceID = AFF03427-F13F-4E9F-846E-87CCAAA67AF9
 # environment
 VSCODE_LOG_STACK = false
 # environment
@@ -60,7 +58,7 @@ ELECTRON_RUN_AS_NODE = 1
 # makefile (from `Makefile', line 13)
 DPADD = ${LIBLCF}
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.LAUqgXZDwl/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.1l3RSgXXa5/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -137,8 +135,6 @@ MAKEFILES :=
 <F = $(notdir $<)
 # environment
 LC_ALL = C
-# environment
-SECURITYSESSIONID = 186a3
 # automatic
 ^F = $(notdir $^)
 # default
@@ -150,9 +146,9 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 756
+VSCODE_PID = 617
 # variable set hash-table stats:
-# Load=70/1024=7%, Rehash=0, Collisions=1/88=1%
+# Load=68/1024=7%, Rehash=0, Collisions=1/86=1%
 
 # Pattern-specific Variable Values
 
@@ -160,7 +156,7 @@ VSCODE_PID = 756
 
 # Directories
 
-# . (device 16777225, inode 20756234): 25 files, no impossibilities.
+# . (device 16777224, inode 20756234): 25 files, no impossibilities.
 
 # 25 files, no impossibilities in 1 directories.
 
@@ -208,7 +204,7 @@ Makefile:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed May 25 18:20:14 2022
+# Finished Make data base on Fri May 27 14:14:02 2022
 
  
 Makefile:17: *** missing separator.  Stop.
