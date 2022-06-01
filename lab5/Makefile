@@ -15,3 +15,19 @@ LDADD += -llcf
 
 # include LCOM's makefile that does all the "heavy lifting"
 .include <minix.lcom.mk>
+
+
+
+PROG=proj
+
+.PATH: ${.CURDIR}/source
+
+SRCS= game.c keyboard.c mouse.c timer.c utils.c videocard.c
+IPATHS=-I./defines -I./macros
+
+CPPFLAGS += -pedantic ${IPATHS} -D LCOM_MACRO -D __LCOM_OPTIMIZED__ -Wall -Wextra -Wshadow -Wunreachable-code #-Weverything -Wno-padded -Wno-unused-macros
+
+DPADD += ${LIBLCF}
+LDADD += -llcf
+
+.include <minix.lcom.mk>

@@ -68,7 +68,6 @@ int (mouse_issue_cmd)(uint8_t cmd) {
         if ((ret = kbd_write_command(MOUSE_WRITE_CMD, cmd, true))) return ret;
         if ((ret = mouse_read_byte(&ack))) return ret;
         if (ack == ACK) return OK;
-        else return 1;
         tickdelay(micros_to_ticks(DELAY_US));
     }
     return 1;

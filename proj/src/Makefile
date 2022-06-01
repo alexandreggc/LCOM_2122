@@ -1,20 +1,13 @@
-# name of the program (Minix service)
 PROG=proj
 
-# source code files to be compiled
-SRCS = $(proj.c) $(wildcard/source *.c) $(wildcard/defines *.h) $(wildcard *.o)
+.PATH: ${.CURDIR}/source
 
-# Object files
-OBJ=$(wildcard/source:.c=.o)
+SRCS= game.c keyboard.c mouse.c timer.c utils.c videocard.c proj.c
+IPATHS=-I./defines -I./macros
 
-# additional compilation flags
-# "-Wall -Wextra -Werror -I . -std=c11 -Wno-unused-parameter" are already set
-CFLAGS += -pedantic -D__LCOM_OPTIMIZED__
-CPPFLAGS += -D proj
+CPPFLAGS += -pedantic ${IPATHS} -D proj -D __LCOM_OPTIMIZED__ -Wall -Wextra -Wshadow -Wunreachable-code #-Weverything -Wno-padded -Wno-unused-macros
 
-# list of library dependencies (for Lab 2, only LCF library)
 DPADD += ${LIBLCF}
 LDADD += -llcf
 
-# include LCOM's makefile that does all the "heavy lifting"
 .include <minix.lcom.mk>

@@ -13,7 +13,7 @@ uint8_t bb[2];
 bool two_byte = 0;
 int size = 1;
 int kbd_error = 0;
-extern uint8_t kbc_cmd_byte;
+//extern uint8_t kbc_cmd_byte;
 
 int (kbd_subscribe_int)(uint8_t *bit_no) {
   *bit_no = kbd_hook_id;
@@ -38,21 +38,22 @@ void (kbc_ih)() {
   process_scancode(value);
 }
 
-void (keyboard_get_code)(bool *make, uint8_t bb[2]){
+void (keyboard_get_code)(bool *make, uint8_t bbyte[2]){
   if(size==1)
-    *make = !((bb[0] >> 7) == 1);
+    *make = !((bbyte[0] >> 7) == 1);
   else
-      *make = !((bb[1] >> 7) == 1);
+      *make = !((bbyte[1] >> 7) == 1);
 
 }
 
-int (keyboard_check_esc)(uint8_t bb[2]){
-  if(two_byte == 0 && bb[0] == ESC_CODE)
+int (keyboard_check_esc)(uint8_t bbyte[2]){
+  if(two_byte == 0 && bbyte[0] == ESC_CODE)
     return 1;
   return OK;
 }
 
 int(kbd_enable_int)(){
+  uint8_t kbc_cmd_byte=0;
   kbd_write_command(READ_CMD_BYTE, 0, false);
   kbd_read_outbuf(&kbc_cmd_byte);
   kbc_cmd_byte |= KBC_ENABLE_INT;
