@@ -43,7 +43,6 @@ void (keyboard_get_code)(bool *make, uint8_t bbyte[2]){
     *make = !((bbyte[0] >> 7) == 1);
   else
       *make = !((bbyte[1] >> 7) == 1);
-
 }
 
 int (keyboard_check_esc)(uint8_t bbyte[2]){
