@@ -1,18 +1,23 @@
 #include "game.h"
+#include "libs.h"
 
 extern uint8_t bb[2];
 extern bool two_byte;
 extern int kbd_error;
 
 int(mainLoop)(){
-  uint16_t x = 100, y = 70, width = 50, height = 50;
-  uint32_t color = 0xff12ff;
-
-  vg_draw_rectangle(x,y,width,height,color);
+  int16_t x = 100, y = 70, width = 50, height = 50;
+  uint32_t color = 3;
   
+  vg_draw_rectangle(x,y,width,height,color);
+
+  sprite_t *player = sprite_constructor((const char* const*)penguin);
+  sprite_set_pos(player, 0, 0);
+  sprite_draw(player);
+
   int ipc_status, r;
   uint8_t keyboard_sel;
-  message msg;
+  message msg;  
   bool make;
 
   if(kbd_subscribe_int(&keyboard_sel))
@@ -48,5 +53,6 @@ int(mainLoop)(){
 
   kbd_unsubscribe_int();
   vg_exit();
+  sprite_destructor(player);
   return OK;
 }

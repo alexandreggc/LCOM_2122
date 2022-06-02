@@ -17,6 +17,10 @@
     "mouse.h": "c",
     "stdio.h": "c",
     "proj.h": "c",
-    "lcf.h": "c"
+    "lcf.h": "c",
+    "lib.h": "c",
+    "libs.h": "c",
+    "shooter.h": "c",
+    "*.xpm": "c"
   },
 }

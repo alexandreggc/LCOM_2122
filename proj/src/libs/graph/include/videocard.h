@@ -1,4 +1,5 @@
-#include <lcom/lcf.h>
+#ifndef VIDEOCARD_H_INCLUDED
+#define VIDEOCARD_H_INCLUDED
 
 #include "graphics_card_macros.h"
 
@@ -20,5 +21,6 @@ uint8_t (get_rectangles_width)(uint8_t no_rectangles);
 
 uint8_t (get_rectangles_height)(uint8_t no_rectangles);
 
-vbe_mode_info_t getModeInfo();
+vbe_mode_info_t (getModeInfo)();
 
+#endif

@@ -12,11 +12,11 @@ int main(int argc, char *argv[]) {
 
   // enables to log function invocations that are being "wrapped" by LCF
   // [comment this out if you don't want/need it]
-  lcf_trace_calls("/home/lcom/labs/lab5/trace.txt");
+  lcf_trace_calls("/home/lcom/labs/proj/src/trace.txt");
 
   // enables to save the output of printf function calls on a file
   // [comment this out if you don't want/need it]
-  lcf_log_output("/home/lcom/labs/lab5/output.txt");
+  lcf_log_output("/home/lcom/labs/proj/src/output.txt");
 
   // handles control over to LCF
   // [LCF handles command line arguments and invokes the right function]
@@ -33,10 +33,11 @@ int main(int argc, char *argv[]) {
 int(proj_main_loop)(int argc, char* argv[])
 {
   (void)argc; (void)argv;
+  uint16_t mode = INDEXED_1024_768;
+  
+  if(set_graphics_mode(mode)) return 1;
 
-  if(map_vram(DIRECT_800_600)) return 1;
-
-  if(set_graphics_mode(DIRECT_800_600)) return 1;
+  if(map_vram(mode)) return 1;
 
   if(mainLoop()) return 1;
 
