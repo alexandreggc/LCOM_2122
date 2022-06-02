@@ -16,6 +16,7 @@
     "timer.h": "c",
     "mouse.h": "c",
     "stdio.h": "c",
-    "proj.h": "c"
+    "proj.h": "c",
+    "lcf.h": "c"
   },
 }
