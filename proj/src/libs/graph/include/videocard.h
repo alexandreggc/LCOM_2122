@@ -1,6 +1,6 @@
 #include <lcom/lcf.h>
 
-#include "../macros/graphics_card_macros.h"
+#include "graphics_card_macros.h"
 
 int (set_graphics_mode)(uint16_t mode);
 

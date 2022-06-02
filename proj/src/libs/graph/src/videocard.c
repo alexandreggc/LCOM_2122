@@ -1,7 +1,7 @@
 #include <lcom/lcf.h>
 
-#include "../defines/videocard.h"
-#include "../macros/graphics_card_macros.h"
+#include "videocard.h"
+#include "graphics_card_macros.h"
 
 static void *video_mem;
 static vbe_mode_info_t vbe_mem_info;

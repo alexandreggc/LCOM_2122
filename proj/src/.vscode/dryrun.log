@@ -1,7 +1,6 @@
 make --dry-run --keep-going --print-directory
-make: Entering directory `/Users/tiagobranquinho/Desktop/universidade/2ANO/2 semestre/LCOM/MINIX-LCOM/shared/proj/src'
+make: Entering directory '/home/alexandre/Documents/FEUP/2ano/2Sem/LC/MINIX-LCOM/shared/proj/src'
+make: Leaving directory '/home/alexandre/Documents/FEUP/2ano/2Sem/LC/MINIX-LCOM/shared/proj/src'
  
-Makefile:17: *** missing separator.  Stop.
+Makefile:18: *** missing separator.  Stop.
 
-make: Leaving directory `/Users/tiagobranquinho/Desktop/universidade/2ANO/2 semestre/LCOM/MINIX-LCOM/shared/proj/src'
- 

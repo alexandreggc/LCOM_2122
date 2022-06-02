@@ -3,8 +3,8 @@
 #include <stdio.h>
 #include <lcom/proj.h>
 
-#include "./defines/videocard.h"
-#include "./defines/game.h"
+#include "libs.h"
+#include "game.h"
 
 int main(int argc, char *argv[]) {
   // sets the language of LCF messages (can be either EN-US or PT-PT)

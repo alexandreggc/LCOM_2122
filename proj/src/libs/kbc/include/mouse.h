@@ -1,6 +1,6 @@
 #include <lcom/lcf.h>
-#include "../macros/mouse_macros.h"
-#include "../macros/keyboard_macros.h"
+#include "mouse_macros.h"
+#include "keyboard_macros.h"
 #include "keyboard.h"
 #include "utils.h"
 

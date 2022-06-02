@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jun  1 19:57:39 2022
+# Make data base, printed on Thu Jun  2 11:29:35 2022
 
 # Variables
 
@@ -21,13 +21,15 @@ SNAP_INSTANCE_KEY =
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-d8bd2f26-288c-445e-8bbe-2ac89f414bdb.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-25103469-228a-4e4f-b3f5-dc2d3d246eef.sock
 # environment
 LC_NAME = pt_PT.UTF-8
 # environment
 LC_NUMERIC = pt_PT.UTF-8
 # environment
 VSCODE_CWD = /home/alexandre
+# environment
+WINDOWPATH = 2
 # environment
 LESS_TERMCAP_me = [0m
 # environment
@@ -36,6 +38,8 @@ LC_ADDRESS = pt_PT.UTF-8
 GDM_LANG = en_US.UTF-8
 # default
 MAKE_COMMAND := make
+# environment
+GTK3_MODULES = xapp-gtk3-module
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
@@ -67,7 +71,7 @@ VSCODE_CODE_CACHE_PATH = /home/alexandre/.config/Code/CachedData/c3511e6c69bb390
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.IB4BN1
+XAUTHORITY = /run/user/1000/gdm/Xauthority
 # default
 .LOADED := 
 # environment
@@ -96,8 +100,6 @@ MFLAGS = -pqrR
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # default
 .SHELLFLAGS := -c
-# environment
-WAYLAND_DISPLAY = wayland-0
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
@@ -115,17 +117,17 @@ SNAP_REEXEC =
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 3924
+VSCODE_PID = 21604
 # environment
 MOZ_ENABLE_WAYLAND = 1
 # environment
-XDG_SESSION_TYPE = wayland
+XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/lenovopc:@/tmp/.ICE-unix/1969,unix/lenovopc:/tmp/.ICE-unix/1969
+SESSION_MANAGER = local/lenovopc:@/tmp/.ICE-unix/1840,unix/lenovopc:/tmp/.ICE-unix/1840
 # automatic
 *F = $(notdir $*)
 # environment
@@ -179,7 +181,7 @@ LESS_TERMCAP_mb = [01;32m
 # environment
 SNAP = /snap/code/97
 # environment
-INVOCATION_ID = 4f3a275b089044c68e40ae7027835f03
+INVOCATION_ID = e2d12711723a4a79adca819ef8c4d771
 # environment
 SNAP_REVISION = 97
 # environment
@@ -188,8 +190,6 @@ SNAP_REAL_HOME = /home/alexandre
 VSCODE_LOG_NATIVE = false
 # environment
 USERNAME = alexandre
-# environment
-GNOME_SETUP_DISPLAY = :1
 # environment
 LC_TELEPHONE = pt_PT.UTF-8
 # automatic
@@ -221,11 +221,11 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 1985
+SYSTEMD_EXEC_PID = 1857
 # environment
 EDITOR = /usr/bin/nano
 # environment
-DISPLAY = :0
+DISPLAY = :1
 # environment
 USER = alexandre
 # default
@@ -237,11 +237,11 @@ SNAP_DATA = /var/snap/code/97
 # environment
 SNAP_CONTEXT = sE3dGMsiInrwMuMNqp1t6wW42HqhiVwxULMlFMIAF33Hvb0BKxoV
 # environment
-MANAGERPID = 1922
+MANAGERPID = 1738
 # environment
 LC_MEASUREMENT = pt_PT.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 3819
+GIO_LAUNCHED_DESKTOP_FILE_PID = 21534
 # environment
 _ = /usr/bin/make
 # environment
@@ -253,7 +253,7 @@ CFLAGS = -pedantic
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/alexandre/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:29255
+JOURNAL_STREAM = 8:21247
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -284,9 +284,6 @@ QT_AUTO_SCREEN_SCALE_FACTOR = 1
 VSCODE_CLI = 1
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
- 
-Makefile:17: *** missing separator.  Stop.
-
 # environment
 SNAP_COMMON = /var/snap/code/common
 # environment
@@ -359,6 +356,8 @@ all:
 # strcache performance: lookups = 31 / hit rate = 12%
 # hash-table stats:
 # Load=27/8192=0%, Rehash=0, Collisions=0/31=0%
-# Finished Make data base on Wed Jun  1 19:57:39 2022
+# Finished Make data base on Thu Jun  2 11:29:35 2022
 
  
+Makefile:17: *** missing separator.  Stop.
+

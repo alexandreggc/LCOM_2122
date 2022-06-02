@@ -1,4 +1,4 @@
-#include "../defines/game.h"
+#include "game.h"
 
 extern uint8_t bb[2];
 extern bool two_byte;

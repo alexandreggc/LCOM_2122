@@ -2,7 +2,7 @@
 #include <stdint.h>
 
 
-#include "../defines/mouse.h"
+#include "mouse.h"
 
 int mouse_hook_id = 2;
 int mouse_ih_counter;

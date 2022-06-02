@@ -3,9 +3,9 @@
 
 #include <stdint.h>
 
-#include "../defines/keyboard.h"
-#include "../macros/i8254.h"
-#include "../macros/keyboard_macros.h"
+#include "keyboard.h"
+#include "i8254.h"
+#include "keyboard_macros.h"
 
 
 int kbd_hook_id = 1;

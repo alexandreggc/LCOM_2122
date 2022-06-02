@@ -1,7 +1,7 @@
 #include <lcom/lcf.h>
 #include <stdint.h>
 
-#include "../defines/utils.h"
+#include "utils.h"
 
 int(util_get_LSB)(uint16_t val, uint8_t *lsb) {
   *lsb = (uint8_t) val;

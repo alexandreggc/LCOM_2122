@@ -1,8 +1,8 @@
 #include <lcom/lcf.h>
 #include <stdint.h>
 
-#include "../defines/timer.h"
-#include "../macros/i8254.h"
+#include "timer.h"
+#include "i8254.h"
 
 int hook_id = 0;
 uint32_t no_interrupts = 0;
