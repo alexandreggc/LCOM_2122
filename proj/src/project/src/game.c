@@ -21,7 +21,7 @@ int(mainLoop)(){
   uint8_t timer_sel;
   no_interrupts = 0;
 
-if(timer_subscribe_int(&timer_sel))
+  if(timer_subscribe_int(&timer_sel))
     return 1;
   int timer_irq_set = BIT(timer_sel);
 

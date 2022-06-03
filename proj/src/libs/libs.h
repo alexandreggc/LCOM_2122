@@ -7,5 +7,6 @@
 #include "kbc/include/mouse.h"
 #include "timer/include/timer.h"
 #include "utils/include/utils.h"
+#include "rtc/include/rtc.h"
 
 #endif

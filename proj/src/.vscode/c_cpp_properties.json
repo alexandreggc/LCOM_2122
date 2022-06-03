@@ -15,7 +15,8 @@
             ],
             "includePath": [
                 "${workspaceFolder}/**",
-                "${env:minix.include}"
+                "${env:minix.include}",
+                "${workspaceFolder}/libs/rtc/include"
             ],
             "browse": {
                 "path": [

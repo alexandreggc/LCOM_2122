@@ -21,6 +21,7 @@
     "lib.h": "c",
     "libs.h": "c",
     "shooter.h": "c",
-    "*.xpm": "c"
+    "*.xpm": "c",
+    "rtc.h": "c"
   },
 }
