@@ -115,6 +115,10 @@ uint8_t (get_rectangles_height)(uint8_t no_rectangles){
     return vbe_mem_info.YResolution / no_rectangles;
 }
 
-vbe_mode_info_t (getModeInfo)(){
-  return vbe_mem_info;
+uint16_t (get_graph_y_res)(){
+  return vbe_mem_info.XResolution;
+}
+
+uint16_t (get_graph_x_res)(){
+  return vbe_mem_info.YResolution;
 }

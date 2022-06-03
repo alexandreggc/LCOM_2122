@@ -175,3 +175,14 @@ void (process_scancode)(uint8_t value){
       bb[0] = value;
   }
 }
+
+int is_two_byte(){
+  return two_byte;
+}
+int kbd_error_occured(){
+  return kbd_error;
+}
+
+void keyboard_get_key(uint8_t *key){
+  memcpy(key, bb, size);
+}

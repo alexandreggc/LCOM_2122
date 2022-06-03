@@ -23,4 +23,5 @@
     "shooter.h": "c",
     "*.xpm": "c"
   },
+  "C_Cpp.errorSquiggles": "Enabled",
 }

@@ -7,7 +7,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Fri Jun  3 00:43:33 2022
+# Make data base, printed on Sat Jun  4 00:00:57 2022
 
 # Variables
 
@@ -40,7 +40,7 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/v1/yy42rmgd5hsbwthphypsmb0h0000gn/T/vscode-ipc-fa31c667-d124-429d-abff-b561c8a1eedc.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/v1/yy42rmgd5hsbwthphypsmb0h0000gn/T/vscode-ipc-50a32ef5-2b70-4c62-bfc9-1df368be6dca.sock
 # environment
 VSCODE_CWD = /
 # environment
@@ -56,7 +56,7 @@ ELECTRON_RUN_AS_NODE = 1
 # makefile (from `Makefile', line 15)
 DPADD = ${LIBLCF}
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.2ZuAcCe4Ku/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.UK5QUipmO6/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -90,7 +90,7 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # makefile (from `Makefile', line 10)
-SRCS = game.c keyboard.c mouse.c timer.c utils.c videocard.c proj.c sprite.c
+SRCS = game.c keyboard.c mouse.c timer.c utils.c videocard.c proj.c sprite.c rectangle.c menu.c
 # environment
 SHLVL = 1
 # default
@@ -146,7 +146,7 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 655
+VSCODE_PID = 5869
 # variable set hash-table stats:
 # Load=68/1024=7%, Rehash=0, Collisions=1/91=1%
 
@@ -156,9 +156,9 @@ VSCODE_PID = 655
 
 # Directories
 
-# . (device 16777226, inode 20904347): 17 files, no impossibilities.
+# . (device 16777223, inode 20904347): 20 files, no impossibilities.
 
-# 17 files, no impossibilities in 1 directories.
+# 20 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -209,7 +209,7 @@ Makefile:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Fri Jun  3 00:43:33 2022
+# Finished Make data base on Sat Jun  4 00:00:57 2022
 
  
 Makefile:18: *** missing separator.  Stop.

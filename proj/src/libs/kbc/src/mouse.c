@@ -42,9 +42,7 @@ int (mouse_parse_packet)(struct packet *pp){
 }
 
 void (mouse_ih)() {
-  if(mouse_ih_counter >= 3){
-    mouse_ih_counter = 0;
-  }
+  update_ih_counter();
   uint8_t byte;
   util_sys_inb(OUT_BUF, &byte);
   if((byte & FIRST_BYTE_ID) || mouse_ih_counter){
@@ -86,4 +84,14 @@ int (mouse_read_byte)(uint8_t *byte) {
         tickdelay(micros_to_ticks(DELAY_US));
     }
     return 1;
+}
+
+int (get_ih_counter)(){
+  return mouse_ih_counter;
+}
+
+void (update_ih_counter)(){
+  if(mouse_ih_counter >= 3){
+    mouse_ih_counter = 0;
+  }
 }

@@ -9,6 +9,7 @@
 #define DIRECT_1280_1024_888    0x11B
 #define LINEAR_FRAME_BUFFER_MD  BIT(14)
 
+
 #define GET_RED(n)          (0xFF & ((n) >> 16))
 #define GET_GRE(n)          (0xFF & ((n) >>  8))
 #define GET_BLU(n)          (0xFF & (n))

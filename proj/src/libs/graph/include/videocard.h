@@ -21,6 +21,8 @@ uint8_t (get_rectangles_width)(uint8_t no_rectangles);
 
 uint8_t (get_rectangles_height)(uint8_t no_rectangles);
 
-vbe_mode_info_t (getModeInfo)();
+uint16_t (get_graph_y_res)();
+
+uint16_t (get_graph_x_res)();
 
 #endif
