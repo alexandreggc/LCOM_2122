@@ -3,6 +3,7 @@
 
 
 #define REFRESH_RATE    60
+#define PLAYER_SPEED 5
 
 #define UP      -1
 #define DOWN    1

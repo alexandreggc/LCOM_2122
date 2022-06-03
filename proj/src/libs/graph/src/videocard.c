@@ -102,7 +102,8 @@ int(vg_draw_xpm_img)(xpm_image_t *xpm_img, uint16_t x, uint16_t y){
 
 
 int(vg_clear_screen)(){
-  vg_draw_rectangle(0,0,vbe_mem_info.XResolution, vbe_mem_info.YResolution, BLACK);
+  //vg_draw_rectangle(0,0,vbe_mem_info.XResolution, vbe_mem_info.YResolution, BLACK);
+  memset(video_mem, 0, vbe_mem_info.BytesPerScanLine * vbe_mem_info.YResolution);
   return OK;
 }
 

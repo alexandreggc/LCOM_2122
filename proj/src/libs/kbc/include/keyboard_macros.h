@@ -10,6 +10,17 @@
 #define TWO_BYTE_CODE 0xE0
 
 #define ESC_CODE  0x81
+#define W_CODE  0x11
+#define A_CODE  0x1E
+#define S_CODE  0x1F
+#define D_CODE  0x20
+#define ARROWUP_CODE  0xE048
+#define ARROWLEFT_CODE  0xE04B
+#define ARROWDOWN_CODE  0xE050
+#define ARROWRIGHT_CODE  0xE04D
+#define SPACEBAR_CODE  0x39
+
+
 
 #define STATUS_REG_ERR 0x2
 

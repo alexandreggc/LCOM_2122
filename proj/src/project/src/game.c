@@ -6,21 +6,14 @@ extern bool two_byte;
 extern int kbd_error;
 extern uint32_t no_interrupts;
 
-int(mainLoop)(){
-  int16_t x = 100, y = 70, width = 50, height = 50;
-  uint32_t color = 3;
-  
-  vg_draw_rectangle(x,y,width,height,color);
-
+int(mainLoop)(){  
   sprite_t *player = sprite_constructor((const char* const*)penguin);
-  sprite_set_pos(player, 0, 0);
+  sprite_set_pos(player, 10, 10);
   sprite_draw(player);
-
   int ipc_status, r;
   uint8_t keyboard_sel;
   message msg;  
   bool make;
-
   if(kbd_subscribe_int(&keyboard_sel))
     return 1;
   int kbc_irq_set = BIT(keyboard_sel);
@@ -49,21 +42,20 @@ if(timer_subscribe_int(&timer_sel))
                         continue;
                       }
                       keyboard_get_code(&make, bb);
+                      process = !keyboard_process_key(bb, player);
 
                  }
                  if (msg.m_notify.interrupts & timer_irq_set) { /* subscribed interrupt */
                      timer_int_handler();   /* process it */
-                     if((no_interrupts * 60) % REFRESH_RATE == 0){
+                     if((no_interrupts * 60) % REFRESH_RATE == 0){ // atualiza a cada 1 segundo
                         vg_clear_screen();
-                        y+=10;
-                        vg_draw_rectangle(x,y,width,height,color);
+                        sprite_draw(player);
                  }
                  }
                  break;
              default:
                  break; /* no other notifications expected: do nothing */ 
          }
-         if(keyboard_check_esc(bb)) process=0;
      } else { /* received a standard message, not a notification */
          /* no standard messages expected: do nothing */
      }
@@ -73,4 +65,6 @@ if(timer_subscribe_int(&timer_sel))
   vg_exit();
   sprite_destructor(player);
   return OK;
+  
 }
+

@@ -12,11 +12,6 @@
 #include "utils.h"
 #include "project_macros.h"
 
-int playerMove(uint8_t x, uint8_t y);
-
-int getInitialPos(uint8_t *pos[2]);
-
-
 
 
 #endif

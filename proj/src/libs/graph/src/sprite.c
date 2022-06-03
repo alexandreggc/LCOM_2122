@@ -61,3 +61,7 @@ void(sprite_set_speed)(sprite_t *sp, int vx, int vy){
 void (sprite_draw)(sprite_t *sp){
   vg_draw_xpm_img(sp->img , sp->x, sp->y);
 }
+
+void (sprite_update_pos)(sprite_t *sp){
+  sp->x += sp->xspeed; sp->y += sp->yspeed;
+}

@@ -1,313 +1,154 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-Makefile:18: *** missing separator.  Stop.
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
 
-# GNU Make 4.3
-# Built for x86_64-pc-linux-gnu
-# Copyright (C) 1988-2020 Free Software Foundation, Inc.
-# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
-# This is free software: you are free to change and redistribute it.
-# There is NO WARRANTY, to the extent permitted by law.
+# This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Thu Jun  2 15:08:51 2022
+# Make data base, printed on Fri Jun  3 00:43:33 2022
 
 # Variables
 
-# environment
-GDK_BACKEND = x11
-# environment
-LC_ALL = C
-# environment
-NO_AT_BRIDGE = 1
-# environment
-SNAP_INSTANCE_KEY = 
-# environment
-GJS_DEBUG_OUTPUT = stderr
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-5ef11269-bc8f-47f1-8849-a49193eefaaf.sock
-# environment
-LC_NAME = pt_PT.UTF-8
-# environment
-LC_NUMERIC = pt_PT.UTF-8
-# environment
-VSCODE_CWD = /home/alexandre
-# environment
-WINDOWPATH = 2
-# environment
-LESS_TERMCAP_me = [0m
-# environment
-LC_ADDRESS = pt_PT.UTF-8
-# environment
-GDM_LANG = en_US.UTF-8
-# default
-MAKE_COMMAND := make
-# environment
-GTK3_MODULES = xapp-gtk3-module
-# automatic
-@D = $(patsubst %/,%,$(dir $@))
-# environment
-SNAP_INSTANCE_NAME = code
-# environment
-GDK_PIXBUF_MODULEDIR = /snap/code/97/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
-# environment
-VSCODE_HANDLES_UNCAUGHT_ERRORS = true
-# default
-.VARIABLES := 
-# environment
-PWD = /home/alexandre/Documents/FEUP/2ano/2Sem/LC/MINIX-LCOM/shared/proj/src
-# automatic
-%D = $(patsubst %/,%,$(dir $%))
-# environment
-MAIL = /var/spool/mail/alexandre
-# environment
-XDG_DATA_DIRS = /home/alexandre/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
-# environment
-OLDPWD = /home/alexandre
-# automatic
-^D = $(patsubst %/,%,$(dir $^))
-# environment
-VSCODE_LOG_STACK = false
-# automatic
-%F = $(notdir $%)
-# environment
-VSCODE_CODE_CACHE_PATH = /home/alexandre/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
-# environment
-LANG = C
-# environment
-XAUTHORITY = /run/user/1000/gdm/Xauthority
-# default
-.LOADED := 
-# environment
-LESS_TERMCAP_md = [01;32m
-# default
-.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
-# makefile
-MAKEFLAGS = pqrR
-# environment
-LESS_TERMCAP_so = [01;47;34m
-# makefile
-CURDIR := /home/alexandre/Documents/FEUP/2ano/2Sem/LC/MINIX-LCOM/shared/proj/src
-# environment
-VSCODE_PIPE_LOGGING = true
-# environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
-# makefile (from 'Makefile', line 10)
-SRCS = game.c keyboard.c mouse.c timer.c utils.c videocard.c proj.c sprite.c
-# automatic
-*D = $(patsubst %/,%,$(dir $*))
-# environment
-LESS_TERMCAP_ue = [0m
-# environment
-MFLAGS = -pqrR
-# environment
-SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
-# default
-.SHELLFLAGS := -c
-# automatic
-+D = $(patsubst %/,%,$(dir $+))
-# environment
-P9K_SSH = 0
-# makefile (from 'Makefile', line 15)
-DPADD = ${LIBLCF}
-# environment
-XDG_SESSION_DESKTOP = gnome
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST := Makefile
-# environment
-SNAP_REEXEC = 
-# automatic
-@F = $(notdir $@)
-# environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
-VSCODE_PID = 21604
-# environment
-MOZ_ENABLE_WAYLAND = 1
-# environment
-XDG_SESSION_TYPE = x11
-# automatic
-?D = $(patsubst %/,%,$(dir $?))
-# environment
-BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
-# environment
-SESSION_MANAGER = local/lenovopc:@/tmp/.ICE-unix/1840,unix/lenovopc:/tmp/.ICE-unix/1840
-# automatic
-*F = $(notdir $*)
-# environment
-QT_QPA_PLATFORMTHEME = qt5ct
-# environment
-CHROME_DESKTOP = code-url-handler.desktop
-# environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
-# environment
-VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
-# default
-MAKE_HOST := x86_64-pc-linux-gnu
-# makefile
-SHELL = /bin/sh
-# environment
-LESS_TERMCAP_us = [01;36m
-# default
-MAKECMDGOALS := all
-# environment
-XMODIFIERS = @im=ibus
-# environment
-GJS_DEBUG_TOPICS = JS ERROR;JS LOG
-# environment
-SHLVL = 1
-# environment
-MAKELEVEL := 0
-# default
-MAKE = $(MAKE_COMMAND)
-# environment
-SNAP_COOKIE = sE3dGMsiInrwMuMNqp1t6wW42HqhiVwxULMlFMIAF33Hvb0BKxoV
-# environment
-PATH = /home/alexandre/.local/bin:/home/alexandre/.local/bin:/usr/local/bin:/usr/bin:/var/lib/snapd/snap/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/jvm/default/bin
-# environment
-LESS_TERMCAP_se = [0m
-# default
-MAKEFILES := 
-# environment
-LC_MONETARY = pt_PT.UTF-8
-# environment
-MOTD_SHOWN = pam
-# automatic
-^F = $(notdir $^)
-# environment
-SNAP_USER_COMMON = /home/alexandre/snap/code/common
-# environment
-LC_TIME = pt_PT.UTF-8
-# environment
-LESS_TERMCAP_mb = [01;32m
-# environment
-SNAP = /snap/code/97
-# environment
-INVOCATION_ID = e2d12711723a4a79adca819ef8c4d771
-# environment
-SNAP_REVISION = 97
-# environment
-SNAP_REAL_HOME = /home/alexandre
-# environment
-VSCODE_LOG_NATIVE = false
-# environment
-USERNAME = alexandre
-# environment
-LC_TELEPHONE = pt_PT.UTF-8
 # automatic
 ?F = $(notdir $?)
 # environment
-XDG_CURRENT_DESKTOP = GNOME
-# makefile (from 'Makefile', line 1)
-PROG = proj
-# environment
-LS_COLORS = 
+VSCODE_LOG_NATIVE = false
 # automatic
-+F = $(notdir $+)
-# environment
-LESS = -R
-# environment
-DESKTOP_SESSION = gnome
-# environment
-ORIGINAL_XDG_CURRENT_DESKTOP = GNOME
-# environment
-GNUMAKEFLAGS := 
-# environment
-LOGNAME = alexandre
-# makefile (from 'Makefile', line 13)
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from `Makefile', line 13)
 CPPFLAGS = -pedantic ${IPATHS} -D proj -D __LCOM_OPTIMIZED__ -Wall -Wextra -Wshadow -Wunreachable-code 
-# environment
-GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
-# environment
-SNAP_ARCH = amd64
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
 # makefile
-.DEFAULT_GOAL := 
+CURDIR := /Users/tiagobranquinho/Desktop/universidade/2ANO/2 semestre/LCOM/MINIX-LCOM/shared/proj/src
+# makefile
+SHELL = /bin/sh
 # environment
-SYSTEMD_EXEC_PID = 1857
-# environment
-EDITOR = /usr/bin/nano
-# environment
-DISPLAY = :1
-# environment
-USER = alexandre
-# default
-MAKE_VERSION := 4.3
-# environment
-DISABLE_WAYLAND = 1
-# environment
-SNAP_DATA = /var/snap/code/97
-# environment
-SNAP_CONTEXT = sE3dGMsiInrwMuMNqp1t6wW42HqhiVwxULMlFMIAF33Hvb0BKxoV
-# environment
-MANAGERPID = 1738
-# environment
-LC_MEASUREMENT = pt_PT.UTF-8
-# environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 21534
+VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
 # environment
-LC_PAPER = pt_PT.UTF-8
+VSCODE_VERBOSE_LOGGING = true
 # environment
-XDG_RUNTIME_DIR = /run/user/1000
+__CFBundleIdentifier = com.microsoft.VSCode
 # environment
-GDK_PIXBUF_MODULE_FILE = /home/alexandre/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/v1/yy42rmgd5hsbwthphypsmb0h0000gn/T/vscode-ipc-fa31c667-d124-429d-abff-b561c8a1eedc.sock
 # environment
-JOURNAL_STREAM = 8:21247
+VSCODE_CWD = /
 # environment
-XDG_SESSION_CLASS = user
+PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+# makefile (from `Makefile', line 1)
+PROG = proj
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# makefile (from `Makefile', line 15)
+DPADD = ${LIBLCF}
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.2ZuAcCe4Ku/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /Users/tiagobranquinho/Desktop/universidade/2ANO/2 semestre/LCOM/MINIX-LCOM/shared/proj/src
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# makefile (from `Makefile', line 16)
+LDADD = -llcf
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-HOME = /home/alexandre
-# environment
-QT_IM_MODULE = ibus
-# environment
-ELECTRON_RUN_AS_NODE = 1
-# environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-489c886b-1.67.2-main.sock
-# environment
-SNAP_NAME = code
-# makefile (from 'Makefile', line 11)
-IPATHS = -I./project/include -I./libs -I./libs/graph/include -I./libs/rtc/include -I./libs/kbc/include -I./libs/timer/include -I./libs/utils/include
-# environment
-GSETTINGS_SCHEMA_DIR = /snap/code/97/usr/share/glib-2.0/schemas
+HOME = /Users/tiagobranquinho
 # default
-.RECIPEPREFIX := 
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/tiagobranquinho/Library/Application Support/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+# environment
+LOGNAME = tiagobranquinho
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from `Makefile', line 10)
+SRCS = game.c keyboard.c mouse.c timer.c utils.c videocard.c proj.c sprite.c
+# environment
+SHLVL = 1
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = tiagobranquinho
+# makefile
+.DEFAULT_GOAL := 
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/v1/yy42rmgd5hsbwthphypsmb0h0000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/tiagobranquinho/Library/Application Support/Code/1.67.2-main.sock
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.23415711.23415717
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
 # automatic
 <F = $(notdir $<)
 # environment
-SNAP_VERSION = c3511e6c
+LC_ALL = C
+# makefile (from `Makefile', line 11)
+IPATHS = -I./project/include -I./libs -I./libs/graph/include -I./libs/rtc/include -I./libs/kbc/include -I./libs/timer/include -I./libs/utils/include
+# automatic
+^F = $(notdir $^)
 # default
 SUFFIXES := 
-# environment
-QT_AUTO_SCREEN_SCALE_FACTOR = 1
-# environment
-VSCODE_CLI = 1
-# environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
-SNAP_COMMON = /var/snap/code/common
-# environment
-LS_OPTIONS = --color=auto
 # default
-.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+.INCLUDE_DIRS = /usr/local/include
 # environment
-SNAP_USER_DATA = /home/alexandre/snap/code/97
+MAKELEVEL := 0
 # environment
-XDG_MENU_PREFIX = gnome-
-# makefile (from 'Makefile', line 16)
-LDADD = -llcf
+LANG = C
 # environment
-GDMSESSION = gnome
-# environment
-PKGFILE_PROMPT_INSTALL_MISSING = 1
-# environment
-LC_IDENTIFICATION = pt_PT.UTF-8
-# environment
-SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+VSCODE_PID = 655
 # variable set hash-table stats:
-# Load=147/1024=14%, Rehash=0, Collisions=15/169=9%
+# Load=68/1024=7%, Rehash=0, Collisions=1/91=1%
 
 # Pattern-specific Variable Values
 
@@ -315,7 +156,7 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# . (device 66306, inode 1972966): 17 files, no impossibilities.
+# . (device 16777226, inode 20904347): 17 files, no impossibilities.
 
 # 17 files, no impossibilities in 1 directories.
 
@@ -326,14 +167,20 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # Files
 
 # Not a target:
-Makefile:
+all:
+#  Command-line target.
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
- 
 # Not a target:
-/libs/timer/src:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -344,62 +191,26 @@ Makefile:
 #  File has not been updated.
 
 # Not a target:
-/libs/rtc/src:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-/project/src:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-all:
-#  Command line target.
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-/libs/graph/src:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-/libs/kbc/src:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-/libs/utils/src:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
 # files hash-table stats:
-# Load=11/1024=1%, Rehash=0, Collisions=0/23=0%
+# Load=5/1024=0%, Rehash=0, Collisions=0/11=0%
 # VPATH Search Paths
 
-# No 'vpath' search paths.
+# No `vpath' search paths.
 
-# No general ('VPATH' variable) search path.
+# No general (`VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 29 / storage = 282 B / avg = 9 B
-# current buf: size = 8162 B / used = 282 B / count = 29 / avg = 9 B
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# strcache performance: lookups = 44 / hit rate = 34%
-# hash-table stats:
-# Load=29/8192=0%, Rehash=0, Collisions=0/44=0%
-# Finished Make data base on Thu Jun  2 15:08:51 2022
+# Finished Make data base on Fri Jun  3 00:43:33 2022
 
  
+Makefile:18: *** missing separator.  Stop.
+

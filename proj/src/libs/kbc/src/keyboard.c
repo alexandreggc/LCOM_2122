@@ -4,8 +4,6 @@
 #include <stdint.h>
 
 #include "keyboard.h"
-#include "i8254.h"
-#include "keyboard_macros.h"
 
 
 int kbd_hook_id = 1;
@@ -14,6 +12,7 @@ bool two_byte = 0;
 int size = 1;
 int kbd_error = 0;
 //extern uint8_t kbc_cmd_byte;
+
 
 int (kbd_subscribe_int)(uint8_t *bit_no) {
   *bit_no = kbd_hook_id;
@@ -45,9 +44,69 @@ void (keyboard_get_code)(bool *make, uint8_t bbyte[2]){
       *make = !((bbyte[1] >> 7) == 1);
 }
 
-int (keyboard_check_esc)(uint8_t bbyte[2]){
-  if(two_byte == 0 && bbyte[0] == ESC_CODE)
-    return 1;
+int (keyboard_process_key)(uint8_t bbyte[2], sprite_t* sp){
+  int h_dir = REST, v_dir = REST;
+    if(size == 2){
+      uint8_t lsb, msb;
+      uint16_t arrowCodes[4] = {ARROWUP_CODE, ARROWLEFT_CODE, ARROWDOWN_CODE, ARROWRIGHT_CODE};
+      for(uint8_t i = 0; i < 4; i++){
+        util_get_LSB(arrowCodes[i], &lsb);
+        util_get_MSB(arrowCodes[i], &msb);
+        if(bbyte[0] == msb && bbyte[1] == lsb){
+          switch (i){
+          case 0:{
+            v_dir = UP;
+            break;
+          }
+          case 1:{
+            h_dir = LEFT;
+            break;
+          }
+          case 2:{
+            v_dir = DOWN;
+            break;
+          }
+          case 3:{
+            h_dir = RIGHT;
+            break;
+          }
+          default:
+            break;
+          }
+          break;
+        } 
+      }
+    }
+  else{
+    switch (bbyte[0])
+    {
+    case ESC_CODE: return 1;
+    case W_CODE: {
+      v_dir = UP;
+      break;
+      }
+    case A_CODE: {
+      h_dir = LEFT;
+      break;
+      }
+      case S_CODE: {
+        v_dir = DOWN;
+        break;
+      }
+      case D_CODE: {
+        h_dir = RIGHT;
+        break;
+      }
+      case SPACEBAR_CODE: {
+        break;
+      }
+    default:
+      break;
+    } 
+  }
+
+  sprite_set_speed(sp, h_dir * PLAYER_SPEED, v_dir * PLAYER_SPEED);
+  sprite_update_pos(sp);
   return OK;
 }
 
