@@ -67,6 +67,7 @@ int(mainLoop)(){
                           sprite_draw(player);
                         sprite_draw(mouse);
                         no_interrupts = 0;
+                        vg_draw();
                  }
                  }
                  if (msg.m_notify.interrupts & mouse_irq_set) { /* subscribed interrupt */
