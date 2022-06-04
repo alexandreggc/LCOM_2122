@@ -8,7 +8,7 @@ Makefile:19: *** missing separator.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Jun  4 02:24:33 2022
+# Make data base, printed on Sat Jun  4 12:59:51 2022
 
 # Variables
 
@@ -43,7 +43,59 @@ MAKE_COMMAND := make
 # environment
 SNAP_INSTANCE_NAME = code
 # environment
+<<<<<<< HEAD
 GDK_PIXBUF_MODULEDIR = /snap/code/97/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+=======
+_ = /usr/bin/make
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/v1/yy42rmgd5hsbwthphypsmb0h0000gn/T/vscode-ipc-5641a55d-414a-4822-9fc5-67d7bb9ba8e3.sock
+# environment
+VSCODE_CWD = /
+# environment
+PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+# makefile (from `Makefile', line 1)
+PROG = proj
+# environment
+LaunchInstanceID = 34A1E054-4E8D-4A0F-B02D-335FE21C99B1
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# makefile (from `Makefile', line 15)
+DPADD = ${LIBLCF}
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.u9jqT8aixV/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /Users/tiagobranquinho/Desktop/universidade/2ANO/2 semestre/LCOM/MINIX-LCOM/shared/proj/src
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# makefile (from `Makefile', line 16)
+LDADD = -llcf
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/tiagobranquinho
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/tiagobranquinho/Library/Application Support/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+# environment
+LOGNAME = tiagobranquinho
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+>>>>>>> 57512b9 (Resolving Conflict)
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -65,6 +117,7 @@ VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # environment
+<<<<<<< HEAD
 VSCODE_CODE_CACHE_PATH = /home/alexandre/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
 # environment
 LANG = C
@@ -310,6 +363,35 @@ LC_IDENTIFICATION = pt_PT.UTF-8
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
 # Load=147/1024=14%, Rehash=0, Collisions=15/170=9%
+=======
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+LC_ALL = C
+# environment
+SECURITYSESSIONID = 186a3
+# makefile (from `Makefile', line 11)
+IPATHS = -I./project/include -I./libs -I./libs/graph/include -I./libs/rtc/include -I./libs/kbc/include -I./libs/timer/include -I./libs/utils/include
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+VSCODE_PID = 609
+# variable set hash-table stats:
+# Load=70/1024=7%, Rehash=0, Collisions=1/93=1%
+>>>>>>> 57512b9 (Resolving Conflict)
 
 # Pattern-specific Variable Values
 
@@ -317,7 +399,11 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
+<<<<<<< HEAD
 # . (device 66306, inode 1972966): 21 files, no impossibilities.
+=======
+# . (device 16777225, inode 20904347): 20 files, no impossibilities.
+>>>>>>> 57512b9 (Resolving Conflict)
 
 # 21 files, no impossibilities in 1 directories.
 
@@ -375,11 +461,24 @@ all:
 #  Modification time never checked.
 #  File has not been updated.
 
+<<<<<<< HEAD
 # Not a target:
 /libs/graph/src:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+=======
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Sat Jun  4 12:59:51 2022
+>>>>>>> 57512b9 (Resolving Conflict)
 
  
 # Not a target:
