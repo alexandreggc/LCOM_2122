@@ -4,6 +4,7 @@
 #include "graphics_card_macros.h"
 
 static void *video_mem;
+static void *video_buf;
 static vbe_mode_info_t vbe_mem_info;
 static int bytes_per_pixel;
 static int bytes_per_line;
@@ -61,6 +62,8 @@ int(map_vram)(uint16_t mode){
 
   if(video_mem == MAP_FAILED)
     panic("couldn't map video memory");
+
+  video_buf = malloc(vram_size);
   
 return OK;
 
@@ -68,7 +71,7 @@ return OK;
 
 int(vg_draw_pixel)(uint16_t x, uint16_t y, uint32_t color){
   int pos = y * bytes_per_line + x*bytes_per_pixel;
-  memcpy((void*)((unsigned int)video_mem + pos), &color, bytes_per_pixel);
+  memcpy((void*)((unsigned int)video_buf + pos), &color, bytes_per_pixel);
   return OK;
 } 
 
@@ -105,7 +108,12 @@ int(vg_draw_xpm_img)(xpm_image_t *xpm_img, uint16_t x, uint16_t y){
 
 int(vg_clear_screen)(){
   //vg_draw_rectangle(0,0,vbe_mem_info.XResolution, vbe_mem_info.YResolution, BLACK);
-  memset(video_mem, 0, vbe_mem_info.BytesPerScanLine * vbe_mem_info.YResolution);
+  memset(video_buf, 0, vbe_mem_info.BytesPerScanLine * vbe_mem_info.YResolution);
+  return OK;
+}
+
+int (vg_draw)(){
+  memcpy(video_mem, video_buf, vbe_mem_info.BytesPerScanLine * vbe_mem_info.YResolution);
   return OK;
 }
 
@@ -117,6 +125,10 @@ uint8_t (get_rectangles_height)(uint8_t no_rectangles){
     return vbe_mem_info.YResolution / no_rectangles;
 }
 
-vbe_mode_info_t (getModeInfo)(){
-  return vbe_mem_info;
+uint16_t (get_graph_y_res)(){
+  return vbe_mem_info.YResolution;
+}
+
+uint16_t (get_graph_x_res)(){
+  return vbe_mem_info.XResolution;
 }

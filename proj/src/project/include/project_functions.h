@@ -12,6 +12,8 @@
 #include "utils.h"
 #include "project_macros.h"
 
+enum GameState{MENU, PLAY, EXIT};
+
 
 
 #endif

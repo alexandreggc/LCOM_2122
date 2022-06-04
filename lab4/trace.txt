@@ -1,0 +1,1755 @@
+@lcflib.a:2019, lcf_start
+  mouse_test_packet(cnt)
+> mouse_test_packet(50)
+  @mouse.c:13, mouse_subscribe_int
+    sys_irqsetpolicy(IRQ_LINE, IRQ_REENABLE | IRQ_EXCLUSIVE, &mouse_hook_id)
+  > sys_irqsetpolicy(12, 3, addr: 0x822dd4c [2])
+  < sys_irqsetpolicy(12, 3, addr: 0x822dd4c [10]) -> (ret: 0)
+  @mouse.c:17, disable_irq
+    sys_irqdisable(&mouse_hook_id)
+  > sys_irqdisable(addr: 0x822dd4c [10])
+  < sys_irqdisable(addr: 0x822dd4c [10]) -> (ret: 0)
+  @lab4.c:53, mouse_test_packet
+    mouse_enable_data_reporting()
+  @mouse.c:21, enable_irq
+    sys_irqenable(&mouse_hook_id)
+  > sys_irqenable(addr: 0x822dd4c [10])
+  < sys_irqenable(addr: 0x822dd4c [10]) -> (ret: 0)
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x04 = 0b00000100])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=4"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x02 = 0b00000010])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x03 = 0b00000011])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x03 = 0b00000011])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0"
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x08 = 0b00001000])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x01 = 0b00000001])
+  @lab4.c:61, mouse_test_packet
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6b0, addr: 0xeffff6f8)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000100]>)
+  @lab4.c:69, mouse_test_packet
+    mouse_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &byte)
+    > sys_inb(0x60, addr: 0xeffff5b4)
+    < sys_inb(0x60, addr: 0xeffff5b4 [0x00 = 0b00000000])
+  @lab4.c:73, mouse_test_packet
+    mouse_print_packet(&pp)
+  > mouse_print_packet(addr: 0xeffff6a0)
+    "B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0"
+  @mouse.c:17, disable_irq
+    sys_irqdisable(&mouse_hook_id)
+  > sys_irqdisable(addr: 0x822dd4c [10])
+  < sys_irqdisable(addr: 0x822dd4c [10]) -> (ret: 0)
+  @mouse.c:55, disable_data_reporting
+    sys_outb(CTRL_REG, MOUSE_WRITE_CMD)
+  > sys_outb(0x64, 0xd4 = 0b11010100)
+  @mouse.c:56, disable_data_reporting
+    sys_outb(IN_BUF, DISABLE_DATA_REPORT)
+  > sys_outb(0x60, 0xf5 = 0b11110101)
+  @mouse.c:57, disable_data_reporting
+    micros_to_ticks(ACKS_DELAY)
+  @mouse.c:57, disable_data_reporting
+    tickdelay(micros_to_ticks(ACKS_DELAY))
+  > tickdelay(1 [16.7 ms])
+  @utils.c:25, util_sys_inb
+    sys_inb(port, &byte)
+  > sys_inb(0x60, addr: 0xeffff63c)
+  < sys_inb(0x60, addr: 0xeffff63c [0xfa = 0b11111010])
+  @utils.c:25, util_sys_inb
+    sys_inb(port, &byte)
+  > sys_inb(0x64, addr: 0xeffff634)
+  < sys_inb(0x64, addr: 0xeffff634 [0x1c = 0b00011100])
+  @keyboard.c:67, kbd_write_command
+    sys_outb(CMD_REG, kbc_cmd)
+  > sys_outb(0x64, 0x60 = 0b01100000)
+  @keyboard.c:69, kbd_write_command
+    sys_outb(OUT_BUF, arg)
+  > sys_outb(0x60, 0x47 = 0b01000111)
+  @mouse.c:21, enable_irq
+    sys_irqenable(&mouse_hook_id)
+  > sys_irqenable(addr: 0x822dd4c [10])
+  < sys_irqenable(addr: 0x822dd4c [10]) -> (ret: 0)
+  @mouse.c:25, mouse_unsubscribe_int
+    sys_irqrmpolicy(&mouse_hook_id)
+  > sys_irqrmpolicy(addr: 0x822dd4c [10])
+  < sys_irqrmpolicy(addr: 0x822dd4c [10]) -> (ret: 0)
+< mouse_test_packet(50) -> (ret: 0)

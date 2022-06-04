@@ -7,7 +7,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Fri May 27 14:14:02 2022
+# Make data base, printed on Fri Jun  3 14:51:58 2022
 
 # Variables
 
@@ -42,7 +42,7 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/v1/yy42rmgd5hsbwthphypsmb0h0000gn/T/vscode-ipc-43797383-18e4-416c-869b-014518bdaac5.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/v1/yy42rmgd5hsbwthphypsmb0h0000gn/T/vscode-ipc-22b16c85-396f-45cc-b7c3-6d2c8caab6db.sock
 # environment
 VSCODE_CWD = /
 # environment
@@ -58,7 +58,7 @@ ELECTRON_RUN_AS_NODE = 1
 # makefile (from `Makefile', line 13)
 DPADD = ${LIBLCF}
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.1l3RSgXXa5/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.tmwdYii7RM/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -146,7 +146,7 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 617
+VSCODE_PID = 675
 # variable set hash-table stats:
 # Load=68/1024=7%, Rehash=0, Collisions=1/86=1%
 
@@ -156,7 +156,7 @@ VSCODE_PID = 617
 
 # Directories
 
-# . (device 16777224, inode 20756234): 25 files, no impossibilities.
+# . (device 16777223, inode 20756234): 25 files, no impossibilities.
 
 # 25 files, no impossibilities in 1 directories.
 
@@ -204,7 +204,7 @@ Makefile:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Fri May 27 14:14:02 2022
+# Finished Make data base on Fri Jun  3 14:51:58 2022
 
  
 Makefile:17: *** missing separator.  Stop.

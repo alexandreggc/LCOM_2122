@@ -63,5 +63,8 @@ void (sprite_draw)(sprite_t *sp){
 }
 
 void (sprite_update_pos)(sprite_t *sp){
-  sp->x += sp->xspeed; sp->y += sp->yspeed;
+  if(sp->x + sp->xspeed >= 0 && sp->x + sp->xspeed + sp->width < get_graph_x_res())
+    sp->x += sp->xspeed;
+  if(sp->y + sp->yspeed >= 0 && sp->y + sp->yspeed + sp->height < get_graph_y_res())
+    sp->y += sp->yspeed;
 }

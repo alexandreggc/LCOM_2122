@@ -18,5 +18,8 @@ int (kbd_read_outbuf)(uint8_t *data);
 void (process_scancode)(uint8_t value);
 void (kbd_polling)();
 void (reset_vars)();
+int is_two_byte();
+int kbd_error_occured(); 
+void keyboard_get_key(uint8_t *key);
 
 #endif 

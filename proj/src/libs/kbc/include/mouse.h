@@ -16,5 +16,7 @@ int (enable_irq());
 int (disable_data_reporting)();
 int (mouse_issue_cmd)(uint8_t cmd);
 int (mouse_read_byte)(uint8_t *byte);
+int (get_ih_counter)();
+void (update_ih_counter)();
 
 #endif 

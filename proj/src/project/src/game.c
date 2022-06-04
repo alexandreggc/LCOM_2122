@@ -1,34 +1,42 @@
 #include "game.h"
 #include "libs.h"
 #include "bomberman.xpm"
-
-extern uint8_t bb[2];
-extern bool two_byte;
-extern int kbd_error;
-extern uint32_t no_interrupts;
+#include "crosshair.xpm"
 
 int(mainLoop)(){  
+  enum GameState gameState = MENU;
   sprite_t *player = sprite_constructor((const char* const*)bomberman_xpm);
+  sprite_t *mouse = sprite_constructor((const char* const*)crosshair_xpm);
+  sprite_set_pos(mouse, 100, 100);
+  sprite_draw(mouse);
+
   sprite_set_pos(player, 10, 10);
-  sprite_draw(player);
+  //sprite_draw(player);
   int ipc_status, r;
   uint8_t keyboard_sel;
   message msg;  
-  bool make;
+  menu_t *main_menu = menu_ctor();
   if(kbd_subscribe_int(&keyboard_sel))
     return 1;
   int kbc_irq_set = BIT(keyboard_sel);
 
   uint8_t timer_sel;
-  no_interrupts = 0;
+  int no_interrupts = 0;
 
   if(timer_subscribe_int(&timer_sel))
     return 1;
   int timer_irq_set = BIT(timer_sel);
 
-  int process = 1;
+  uint8_t mouse_sel;
+  if(mouse_subscribe_int(&mouse_sel))
+    return 1;
+  int mouse_irq_set = BIT(mouse_sel);
 
-  while( process ) { /* You may want to use a different condition */
+  if (disable_irq()) return 1;
+  if(mouse_enable_data_reporting()) return 1;
+  if (enable_irq()) return 1; // re-enables our interrupts notifications
+
+  while( gameState != EXIT ) { /* You may want to use a different condition */
      /* Get a request message. */
      if ( (r = driver_receive(ANY, &msg, &ipc_status)) != 0 ) { 
          printf("driver_receive failed with: %d", r);
@@ -39,19 +47,54 @@ int(mainLoop)(){
              case HARDWARE: /* hardware interrupt notification */       
                  if (msg.m_notify.interrupts & kbc_irq_set) { /* subscribed interrupt */
                       kbc_ih();/* process it */
-                      if(two_byte || kbd_error){
+                      if(is_two_byte() || kbd_error_occured()){
                         continue;
                       }
-                      keyboard_get_code(&make, bb);
-                      process = !keyboard_process_key(bb, player);
-
+                      uint8_t bb[2];
+                      keyboard_get_key(bb);
+                      if(gameState == PLAY)
+                        if(keyboard_process_key(bb, player))
+                          gameState = EXIT;
                  }
                  if (msg.m_notify.interrupts & timer_irq_set) { /* subscribed interrupt */
                      timer_int_handler();   /* process it */
                      if((no_interrupts * 60) % REFRESH_RATE == 0){ // atualiza a cada 1 segundo
                         vg_clear_screen();
-                        sprite_draw(player);
+                        if(gameState == MENU){
+                            menu_draw(main_menu);
+                        }
+                        else if(gameState == PLAY)
+                          sprite_draw(player);
+                        sprite_draw(mouse);
+                        no_interrupts = 0;
+                        vg_draw();
                  }
+                 }
+                 if (msg.m_notify.interrupts & mouse_irq_set) { /* subscribed interrupt */
+                      mouse_ih();
+                      if(get_ih_counter() >= 3){
+                          struct packet pp;
+                          mouse_parse_packet(&pp);           
+                          sprite_set_speed(mouse, pp.delta_x, pp.delta_y * UP);
+                          sprite_update_pos(mouse);
+                          if(gameState == MENU){
+                            int state = menu_update_state(main_menu, mouse, pp.lb);
+                            switch (state)
+                            {
+                            case 1: {
+                              gameState = PLAY;
+                              break;
+                            }
+                            case 2: {
+                              gameState = EXIT;
+                              break;
+                            }
+                            default:
+                              break;
+                            }
+                          }
+
+                      }
                  }
                  break;
              default:
@@ -61,11 +104,25 @@ int(mainLoop)(){
          /* no standard messages expected: do nothing */
      }
   }
+  if(kbd_unsubscribe_int())
+    return 1;
+  if(timer_unsubscribe_int())
+    return 1;
 
-  kbd_unsubscribe_int();
+
+  if (disable_irq()) return 1; // temporarily disables our interrupts notifications
+  disable_data_reporting();
+  uint8_t cmd_byte = minix_get_dflt_kbc_cmd_byte();
+  kbd_write_command(WRITE_CMD_BYTE, cmd_byte, true);
+  
+  if (enable_irq()) return 1;
+  if(mouse_unsubscribe_int()){
+      return 1;
+  }
   vg_exit();
   sprite_destructor(player);
-  return OK;
-  
-}
+  sprite_destructor(mouse);
+  menu_dtor(main_menu);
 
+  return OK;
+}
