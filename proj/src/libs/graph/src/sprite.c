@@ -15,7 +15,7 @@ sprite_t* (sprite_constructor)(const char *const *xpm){
   sprite_t* ret = malloc(sizeof(sprite_t));
   xpm_image_t *xpm_img = malloc(sizeof(xpm_image_t));
   if (ret==NULL || xpm_img==NULL) return NULL;
-  uint8_t *map = xpm_load((xpm_map_t)xpm, XPM_INDEXED, xpm_img);
+  uint8_t *map = xpm_load((xpm_map_t)xpm, XPM_8_8_8, xpm_img);
   if (map == NULL) sprite_destructor(ret);
   xpm_img->bytes=map;
   ret->img = xpm_img;
@@ -63,8 +63,8 @@ void (sprite_draw)(sprite_t *sp){
 }
 
 void (sprite_update_pos)(sprite_t *sp){
-  if(sp->x + sp->xspeed >= 0 && sp->x + sp->xspeed + sp->width <= get_graph_x_res())
+  if(sp->x + sp->xspeed >= 0 && sp->x + sp->xspeed + sp->width < get_graph_x_res())
     sp->x += sp->xspeed;
-  if(sp->y + sp->yspeed >= 0 && sp->y + sp->xspeed + sp->width <= get_graph_y_res())
+  if(sp->y + sp->yspeed >= 0 && sp->y + sp->yspeed + sp->height < get_graph_y_res())
     sp->y += sp->yspeed;
 }

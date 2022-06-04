@@ -1,11 +1,13 @@
 #include "game.h"
 #include "libs.h"
+#include "bomberman.xpm"
+#include "crosshair.xpm"
 
 int(mainLoop)(){  
   enum GameState gameState = MENU;
-  sprite_t *player = sprite_constructor((const char* const*)penguin);
-  sprite_t *mouse = sprite_constructor((const char* const*)cross);
-  sprite_set_pos(mouse, 120, 220);
+  sprite_t *player = sprite_constructor((const char* const*)bomberman_xpm);
+  sprite_t *mouse = sprite_constructor((const char* const*)crosshair_xpm);
+  sprite_set_pos(mouse, 100, 100);
   sprite_draw(mouse);
 
   sprite_set_pos(player, 10, 10);
@@ -120,6 +122,6 @@ int(mainLoop)(){
   sprite_destructor(player);
   sprite_destructor(mouse);
   menu_dtor(main_menu);
-  
+
   return OK;
 }

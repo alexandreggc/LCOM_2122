@@ -3,6 +3,7 @@
 
 #include "rectangle.h"
 #include "sprite.h"
+
 typedef struct menu menu_t;
 
 

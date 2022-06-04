@@ -10,7 +10,7 @@ rectangle_t* (rectangle_ctor)(int16_t x, int16_t y, uint16_t w, uint16_t h){
     ret->y = y;
     ret->w = w;
     ret->h = h;
-    ret->color = 0x4;
+    ret->color = 0x00ff0000;
     return ret;
 }
 void (rectangle_dtor)(rectangle_t *rectangle){

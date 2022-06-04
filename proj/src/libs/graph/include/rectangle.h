@@ -1,6 +1,5 @@
 #ifndef RECTANGLE_H_INCLUDED
 #define RECTANGLE_H_INCLUDED
-#include <lcom/lcf.h>
 
 typedef struct rectangle rectangle_t;
 struct rectangle{
