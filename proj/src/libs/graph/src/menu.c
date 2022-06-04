@@ -19,7 +19,7 @@ menu_t* (menu_ctor)(){
 }
 
 int (menu_update_state)(menu_t *menu, sprite_t *sp, int click) {
-    if(rectangle_collide_point(menu->playButton, sprite_get_xpos(sp), sprite_get_ypos(sp))){
+    if(rectangle_collide_point(menu->playButton, sprite_get_xpos(sp) + sprite_get_width(sp) / 2, sprite_get_ypos(sp) + sprite_get_height(sp) / 2)){
         menu->playButton->color = 0x00ff00ff;
         if(click)
             return 1;
@@ -27,7 +27,7 @@ int (menu_update_state)(menu_t *menu, sprite_t *sp, int click) {
     else{
          menu->playButton->color = 0x00ff0000;
     }
-    if(rectangle_collide_point(menu->exitButton, sprite_get_xpos(sp), sprite_get_ypos(sp))){
+    if(rectangle_collide_point(menu->exitButton, sprite_get_xpos(sp)+ sprite_get_width(sp) / 2 , sprite_get_ypos(sp) + sprite_get_height(sp) / 2)){
          menu->exitButton->color = 0x00ff00ff;
         if(click)
             return 2;
