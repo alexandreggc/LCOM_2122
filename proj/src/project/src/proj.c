@@ -33,7 +33,7 @@ int main(int argc, char *argv[]) {
 int(proj_main_loop)(int argc, char* argv[])
 {
   (void)argc; (void)argv;
-  uint16_t mode = INDEXED_1024_768;
+  uint16_t mode = DIRECT_800_600;
   
   if(set_graphics_mode(mode)) return 1;
 

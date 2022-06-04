@@ -1,5 +1,6 @@
 #include "game.h"
 #include "libs.h"
+#include "bomberman.xpm"
 
 extern uint8_t bb[2];
 extern bool two_byte;
@@ -7,7 +8,7 @@ extern int kbd_error;
 extern uint32_t no_interrupts;
 
 int(mainLoop)(){  
-  sprite_t *player = sprite_constructor((const char* const*)penguin);
+  sprite_t *player = sprite_constructor((const char* const*)bomberman_xpm);
   sprite_set_pos(player, 10, 10);
   sprite_draw(player);
   int ipc_status, r;

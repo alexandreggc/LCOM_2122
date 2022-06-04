@@ -7,8 +7,9 @@ PROG=proj
 .PATH: ${.CURDIR}/libs/timer/src
 .PATH: ${.CURDIR}/libs/utils/src
 
-SRCS= game.c keyboard.c mouse.c timer.c utils.c videocard.c proj.c sprite.c rtc.c
-IPATHS=-I./project/include -I./libs -I./libs/graph/include -I./libs/rtc/include -I./libs/kbc/include -I./libs/timer/include -I./libs/utils/include
+SRCS= game.c keyboard.c mouse.c timer.c utils.c videocard.c proj.c sprite.c rtc.c entities.c
+
+IPATHS=-I./project/include -I./libs -I./libs/graph/include -I./libs/rtc/include -I./libs/kbc/include -I./libs/timer/include -I./libs/utils/include -I./media
 
 CPPFLAGS += -pedantic ${IPATHS} -D proj -D __LCOM_OPTIMIZED__ -Wall -Wextra -Wshadow -Wunreachable-code #-Weverything -Wno-padded -Wno-unused-macros
 
