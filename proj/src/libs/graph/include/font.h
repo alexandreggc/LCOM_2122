@@ -34,7 +34,7 @@ void (font_dtor)(font_t *font);
  */
 void (font_load_glyphs)(font_t *font);
 
-void (font_draw_string)(font_t *font, char* string, size_t sz, uint16_t x, uint16_t y);
+void (font_draw_string)(font_t *font, char* phrase, uint16_t x, uint16_t y);
 
 /**
  * @}

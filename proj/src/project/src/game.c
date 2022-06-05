@@ -11,9 +11,6 @@ int(mainLoop)(){
   font_t *font = font_ctor(2);
 
   sprite_set_pos(mouse, 100, 100);
-  sprite_draw(mouse);
-
-  sprite_set_pos(player, 10, 10);
 
   int ipc_status, r;
   uint8_t keyboard_sel;
@@ -65,7 +62,7 @@ int(mainLoop)(){
                         vg_clear_screen();
                         if(gameState == MENU){
                             menu_draw(main_menu);
-                            font_draw_string(font, "ab", 2, 100, 50);
+                            font_draw_string(font, "ABBAAABA", 100, 50);
                         }
                         else if(gameState == PLAY)
                           sprite_draw(player);
@@ -87,6 +84,7 @@ int(mainLoop)(){
                             {
                             case 1: {
                               gameState = PLAY;
+                              sprite_set_pos(player, 10, 10);
                               break;
                             }
                             case 2: {
