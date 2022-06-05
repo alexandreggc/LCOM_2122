@@ -10,7 +10,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 Makefile:20: *** missing separator.  Stop.
 
 
-# Make data base, printed on Sat Jun  4 22:20:20 2022
+# Make data base, printed on Sun Jun  5 01:31:16 2022
 
 # Variables
 
@@ -22,7 +22,6 @@ Makefile:20: *** missing separator.  Stop.
 VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
- 
 # makefile (from `Makefile', line 15)
 CPPFLAGS = -pedantic ${IPATHS} -D proj -D __LCOM_OPTIMIZED__ -Wall -Wextra -Wshadow -Wunreachable-code 
 # automatic
@@ -44,7 +43,7 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/v1/yy42rmgd5hsbwthphypsmb0h0000gn/T/vscode-ipc-0bfec65e-3aad-4182-83c9-982947128613.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/v1/yy42rmgd5hsbwthphypsmb0h0000gn/T/vscode-ipc-7836a7f9-f913-4389-a54e-05a6dd2ab284.sock
 # environment
 VSCODE_CWD = /
 # environment
@@ -94,7 +93,7 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # makefile (from `Makefile', line 11)
-SRCS = game.c keyboard.c mouse.c timer.c utils.c videocard.c proj.c sprite.c rtc.c entities.c rectangle.c menu.c
+SRCS = game.c keyboard.c mouse.c timer.c utils.c videocard.c proj.c sprite.c rtc.c entities.c rectangle.c menu.c font.c
 # environment
 SHLVL = 1
 # default
@@ -122,6 +121,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
+ 
 XPC_SERVICE_NAME = application.com.microsoft.VSCode.23415711.23415717
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
@@ -150,7 +150,7 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 3281
+VSCODE_PID = 4928
 # variable set hash-table stats:
 # Load=68/1024=7%, Rehash=0, Collisions=1/92=1%
 
@@ -160,9 +160,9 @@ VSCODE_PID = 3281
 
 # Directories
 
-# . (device 16777223, inode 20904347): 21 files, no impossibilities.
+# . (device 16777223, inode 20904347): 23 files, no impossibilities.
 
-# 21 files, no impossibilities in 1 directories.
+# 23 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -213,6 +213,6 @@ Makefile:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sat Jun  4 22:20:20 2022
+# Finished Make data base on Sun Jun  5 01:31:16 2022
 
  
