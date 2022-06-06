@@ -1,12 +1,15 @@
 #include "game.h"
 #include "libs.h"
+#include "entities.h"
 #include "bomberman.xpm"
 #include "crosshair.xpm"
+#include "map.xpm"
 
 int(mainLoop)(){  
   enum GameState gameState = MENU;
   sprite_t *player = sprite_constructor((const char* const*)bomberman_xpm);
   sprite_t *mouse = sprite_constructor((const char* const*)crosshair_xpm);
+  map_t* map = map_constructor((const char* const*)map_xpm);
   sprite_set_pos(mouse, 100, 100);
   sprite_draw(mouse);
 
@@ -58,15 +61,16 @@ int(mainLoop)(){
                  }
                  if (msg.m_notify.interrupts & timer_irq_set) { /* subscribed interrupt */
                      timer_int_handler();   /* process it */
-                     if((no_interrupts * 60) % REFRESH_RATE == 0){ // atualiza a cada 1 segundo
+                     if((no_interrupts*60) % REFRESH_RATE == 0){ // atualiza a cada 1 segundo
                         vg_clear_screen();
                         if(gameState == MENU){
                             menu_draw(main_menu);
                         }
-                        else if(gameState == PLAY)
+                        else if(gameState == PLAY){
+                          map_draw(map);
                           sprite_draw(player);
+                        }
                         sprite_draw(mouse);
-                        no_interrupts = 0;
                         vg_draw();
                  }
                  }
