@@ -17,6 +17,8 @@ int(vg_draw_xpm_img)(xpm_image_t *xpm_img, uint16_t x, uint16_t y);
 
 int(vg_clear_screen)();
 
+int (vg_draw)();
+
 uint8_t (get_rectangles_width)(uint8_t no_rectangles);
 
 uint8_t (get_rectangles_height)(uint8_t no_rectangles);

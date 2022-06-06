@@ -2,16 +2,16 @@
 #include "libs.h"
 #include "bomberman.xpm"
 #include "crosshair.xpm"
+#include "font.h"
 
 int(mainLoop)(){  
   enum GameState gameState = MENU;
   sprite_t *player = sprite_constructor((const char* const*)bomberman_xpm);
   sprite_t *mouse = sprite_constructor((const char* const*)crosshair_xpm);
-  sprite_set_pos(mouse, 100, 100);
-  sprite_draw(mouse);
+  font_t *font = font_ctor(NUM_SYMBOLS);
 
-  sprite_set_pos(player, 10, 10);
-  //sprite_draw(player);
+  sprite_set_pos(mouse, 100, 100);
+ 
   int ipc_status, r;
   uint8_t keyboard_sel;
   message msg;  
@@ -62,11 +62,13 @@ int(mainLoop)(){
                         vg_clear_screen();
                         if(gameState == MENU){
                             menu_draw(main_menu);
+                            font_draw_string(font, "ABCD EFGH HIJKLMNOPQRSTUVWXYZ", 10, 50);
                         }
                         else if(gameState == PLAY)
                           sprite_draw(player);
                         sprite_draw(mouse);
                         no_interrupts = 0;
+                        vg_draw();
                  }
                  }
                  if (msg.m_notify.interrupts & mouse_irq_set) { /* subscribed interrupt */
@@ -82,6 +84,7 @@ int(mainLoop)(){
                             {
                             case 1: {
                               gameState = PLAY;
+                              sprite_set_pos(player, 10, 10);
                               break;
                             }
                             case 2: {
@@ -121,6 +124,7 @@ int(mainLoop)(){
   vg_exit();
   sprite_destructor(player);
   sprite_destructor(mouse);
+  font_dtor(font);
   menu_dtor(main_menu);
 
   return OK;

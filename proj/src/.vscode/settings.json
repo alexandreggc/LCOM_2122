@@ -22,7 +22,11 @@
     "libs.h": "c",
     "shooter.h": "c",
     "*.xpm": "c",
+<<<<<<< HEAD
+    "rtc.h": "c"
+=======
     "rectangle.h": "c"
+>>>>>>> feature/doublebuffer
   },
   "C_Cpp.errorSquiggles": "Enabled",
 }

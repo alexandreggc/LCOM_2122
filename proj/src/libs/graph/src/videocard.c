@@ -4,6 +4,7 @@
 #include "graphics_card_macros.h"
 
 static void *video_mem;
+static void *video_buf;
 static vbe_mode_info_t vbe_mem_info;
 static int bytes_per_pixel;
 static int bytes_per_line;
@@ -61,6 +62,8 @@ int(map_vram)(uint16_t mode){
 
   if(video_mem == MAP_FAILED)
     panic("couldn't map video memory");
+
+  video_buf = malloc(vram_size);
   
 return OK;
 
@@ -68,7 +71,7 @@ return OK;
 
 int(vg_draw_pixel)(uint16_t x, uint16_t y, uint32_t color){
   int pos = y * bytes_per_line + x*bytes_per_pixel;
-  memcpy((void*)((unsigned int)video_mem + pos), &color, bytes_per_pixel);
+  memcpy((void*)((unsigned int)video_buf + pos), &color, bytes_per_pixel);
   return OK;
 } 
 
@@ -95,7 +98,8 @@ int(vg_draw_xpm_img)(xpm_image_t *xpm_img, uint16_t x, uint16_t y){
             if (x + w < Xres && y + h < Yres) {
                 uint32_t color = 0; 
                 memcpy(&color, xpm_img->bytes+(w + h * xpm_img->width)*bytes_per_pixel, bytes_per_pixel);
-                vg_draw_pixel(x + w, y + h, color);
+                if(color > 0x7f)
+                  vg_draw_pixel(x + w, y + h, color);
             }
         }
     }
@@ -105,7 +109,12 @@ int(vg_draw_xpm_img)(xpm_image_t *xpm_img, uint16_t x, uint16_t y){
 
 int(vg_clear_screen)(){
   //vg_draw_rectangle(0,0,vbe_mem_info.XResolution, vbe_mem_info.YResolution, BLACK);
-  memset(video_mem, 0, vbe_mem_info.BytesPerScanLine * vbe_mem_info.YResolution);
+  memset(video_buf, 0, vbe_mem_info.BytesPerScanLine * vbe_mem_info.YResolution);
+  return OK;
+}
+
+int (vg_draw)(){
+  memcpy(video_mem, video_buf, vbe_mem_info.BytesPerScanLine * vbe_mem_info.YResolution);
   return OK;
 }
 
