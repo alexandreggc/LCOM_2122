@@ -12,7 +12,9 @@ typedef struct menu menu_t;
  * @param   fnt Font to use when rendering menu options text
  * @return      Pointer to constructed menu, or NULL if failed.
  */
-menu_t* (menu_ctor)();
+menu_t* (menu_ctor)(size_t n_buttons);
+
+void menu_add_button(menu_t * menu, rectangle_t *button);
 /**
  * @brief Destruct menu.
  * @param   p   Pointer to menu to destruct

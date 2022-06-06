@@ -15,7 +15,12 @@ int(mainLoop)(){
   int ipc_status, r;
   uint8_t keyboard_sel;
   message msg;  
-  menu_t *main_menu = menu_ctor();
+
+
+  menu_t *main_menu = menu_ctor(2);
+  menu_add_button(main_menu, rectangle_ctor(300,200,200,100));
+  menu_add_button(main_menu, rectangle_ctor(300,350,200,100));
+
   if(kbd_subscribe_int(&keyboard_sel))
     return 1;
   int kbc_irq_set = BIT(keyboard_sel);
