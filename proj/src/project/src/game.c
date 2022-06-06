@@ -8,10 +8,10 @@ int(mainLoop)(){
   enum GameState gameState = MENU;
   sprite_t *player = sprite_constructor((const char* const*)bomberman_xpm);
   sprite_t *mouse = sprite_constructor((const char* const*)crosshair_xpm);
-  font_t *font = font_ctor(2);
+  font_t *font = font_ctor(NUM_SYMBOLS);
 
   sprite_set_pos(mouse, 100, 100);
-
+ 
   int ipc_status, r;
   uint8_t keyboard_sel;
   message msg;  
@@ -62,7 +62,7 @@ int(mainLoop)(){
                         vg_clear_screen();
                         if(gameState == MENU){
                             menu_draw(main_menu);
-                            font_draw_string(font, "ABBAAABA", 100, 50);
+                            font_draw_string(font, "ABCD EFGH HIJKLMNOPQRSTUVWXYZ", 10, 50);
                         }
                         else if(gameState == PLAY)
                           sprite_draw(player);

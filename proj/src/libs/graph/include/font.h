@@ -2,8 +2,33 @@
 #define FONT_H_INCLUDED
 
 #include "sprite.h"
+#include "font_macros.h"
 #include "char65.xpm"
 #include "char66.xpm"
+#include "char67.xpm"
+#include "char68.xpm"
+#include "char69.xpm"
+#include "char70.xpm"
+#include "char71.xpm"
+#include "char72.xpm"
+#include "char73.xpm"
+#include "char74.xpm"
+#include "char75.xpm"
+#include "char76.xpm"
+#include "char77.xpm"
+#include "char78.xpm"
+#include "char79.xpm"
+#include "char80.xpm"
+#include "char81.xpm"
+#include "char82.xpm"
+#include "char83.xpm"
+#include "char84.xpm"
+#include "char85.xpm"
+#include "char86.xpm"
+#include "char87.xpm"
+#include "char88.xpm"
+#include "char89.xpm"
+#include "char90.xpm"
 
 typedef struct font font_t;
 
