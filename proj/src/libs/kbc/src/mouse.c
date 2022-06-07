@@ -6,7 +6,7 @@
 
 int mouse_hook_id = 2;
 int mouse_ih_counter;
-
+uint8_t status;
 
 uint8_t bb[3];
 
@@ -42,11 +42,12 @@ int (mouse_parse_packet)(struct packet *pp){
 }
 
 void (mouse_ih)() {
-  update_ih_counter();
-  uint8_t byte;
-  util_sys_inb(OUT_BUF, &byte);
-  if((byte & FIRST_BYTE_ID) || mouse_ih_counter){
-    bb[mouse_ih_counter++] = byte;
+  if(mouse_ih_counter >= 3){
+    mouse_ih_counter = 0;
+  }
+  util_sys_inb(OUT_BUF, &status);
+  if((status & FIRST_BYTE_ID) || mouse_ih_counter){
+    bb[mouse_ih_counter++] = status;
   }
 }
 
@@ -90,8 +91,6 @@ int (get_ih_counter)(){
   return mouse_ih_counter;
 }
 
-void (update_ih_counter)(){
-  if(mouse_ih_counter >= 3){
-    mouse_ih_counter = 0;
-  }
+void (set_zero()){
+  mouse_ih_counter = 0;
 }

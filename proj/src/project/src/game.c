@@ -36,6 +36,56 @@ int(mainLoop)(){
   if (disable_irq()) return 1;
   if(mouse_enable_data_reporting()) return 1;
   if (enable_irq()) return 1; // re-enables our interrupts notifications
+struct packet pp;
+
+while( gameState != PLAY ) { /* You may want to use a different condition */
+     /* Get a request message. */
+     if ( (r = driver_receive(ANY, &msg, &ipc_status)) != 0 ) { 
+         printf("driver_receive failed with: %d", r);
+         continue;
+     }
+     if (is_ipc_notify(ipc_status)) { /* received notification */
+         switch (_ENDPOINT_P(msg.m_source)) {
+             case HARDWARE: /* hardware interrupt notification */       
+                 if (msg.m_notify.interrupts & timer_irq_set) { /* subscribed interrupt */
+                     timer_int_handler();   /* process it */
+                     if((no_interrupts) % REFRESH_RATE == 0){ // atualiza a cada 1 segundo
+                        no_interrupts = 0;
+                        vg_clear_screen();
+                        menu_draw(main_menu);
+                        sprite_draw(mouse);
+                        vg_draw();
+                 }
+                 }
+                 if (msg.m_notify.interrupts & mouse_irq_set) { /* subscribed interrupt */
+                      mouse_ih();
+                      if(get_ih_counter() >= 3){
+                          mouse_parse_packet(&pp);           
+                          sprite_set_speed(mouse, pp.delta_x, pp.delta_y * UP);
+                          sprite_update_pos(mouse);
+                          switch (menu_update_state(main_menu, mouse, pp.lb)){
+                          case 1: {
+                            gameState = PLAY;
+                            break;
+                          }
+                          case 2: {
+                            gameState = EXIT;
+                            break;
+                          }
+                          default:
+                            break;
+                          }
+                      }
+                 }
+                 break;
+             default:
+                 break; /* no other notifications expected: do nothing */ 
+         }
+     } else { /* received a standard message, not a notification */
+         /* no standard messages expected: do nothing */
+     }
+  }
+  int refresh = 1;
 
   while( gameState != EXIT ) { /* You may want to use a different condition */
      /* Get a request message. */
@@ -53,55 +103,37 @@ int(mainLoop)(){
                       }
                       uint8_t bb[2];
                       keyboard_get_key(bb);
-                      if(gameState == PLAY){
-                        map_update_player_grid(map, player);
-                        if(player_process_key(bb, kbd_get_size_bb(), player)){
-                          gameState = EXIT;
-                        }
-                        map_test_collisions(map, player);
+                      refresh = 1;
+                      map_update_player_grid(map, player);
+                      if(player_process_key(bb, kbd_get_size_bb(), player)){
+                        gameState = EXIT;
                       }
+                      map_test_collisions(map, player);
                  }
                  if (msg.m_notify.interrupts & timer_irq_set) { /* subscribed interrupt */
                      timer_int_handler();   /* process it */
-                     if((no_interrupts*60) % REFRESH_RATE == 0){ // atualiza a cada 1 segundo
+                     if((no_interrupts * 60) % REFRESH_RATE == 0){ // atualiza a cada 1 segundo
                         no_interrupts = 0;
-                        vg_clear_screen();
-                        if(gameState == MENU){
-                            menu_draw(main_menu);
-                            sprite_draw(mouse);
-                        }
-                        else if(gameState == PLAY){
+                        if(refresh){
+                          vg_clear_screen();
                           map_draw(map);
+                          sprite_draw(mouse);
                           player_draw(player);
+                          vg_draw();
+                          refresh = 0;
                         }
-                        sprite_draw(mouse);
-                        vg_draw();
                  }
                  }
                  if (msg.m_notify.interrupts & mouse_irq_set) { /* subscribed interrupt */
                       mouse_ih();
                       if(get_ih_counter() >= 3){
-                          struct packet pp;
-                          mouse_parse_packet(&pp);           
-                          sprite_set_speed(mouse, pp.delta_x, pp.delta_y * UP);
-                          sprite_update_pos(mouse);
-                          if(gameState == MENU){
-                            int state = menu_update_state(main_menu, mouse, pp.lb);
-                            switch (state)
-                            {
-                            case 1: {
-                              gameState = PLAY;
-                              break;
-                            }
-                            case 2: {
-                              gameState = EXIT;
-                              break;
-                            }
-                            default:
-                              break;
-                            }
+                          mouse_parse_packet(&pp);      
+                          if(pp.delta_x != REST || pp.delta_y != REST || pp.lb != 0){
+                            update = 1;
+                            sprite_set_speed(mouse, pp.delta_x, pp.delta_y * UP);
+                            sprite_update_pos(mouse);
                           }
-
+                          set_zero();
                       }
                  }
                  break;
