@@ -129,7 +129,7 @@ while( gameState != PLAY ) { /* You may want to use a different condition */
                       if(get_ih_counter() >= 3){
                           mouse_parse_packet(&pp);      
                           if(pp.delta_x != REST || pp.delta_y != REST || pp.lb != 0){
-                            update = 1;
+                            refresh = 1;
                             sprite_set_speed(mouse, pp.delta_x, pp.delta_y * UP);
                             sprite_update_pos(mouse);
                           }
