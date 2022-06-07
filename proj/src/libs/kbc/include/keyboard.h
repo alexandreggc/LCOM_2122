@@ -7,6 +7,7 @@
 #include "sprite.h"
 #include "project_macros.h"
 
+int (kbd_get_size_bb)();
 int (kbd_subscribe_int)(uint8_t *bit_no);
 int (kbd_unsubscribe_int)();
 

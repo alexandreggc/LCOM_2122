@@ -7,14 +7,12 @@
 
 int(mainLoop)(){  
   enum GameState gameState = MENU;
-  sprite_t *player = sprite_constructor((const char* const*)bomberman_xpm);
+  player_t *player = player_constructor(195, 85);
   sprite_t *mouse = sprite_constructor((const char* const*)crosshair_xpm);
-  map_t* map = map_constructor((const char* const*)map_xpm);
+  map_t* map = map_constructor();
   sprite_set_pos(mouse, 100, 100);
   sprite_draw(mouse);
 
-  sprite_set_pos(player, 10, 10);
-  //sprite_draw(player);
   int ipc_status, r;
   uint8_t keyboard_sel;
   message msg;  
@@ -55,20 +53,26 @@ int(mainLoop)(){
                       }
                       uint8_t bb[2];
                       keyboard_get_key(bb);
-                      if(gameState == PLAY)
-                        if(keyboard_process_key(bb, player))
+                      if(gameState == PLAY){
+                        map_update_player_grid(map, player);
+                        if(player_process_key(bb, kbd_get_size_bb(), player)){
                           gameState = EXIT;
+                        }
+                        map_test_collisions(map, player);
+                      }
                  }
                  if (msg.m_notify.interrupts & timer_irq_set) { /* subscribed interrupt */
                      timer_int_handler();   /* process it */
                      if((no_interrupts*60) % REFRESH_RATE == 0){ // atualiza a cada 1 segundo
+                        no_interrupts = 0;
                         vg_clear_screen();
                         if(gameState == MENU){
                             menu_draw(main_menu);
+                            sprite_draw(mouse);
                         }
                         else if(gameState == PLAY){
                           map_draw(map);
-                          sprite_draw(player);
+                          player_draw(player);
                         }
                         sprite_draw(mouse);
                         vg_draw();
@@ -124,7 +128,8 @@ int(mainLoop)(){
       return 1;
   }
   vg_exit();
-  sprite_destructor(player);
+  map_destructor(map);
+  player_destructor(player);
   sprite_destructor(mouse);
   menu_dtor(main_menu);
 

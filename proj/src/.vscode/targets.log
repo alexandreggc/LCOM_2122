@@ -8,7 +8,7 @@ Makefile:20: *** missing separator.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jun  6 12:57:53 2022
+# Make data base, printed on Tue Jun  7 18:34:48 2022
 
 # Variables
 
@@ -23,7 +23,7 @@ SNAP_INSTANCE_KEY =
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-5b147431-94d1-446c-9a05-88ade11d04ec.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-19ba8025-4aae-4b0c-ad67-c8744b3c3c13.sock
 # environment
 LC_NAME = pt_PT.UTF-8
 # environment
@@ -69,7 +69,7 @@ VSCODE_CODE_CACHE_PATH = /home/alexandre/.config/Code/CachedData/c3511e6c69bb390
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.S6Y2M1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.TL44M1
 # default
 .LOADED := 
 # environment
@@ -87,7 +87,7 @@ VSCODE_PIPE_LOGGING = true
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # makefile (from 'Makefile', line 11)
-SRCS = game.c keyboard.c mouse.c timer.c utils.c videocard.c proj.c sprite.c rtc.c entities.c rectangle.c menu.c
+SRCS = game.c keyboard.c mouse.c timer.c utils.c videocard.c proj.c sprite.c rtc.c entities.c rectangle.c menu.c project_functions.c
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
@@ -117,7 +117,7 @@ SNAP_REEXEC =
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 2993
+VSCODE_PID = 208236
 # environment
 MOZ_ENABLE_WAYLAND = 1
 # environment
@@ -127,7 +127,7 @@ XDG_SESSION_TYPE = wayland
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/lenovopc:@/tmp/.ICE-unix/1376,unix/lenovopc:/tmp/.ICE-unix/1376
+SESSION_MANAGER = local/lenovopc:@/tmp/.ICE-unix/1440,unix/lenovopc:/tmp/.ICE-unix/1440
 # automatic
 *F = $(notdir $*)
 # environment
@@ -181,7 +181,7 @@ LESS_TERMCAP_mb = [01;32m
 # environment
 SNAP = /snap/code/97
 # environment
-INVOCATION_ID = 9a7130bbc12348b4b1373f072f516098
+INVOCATION_ID = 550da5b411d345e7bafbb06b00d44f64
 # environment
 SNAP_REVISION = 97
 # environment
@@ -223,7 +223,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 1392
+SYSTEMD_EXEC_PID = 1456
 # environment
 EDITOR = /usr/bin/nano
 # environment
@@ -239,11 +239,11 @@ SNAP_DATA = /var/snap/code/97
 # environment
 SNAP_CONTEXT = sE3dGMsiInrwMuMNqp1t6wW42HqhiVwxULMlFMIAF33Hvb0BKxoV
 # environment
-MANAGERPID = 1330
+MANAGERPID = 1394
 # environment
 LC_MEASUREMENT = pt_PT.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 2658
+GIO_LAUNCHED_DESKTOP_FILE_PID = 208126
 # environment
 _ = /usr/bin/make
 # environment
@@ -253,7 +253,7 @@ XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/alexandre/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:28232
+JOURNAL_STREAM = 8:30006
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -294,6 +294,7 @@ LS_OPTIONS = --color=auto
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
 # environment
 SNAP_USER_DATA = /home/alexandre/snap/code/97
+ 
 # environment
 XDG_MENU_PREFIX = gnome-
 # makefile (from 'Makefile', line 18)
@@ -315,9 +316,9 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# . (device 66306, inode 1972966): 23 files, no impossibilities.
+# . (device 66306, inode 1972966): 24 files, no impossibilities.
 
-# 23 files, no impossibilities in 1 directories.
+# 24 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -399,12 +400,12 @@ all:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 36 / storage = 342 B / avg = 9 B
-# current buf: size = 8162 B / used = 342 B / count = 36 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 37 / storage = 362 B / avg = 9 B
+# current buf: size = 8162 B / used = 362 B / count = 37 / avg = 9 B
 
-# strcache performance: lookups = 53 / hit rate = 32%
+# strcache performance: lookups = 54 / hit rate = 31%
 # hash-table stats:
-# Load=36/8192=0%, Rehash=0, Collisions=0/53=0%
-# Finished Make data base on Mon Jun  6 12:57:53 2022
+# Load=37/8192=0%, Rehash=0, Collisions=0/54=0%
+# Finished Make data base on Tue Jun  7 18:34:48 2022
 
  
