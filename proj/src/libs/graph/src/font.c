@@ -150,3 +150,11 @@ void (font_dtor)(font_t *font){
   }
   free(font->glyphs);
 }
+
+int (font_get_char_width)(font_t *font){
+  return sprite_get_width(font->glyphs[0]);
+}
+
+int (font_get_char_height)(font_t *font){
+  return sprite_get_height(font->glyphs[0]);
+}

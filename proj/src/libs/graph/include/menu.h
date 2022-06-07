@@ -3,6 +3,7 @@
 
 #include "rectangle.h"
 #include "sprite.h"
+#include "font.h"
 
 typedef struct menu menu_t;
 
@@ -12,9 +13,9 @@ typedef struct menu menu_t;
  * @param   fnt Font to use when rendering menu options text
  * @return      Pointer to constructed menu, or NULL if failed.
  */
-menu_t* (menu_ctor)(size_t n_buttons);
+menu_t* (menu_ctor)(font_t *font, size_t n_buttons);
 
-void menu_add_button(menu_t * menu, rectangle_t *button);
+void menu_add_button(menu_t * menu, int16_t x, int16_t y, uint16_t w, uint16_t h, char* phrase);
 /**
  * @brief Destruct menu.
  * @param   p   Pointer to menu to destruct

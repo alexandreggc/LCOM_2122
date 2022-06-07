@@ -2,24 +2,26 @@
 
 #include "menu.h"
 #include "rectangle.h"
-
+#include "font.h"
 struct menu {
     rectangle_t **buttons;
+    font_t *font;
     uint8_t switchState;
     size_t sz;
 };
 
-menu_t* (menu_ctor)(size_t n_buttons){
+menu_t* (menu_ctor)(font_t *font, size_t n_buttons){
     menu_t *ret = (menu_t*)malloc(sizeof(menu_t));
     if (ret == NULL) return NULL;
     ret->buttons = (rectangle_t**)malloc(n_buttons * sizeof(rectangle_t*));
+    ret->font = font;
     ret->switchState = 0;
     ret->sz = 0;
     return ret;
 }
 
-void menu_add_button(menu_t *menu, rectangle_t *button){
-    menu->buttons[menu->sz++] = button;
+void menu_add_button(menu_t *menu, int16_t x, int16_t y, uint16_t w, uint16_t h, char* phrase){
+    menu->buttons[menu->sz++] = rectangle_ctor(x, y, w, h, menu->font, phrase);
 }
 
 

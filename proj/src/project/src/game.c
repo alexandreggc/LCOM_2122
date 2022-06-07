@@ -4,12 +4,12 @@
 #include "crosshair.xpm"
 #include "font.h"
 
+
 int(mainLoop)(){  
   enum GameState gameState = MENU;
   sprite_t *player = sprite_constructor((const char* const*)bomberman_xpm);
   sprite_t *mouse = sprite_constructor((const char* const*)crosshair_xpm);
   font_t *font = font_ctor(NUM_SYMBOLS);
-
   sprite_set_pos(mouse, 100, 100);
  
   int ipc_status, r;
@@ -17,9 +17,9 @@ int(mainLoop)(){
   message msg;  
 
 
-  menu_t *main_menu = menu_ctor(2);
-  menu_add_button(main_menu, rectangle_ctor(300,200,200,100));
-  menu_add_button(main_menu, rectangle_ctor(300,350,200,100));
+  menu_t *main_menu = menu_ctor(font, 2);
+  menu_add_button(main_menu, 200, 200, 400, 100, "PLAY THE GAME");
+  menu_add_button(main_menu, 200, 400, 350, 150, "EXIT");
 
   if(kbd_subscribe_int(&keyboard_sel))
     return 1;

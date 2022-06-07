@@ -61,6 +61,11 @@ void (font_load_glyphs)(font_t *font);
 
 void (font_draw_string)(font_t *font, char* phrase, uint16_t x, uint16_t y);
 
+int (font_get_char_width)(font_t *font);
+
+int (font_get_char_height)(font_t *font);
+
+
 /**
  * @}
  */
