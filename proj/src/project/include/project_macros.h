@@ -4,6 +4,7 @@
 
 #define REFRESH_RATE    60
 #define PLAYER_SPEED 10
+#define BOT_SPEED 1
 #define MOUSE_SPEED 1
 
 #define UP      -1
