@@ -189,6 +189,7 @@ void (bot_move)(bot_t* bot) {
   if(xspeed == 0 && yspeed == 0) {
     srand(time(NULL));
     int randomnumber = rand() % 4;
+    srand(1);
     switch(randomnumber) {
       case 0: h_dir = LEFT; break;
       case 1: h_dir = RIGHT; break;
@@ -407,5 +408,42 @@ void (map_test_bot_collisions)(map_t *map, bot_t *bot){
     }
   }
   sprite_update_pos(bot->sp);
+}
+
+wall_t** (map_find_empty_spots)(map_t *map) {
+  //Percorre array de walls e guarda as que estao broken num array result
+
+  wall_t** broken = malloc(sizeof(wall_t*)*map->size_map);
+
+  int index = 0;
+  for(int i=0; i<map->size_map; i++) {
+    if(map->walls[i]->broken) {
+      broken[index] = map->walls[i];
+      index++;
+    }
+  }
+
+  return broken;
+}
+
+void (map_place_bots)(bot_t** bots) {
+  //Spawna o numero de bots indicado por NUMBER_OF_BOTS em posicoes ao acaso do array retornado por map_find_empty_spots
+
+  for(int i=0; i<NUMBER_OF_BOTS; i++) {
+    bots[i] = bot_constructor(195,80);
+  }
+
+  /* wall_t** empty = map_find_empty_spots(map);
+  
+  for(int i=0; i<NUMBER_OF_BOTS; i++) {
+    srand(time(NULL));
+    int randomnumber = rand() % (sizeof(empty) / sizeof(wall_t*));
+    srand(1);
+
+    int x = empty[randomnumber]->x_map;
+    int y = empty[randomnumber]->y_map;
+    
+    bots[i] = bot_constructor(x,y);
+  } */
 }
 

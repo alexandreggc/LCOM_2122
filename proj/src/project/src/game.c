@@ -9,11 +9,9 @@ int(mainLoop)(){
   enum GameState gameState = MENU;
   player_t *player = player_constructor(195, 85);
   bot_t** bots = malloc(sizeof(bot_t*));
-  for(int i=0; i<3; i++) {
-    bots[i] = bot_constructor(195,85);
-  }
   sprite_t *mouse = sprite_constructor((const char* const*)crosshair_xpm);
   map_t* map = map_constructor();
+  map_place_bots(bots);
   sprite_set_pos(mouse, 100, 100);
   sprite_draw(mouse);
 
@@ -75,7 +73,7 @@ int(mainLoop)(){
                             sprite_draw(mouse);
                         }
                         else if(gameState == PLAY){
-                          for(int i=0; i<3; i++) {
+                          for(int i=0; i<NUMBER_OF_BOTS; i++) {
                             map_update_bot_grid(map,bots[i]);
                             map_test_bot_collisions(map,bots[i]);
                             bot_move(bots[i]);
@@ -140,7 +138,7 @@ int(mainLoop)(){
   vg_exit();
   map_destructor(map);
   player_destructor(player);
-  for(int i=0; i<3; i++) bot_destructor(bots[i]);
+  for(int i=0; i<NUMBER_OF_BOTS; i++) bot_destructor(bots[i]);
   sprite_destructor(mouse);
   menu_dtor(main_menu);
 
