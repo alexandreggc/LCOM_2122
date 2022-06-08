@@ -4,6 +4,8 @@
 #include "crosshair.xpm"
 #include "font.h"
 
+extern struct date_struct *date_s;
+extern struct time_struct *time_s;
 
 int(mainLoop)(){  
   enum GameState gameState = MENU;
@@ -31,6 +33,11 @@ int(mainLoop)(){
   if(timer_subscribe_int(&timer_sel))
     return 1;
   int timer_irq_set = BIT(timer_sel);
+
+  uint8_t rtc_sel;
+  if(rtc_subscribe_int(&rtc_sel))
+    return 1;
+  int rtc_irq_set = BIT(rtc_sel);
 
   uint8_t mouse_sel;
   if(mouse_subscribe_int(&mouse_sel))
@@ -101,8 +108,11 @@ int(mainLoop)(){
                             }
                           }
 
-                      }
+                  }
                  }
+                  if (msg.m_notify.interrupts & rtc_irq_set) {
+                    rtc_ih();
+                  }
                  break;
              default:
                  break; /* no other notifications expected: do nothing */ 
@@ -116,6 +126,7 @@ int(mainLoop)(){
   if(timer_unsubscribe_int())
     return 1;
 
+  if(rtc_unsubscribe_int()) return 1;
 
   if (disable_irq()) return 1; // temporarily disables our interrupts notifications
   disable_data_reporting();

@@ -5,11 +5,12 @@
 #include "utils.h"
 
 int hook_id_rtc = 8;
-struct time_struct time_s;
-struct date_struct date_s;
+struct time_struct *time_s;
+struct date_struct *date_s;
 
 int (rtc_subscribe_int)(uint8_t *bit_no) {
   *bit_no = hook_id_rtc;
+  rtc_set_updates(false);
   return sys_irqsetpolicy(RTC_IRQ, (IRQ_REENABLE | IRQ_EXCLUSIVE), &hook_id_rtc);
 }
 
@@ -60,25 +61,27 @@ int rtc_set_updates(bool enable) {
   return 0;
 }
 
-int (rtc_read_time)(struct time_struct t) {
+int (rtc_read_time)(struct time_struct *t) {
   if(rtc_set_updates(true)) return 1;
 
-  if(rtc_read_sec(&t.sec)) return 1;
-  if(rtc_read_min(&t.min)) return 1;
-  if(rtc_read_hour(&t.hour)) return 1;
+  if(rtc_read_sec(&t->sec)) return 1;
+  if(rtc_read_min(&t->min)) return 1;
+  if(rtc_read_hour(&t->hour)) return 1;
 
   if(rtc_set_updates(false)) return 1;
 
   return 0;
 }
 
-int (rtc_read_date)(struct date_struct d) {
+int (rtc_read_date)(struct date_struct *d) {
+  if(rtc_check_update()) return 1;
+
   if(rtc_set_updates(true)) return 1;
 
-  if(rtc_read_weekday(&d.weekday)) return 1;
-  if(rtc_read_day(&d.day)) return 1;
-  if(rtc_read_month(&d.month)) return 1;
-  if(rtc_read_year(&d.year)) return 1;
+  if(rtc_read_weekday(&d->weekday)) return 1;
+  if(rtc_read_day(&d->day)) return 1;
+  if(rtc_read_month(&d->month)) return 1;
+  if(rtc_read_year(&d->year)) return 1;
 
   if(rtc_set_updates(false)) return 1;
 
