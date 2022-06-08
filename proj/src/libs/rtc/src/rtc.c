@@ -36,10 +36,11 @@ int (rtc_write_register)(uint32_t reg, uint8_t data) {
 
 int (rtc_check_update)() {
   uint8_t data;
-
+  do {
   if (rtc_read_register(RTC_REG_A, &data)) return 1;
+  } while (data & UIP);
 
-  return (data & UIP) != 0;
+  return 0;
 }
 
 int rtc_set_updates(bool enable) {

@@ -4,9 +4,6 @@
 #include "crosshair.xpm"
 #include "font.h"
 
-extern struct date_struct *date_s;
-extern struct time_struct *time_s;
-
 int(mainLoop)(){  
   enum GameState gameState = MENU;
   sprite_t *player = sprite_constructor((const char* const*)bomberman_xpm);
@@ -17,7 +14,6 @@ int(mainLoop)(){
   int ipc_status, r;
   uint8_t keyboard_sel;
   message msg;  
-
 
   menu_t *main_menu = menu_ctor(font, 2);
   menu_add_button(main_menu, 200, 200, 400, 100, "PLAY THE GAME");
@@ -33,11 +29,6 @@ int(mainLoop)(){
   if(timer_subscribe_int(&timer_sel))
     return 1;
   int timer_irq_set = BIT(timer_sel);
-
-  uint8_t rtc_sel;
-  if(rtc_subscribe_int(&rtc_sel))
-    return 1;
-  int rtc_irq_set = BIT(rtc_sel);
 
   uint8_t mouse_sel;
   if(mouse_subscribe_int(&mouse_sel))
@@ -72,9 +63,24 @@ int(mainLoop)(){
                      timer_int_handler();   /* process it */
                      if((no_interrupts * 60) % REFRESH_RATE == 0){ // atualiza a cada 1 segundo
                         vg_clear_screen();
+
                         if(gameState == MENU){
                             menu_draw(main_menu);
-                            font_draw_string(font, "ABCD EFGH HIJKLMNOPQRSTUVWXYZ", 10, 50);
+                            unsigned char wd;
+                            rtc_read_weekday(&wd);
+                            char *string = "";
+
+                            switch(wd) {
+                              case 0: string = "SUNDAY"; break;
+                              case 1: string = "MONDAY"; break;
+                              case 2: string = "TUESDAY"; break;
+                              case 3: string = "WENSDAY"; break;
+                              case 4: string = "THURSDAY"; break;
+                              case 5: string = "FRIDAY"; break;
+                              case 6: string = "SATURDAY"; break;
+                              default: string = ""; break;
+                            }
+                            font_draw_string(font, string, 10, 100);
                         }
                         else if(gameState == PLAY)
                           sprite_draw(player);
@@ -110,9 +116,6 @@ int(mainLoop)(){
 
                   }
                  }
-                  if (msg.m_notify.interrupts & rtc_irq_set) {
-                    rtc_ih();
-                  }
                  break;
              default:
                  break; /* no other notifications expected: do nothing */ 
@@ -125,8 +128,6 @@ int(mainLoop)(){
     return 1;
   if(timer_unsubscribe_int())
     return 1;
-
-  if(rtc_unsubscribe_int()) return 1;
 
   if (disable_irq()) return 1; // temporarily disables our interrupts notifications
   disable_data_reporting();
