@@ -187,6 +187,7 @@ void (bot_move)(bot_t* bot) {
   int yspeed = sprite_get_yspeed(bot->sp);
 
   if(xspeed == 0 && yspeed == 0) {
+    srand(time(NULL));
     int randomnumber = rand() % 4;
     switch(randomnumber) {
       case 0: h_dir = LEFT; break;
