@@ -6,9 +6,13 @@
 
 int mouse_hook_id = 2;
 int mouse_ih_counter;
-
+uint8_t status;
 
 uint8_t bb[3];
+
+int mouse_x_speed;
+int mouse_y_speed;
+
 
 int (mouse_subscribe_int)(uint8_t *bit_no) {
   *bit_no = mouse_hook_id;
@@ -42,11 +46,12 @@ int (mouse_parse_packet)(struct packet *pp){
 }
 
 void (mouse_ih)() {
-  update_ih_counter();
-  uint8_t byte;
-  util_sys_inb(OUT_BUF, &byte);
-  if((byte & FIRST_BYTE_ID) || mouse_ih_counter){
-    bb[mouse_ih_counter++] = byte;
+  if(mouse_ih_counter >= 3){
+    mouse_ih_counter = 0;
+  }
+  util_sys_inb(OUT_BUF, &status);
+  if((status & FIRST_BYTE_ID) || mouse_ih_counter){
+    bb[mouse_ih_counter++] = status;
   }
 }
 
@@ -90,8 +95,22 @@ int (get_ih_counter)(){
   return mouse_ih_counter;
 }
 
-void (update_ih_counter)(){
-  if(mouse_ih_counter >= 3){
-    mouse_ih_counter = 0;
-  }
+int update_mouse(struct packet *pp){
+  if(pp->delta_x == 0 && pp->delta_y == 0 && pp->lb == 0)
+    return 0;
+  mouse_x_speed = pp->delta_x;
+  mouse_y_speed = pp->delta_y * UP;
+  return 1;
+}
+
+int get_mouse_x_speed(){
+  return mouse_x_speed;
+}
+
+int get_mouse_y_speed(){
+  return mouse_y_speed;
+}
+
+void (reset_mouse_speed)(){
+  mouse_x_speed = 0; mouse_y_speed = 0;
 }

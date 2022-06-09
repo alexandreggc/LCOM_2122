@@ -1,14 +1,16 @@
 #include<lcom/lcf.h>
+#include "entities.h"
 #include <math.h>
 #include <stdio.h>
 
-#include "project_functions.h"
 #include "libs.h"
-#include "entities.h"
+
 #include "wall.xpm"
 #include "bomberman.xpm"
 #include "bomb.xpm"
 #include "bomb2.xpm"
+#include "keys.h"
+
 
 #define MAP_BLOCKS_SIZE 12
 
@@ -65,30 +67,49 @@ void (player_set_center)(player_t* p, int cx, int cy){
   p->cy = cy;
 }
 
-int (player_process_key)(uint8_t bbyte[2], int size, player_t* player, bomb_t* bomb, int *bombsUsed){
-  int h_dir = REST, v_dir = REST;
+void (player_set_speed)(player_t *player, keys_t *keys){
+  sprite_set_speed(player->sp, (keys->right_pressed - keys->left_pressed) * PLAYER_SPEED, (keys->down_pressed - keys->up_pressed) * PLAYER_SPEED);
+}
+
+int (player_process_key)(player_t *player, uint8_t bbyte[2], int size, keys_t *keys, bomb_t *bomb, int *bombsUsed){
     if(size == 2){
       uint8_t lsb, msb;
-      uint16_t arrowCodes[4] = {ARROWUP_CODE, ARROWLEFT_CODE, ARROWDOWN_CODE, ARROWRIGHT_CODE};
-      for(uint8_t i = 0; i < 4; i++){
+      uint16_t arrowCodes[8] = {ARROWUP_M_CODE, ARROWUP_B_CODE, ARROWLEFT_M_CODE, ARROWLEFT_B_CODE, ARROWDOWN_M_CODE, ARROWDOWN_B_CODE, ARROWRIGHT_M_CODE, ARROWRIGHT_B_CODE};
+      for(uint8_t i = 0; i < 8; i++){
         util_get_LSB(arrowCodes[i], &lsb);
         util_get_MSB(arrowCodes[i], &msb);
         if(bbyte[0] == msb && bbyte[1] == lsb){
           switch (i){
           case 0:{
-            v_dir = UP;
+            keys->up_pressed = 1;
             break;
           }
           case 1:{
-            h_dir = LEFT;
+            keys->up_pressed = 0;
             break;
           }
           case 2:{
-            v_dir = DOWN;
+            keys->left_pressed = 1;
             break;
           }
           case 3:{
-            h_dir = RIGHT;
+            keys->left_pressed = 0;
+            break;
+          }
+          case 4:{
+            keys->down_pressed = 1;
+            break;
+          }
+          case 5:{
+            keys->down_pressed = 0;
+            break;
+          }
+          case 6:{
+            keys->right_pressed = 1;
+            break;
+          }
+          case 7:{
+            keys->right_pressed = 0;
             break;
           }
           default:
@@ -99,38 +120,60 @@ int (player_process_key)(uint8_t bbyte[2], int size, player_t* player, bomb_t* b
       }
     }
   else{
-    switch (bbyte[0])
-    {
-    case ESC_CODE: return 1;
-    case W_CODE: {
-      v_dir = UP;
+    switch (bbyte[0]){
+    case ESC_B_CODE: return 1;
+    case W_M_CODE: {
+      keys->up_pressed = 1;
       break;
-      }
-    case A_CODE: {
-      h_dir = LEFT;
+    }
+    case W_B_CODE: {
+      keys->up_pressed = 0;
       break;
-      }
-      case S_CODE: {
-        v_dir = DOWN;
-        break;
-      }
-      case D_CODE: {
-        h_dir = RIGHT;
-        break;
-      }
-      case SPACEBAR_CODE: {
-        break;
-      }
+    }
+    case A_M_CODE: {
+      keys->left_pressed = 1;
+      break;
+    }
+    case A_B_CODE: {
+      keys->left_pressed = 0;
+      break;
+    }
+    case S_M_CODE: {
+      keys->down_pressed = 1;
+      break;
+    }
+    case S_B_CODE: {
+      keys->down_pressed = 0;
+      break;
+    }
+    case D_M_CODE: {
+      keys->right_pressed = 1;
+      break;
+    }
+    case D_B_CODE: {
+      keys->right_pressed = 0;
+      break;
+    }
+    case SPACEBAR_M_CODE: {
+      keys->space_pressed = 1;
+      break;
+    }
+    case SPACEBAR_B_CODE: {
+      keys->space_pressed = 0;
+      break;
+    }
     default:
-      if(*bombsUsed<NUMBER_OF_BOMBS) {
-        bomb_place(bomb,sprite_get_xpos(player->sp),sprite_get_ypos(player->sp));
-        (*bombsUsed)++;
-      }
       break;
     } 
   }
-  sprite_set_speed(player->sp, h_dir * PLAYER_SPEED, v_dir * PLAYER_SPEED);
   return OK;
+}
+
+void (player_check_place_bomb)(player_t *player, keys_t *keys, bomb_t *bomb, int *bombsUsed){
+  if(keys->space_pressed == 1){
+    bomb_place(bomb,sprite_get_xpos(player->sp),sprite_get_ypos(player->sp));
+    (*bombsUsed)++;
+  }
 }
 
 

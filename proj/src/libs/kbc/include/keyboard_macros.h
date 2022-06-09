@@ -9,16 +9,25 @@
 #define OUT_BUF 0x60
 #define TWO_BYTE_CODE 0xE0
 
-#define ESC_CODE  0x81
-#define W_CODE  0x11
-#define A_CODE  0x1E
-#define S_CODE  0x1F
-#define D_CODE  0x20
-#define ARROWUP_CODE  0xE048
-#define ARROWLEFT_CODE  0xE04B
-#define ARROWDOWN_CODE  0xE050
-#define ARROWRIGHT_CODE  0xE04D
-#define SPACEBAR_CODE  0x39
+#define ESC_B_CODE  0x81
+#define W_M_CODE  0x11
+#define W_B_CODE  0x91
+#define A_M_CODE  0x1E
+#define A_B_CODE  0x9E
+#define S_M_CODE  0x1F
+#define S_B_CODE  0x9F
+#define D_M_CODE  0x20
+#define D_B_CODE  0xA0
+#define ARROWUP_M_CODE  0xE048
+#define ARROWUP_B_CODE  0xE0C8
+#define ARROWLEFT_M_CODE  0xE04B
+#define ARROWLEFT_B_CODE  0xE0CB
+#define ARROWDOWN_M_CODE  0xE050
+#define ARROWDOWN_B_CODE  0xE0D0
+#define ARROWRIGHT_M_CODE  0xE04D
+#define ARROWRIGHT_B_CODE  0xE0CD
+#define SPACEBAR_M_CODE  0x39
+#define SPACEBAR_B_CODE  0xB9
 
 
 

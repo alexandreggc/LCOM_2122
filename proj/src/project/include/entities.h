@@ -1,6 +1,9 @@
 #ifndef ENTITIES_H_INCLUDED
 #define ENTITIES_H_INCLUDED
 
+#include "project_functions.h"
+#include "keys.h"
+
 typedef enum{
   EMPTY,
   PLAYER,
@@ -28,7 +31,11 @@ int (player_get_mapx)(player_t* p);
 int (player_get_mapy)(player_t* p);
 void (player_set_map_pos)(player_t* p, int x, int y);
 void (player_set_center)(player_t* p, int cx, int cy);
-int (player_process_key)(uint8_t bbyte[2], int size, player_t* player, bomb_t* bomb, int *bombsUsed);
+int (player_process_key)(player_t *player, uint8_t bbyte[2], int size, keys_t *keys, bomb_t *bomb, int *bombsUsed);
+void (player_set_speed)(player_t *player, keys_t *keys);
+
+void (player_check_place_bomb)(player_t *player, keys_t *keys, bomb_t *bomb, int *bombsUsed);
+
 
 
 // BOT FUNCTIONS

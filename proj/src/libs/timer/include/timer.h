@@ -10,4 +10,8 @@ int (timer_unsubscribe_int)();
 
 void (timer_int_handler)();
 
+void (timer_reset_no_interrupts)();
+
+uint32_t (timer_get_no_interrupts)();
+
 #endif

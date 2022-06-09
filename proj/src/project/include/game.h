@@ -12,6 +12,7 @@
 #include "rtc.h"
 #include "utils.h"
 #include "project_macros.h"
+#include "keys.h"
 
 int(mainLoop)();
 
