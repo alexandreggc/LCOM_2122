@@ -5,7 +5,7 @@
 #include "i8254.h"
 
 int hook_id = 0;
-uint32_t no_interrupts = 0;
+uint32_t no_interrupts;
 
 
 int (timer_set_frequency)(uint8_t timer, uint32_t freq) {
@@ -75,4 +75,12 @@ int (timer_display_conf)(uint8_t timer, uint8_t st, enum timer_status_field fiel
   conf.byte = st;
   timer_print_config(timer, field, conf);
   return OK;
+}
+
+void (timer_reset_no_interrupts)(){
+  no_interrupts = 0;
+}
+
+uint32_t (timer_get_no_interrupts)(){
+  return no_interrupts;
 }

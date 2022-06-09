@@ -11,4 +11,5 @@ enum GameState{MENU, PLAY, EXIT};
 
 int (point_distance)(int x0, int y0, int x, int y);
 
+
 #endif
