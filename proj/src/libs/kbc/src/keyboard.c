@@ -122,3 +122,10 @@ int kbd_error_occured(){
 void keyboard_get_key(uint8_t *key){
   memcpy(key, bb, size);
 }
+
+int (keyboard_check_esc)(uint8_t code[2]){
+  if(two_byte == 0 && code[0] == ESC_B_CODE)
+    return 1;
+  return OK;
+}
+

@@ -71,7 +71,7 @@ void (player_set_speed)(player_t *player, keys_t *keys){
   sprite_set_speed(player->sp, (keys->right_pressed - keys->left_pressed) * PLAYER_SPEED, (keys->down_pressed - keys->up_pressed) * PLAYER_SPEED);
 }
 
-int (player_process_key)(player_t *player, uint8_t bbyte[2], int size, keys_t *keys, bomb_t *bomb, int *bombsUsed){
+int (player_process_key)(uint8_t bbyte[2], int size, keys_t *keys){
     if(size == 2){
       uint8_t lsb, msb;
       uint16_t arrowCodes[8] = {ARROWUP_M_CODE, ARROWUP_B_CODE, ARROWLEFT_M_CODE, ARROWLEFT_B_CODE, ARROWDOWN_M_CODE, ARROWDOWN_B_CODE, ARROWRIGHT_M_CODE, ARROWRIGHT_B_CODE};

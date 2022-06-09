@@ -23,4 +23,7 @@ int is_two_byte();
 int kbd_error_occured(); 
 void keyboard_get_key(uint8_t *key);
 
+int (keyboard_check_esc)(uint8_t bb[2]);
+
+
 #endif 

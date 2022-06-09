@@ -4,6 +4,7 @@
 #include "crosshair.xpm"
 #include "font.h"
 
+
 extern int no_interrupts;
 
 int(mainLoop)(){  
@@ -48,10 +49,12 @@ int(mainLoop)(){
   if(mouse_enable_data_reporting()) return 1;
   if (enable_irq()) return 1; // re-enables our interrupts notifications
   struct packet pp;
-  int mouse_refresh = 1;
   int keyboard_refresh = 1;
+  keys_t *curr_keys = keys_ctor();
 
-while( gameState == MENU ) { /* You may want to use a different condition */
+  while(gameState != EXIT){
+      int mouse_refresh = 1;
+      while( gameState == MENU ) { /* You may want to use a different condition */
      /* Get a request message. */
      if ( (r = driver_receive(ANY, &msg, &ipc_status)) != 0 ) { 
          printf("driver_receive failed with: %d", r);
@@ -97,6 +100,17 @@ while( gameState == MENU ) { /* You may want to use a different condition */
                           }
                       }
                  }
+                 if (msg.m_notify.interrupts & kbc_irq_set) { /* subscribed interrupt */
+                      kbc_ih();/* process it */
+                      if(is_two_byte() || kbd_error_occured()){
+                        continue;
+                      }
+                      uint8_t bb[2];
+                      keyboard_get_key(bb);
+                      if(keyboard_check_esc(bb))
+                        gameState = EXIT;
+                     
+                 }
                  break;
              default:
                  break; /* no other notifications expected: do nothing */ 
@@ -105,9 +119,8 @@ while( gameState == MENU ) { /* You may want to use a different condition */
          /* no standard messages expected: do nothing */
      }
   }
-  keys_t *curr_keys = keys_ctor();
 
-  while( gameState != EXIT ) { /* You may want to use a different condition */
+  while( gameState == PLAY) { /* You may want to use a different condition */
      /* Get a request message. */
      if ( (r = driver_receive(ANY, &msg, &ipc_status)) != 0 ) { 
          printf("driver_receive failed with: %d", r);
@@ -123,7 +136,7 @@ while( gameState == MENU ) { /* You may want to use a different condition */
                       }
                       uint8_t bb[2];
                       keyboard_get_key(bb);
-                      if(player_process_key(player, bb, kbd_get_size_bb(), curr_keys ,bombs[bombsUsed], &bombsUsed)){
+                      if(player_process_key(bb, kbd_get_size_bb(), curr_keys)){
                           gameState = MENU;
                         }
                       else
@@ -153,13 +166,13 @@ while( gameState == MENU ) { /* You may want to use a different condition */
                     map_test_collisions(map, player);
                     keyboard_refresh = 0;
                     if(bombsUsed<NUMBER_OF_BOMBS) {
-                      player_check_place_bomb(player, curr_keys, bombs[bombsUsed], bombsUsed);
+                      player_check_place_bomb(player, curr_keys, bombs[bombsUsed], &bombsUsed);
                   }
                   } 
-                  sprite_draw(mouse);
-                  bomb_draw(bombs);
                   map_draw(map);
+                  bomb_draw(bombs);
                   player_draw(player);
+                  sprite_draw(mouse);
                   vg_draw();
                   }
                 }
@@ -167,7 +180,7 @@ while( gameState == MENU ) { /* You may want to use a different condition */
                       mouse_ih();
                       if(get_ih_counter() >= 3){
                           mouse_parse_packet(&pp);           
-                          if(mouse_refresh = update_mouse(&pp))
+                          if((mouse_refresh = update_mouse(&pp)) == 1)
                             check_bomb_click(bombs, mouse, pp.lb);
                       }
                  }
@@ -179,6 +192,9 @@ while( gameState == MENU ) { /* You may want to use a different condition */
          /* no standard messages expected: do nothing */
      }
   }
+  }
+
+
   if(kbd_unsubscribe_int())
     return 1;
   if(timer_unsubscribe_int())

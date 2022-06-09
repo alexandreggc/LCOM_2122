@@ -1,7 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 # GNU Make 3.81
 # Copyright (C) 2006  Free Software Foundation, Inc.
 # This is free software; see the source for copying conditions.
@@ -10,236 +7,17 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
  
->>>>>>> feature/LagFix
 Makefile:20: *** missing separator.  Stop.
 
 
-<<<<<<< HEAD
-# Make data base, printed on Tue Jun  7 18:34:48 2022
-=======
-# GNU Make 3.81
-# Copyright (C) 2006  Free Software Foundation, Inc.
-# This is free software; see the source for copying conditions.
-# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
-# PARTICULAR PURPOSE.
-
-# This program built for i386-apple-darwin11.3.0
-
-# Make data base, printed on Mon Jun  6 22:20:11 2022
->>>>>>> feature/Menu
-
-# Variables
-
-# environment
-GDK_BACKEND = x11
-# environment
-LC_ALL = C
-# environment
-NO_AT_BRIDGE = 1
-# environment
-SNAP_INSTANCE_KEY = 
-# environment
-GJS_DEBUG_OUTPUT = stderr
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-19ba8025-4aae-4b0c-ad67-c8744b3c3c13.sock
-# environment
-LC_NAME = pt_PT.UTF-8
-# environment
-LC_NUMERIC = pt_PT.UTF-8
-# environment
-VSCODE_CWD = /home/alexandre
-# environment
-LESS_TERMCAP_me = [0m
-# environment
-LC_ADDRESS = pt_PT.UTF-8
-# environment
-GDM_LANG = en_US.UTF-8
-# default
-MAKE_COMMAND := make
-# automatic
-@D = $(patsubst %/,%,$(dir $@))
-# environment
-SNAP_INSTANCE_NAME = code
-# environment
-GDK_PIXBUF_MODULEDIR = /snap/code/97/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
-# environment
-VSCODE_HANDLES_UNCAUGHT_ERRORS = true
-# default
-.VARIABLES := 
-# environment
-PWD = /home/alexandre/Documents/FEUP/2ano/2Sem/LC/MINIX-LCOM/shared/proj/src
-# automatic
-<<<<<<< HEAD
-%D = $(patsubst %/,%,$(dir $%))
-# environment
-MAIL = /var/spool/mail/alexandre
-# environment
-XDG_DATA_DIRS = /home/alexandre/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
-# environment
-OLDPWD = /home/alexandre
-=======
-?D = $(patsubst %/,%,$(dir $?))
-# makefile (from `Makefile', line 15)
-CPPFLAGS = -pedantic ${IPATHS} -D proj -D __LCOM_OPTIMIZED__ -Wall -Wextra -Wshadow -Wunreachable-code 
->>>>>>> feature/Menu
-# automatic
-^D = $(patsubst %/,%,$(dir $^))
-# environment
-VSCODE_LOG_STACK = false
-# automatic
-%F = $(notdir $%)
-# environment
-VSCODE_CODE_CACHE_PATH = /home/alexandre/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
-# environment
-LANG = C
-# environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.TL44M1
-# default
-.LOADED := 
-# environment
-LESS_TERMCAP_md = [01;32m
-# default
-.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
-# makefile
-MAKEFLAGS = pqrR
-# environment
-LESS_TERMCAP_so = [01;47;34m
-# makefile
-CURDIR := /home/alexandre/Documents/FEUP/2ano/2Sem/LC/MINIX-LCOM/shared/proj/src
-# environment
-<<<<<<< HEAD
-VSCODE_PIPE_LOGGING = true
-=======
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/v1/yy42rmgd5hsbwthphypsmb0h0000gn/T/vscode-ipc-1d3d3d65-2801-43c5-b8ea-75b2c96a401b.sock
->>>>>>> feature/Menu
-# environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
-# makefile (from 'Makefile', line 11)
-SRCS = game.c keyboard.c mouse.c timer.c utils.c videocard.c proj.c sprite.c rtc.c entities.c rectangle.c menu.c project_functions.c
-# automatic
-*D = $(patsubst %/,%,$(dir $*))
-# environment
-LESS_TERMCAP_ue = [0m
-# environment
-MFLAGS = -pqrR
-# environment
-SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
-# default
-.SHELLFLAGS := -c
-# environment
-WAYLAND_DISPLAY = wayland-0
-# automatic
-+D = $(patsubst %/,%,$(dir $+))
-# environment
-P9K_SSH = 0
-# makefile (from 'Makefile', line 17)
-DPADD = ${LIBLCF}
-# environment
-<<<<<<< HEAD
-XDG_SESSION_DESKTOP = gnome
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST := Makefile
-# environment
-SNAP_REEXEC = 
-=======
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.9dWnUgEasq/Listeners
->>>>>>> feature/Menu
-# automatic
-@F = $(notdir $@)
-# environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
-VSCODE_PID = 208236
-# environment
-MOZ_ENABLE_WAYLAND = 1
-# environment
-XDG_SESSION_TYPE = wayland
-# automatic
-?D = $(patsubst %/,%,$(dir $?))
-# environment
-BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
-# environment
-SESSION_MANAGER = local/lenovopc:@/tmp/.ICE-unix/1440,unix/lenovopc:/tmp/.ICE-unix/1440
-# automatic
-*F = $(notdir $*)
-# environment
-QT_QPA_PLATFORMTHEME = qt5ct
-# environment
-CHROME_DESKTOP = code-url-handler.desktop
-# environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
-# automatic
-<D = $(patsubst %/,%,$(dir $<))
-# environment
-VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
-# default
-MAKE_HOST := x86_64-pc-linux-gnu
-# makefile
-SHELL = /bin/sh
-# environment
-LESS_TERMCAP_us = [01;36m
-# default
-MAKECMDGOALS := all
-<<<<<<< HEAD
-# environment
-XMODIFIERS = @im=ibus
-# environment
-GJS_DEBUG_TOPICS = JS ERROR;JS LOG
-=======
-# makefile (from `Makefile', line 11)
-SRCS = game.c keyboard.c mouse.c timer.c utils.c videocard.c proj.c sprite.c rtc.c entities.c rectangle.c menu.c font.c
->>>>>>> feature/Menu
-# environment
-SHLVL = 1
-# environment
-MAKELEVEL := 0
-# default
-MAKE = $(MAKE_COMMAND)
-# environment
-SNAP_COOKIE = sE3dGMsiInrwMuMNqp1t6wW42HqhiVwxULMlFMIAF33Hvb0BKxoV
-# environment
-PATH = /home/alexandre/.local/bin:/home/alexandre/.local/bin:/usr/local/bin:/usr/bin:/var/lib/snapd/snap/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/jvm/default/bin
-# environment
-LESS_TERMCAP_se = [0m
-# default
-MAKEFILES := 
-# environment
-LC_MONETARY = pt_PT.UTF-8
-# environment
-MOTD_SHOWN = pam
-# automatic
-^F = $(notdir $^)
-# environment
-SNAP_USER_COMMON = /home/alexandre/snap/code/common
-# environment
-LC_TIME = pt_PT.UTF-8
-# environment
-LESS_TERMCAP_mb = [01;32m
-# environment
-SNAP = /snap/code/97
-# environment
-INVOCATION_ID = 550da5b411d345e7bafbb06b00d44f64
-# environment
-SNAP_REVISION = 97
-# environment
-SNAP_REAL_HOME = /home/alexandre
-# environment
-VSCODE_LOG_NATIVE = false
-# environment
-USERNAME = alexandre
-# environment
-GNOME_SETUP_DISPLAY = :1
-# environment
-LC_TELEPHONE = pt_PT.UTF-8
-=======
-# Make data base, printed on Thu Jun  9 21:48:03 2022
+# Make data base, printed on Thu Jun  9 23:20:16 2022
 
 # Variables
 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
->>>>>>> feature/LagFix
 # automatic
+ 
 ?F = $(notdir $?)
 # environment
 VSCODE_LOG_NATIVE = false
@@ -297,7 +75,6 @@ LDADD = -llcf
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /Users/tiagobranquinho
- 
 # default
 MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
 # environment
@@ -317,7 +94,7 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # makefile (from `Makefile', line 11)
-SRCS = game.c keyboard.c mouse.c timer.c utils.c videocard.c proj.c sprite.c rtc.c entities.c rectangle.c menu.c project_functions.c keys.c
+SRCS = game.c keyboard.c mouse.c timer.c utils.c videocard.c proj.c sprite.c rtc.c entities.c rectangle.c menu.c font.c project_functions.c keys.c
 # environment
 SHLVL = 1
 # default
@@ -345,6 +122,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
+ 
 XPC_SERVICE_NAME = application.com.microsoft.VSCode.23415711.23415717
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
@@ -373,21 +151,7 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-<<<<<<< HEAD
-<<<<<<< HEAD
-GDMSESSION = gnome
-# environment
-PKGFILE_PROMPT_INSTALL_MISSING = 1
-# environment
-LC_IDENTIFICATION = pt_PT.UTF-8
-# environment
-SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
-=======
-VSCODE_PID = 1030
->>>>>>> feature/Menu
-=======
 VSCODE_PID = 720
->>>>>>> feature/LagFix
 # variable set hash-table stats:
 # Load=68/1024=7%, Rehash=0, Collisions=1/92=1%
 
@@ -397,17 +161,9 @@ VSCODE_PID = 720
 
 # Directories
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-# . (device 66306, inode 1972966): 24 files, no impossibilities.
-=======
-# . (device 16777223, inode 20904347): 24 files, no impossibilities.
->>>>>>> feature/Menu
-=======
-# . (device 16777223, inode 20904347): 24 files, no impossibilities.
->>>>>>> feature/LagFix
+# . (device 16777223, inode 20904347): 26 files, no impossibilities.
 
-# 24 files, no impossibilities in 1 directories.
+# 26 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -458,19 +214,6 @@ Makefile:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-# strcache performance: lookups = 54 / hit rate = 31%
-# hash-table stats:
-# Load=37/8192=0%, Rehash=0, Collisions=0/54=0%
-# Finished Make data base on Tue Jun  7 18:34:48 2022
-=======
-# Finished Make data base on Mon Jun  6 22:20:11 2022
->>>>>>> feature/Menu
-=======
-# Finished Make data base on Thu Jun  9 21:48:03 2022
->>>>>>> feature/LagFix
+# Finished Make data base on Thu Jun  9 23:20:16 2022
 
  
-Makefile:20: *** missing separator.  Stop.
-
