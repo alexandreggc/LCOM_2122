@@ -66,7 +66,6 @@ void (map_update_player_grid)(map_t *map, player_t *player);
 void (map_update_bot_grid)(map_t *map, bot_t *bot);
 void (map_test_collisions)(map_t *map, player_t *player);
 void (map_test_bot_collisions)(map_t *map, bot_t *bot);
-wall_t** (map_find_empty_spots)(map_t *map);
-void (map_place_bots)(bot_t** bots);
+void (map_place_bots)(map_t *map, bot_t** bots);
 
 #endif

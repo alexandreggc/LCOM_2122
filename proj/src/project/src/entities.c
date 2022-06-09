@@ -1,5 +1,6 @@
 #include<lcom/lcf.h>
 #include <math.h>
+#include <stdio.h>
 
 #include "project_functions.h"
 #include "libs.h"
@@ -187,9 +188,8 @@ void (bot_move)(bot_t* bot) {
   int yspeed = sprite_get_yspeed(bot->sp);
 
   if(xspeed == 0 && yspeed == 0) {
-    srand(time(NULL));
+    srand(time(0));
     int randomnumber = rand() % 4;
-    srand(1);
     switch(randomnumber) {
       case 0: h_dir = LEFT; break;
       case 1: h_dir = RIGHT; break;
@@ -300,6 +300,7 @@ map_t* (map_constructor)(){
       int wall_pixel_x = i*wall_pixel_w;
       int wall_pixel_y = j*wall_pixel_h;
       sprite_set_pos(wall->sp, map_x + wall_pixel_x, map_y + wall_pixel_y);
+      srand(time(0));
       if (rand() & 1){
         wall_set_broken(wall);
       }
@@ -410,40 +411,24 @@ void (map_test_bot_collisions)(map_t *map, bot_t *bot){
   sprite_update_pos(bot->sp);
 }
 
-wall_t** (map_find_empty_spots)(map_t *map) {
-  //Percorre array de walls e guarda as que estao broken num array result
+void (map_place_bots)(map_t *map, bot_t** bots) {
+  int bot_index = 0;
+  while(bot_index<NUMBER_OF_BOTS) {
 
-  wall_t** broken = malloc(sizeof(wall_t*)*map->size_map);
+    for(int i=0; i<map->size_map; i++) {
+      srand(time(0));
+      if(map->walls[i]->broken && (rand() & 1)) {
 
-  int index = 0;
-  for(int i=0; i<map->size_map; i++) {
-    if(map->walls[i]->broken) {
-      broken[index] = map->walls[i];
-      index++;
+        if(map->walls[i]->x_map < 3 || map->walls[i]->y_map < 3) continue;
+
+        int x = sprite_get_xpos(map->walls[i]->sp);
+        int y = sprite_get_ypos(map->walls[i]->sp);
+      
+        bots[bot_index] = bot_constructor(x,y);
+        bot_index++;
+      }
+      if(bot_index>=NUMBER_OF_BOTS) break;
     }
   }
-
-  return broken;
-}
-
-void (map_place_bots)(bot_t** bots) {
-  //Spawna o numero de bots indicado por NUMBER_OF_BOTS em posicoes ao acaso do array retornado por map_find_empty_spots
-
-  for(int i=0; i<NUMBER_OF_BOTS; i++) {
-    bots[i] = bot_constructor(195,80);
-  }
-
-  /* wall_t** empty = map_find_empty_spots(map);
-  
-  for(int i=0; i<NUMBER_OF_BOTS; i++) {
-    srand(time(NULL));
-    int randomnumber = rand() % (sizeof(empty) / sizeof(wall_t*));
-    srand(1);
-
-    int x = empty[randomnumber]->x_map;
-    int y = empty[randomnumber]->y_map;
-    
-    bots[i] = bot_constructor(x,y);
-  } */
 }
 

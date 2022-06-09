@@ -8,10 +8,10 @@
 int(mainLoop)(){  
   enum GameState gameState = MENU;
   player_t *player = player_constructor(195, 85);
-  bot_t** bots = malloc(sizeof(bot_t*));
+  bot_t** bots = malloc(sizeof(bot_t*)*NUMBER_OF_BOTS);
   sprite_t *mouse = sprite_constructor((const char* const*)crosshair_xpm);
   map_t* map = map_constructor();
-  map_place_bots(bots);
+  map_place_bots(map,bots);
   sprite_set_pos(mouse, 100, 100);
   sprite_draw(mouse);
 
@@ -58,7 +58,7 @@ int(mainLoop)(){
                       if(gameState == PLAY){
                         map_update_player_grid(map, player);
                         if(player_process_key(bb, kbd_get_size_bb(), player)){
-                          gameState = MENU;
+                          gameState = EXIT;
                         }
                         map_test_collisions(map, player);
                       }
