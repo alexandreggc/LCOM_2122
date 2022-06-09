@@ -7,6 +7,8 @@
 #include "entities.h"
 #include "wall.xpm"
 #include "bomberman.xpm"
+#include "bomb.xpm"
+#include "bomb2.xpm"
 
 #define MAP_BLOCKS_SIZE 12
 
@@ -63,7 +65,7 @@ void (player_set_center)(player_t* p, int cx, int cy){
   p->cy = cy;
 }
 
-int (player_process_key)(uint8_t bbyte[2], int size, player_t* player){
+int (player_process_key)(uint8_t bbyte[2], int size, player_t* player, bomb_t* bomb, int *bombsUsed){
   int h_dir = REST, v_dir = REST;
     if(size == 2){
       uint8_t lsb, msb;
@@ -120,10 +122,13 @@ int (player_process_key)(uint8_t bbyte[2], int size, player_t* player){
         break;
       }
     default:
+      if(*bombsUsed<NUMBER_OF_BOMBS) {
+        bomb_place(bomb,sprite_get_xpos(player->sp),sprite_get_ypos(player->sp));
+        (*bombsUsed)++;
+      }
       break;
     } 
   }
-
   sprite_set_speed(player->sp, h_dir * PLAYER_SPEED, v_dir * PLAYER_SPEED);
   return OK;
 }
@@ -151,10 +156,13 @@ bot_t* (bot_constructor)(int x, int y){
   return ret;
 }
 
-void (bot_destructor)(bot_t* p){
-  sprite_destructor(p->sp);
-  free(p);
+void (bot_destructor)(bot_t** bots){
+  for(int i=0; i<NUMBER_OF_BOTS; i++) {
+    sprite_destructor(bots[i]->sp);
+    free(bots[i]);
+  }
 }
+
 void (bot_draw)(bot_t* p){
   sprite_draw(p->sp);
 }
@@ -210,6 +218,72 @@ void (bot_move)(bot_t* bot) {
   }
 
   sprite_set_speed(bot->sp, h_dir * BOT_SPEED, v_dir * BOT_SPEED);
+}
+
+
+// BOMB FUNCTIONS
+
+struct bomb{
+  sprite_t* sp;
+  int x_map, y_map;
+  int r;
+  int range;
+  bool exploded;
+};
+
+bomb_t* (bomb_constructor)(){
+  bomb_t* bomb = malloc(sizeof(bomb_t));
+  sprite_t* sp = sprite_constructor((const char* const*)bomb2_xpm);
+  bomb->sp = sp;
+  bomb->range = BOMB_RANGE;
+  bomb->exploded = true;
+  bomb->r = sprite_get_width(sp)/2;
+  return bomb;
+}
+
+void (bomb_destructor)(bomb_t** bombs){
+  for(int i=0; i<NUMBER_OF_BOMBS; i++) {
+    sprite_destructor(bombs[i]->sp);
+    free(bombs[i]);
+  }
+}
+
+void (bomb_draw)(bomb_t** bombs){
+  for(int i=0; i<NUMBER_OF_BOMBS; i++) {
+    if(!(bombs[i]->exploded)) sprite_draw(bombs[i]->sp);
+  }
+}
+
+bool (bomb_exploded)(bomb_t* b){
+  return b->exploded;
+}
+
+int (bomb_get_xmap)(bomb_t* b){
+  return b->x_map;
+}
+
+int (bomb_get_ymap)(bomb_t* b){
+  return b->y_map;
+}
+
+void (bomb_place)(bomb_t *b, int x, int y) {
+  sprite_set_speed(b->sp,0,0);
+  sprite_set_pos(b->sp,x,y);
+  b->x_map = x;
+  b->y_map = y;
+  b->exploded = false;
+}
+
+void (bomb_explode)(bomb_t* b){
+  b->exploded = true;
+  // bomb_destructor(b);
+  // (...)
+}
+
+void bomb_populate(bomb_t** bombs) {
+  for(int i=0; i<NUMBER_OF_BOMBS;i++){
+    bombs[i] = bomb_constructor();
+  }
 }
 
 

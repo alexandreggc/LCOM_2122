@@ -6,7 +6,11 @@
 #define PLAYER_SPEED 10
 #define BOT_SPEED 1
 #define MOUSE_SPEED 1
+
 #define NUMBER_OF_BOTS 6
+#define NUMBER_OF_BOMBS 3
+
+#define BOMB_RANGE 1
 
 #define UP      -1
 #define DOWN    1

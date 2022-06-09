@@ -1,17 +1,18 @@
 #include "game.h"
 #include "libs.h"
 #include "entities.h"
-#include "bomberman.xpm"
 #include "crosshair.xpm"
-#include "map.xpm"
 #include "font.h"
 
 int(mainLoop)(){  
   enum GameState gameState = MENU;
+  int bombsUsed = 0;
   player_t *player = player_constructor(195, 85);
   bot_t** bots = malloc(sizeof(bot_t*)*NUMBER_OF_BOTS);
+  bomb_t** bombs = malloc(sizeof(bomb_t*)*NUMBER_OF_BOMBS);
   sprite_t *mouse = sprite_constructor((const char* const*)crosshair_xpm);
   map_t* map = map_constructor();
+  bomb_populate(bombs);
   map_place_bots(map,bots);
   sprite_set_pos(mouse, 100, 100);
   sprite_draw(mouse);
@@ -64,8 +65,8 @@ int(mainLoop)(){
                       keyboard_get_key(bb);
                       if(gameState == PLAY){
                         map_update_player_grid(map, player);
-                        if(player_process_key(bb, kbd_get_size_bb(), player)){
-                          gameState = EXIT;
+                        if(player_process_key(bb, kbd_get_size_bb(), player,bombs[bombsUsed], &bombsUsed)){
+                          gameState = MENU;
                         }
                         map_test_collisions(map, player);
                       }
@@ -87,6 +88,7 @@ int(mainLoop)(){
                             bot_move(bots[i]);
                             bot_draw(bots[i]);
                           }
+                          bomb_draw(bombs);
                           map_draw(map);
                           player_draw(player);
                           /* unsigned char wd;
@@ -160,7 +162,8 @@ int(mainLoop)(){
   vg_exit();
   map_destructor(map);
   player_destructor(player);
-  for(int i=0; i<NUMBER_OF_BOTS; i++) bot_destructor(bots[i]);
+  bot_destructor(bots);
+  bomb_destructor(bombs);
   sprite_destructor(mouse);
   font_dtor(font);
   menu_dtor(main_menu);
