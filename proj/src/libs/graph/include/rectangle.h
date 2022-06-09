@@ -1,10 +1,14 @@
 #ifndef RECTANGLE_H_INCLUDED
 #define RECTANGLE_H_INCLUDED
 
+#include "font.h"
+
 typedef struct rectangle rectangle_t;
 struct rectangle{
     uint16_t  x, y, w, h;
     uint32_t color;
+    font_t *font;
+    char *phrase;
 };
 
 /**
@@ -15,7 +19,7 @@ struct rectangle{
  * @param   h   Height
  * @return      Pointer to constructed rectangle, or NULL if failed
  */
-rectangle_t* (rectangle_ctor)(int16_t x, int16_t y, uint16_t w, uint16_t h);
+rectangle_t* (rectangle_ctor)(int16_t x, int16_t y, uint16_t w, uint16_t h, font_t *font, char* phrase);
 /**
  * @brief Destruct rectangle.
  * @param   p   Pointer to rectangle to be destructed
@@ -78,6 +82,11 @@ int      (rectangle_collide_point)(const rectangle_t *p, int x, int y);
  * @param   p   Pointer to rectangle to be drawn
  */
 void (rectangle_draw)(rectangle_t *p);
+
+int (rectangle_draw_start_x)(rectangle_t *p);
+
+int (rectangle_draw_start_y)(rectangle_t *p);
+
 
 /**
  * @}

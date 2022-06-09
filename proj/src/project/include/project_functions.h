@@ -5,6 +5,12 @@
 #include <lcom/proj.h>
 
 #include "libs.h"
+#include "videocard.h"
+#include "keyboard.h"
+#include "mouse.h"
+#include "timer.h"
+#include "rtc.h"
+#include "utils.h"
 #include "project_macros.h"
 
 enum GameState{MENU, PLAY, EXIT};

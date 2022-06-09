@@ -4,6 +4,7 @@
 #include "bomberman.xpm"
 #include "crosshair.xpm"
 #include "map.xpm"
+#include "font.h"
 
 int(mainLoop)(){  
   enum GameState gameState = MENU;
@@ -15,10 +16,16 @@ int(mainLoop)(){
   sprite_set_pos(mouse, 100, 100);
   sprite_draw(mouse);
 
+  font_t *font = font_ctor(NUM_SYMBOLS);
+ 
   int ipc_status, r;
   uint8_t keyboard_sel;
   message msg;  
-  menu_t *main_menu = menu_ctor();
+
+  menu_t *main_menu = menu_ctor(font, 2);
+  menu_add_button(main_menu, 200, 200, 400, 100, "PLAY THE GAME");
+  menu_add_button(main_menu, 200, 400, 350, 150, "EXIT");
+
   if(kbd_subscribe_int(&keyboard_sel))
     return 1;
   int kbc_irq_set = BIT(keyboard_sel);
@@ -68,6 +75,7 @@ int(mainLoop)(){
                      if((no_interrupts*60) % REFRESH_RATE == 0){ // atualiza a cada 1 segundo
                         no_interrupts = 0;
                         vg_clear_screen();
+
                         if(gameState == MENU){
                             menu_draw(main_menu);
                             sprite_draw(mouse);
@@ -81,6 +89,21 @@ int(mainLoop)(){
                           }
                           map_draw(map);
                           player_draw(player);
+                          /* unsigned char wd;
+                          rtc_read_weekday(&wd);
+                          char *string = "";
+
+                          switch(wd) {
+                            case 0: string = "SUNDAY"; break;
+                            case 1: string = "MONDAY"; break;
+                            case 2: string = "TUESDAY"; break;
+                            case 3: string = "WENSDAY"; break;
+                            case 4: string = "THURSDAY"; break;
+                            case 5: string = "FRIDAY"; break;
+                            case 6: string = "SATURDAY"; break;
+                            default: string = ""; break;
+                          }
+                          font_draw_string(font, string, 10, 100); */
                         }
                         sprite_draw(mouse);
                         vg_draw();
@@ -110,7 +133,7 @@ int(mainLoop)(){
                             }
                           }
 
-                      }
+                  }
                  }
                  break;
              default:
@@ -124,7 +147,6 @@ int(mainLoop)(){
     return 1;
   if(timer_unsubscribe_int())
     return 1;
-
 
   if (disable_irq()) return 1; // temporarily disables our interrupts notifications
   disable_data_reporting();
@@ -140,6 +162,7 @@ int(mainLoop)(){
   player_destructor(player);
   for(int i=0; i<NUMBER_OF_BOTS; i++) bot_destructor(bots[i]);
   sprite_destructor(mouse);
+  font_dtor(font);
   menu_dtor(main_menu);
 
   return OK;

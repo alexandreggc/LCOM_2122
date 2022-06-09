@@ -1,4 +1,5 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+<<<<<<< HEAD
 Makefile:20: *** missing separator.  Stop.
 
 # GNU Make 4.3
@@ -9,6 +10,17 @@ Makefile:20: *** missing separator.  Stop.
 # There is NO WARRANTY, to the extent permitted by law.
 
 # Make data base, printed on Tue Jun  7 18:34:48 2022
+=======
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+
+# Make data base, printed on Mon Jun  6 22:20:11 2022
+>>>>>>> feature/Menu
 
 # Variables
 
@@ -51,6 +63,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # environment
 PWD = /home/alexandre/Documents/FEUP/2ano/2Sem/LC/MINIX-LCOM/shared/proj/src
 # automatic
+<<<<<<< HEAD
 %D = $(patsubst %/,%,$(dir $%))
 # environment
 MAIL = /var/spool/mail/alexandre
@@ -58,6 +71,11 @@ MAIL = /var/spool/mail/alexandre
 XDG_DATA_DIRS = /home/alexandre/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
 OLDPWD = /home/alexandre
+=======
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from `Makefile', line 15)
+CPPFLAGS = -pedantic ${IPATHS} -D proj -D __LCOM_OPTIMIZED__ -Wall -Wextra -Wshadow -Wunreachable-code 
+>>>>>>> feature/Menu
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
@@ -83,7 +101,11 @@ LESS_TERMCAP_so = [01;47;34m
 # makefile
 CURDIR := /home/alexandre/Documents/FEUP/2ano/2Sem/LC/MINIX-LCOM/shared/proj/src
 # environment
+<<<<<<< HEAD
 VSCODE_PIPE_LOGGING = true
+=======
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/v1/yy42rmgd5hsbwthphypsmb0h0000gn/T/vscode-ipc-1d3d3d65-2801-43c5-b8ea-75b2c96a401b.sock
+>>>>>>> feature/Menu
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # makefile (from 'Makefile', line 11)
@@ -107,11 +129,15 @@ P9K_SSH = 0
 # makefile (from 'Makefile', line 17)
 DPADD = ${LIBLCF}
 # environment
+<<<<<<< HEAD
 XDG_SESSION_DESKTOP = gnome
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST := Makefile
 # environment
 SNAP_REEXEC = 
+=======
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.9dWnUgEasq/Listeners
+>>>>>>> feature/Menu
 # automatic
 @F = $(notdir $@)
 # environment
@@ -148,10 +174,15 @@ SHELL = /bin/sh
 LESS_TERMCAP_us = [01;36m
 # default
 MAKECMDGOALS := all
+<<<<<<< HEAD
 # environment
 XMODIFIERS = @im=ibus
 # environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+=======
+# makefile (from `Makefile', line 11)
+SRCS = game.c keyboard.c mouse.c timer.c utils.c videocard.c proj.c sprite.c rtc.c entities.c rectangle.c menu.c font.c
+>>>>>>> feature/Menu
 # environment
 SHLVL = 1
 # environment
@@ -300,6 +331,7 @@ XDG_MENU_PREFIX = gnome-
 # makefile (from 'Makefile', line 18)
 LDADD = -llcf
 # environment
+<<<<<<< HEAD
 GDMSESSION = gnome
 # environment
 PKGFILE_PROMPT_INSTALL_MISSING = 1
@@ -307,6 +339,9 @@ PKGFILE_PROMPT_INSTALL_MISSING = 1
 LC_IDENTIFICATION = pt_PT.UTF-8
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+=======
+VSCODE_PID = 1030
+>>>>>>> feature/Menu
 # variable set hash-table stats:
 # Load=147/1024=14%, Rehash=0, Collisions=15/170=9%
 
@@ -316,7 +351,11 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
+<<<<<<< HEAD
 # . (device 66306, inode 1972966): 24 files, no impossibilities.
+=======
+# . (device 16777223, inode 20904347): 24 files, no impossibilities.
+>>>>>>> feature/Menu
 
 # 24 files, no impossibilities in 1 directories.
 
@@ -403,9 +442,15 @@ all:
 # strcache buffers: 1 (0) / strings = 37 / storage = 362 B / avg = 9 B
 # current buf: size = 8162 B / used = 362 B / count = 37 / avg = 9 B
 
+<<<<<<< HEAD
 # strcache performance: lookups = 54 / hit rate = 31%
 # hash-table stats:
 # Load=37/8192=0%, Rehash=0, Collisions=0/54=0%
 # Finished Make data base on Tue Jun  7 18:34:48 2022
+=======
+# Finished Make data base on Mon Jun  6 22:20:11 2022
+>>>>>>> feature/Menu
 
  
+Makefile:20: *** missing separator.  Stop.
+

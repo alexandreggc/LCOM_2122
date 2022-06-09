@@ -98,7 +98,8 @@ int(vg_draw_xpm_img)(xpm_image_t *xpm_img, uint16_t x, uint16_t y){
             if (x + w < Xres && y + h < Yres) {
                 uint32_t color = 0; 
                 memcpy(&color, xpm_img->bytes+(w + h * xpm_img->width)*bytes_per_pixel, bytes_per_pixel);
-                vg_draw_pixel(x + w, y + h, color);
+                if(color > 0x7f)
+                  vg_draw_pixel(x + w, y + h, color);
             }
         }
     }
