@@ -58,6 +58,7 @@ int (bomb_get_ymap)(bomb_t* b);
 void (bomb_place)(bomb_t *b, int x, int y);
 void (bomb_explode)(bomb_t* b);
 void bomb_populate(bomb_t** bombs);
+void check_bomb_click(bomb_t** bombs, sprite_t* mouse, int click);
 
 
 // WALL FUNCTIONS

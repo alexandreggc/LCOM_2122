@@ -276,13 +276,33 @@ void (bomb_place)(bomb_t *b, int x, int y) {
 
 void (bomb_explode)(bomb_t* b){
   b->exploded = true;
-  // bomb_destructor(b);
   // (...)
 }
 
 void bomb_populate(bomb_t** bombs) {
   for(int i=0; i<NUMBER_OF_BOMBS;i++){
     bombs[i] = bomb_constructor();
+  }
+}
+
+void check_bomb_click(bomb_t** bombs, sprite_t* mouse, int click) {
+  if(!click) return;
+
+  int mouse_x = sprite_get_xpos(mouse) + sprite_get_width(mouse) / 2;
+  int mouse_y = sprite_get_ypos(mouse) + sprite_get_height(mouse) / 2;
+
+  for(int i=0; i<NUMBER_OF_BOMBS; i++) {
+    if(bombs[i]->exploded) continue;
+
+    int bomb_x = sprite_get_xpos(bombs[i]->sp);
+    int bomb_y = sprite_get_ypos(bombs[i]->sp);
+    int bomb_w = sprite_get_width(bombs[i]->sp);
+    int bomb_h = sprite_get_height(bombs[i]->sp);
+
+    if((mouse_x >= bomb_x && mouse_x <= bomb_x + bomb_w) && (mouse_y >= bomb_y && mouse_y <= bomb_y + bomb_h)) {
+      bomb_explode(bombs[i]);
+      break;
+    }
   }
 }
 

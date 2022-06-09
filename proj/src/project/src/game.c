@@ -133,6 +133,8 @@ int(mainLoop)(){
                             default:
                               break;
                             }
+                          } else if(gameState == PLAY) {
+                            check_bomb_click(bombs, mouse, pp.lb);
                           }
 
                   }
