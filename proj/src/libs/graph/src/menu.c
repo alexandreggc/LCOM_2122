@@ -40,6 +40,7 @@ int (menu_update_state)(menu_t *menu, sprite_t *sp, int click) {
 }
 
 void (menu_draw)(menu_t *menu) {
+    font_draw_string(menu->font,"BOMBERMAN",300,100);
     for (size_t i = 0; i < menu->sz; i++){
         rectangle_draw(menu->buttons[i]);
     }

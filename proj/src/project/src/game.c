@@ -27,8 +27,11 @@ int(mainLoop)(){
   message msg;  
 
   menu_t *main_menu = menu_ctor(font, 2);
-  menu_add_button(main_menu, 200, 200, 400, 100, "PLAY THE GAME");
-  menu_add_button(main_menu, 200, 400, 350, 150, "EXIT");
+  menu_add_button(main_menu, 225, 200, 350, 75, "PLAY THE GAME");
+  menu_add_button(main_menu, 225, 300, 350, 75, "LEADERBOARD");
+  menu_add_button(main_menu, 225, 400, 350, 75, "EXIT");
+
+  leaderboard_t *leaderboard = leaderboard_constructor(font);
 
   if(kbd_subscribe_int(&keyboard_sel))
     return 1;
@@ -91,9 +94,12 @@ int(mainLoop)(){
                                 break;
                               }
                               case 2: {
-                                gameState = EXIT;
+                                gameState = LEADERBOARD;
                                 break;
                               }
+                              case 3:
+                                gameState = EXIT;
+                                break;
                               default:
                                 break;
                               }
@@ -118,7 +124,7 @@ int(mainLoop)(){
      } else { /* received a standard message, not a notification */
          /* no standard messages expected: do nothing */
      }
-  }
+    }
 
   while( gameState == PLAY) { /* You may want to use a different condition */
      /* Get a request message. */
@@ -191,8 +197,61 @@ int(mainLoop)(){
      } else { /* received a standard message, not a notification */
          /* no standard messages expected: do nothing */
      }
+    }
+
+  while( gameState == LEADERBOARD ) { /* You may want to use a different condition */
+     /* Get a request message. */
+     if ( (r = driver_receive(ANY, &msg, &ipc_status)) != 0 ) { 
+         printf("driver_receive failed with: %d", r);
+         continue;
+     }
+     if (is_ipc_notify(ipc_status)) { /* received notification */
+         switch (_ENDPOINT_P(msg.m_source)) {
+             case HARDWARE: /* hardware interrupt notification */       
+                 if (msg.m_notify.interrupts & timer_irq_set) { /* subscribed interrupt */
+                     timer_int_handler();   /* process it */
+                     if((timer_get_no_interrupts() * 60) % REFRESH_RATE == 0){ // atualiza a cada 1 segundo
+                        timer_reset_no_interrupts();
+                        if(mouse_refresh){
+                          vg_clear_screen();
+                          leaderboard_draw(leaderboard);
+                          sprite_set_speed(mouse, get_mouse_x_speed(), get_mouse_y_speed());
+                          sprite_update_pos(mouse);
+                          reset_mouse_speed();
+                          mouse_refresh = 0;
+                          sprite_draw(mouse);
+                          vg_draw();
+                        }      
+                 }
+                 }
+                 if (msg.m_notify.interrupts & mouse_irq_set) { /* subscribed interrupt */
+                      mouse_ih();
+                      if(get_ih_counter() >= 3){
+                          mouse_parse_packet(&pp);           
+                          mouse_refresh = update_mouse(&pp);
+                      }
+                 }
+                 if (msg.m_notify.interrupts & kbc_irq_set) { /* subscribed interrupt */
+                      kbc_ih();/* process it */
+                      if(is_two_byte() || kbd_error_occured()){
+                        continue;
+                      }
+                      uint8_t bb[2];
+                      keyboard_get_key(bb);
+                      if(keyboard_check_esc(bb))
+                        gameState = MENU;
+                     
+                 }
+                 break;
+             default:
+                 break; /* no other notifications expected: do nothing */ 
+         }
+     } else { /* received a standard message, not a notification */
+         /* no standard messages expected: do nothing */
+     }
+    }
   }
-  }
+
 
 
   if(kbd_unsubscribe_int())
@@ -218,6 +277,8 @@ int(mainLoop)(){
   font_dtor(font);
   menu_dtor(main_menu);
   keys_dtor(curr_keys);
+  leaderboard_destructor(leaderboard);
 
   return OK;
 }
+
