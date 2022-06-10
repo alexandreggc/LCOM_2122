@@ -3,6 +3,20 @@
 
 #include "sprite.h"
 #include "font_macros.h"
+#include "keyboard_macros.h"
+#include "char44.xpm"
+#include "char46.xpm"
+#include "char48.xpm"
+#include "char49.xpm"
+#include "char50.xpm"
+#include "char51.xpm"
+#include "char52.xpm"
+#include "char53.xpm"
+#include "char54.xpm"
+#include "char55.xpm"
+#include "char56.xpm"
+#include "char57.xpm"
+#include "char58.xpm"
 #include "char65.xpm"
 #include "char66.xpm"
 #include "char67.xpm"
@@ -38,7 +52,7 @@ typedef struct font font_t;
  * @param   fnt Font to use when rendering menu options text
  * @return      Pointer to constructed menu, or NULL if failed.
  */
-font_t* (font_ctor)(size_t sz);
+font_t* (font_ctor)();
 /**
  * @brief Destruct menu.
  * @param   p   Pointer to menu to destruct

@@ -18,7 +18,4 @@
 #define RIGHT   1
 #define REST    0
 
-#define NUM_SYMBOLS 26
-
-
 #endif /* end of include guard: PROJ_MACROS_H_INCLUDED */

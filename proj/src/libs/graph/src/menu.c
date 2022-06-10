@@ -50,5 +50,6 @@ void (menu_dtor)(menu_t *menu){
         rectangle_dtor(menu->buttons[i]);
     }
     free(menu->buttons);
+    free(menu->font);
     free(menu);
 }

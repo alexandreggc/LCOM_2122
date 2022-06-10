@@ -5,7 +5,6 @@
 #include "font.h"
 
 
-extern int no_interrupts;
 
 int(mainLoop)(){  
   enum GameState gameState = MENU;
@@ -20,7 +19,7 @@ int(mainLoop)(){
   sprite_set_pos(mouse, 100, 100);
   sprite_draw(mouse);
 
-  font_t *font = font_ctor(NUM_SYMBOLS);
+  font_t *font = font_ctor();
  
   int ipc_status, r;
   uint8_t keyboard_sel;
