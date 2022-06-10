@@ -161,12 +161,12 @@ int(mainLoop)(){
                     reset_mouse_speed();
                     mouse_refresh = 0;
                   }
-                  if(keyboard_refresh){
-                    player_set_speed(player, curr_keys);
-                    map_test_collisions(map, player);
-                    //keyboard_refresh = 0;
+                  player_set_speed(player, curr_keys);
+                  map_test_collisions(map, player);
+                  if(keyboard_refresh){  
+                    keyboard_refresh = 0;
                     if(bombsUsed<NUMBER_OF_BOMBS) {
-                      player_check_place_bomb(player, curr_keys, bombs[bombsUsed], &bombsUsed);
+                      player_check_place_bomb(map, player, curr_keys, bombs, &bombsUsed);
                     }
                   } 
                   map_draw(map);
@@ -181,7 +181,7 @@ int(mainLoop)(){
                       if(get_ih_counter() >= 3){
                           mouse_parse_packet(&pp);           
                           if((mouse_refresh = update_mouse(&pp)) == 1)
-                            check_bomb_click(bombs, mouse, pp.lb);
+                            check_bomb_click(bombs, mouse, pp.lb, &bombsUsed);
                       }
                  }
                  break;

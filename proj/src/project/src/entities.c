@@ -168,10 +168,24 @@ int (player_process_key)(uint8_t bbyte[2], int size, keys_t *keys){
   return OK;
 }
 
-void (player_check_place_bomb)(player_t *player, keys_t *keys, bomb_t *bomb, int *bombsUsed){
+void (player_check_place_bomb)(map_t* map, player_t *player, keys_t *keys, bomb_t **bombs, int *bombsUsed){
+  int new_x_map = player_get_mapx(player);
+  int new_y_map = player_get_mapy(player);
   if(keys->space_pressed == 1){
-    bomb_place(bomb,sprite_get_xpos(player->sp),sprite_get_ypos(player->sp));
-    (*bombsUsed)++;
+    for (int i=0; i<NUMBER_OF_BOMBS; i++){
+      int bomb_x_map = bomb_get_xmap(bombs[i]);
+      int bomb_y_map = bomb_get_ymap(bombs[i]);
+      if (bomb_x_map == new_x_map && bomb_y_map == new_y_map && !bomb_exploded(bombs[i])){
+        return;
+      }
+    }
+    for (int i=0; i<NUMBER_OF_BOMBS; i++){
+      if (bomb_exploded(bombs[i])){
+        map_place_bomb(map, bombs[i], new_x_map, new_y_map);
+        (*bombsUsed)++;
+        return;
+      }
+    }
   }
 }
 
@@ -262,6 +276,40 @@ void (bot_move)(bot_t* bot) {
   sprite_set_speed(bot->sp, h_dir * BOT_SPEED, v_dir * BOT_SPEED);
 }
 
+// EXPLOSION FUNCTIONS
+
+struct explosion{
+  sprite_t* sp;
+  int x_map, y_map;
+  int r;
+};
+
+explosion_t *(explosion_constructor)(){
+  explosion_t * ret = malloc(sizeof(explosion_t));
+  if (ret == NULL) return NULL;
+  sprite_t *sp = sprite_constructor((const char* const*)bomb2_xpm);
+  ret->sp = sp;
+  ret->r = sprite_get_width(sp);
+  ret->x_map = 0;
+  ret->y_map = 0;
+  return ret;
+}
+
+void explosion_destructor(explosion_t *explosion){
+  if (explosion == NULL) return;
+  sprite_destructor(explosion->sp);
+  free(explosion);
+}
+
+void (explosion_set_map_pos)(explosion_t *explosion, int xmap, int ymap){
+  explosion->x_map = xmap;
+  explosion->y_map = ymap;
+}
+
+void (explosion_draw)(explosion_t *explosion){
+  sprite_draw(explosion->sp);
+}
+
 
 // BOMB FUNCTIONS
 
@@ -271,6 +319,7 @@ struct bomb{
   int r;
   int range;
   bool exploded;
+  int duration;
 };
 
 bomb_t* (bomb_constructor)(){
@@ -280,6 +329,7 @@ bomb_t* (bomb_constructor)(){
   bomb->range = BOMB_RANGE;
   bomb->exploded = true;
   bomb->r = sprite_get_width(sp)/2;
+  bomb->duration = EXPLOSION_TIME;
   return bomb;
 }
 
@@ -308,14 +358,6 @@ int (bomb_get_ymap)(bomb_t* b){
   return b->y_map;
 }
 
-void (bomb_place)(bomb_t *b, int x, int y) {
-  sprite_set_speed(b->sp,0,0);
-  sprite_set_pos(b->sp,x,y);
-  b->x_map = x;
-  b->y_map = y;
-  b->exploded = false;
-}
-
 void (bomb_explode)(bomb_t* b){
   b->exploded = true;
   // (...)
@@ -327,7 +369,7 @@ void bomb_populate(bomb_t** bombs) {
   }
 }
 
-void check_bomb_click(bomb_t** bombs, sprite_t* mouse, int click) {
+void check_bomb_click(bomb_t** bombs, sprite_t* mouse, int click, int* bombsUsed) {
   if(!click) return;
 
   int mouse_x = sprite_get_xpos(mouse) + sprite_get_width(mouse) / 2;
@@ -343,6 +385,7 @@ void check_bomb_click(bomb_t** bombs, sprite_t* mouse, int click) {
 
     if((mouse_x >= bomb_x && mouse_x <= bomb_x + bomb_w) && (mouse_y >= bomb_y && mouse_y <= bomb_y + bomb_h)) {
       bomb_explode(bombs[i]);
+      (*bombsUsed)--;
       break;
     }
   }
@@ -568,3 +611,24 @@ void (map_place_bots)(map_t *map, bot_t** bots) {
   }
 }
 
+void (map_place_bomb)(map_t *map, bomb_t *b, int xmap, int ymap) {
+  int x_px = map_get_Xpixel_pos(map, xmap);
+  int y_px = map_get_Ypixel_pos(map, ymap);
+  sprite_set_speed(b->sp,0,0);
+  sprite_set_pos(b->sp, x_px, y_px);
+  b->x_map = xmap;
+  b->y_map = ymap;
+  b->exploded = false;
+}
+
+int (map_get_Xpixel_pos)(map_t *map, int xmap){
+  int wall_sz = sprite_get_width(map->walls[0]->sp);
+  int x_px = map->x + (xmap * wall_sz);
+  return x_px;
+}
+
+int (map_get_Ypixel_pos)(map_t *map, int ymap){
+  int wall_sz = sprite_get_height(map->walls[0]->sp);
+  int y_px = map->y + (ymap * wall_sz);
+  return y_px;
+}
