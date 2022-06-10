@@ -266,9 +266,7 @@ int(mainLoop)(){
                      if((timer_get_no_interrupts() * 60) % REFRESH_RATE == 0){ // atualiza a cada 1 segundo
                         timer_reset_no_interrupts();
                           vg_clear_screen();
-                          font_draw_string(font,"GAME ENDED",280,100);
-                          font_draw_string(font,"ENTER YOUR NAME",50,300);
-                          font_draw_string(font,playerName,50,400);
+                          gameended_draw(leaderboard,playerName);
                           sprite_set_speed(mouse, get_mouse_x_speed(), get_mouse_y_speed());
                           sprite_update_pos(mouse);
                           reset_mouse_speed();
@@ -292,12 +290,17 @@ int(mainLoop)(){
                       uint8_t bb[2];
                       keyboard_get_key(bb);
                       if(keyboard_check_esc(bb)){
+                        memset(playerName, 0, 20);
                         gameState = MENU;
+
                       } else if(bb[0]==ENTER_M_CODE) {
-                        //save name and time to leaderboard->file
+                        leaderboard_save_file(leaderboard,playerName);
+                        memset(playerName, 0, 20);
                         gameState = MENU;
+
                       } else if(bb[0]==BACKSPACE_M_CODE){
                         playerName[strlen(playerName)-1] = '\0';
+
                       } else {
                         char c = map_makecode(bb[0]);
                         strncat(playerName,&c,sizeof(char));

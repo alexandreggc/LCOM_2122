@@ -38,4 +38,18 @@ void (leaderboard_draw)(leaderboard_t *lb) {
   }
 }
 
+void (gameended_draw)(leaderboard_t *lb, char* playerName){
+  font_draw_string(lb->font,"GAME ENDED",280,100);
+  font_draw_string(lb->font,"ENTER YOUR NAME",50,300);
+  font_draw_string(lb->font,playerName,50,400);
+}
+
+void (leaderboard_save_file)(leaderboard_t *lb, char* playerName){
+  FILE *file = fopen(lb->file_location, "a");
+
+  if(file==NULL) return;
+  
+  fprintf(file, "%s\n", playerName);
+  fclose(file);
+}
 
