@@ -6,6 +6,7 @@
 
 
 
+
 int(mainLoop)(){  
   enum GameState gameState = MENU;
   int bombsUsed = 0;
