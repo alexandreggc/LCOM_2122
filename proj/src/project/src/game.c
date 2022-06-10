@@ -65,7 +65,7 @@ int(mainLoop)(){
              case HARDWARE: /* hardware interrupt notification */       
                  if (msg.m_notify.interrupts & timer_irq_set) { /* subscribed interrupt */
                      timer_int_handler();   /* process it */
-                     if((timer_get_no_interrupts() * 60) % REFRESH_RATE == 0){ // atualiza a cada 1 segundo
+                     if((timer_get_no_interrupts()) % (sys_hz()/REFRESH_RATE) == 0){ // atualiza a cada 1 segundo
                         timer_reset_no_interrupts();
                         if(mouse_refresh){
                           vg_clear_screen();
@@ -164,10 +164,10 @@ int(mainLoop)(){
                   if(keyboard_refresh){
                     player_set_speed(player, curr_keys);
                     map_test_collisions(map, player);
-                    keyboard_refresh = 0;
+                    //keyboard_refresh = 0;
                     if(bombsUsed<NUMBER_OF_BOMBS) {
                       player_check_place_bomb(player, curr_keys, bombs[bombsUsed], &bombsUsed);
-                  }
+                    }
                   } 
                   map_draw(map);
                   bomb_draw(bombs);

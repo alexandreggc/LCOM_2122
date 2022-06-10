@@ -115,7 +115,6 @@ int (player_process_key)(uint8_t bbyte[2], int size, keys_t *keys){
           default:
             break;
           }
-          break;
         } 
       }
     }
