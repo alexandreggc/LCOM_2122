@@ -11,7 +11,7 @@
 #define NUMBER_OF_BOMBS 3
 
 #define BOMB_RANGE 1
-#define EXPLOSION_TIME 2
+#define EXPLOSION_TIME 50
 
 #define UP      -1
 #define DOWN    1

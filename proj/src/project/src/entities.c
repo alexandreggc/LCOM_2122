@@ -282,6 +282,9 @@ struct explosion{
   sprite_t* sp;
   int x_map, y_map;
   int r;
+  int range;
+  int duration;
+  int counter;
 };
 
 explosion_t *(explosion_constructor)(){
@@ -292,6 +295,9 @@ explosion_t *(explosion_constructor)(){
   ret->r = sprite_get_width(sp);
   ret->x_map = 0;
   ret->y_map = 0;
+  ret->duration = EXPLOSION_TIME;
+  ret->range = BOMB_RANGE;
+  ret->counter = EXPLOSION_TIME;
   return ret;
 }
 
@@ -301,13 +307,67 @@ void explosion_destructor(explosion_t *explosion){
   free(explosion);
 }
 
-void (explosion_set_map_pos)(explosion_t *explosion, int xmap, int ymap){
+void (explosion_set_map_pos)(explosion_t *explosion, map_t* map, int xmap, int ymap){
   explosion->x_map = xmap;
   explosion->y_map = ymap;
+  int x_px = map_get_Xpixel_pos(map, xmap);
+  int y_px = map_get_Xpixel_pos(map, ymap);
+  sprite_set_pos(explosion->sp, x_px, y_px);
+  // int i = 0;
+  // for (int dir=0; dir<4; dir++){
+  //   for (int range=1; range <= explosion->range; range++){
+  //     switch (dir)
+  //     {
+  //     case 0: // UP EXPLOSION
+  //       x_px = map_get_Xpixel_pos(map, xmap);
+  //       y_px = map_get_Xpixel_pos(map, ymap-range);
+  //       explosion->positions[i++] = x_px;
+  //       explosion->positions[i++] = y_px;
+  //       break; 
+  //     case 1: // DOWN EXPLOSION
+  //       x_px = map_get_Xpixel_pos(map, xmap);
+  //       y_px = map_get_Xpixel_pos(map, ymap+range);
+  //       explosion->positions[i++] = x_px;
+  //       explosion->positions[i++] = y_px;
+  //       break;
+  //     case 2: // RIGHT EXPLOSION
+  //       x_px = map_get_Xpixel_pos(map, xmap+range);
+  //       y_px = map_get_Xpixel_pos(map, ymap);
+  //       explosion->positions[i++] = x_px;
+  //       explosion->positions[i++] = y_px;
+  //       break;
+  //     case 3: // LEFT EXPLOSION
+  //       x_px = map_get_Xpixel_pos(map, xmap-range);
+  //       y_px = map_get_Xpixel_pos(map, ymap);
+  //       explosion->positions[i++] = x_px;
+  //       explosion->positions[i++] = y_px;
+  //       break;
+  //     default:
+  //       break;
+  //     } 
+  //   }
+  // }
 }
 
 void (explosion_draw)(explosion_t *explosion){
-  sprite_draw(explosion->sp);
+  if (explosion->counter < explosion->duration){
+    sprite_draw(explosion->sp);
+    explosion->counter++;  
+  }
+}
+
+void (explosions_draw)(explosion_t **explosions){
+  for (size_t i=0; i<sizeof(explosions); i++){
+    explosion_draw(explosions[i]);
+  }
+}
+
+void (explosion_expand)(explosion_t *explosion){
+  explosion->counter = 0;
+}
+
+bool (explosion_ended)(explosion_t *explosion){
+  return explosion->counter == explosion->duration;
 }
 
 
@@ -315,34 +375,51 @@ void (explosion_draw)(explosion_t *explosion){
 
 struct bomb{
   sprite_t* sp;
+  explosion_t** explosions;
   int x_map, y_map;
   int r;
-  int range;
   bool exploded;
-  int duration;
+  int num_explosion;
 };
 
 bomb_t* (bomb_constructor)(){
+  int num_explosions = (4*BOMB_RANGE)+1;
   bomb_t* bomb = malloc(sizeof(bomb_t));
+  explosion_t** explosions = malloc(sizeof(explosion_t*)*num_explosions);
+  for (int i=0; i<num_explosions; i++){
+    explosions[i] = malloc(sizeof(explosion_t));
+    explosion_t * explosion = explosion_constructor();
+    sprite_set_pos(explosion->sp, 10, 10);
+    explosions[i] = explosion;
+  }
   sprite_t* sp = sprite_constructor((const char* const*)bomb2_xpm);
   bomb->sp = sp;
-  bomb->range = BOMB_RANGE;
   bomb->exploded = true;
   bomb->r = sprite_get_width(sp)/2;
-  bomb->duration = EXPLOSION_TIME;
+  bomb->explosions = explosions;
+  bomb->num_explosion = num_explosions;
+  bomb->x_map = 0; bomb->y_map = 0;
   return bomb;
 }
 
-void (bomb_destructor)(bomb_t** bombs){
-  for(int i=0; i<NUMBER_OF_BOMBS; i++) {
-    sprite_destructor(bombs[i]->sp);
-    free(bombs[i]);
+void (bomb_destructor)(bomb_t* bomb){
+  sprite_destructor(bomb->sp);
+  for (int e=0; e < bomb->num_explosion; e++){
+    explosion_destructor(bomb->explosions[e]);
+  }
+  free(bomb);
+}
+
+void (bombs_destructor)(bomb_t** bombs){
+  for (int i=0; i<NUMBER_OF_BOMBS; i++){
+    bomb_destructor(bombs[i]);
   }
 }
 
-void (bomb_draw)(bomb_t** bombs){
+void (bombs_draw)(bomb_t** bombs){
   for(int i=0; i<NUMBER_OF_BOMBS; i++) {
     if(!(bombs[i]->exploded)) sprite_draw(bombs[i]->sp);
+      explosions_draw(bombs[i]->explosions);
   }
 }
 
@@ -360,7 +437,9 @@ int (bomb_get_ymap)(bomb_t* b){
 
 void (bomb_explode)(bomb_t* b){
   b->exploded = true;
-  // (...)
+  for (int i=0; i<b->num_explosion; i++){
+    explosion_expand(b->explosions[i]);
+  }
 }
 
 void bomb_populate(bomb_t** bombs) {
@@ -386,7 +465,7 @@ void check_bomb_click(bomb_t** bombs, sprite_t* mouse, int click, int* bombsUsed
     if((mouse_x >= bomb_x && mouse_x <= bomb_x + bomb_w) && (mouse_y >= bomb_y && mouse_y <= bomb_y + bomb_h)) {
       bomb_explode(bombs[i]);
       (*bombsUsed)--;
-      break;
+      return;
     }
   }
 }
@@ -632,3 +711,11 @@ int (map_get_Ypixel_pos)(map_t *map, int ymap){
   int y_px = map->y + (ymap * wall_sz);
   return y_px;
 }
+
+// void (map_update_explosions)(map_t *map, bomb_t** bombs){
+//   for (int i=0; i<NUMBER_OF_BOMBS; i++){
+//     if (!explosion_ended(bombs[i]->explosion)){
+//       map->elements[]
+//     }
+//   }
+// }

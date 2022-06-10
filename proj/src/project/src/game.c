@@ -170,7 +170,7 @@ int(mainLoop)(){
                     }
                   } 
                   map_draw(map);
-                  bomb_draw(bombs);
+                  bombs_draw(bombs);
                   player_draw(player);
                   sprite_draw(mouse);
                   vg_draw();
@@ -213,7 +213,7 @@ int(mainLoop)(){
   map_destructor(map);
   player_destructor(player);
   bot_destructor(bots);
-  bomb_destructor(bombs);
+  bombs_destructor(bombs);
   sprite_destructor(mouse);
   font_dtor(font);
   menu_dtor(main_menu);

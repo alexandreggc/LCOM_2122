@@ -8,7 +8,8 @@ typedef enum{
   EMPTY,
   PLAYER,
   ENEMY,
-  WALL
+  WALL, 
+  EXPLOSION
 }element_t;
 
 
@@ -58,16 +59,20 @@ void (bot_move)(bot_t* bot);
 
 explosion_t* (explosion_constructor)();
 void (explosion_destructor)(explosion_t* bombs);
-void (explosion_set_map_pos)(explosion_t *explosion, int xmap, int ymap);
+void (explosion_set_map_pos)(explosion_t *explosion, map_t* map, int xmap, int ymap);
 void (explosion_draw)(explosion_t *explosion);
+void (explosions_draw)(explosion_t **explosion);
+bool (explosion_ended)(explosion_t *explosion);
+void (explosion_expand)(explosion_t *explosion);
 
 
 // BOMB FUNCTIONS
 
 
 bomb_t* (bomb_constructor)();
-void (bomb_destructor)(bomb_t** bombs);
-void (bomb_draw)(bomb_t** bombs);
+void (bombs_destructor)(bomb_t** bombs);
+void (bomb_destructor)(bomb_t* bomb);
+void (bombs_draw)(bomb_t** bombs);
 bool (bomb_exploded)(bomb_t* b);
 int (bomb_get_xmap)(bomb_t* b);
 int (bomb_get_ymap)(bomb_t* b);
