@@ -11,6 +11,7 @@
 #include "timer.h"
 #include "rtc.h"
 #include "leaderboard.h"
+#include "makecode_map.h"
 #include "utils.h"
 #include "project_macros.h"
 #include "keys.h"

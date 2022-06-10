@@ -28,6 +28,10 @@
 #define ARROWRIGHT_B_CODE  0xE0CD
 #define SPACEBAR_M_CODE  0x39
 #define SPACEBAR_B_CODE  0xB9
+#define ENTER_M_CODE  0x1C
+#define ENTER_B_CODE  0x9C
+#define BACKSPACE_M_CODE  0x0E
+#define BACKSPACE_B_CODE  0x8E
 
 
 

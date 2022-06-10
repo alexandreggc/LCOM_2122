@@ -10,11 +10,12 @@
 #include "mouse.h"
 #include "timer.h"
 #include "leaderboard.h"
+#include "makecode_map.h"
 #include "rtc.h"
 #include "utils.h"
 #include "project_macros.h"
 
-enum GameState{MENU, PLAY, LEADERBOARD, EXIT};
+enum GameState{MENU, PLAY, LEADERBOARD, END, EXIT};
 
 int (point_distance)(int x0, int y0, int x, int y);
 
