@@ -55,6 +55,7 @@ int(mainLoop)(){
   while(gameState != EXIT){
       int mouse_refresh = 1;
       while( gameState == MENU ) { /* You may want to use a different condition */
+      rtc_update_real_time();
      /* Get a request message. */
      if ( (r = driver_receive(ANY, &msg, &ipc_status)) != 0 ) { 
          printf("driver_receive failed with: %d", r);
@@ -62,21 +63,21 @@ int(mainLoop)(){
      }
      if (is_ipc_notify(ipc_status)) { /* received notification */
          switch (_ENDPOINT_P(msg.m_source)) {
-             case HARDWARE: /* hardware interrupt notification */       
+             case HARDWARE: /* hardware interrupt notification */    
                  if (msg.m_notify.interrupts & timer_irq_set) { /* subscribed interrupt */
                      timer_int_handler();   /* process it */
-                     if((timer_get_no_interrupts() * 60) % REFRESH_RATE == 0){ // atualiza a cada 1 segundo
+                     if((timer_get_no_interrupts()) % REFRESH_RATE == 0){
                         timer_reset_no_interrupts();
-                        if(mouse_refresh){
-                          vg_clear_screen();
-                          menu_draw(main_menu);
-                          sprite_set_speed(mouse, get_mouse_x_speed(), get_mouse_y_speed());
-                          sprite_update_pos(mouse);
-                          reset_mouse_speed();
-                          mouse_refresh = 0;
-                          sprite_draw(mouse);
-                          vg_draw();
-                        }      
+                        rtc_update_real_time();
+                     }
+                     if((timer_get_no_interrupts() * 60) % REFRESH_RATE == 0){ // atualiza a cada 1 segundo
+                        vg_clear_screen();
+                        menu_draw(main_menu);
+                        sprite_set_speed(mouse, get_mouse_x_speed(), get_mouse_y_speed());
+                        sprite_update_pos(mouse);
+                        reset_mouse_speed();
+                        sprite_draw(mouse);
+                        vg_draw();     
                  }
                  }
                  if (msg.m_notify.interrupts & mouse_irq_set) { /* subscribed interrupt */

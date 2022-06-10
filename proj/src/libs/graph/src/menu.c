@@ -3,6 +3,7 @@
 #include "menu.h"
 #include "rectangle.h"
 #include "font.h"
+#include "rtc.h"
 struct menu {
     rectangle_t **buttons;
     font_t *font;
@@ -43,6 +44,11 @@ void (menu_draw)(menu_t *menu) {
     for (size_t i = 0; i < menu->sz; i++){
         rectangle_draw(menu->buttons[i]);
     }
+    char *time = (char *)malloc(32 * sizeof(char));
+    //time = "PEIDO";
+    rtc_get_real_time(time);
+    font_draw_string(menu->font, time, 0, 100);
+    free(time);
 }
 
 void (menu_dtor)(menu_t *menu){
