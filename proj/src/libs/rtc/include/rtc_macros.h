@@ -55,4 +55,5 @@
 
 #define VRT     BIT(7)  /** @brief Valid RAM/time - If set to 0 RTC reading aren't valid */
 
+
 #endif

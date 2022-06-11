@@ -10,14 +10,13 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 Makefile:20: *** missing separator.  Stop.
 
 
-# Make data base, printed on Thu Jun  9 23:20:16 2022
+# Make data base, printed on Sat Jun 11 17:39:04 2022
 
 # Variables
 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
- 
 ?F = $(notdir $?)
 # environment
 VSCODE_LOG_NATIVE = false
@@ -44,13 +43,16 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/v1/yy42rmgd5hsbwthphypsmb0h0000gn/T/vscode-ipc-037b0068-f0fd-4614-a826-bc046520108d.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/v1/yy42rmgd5hsbwthphypsmb0h0000gn/T/vscode-ipc-2dcecf8e-da54-444a-a407-12cfa50ccda4.sock
 # environment
 VSCODE_CWD = /
 # environment
 PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+ 
 # makefile (from `Makefile', line 1)
 PROG = proj
+# environment
+LaunchInstanceID = D5697602-0838-4C60-AC4C-BC9ED232B10A
 # environment
 VSCODE_LOG_STACK = false
 # environment
@@ -60,7 +62,7 @@ ELECTRON_RUN_AS_NODE = 1
 # makefile (from `Makefile', line 17)
 DPADD = ${LIBLCF}
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.y3HlbfwEIc/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.JQZjimiixl/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -78,7 +80,7 @@ HOME = /Users/tiagobranquinho
 # default
 MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/tiagobranquinho/Library/Application Support/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+VSCODE_CODE_CACHE_PATH = /Users/tiagobranquinho/Library/Application Support/Code/CachedData/4af164ea3a06f701fe3e89a2bcbb421d2026b68f
 # environment
 LOGNAME = tiagobranquinho
 # environment
@@ -114,7 +116,7 @@ TMPDIR = /var/folders/v1/yy42rmgd5hsbwthphypsmb0h0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/tiagobranquinho/Library/Application Support/Code/1.67.2-main.sock
+VSCODE_IPC_HOOK = /Users/tiagobranquinho/Library/Application Support/Code/1.68.0-main.sock
 # makefile
 MAKEFLAGS = Rrqp
 # environment
@@ -122,8 +124,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
- 
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.23415711.23415717
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.26094027.26094033
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
@@ -138,6 +139,8 @@ MAKEFILES :=
 <F = $(notdir $<)
 # environment
 LC_ALL = C
+# environment
+SECURITYSESSIONID = 186a4
 # makefile (from `Makefile', line 13)
 IPATHS = -I./project/include -I./libs -I./libs/graph/include -I./libs/rtc/include -I./libs/kbc/include -I./libs/timer/include -I./libs/utils/include -I./media
 # automatic
@@ -151,9 +154,9 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 720
+VSCODE_PID = 6355
 # variable set hash-table stats:
-# Load=68/1024=7%, Rehash=0, Collisions=1/92=1%
+# Load=70/1024=7%, Rehash=0, Collisions=1/94=1%
 
 # Pattern-specific Variable Values
 
@@ -161,9 +164,9 @@ VSCODE_PID = 720
 
 # Directories
 
-# . (device 16777223, inode 20904347): 26 files, no impossibilities.
+# . (device 16777226, inode 20904347): 30 files, no impossibilities.
 
-# 26 files, no impossibilities in 1 directories.
+# 30 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -214,6 +217,6 @@ Makefile:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Jun  9 23:20:16 2022
+# Finished Make data base on Sat Jun 11 17:39:04 2022
 
  
