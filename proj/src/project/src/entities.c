@@ -36,6 +36,14 @@ player_t* (player_constructor)(int x, int y){
   return ret;
 }
 
+void (player_set_alive)(player_t *player){
+  player->life = 1;
+}
+
+bool (player_alive)(player_t *player){
+  return player->life;
+}
+
 void (player_destructor)(player_t* p){
   sprite_destructor(p->sp);
   free(p);
@@ -69,103 +77,6 @@ void (player_set_center)(player_t* p, int cx, int cy){
 
 void (player_set_speed)(player_t *player, keys_t *keys){
   sprite_set_speed(player->sp, (keys->right_pressed - keys->left_pressed) * PLAYER_SPEED, (keys->down_pressed - keys->up_pressed) * PLAYER_SPEED);
-}
-
-int (player_process_key)(uint8_t bbyte[2], int size, keys_t *keys){
-    if(size == 2){
-      uint8_t lsb, msb;
-      uint16_t arrowCodes[8] = {ARROWUP_M_CODE, ARROWUP_B_CODE, ARROWLEFT_M_CODE, ARROWLEFT_B_CODE, ARROWDOWN_M_CODE, ARROWDOWN_B_CODE, ARROWRIGHT_M_CODE, ARROWRIGHT_B_CODE};
-      for(uint8_t i = 0; i < 8; i++){
-        util_get_LSB(arrowCodes[i], &lsb);
-        util_get_MSB(arrowCodes[i], &msb);
-        if(bbyte[0] == msb && bbyte[1] == lsb){
-          switch (i){
-          case 0:{
-            keys->up_pressed = 1;
-            break;
-          }
-          case 1:{
-            keys->up_pressed = 0;
-            break;
-          }
-          case 2:{
-            keys->left_pressed = 1;
-            break;
-          }
-          case 3:{
-            keys->left_pressed = 0;
-            break;
-          }
-          case 4:{
-            keys->down_pressed = 1;
-            break;
-          }
-          case 5:{
-            keys->down_pressed = 0;
-            break;
-          }
-          case 6:{
-            keys->right_pressed = 1;
-            break;
-          }
-          case 7:{
-            keys->right_pressed = 0;
-            break;
-          }
-          default:
-            break;
-          }
-        } 
-      }
-    }
-  else{
-    switch (bbyte[0]){
-    case ESC_B_CODE: return 1;
-    case W_M_CODE: {
-      keys->up_pressed = 1;
-      break;
-    }
-    case W_B_CODE: {
-      keys->up_pressed = 0;
-      break;
-    }
-    case A_M_CODE: {
-      keys->left_pressed = 1;
-      break;
-    }
-    case A_B_CODE: {
-      keys->left_pressed = 0;
-      break;
-    }
-    case S_M_CODE: {
-      keys->down_pressed = 1;
-      break;
-    }
-    case S_B_CODE: {
-      keys->down_pressed = 0;
-      break;
-    }
-    case D_M_CODE: {
-      keys->right_pressed = 1;
-      break;
-    }
-    case D_B_CODE: {
-      keys->right_pressed = 0;
-      break;
-    }
-    case SPACEBAR_M_CODE: {
-      keys->space_pressed = 1;
-      break;
-    }
-    case SPACEBAR_B_CODE: {
-      keys->space_pressed = 0;
-      break;
-    }
-    default:
-      break;
-    } 
-  }
-  return OK;
 }
 
 void (player_check_place_bomb)(map_t* map, player_t *player, keys_t *keys, bomb_t **bombs, int *bombsUsed){
@@ -277,6 +188,15 @@ void (bot_move)(bot_t* bot) {
 
   sprite_set_speed(bot->sp, h_dir * BOT_SPEED, v_dir * BOT_SPEED);
 }
+
+void (bot_set_dead)(bot_t* bot){
+  bot->life = 0;
+}
+
+bool (bot_alive)(bot_t* bot){
+  return bot->life;
+}
+
 
 // EXPLOSION FUNCTIONS
 
@@ -624,7 +544,7 @@ void (map_update_bot_grid)(map_t *map, bot_t *bot){
 }
 
 
-void (map_test_collisions)(map_t *map, player_t *player){
+void (map_test_player_collisions)(map_t *map, player_t *player){
   int xmap = player_get_mapx(player);
   int ymap = player_get_mapy(player);
 
@@ -681,6 +601,19 @@ void (map_test_bot_collisions)(map_t *map, bot_t *bot){
   sprite_update_pos(bot->sp);
 }
 
+void (map_test_player_bot_collisions)(player_t *player, bot_t** bots){
+  for (int i=0; i < NUMBER_OF_BOTS; i++){
+    bot_t *bot = bots[i];
+    int x0 = player->cx;
+    int y0 = player->cy;
+    int x = bot->cx;
+    int y = bot->cy;
+    if (point_distance(x0, y0, x, y) < (bot->r+bot->r) && bot_alive(bot)){
+      player->life = 0;
+    }
+  }
+}
+
 void (map_place_bots)(map_t *map, bot_t** bots) {
   int bot_index = 0;
   while(bot_index<NUMBER_OF_BOTS) {
@@ -722,10 +655,26 @@ int (map_get_Ypixel_pos)(map_t *map, int ymap){
   return y_px;
 }
 
-// void (map_update_explosions)(map_t *map, bomb_t** bombs){
-//   for (int i=0; i<NUMBER_OF_BOMBS; i++){
-//     if (!explosion_ended(bombs[i]->explosion)){
-//       map->elements[]
-//     }
-//   }
-// }
+void (map_test_explosion_collisions)(player_t *player, bot_t** bots, bomb_t** bombs){
+  for (int i=0; i<NUMBER_OF_BOMBS; i++){
+    bomb_t* b = bombs[i];
+    for (int expl=0; expl < b->num_explosion; expl++){
+      explosion_t* explosion = b->explosions[expl];
+      if (!explosion_ended(explosion)){
+        int xmap = explosion->x_map;
+        int ymap = explosion->y_map;
+        // Check player collsion
+        if (player->x_map == xmap && player->y_map == ymap){
+          player->life = 0;
+        }
+        // Check bots collisions
+        for (int bot=0; bot<NUMBER_OF_BOTS; bot++){
+          if (bots[bot]->x_map == xmap && bots[bot]->y_map == ymap && bot_alive(bots[bot])){
+            bot_set_dead(bots[i]);
+          }
+        }
+      }
+    }
+  }
+}
+

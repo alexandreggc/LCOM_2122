@@ -129,3 +129,99 @@ int (keyboard_check_esc)(uint8_t code[2]){
   return OK;
 }
 
+int (kbd_process_key)(uint8_t bbyte[2], keys_t *keys){
+  if(size == 2){
+      uint8_t lsb, msb;
+      uint16_t arrowCodes[8] = {ARROWUP_M_CODE, ARROWUP_B_CODE, ARROWLEFT_M_CODE, ARROWLEFT_B_CODE, ARROWDOWN_M_CODE, ARROWDOWN_B_CODE, ARROWRIGHT_M_CODE, ARROWRIGHT_B_CODE};
+      for(uint8_t i = 0; i < 8; i++){
+        util_get_LSB(arrowCodes[i], &lsb);
+        util_get_MSB(arrowCodes[i], &msb);
+        if(bbyte[0] == msb && bbyte[1] == lsb){
+          switch (i){
+          case 0:{
+            keys->up_pressed = 1;
+            break;
+          }
+          case 1:{
+            keys->up_pressed = 0;
+            break;
+          }
+          case 2:{
+            keys->left_pressed = 1;
+            break;
+          }
+          case 3:{
+            keys->left_pressed = 0;
+            break;
+          }
+          case 4:{
+            keys->down_pressed = 1;
+            break;
+          }
+          case 5:{
+            keys->down_pressed = 0;
+            break;
+          }
+          case 6:{
+            keys->right_pressed = 1;
+            break;
+          }
+          case 7:{
+            keys->right_pressed = 0;
+            break;
+          }
+          default:
+            break;
+          }
+        } 
+      }
+    }
+  else{
+    switch (bbyte[0]){
+    case ESC_B_CODE: return 1;
+    case W_M_CODE: {
+      keys->up_pressed = 1;
+      break;
+    }
+    case W_B_CODE: {
+      keys->up_pressed = 0;
+      break;
+    }
+    case A_M_CODE: {
+      keys->left_pressed = 1;
+      break;
+    }
+    case A_B_CODE: {
+      keys->left_pressed = 0;
+      break;
+    }
+    case S_M_CODE: {
+      keys->down_pressed = 1;
+      break;
+    }
+    case S_B_CODE: {
+      keys->down_pressed = 0;
+      break;
+    }
+    case D_M_CODE: {
+      keys->right_pressed = 1;
+      break;
+    }
+    case D_B_CODE: {
+      keys->right_pressed = 0;
+      break;
+    }
+    case SPACEBAR_M_CODE: {
+      keys->space_pressed = 1;
+      break;
+    }
+    case SPACEBAR_B_CODE: {
+      keys->space_pressed = 0;
+      break;
+    }
+    default:
+      break;
+    } 
+  }
+  return OK;
+}

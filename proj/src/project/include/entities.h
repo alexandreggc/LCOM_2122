@@ -7,9 +7,7 @@
 typedef enum{
   EMPTY,
   PLAYER,
-  ENEMY,
-  WALL, 
-  EXPLOSION
+  BOT
 }element_t;
 
 
@@ -35,9 +33,9 @@ void (player_set_map_pos)(player_t* p, int x, int y);
 void (player_set_center)(player_t* p, int cx, int cy);
 int (player_process_key)(uint8_t bbyte[2], int size, keys_t *keys);
 void (player_set_speed)(player_t *player, keys_t *keys);
-
 void (player_check_place_bomb)(map_t* map, player_t *player, keys_t *keys, bomb_t **bombs, int *bombsUsed);
-
+bool (player_alive)(player_t *player);
+void (player_set_alive)(player_t *player);
 
 
 // BOT FUNCTIONS
@@ -53,6 +51,8 @@ int (bot_get_mapy)(bot_t* p);
 void (bot_set_map_pos)(bot_t* p, int x, int y);
 void (bot_set_center)(bot_t* p, int cx, int cy);
 void (bot_move)(bot_t* bot);
+void (bot_set_dead)(bot_t* bot);
+bool (bot_alive)(bot_t* bot);
 
 
 // EXPLOSION FUNCTIONS
@@ -100,8 +100,10 @@ void (map_destructor)(map_t *map);
 void (map_draw)(map_t *map);
 void (map_update_player_grid)(map_t *map, player_t *player);
 void (map_update_bot_grid)(map_t *map, bot_t *bot);
-void (map_test_collisions)(map_t *map, player_t *player);
+void (map_test_player_collisions)(map_t *map, player_t *player);
+void (map_test_player_bot_collisions)(player_t *player, bot_t** bots);
 void (map_test_bot_collisions)(map_t *map, bot_t *bot);
+void (map_test_explosion_collisions)(player_t *player, bot_t** bots, bomb_t** bombs);
 void (map_place_bots)(map_t *map, bot_t** bots);
 void (map_place_bomb)(map_t *map, bomb_t* bomb, int xmap, int ymap);
 int (map_get_Xpixel_pos)(map_t *map, int xmap);
