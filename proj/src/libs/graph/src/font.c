@@ -28,6 +28,10 @@ void (font_load_glyphs)(font_t *font){
       font->glyphs[i] = sprite_constructor((const char* const*)char46_xpm);
       break;
     }
+    case 47:{
+      font->glyphs[i] = sprite_constructor((const char* const*)char47_xpm);
+      break;
+    }
     case 48:{
       font->glyphs[i] = sprite_constructor((const char* const*)char48_xpm);
       break;

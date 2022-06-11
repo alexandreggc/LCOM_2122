@@ -149,10 +149,10 @@ void (rtc_get_real_time(char *string)){
   }
    char *day = (char *)malloc(4 * sizeof(char));
    sprintf(day,"%d",(BCD_FIRST(date_s.day))*10     + BCD_SECOND(date_s.day));
-   strcat(day, " ");
+   strcat(day, "/");
   char *month = (char *)malloc(4 * sizeof(char));
   sprintf(month,"%d",(BCD_FIRST(date_s.month))*10     + BCD_SECOND(date_s.month));
-  strcat(month, " ");
+  strcat(month, "/");
 
   char *year = (char *)malloc(6 * sizeof(char));
   sprintf(year,"%d",2000 +(BCD_FIRST(date_s.year))*10     + BCD_SECOND(date_s.year));

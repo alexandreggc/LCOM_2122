@@ -6,6 +6,7 @@
 #include "keyboard_macros.h"
 #include "char44.xpm"
 #include "char46.xpm"
+#include "char47.xpm"
 #include "char48.xpm"
 #include "char49.xpm"
 #include "char50.xpm"

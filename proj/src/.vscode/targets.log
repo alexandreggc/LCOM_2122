@@ -6,8 +6,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
+Makefile:20: *** missing separator.  Stop.
 
-# Make data base, printed on Fri Jun 10 18:51:36 2022
+
+# Make data base, printed on Sat Jun 11 17:39:04 2022
 
 # Variables
 
@@ -40,15 +43,16 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/v1/yy42rmgd5hsbwthphypsmb0h0000gn/T/vscode-ipc-d4095ace-4c77-42c6-bac6-59b3772b000b.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/v1/yy42rmgd5hsbwthphypsmb0h0000gn/T/vscode-ipc-2dcecf8e-da54-444a-a407-12cfa50ccda4.sock
 # environment
 VSCODE_CWD = /
 # environment
 PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+ 
 # makefile (from `Makefile', line 1)
 PROG = proj
 # environment
-LaunchInstanceID = 3C3B25B7-E85C-475F-8B98-829410BC8B10
+LaunchInstanceID = D5697602-0838-4C60-AC4C-BC9ED232B10A
 # environment
 VSCODE_LOG_STACK = false
 # environment
@@ -58,7 +62,7 @@ ELECTRON_RUN_AS_NODE = 1
 # makefile (from `Makefile', line 17)
 DPADD = ${LIBLCF}
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.RZlslzK8Jf/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.JQZjimiixl/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -136,7 +140,7 @@ MAKEFILES :=
 # environment
 LC_ALL = C
 # environment
-SECURITYSESSIONID = 186a3
+SECURITYSESSIONID = 186a4
 # makefile (from `Makefile', line 13)
 IPATHS = -I./project/include -I./libs -I./libs/graph/include -I./libs/rtc/include -I./libs/kbc/include -I./libs/timer/include -I./libs/utils/include -I./media
 # automatic
@@ -150,7 +154,7 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 8790
+VSCODE_PID = 6355
 # variable set hash-table stats:
 # Load=70/1024=7%, Rehash=0, Collisions=1/94=1%
 
@@ -160,9 +164,9 @@ VSCODE_PID = 8790
 
 # Directories
 
-# . (device 16777226, inode 20904347): 27 files, no impossibilities.
+# . (device 16777226, inode 20904347): 30 files, no impossibilities.
 
-# 27 files, no impossibilities in 1 directories.
+# 30 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -213,8 +217,6 @@ Makefile:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Fri Jun 10 18:51:36 2022
+# Finished Make data base on Sat Jun 11 17:39:04 2022
 
  
-Makefile:20: *** missing separator.  Stop.
-
