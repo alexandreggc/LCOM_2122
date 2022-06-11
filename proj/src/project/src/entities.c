@@ -11,6 +11,7 @@
 #include "bomb2.xpm"
 #include "stone.xpm"
 #include "door.xpm"
+#include "explosion.xpm"
 #include "keys.h"
 
 
@@ -218,7 +219,7 @@ struct explosion{
 explosion_t *(explosion_constructor)(){
   explosion_t * ret = malloc(sizeof(explosion_t));
   if (ret == NULL) return NULL;
-  sprite_t *sp = sprite_constructor((const char* const*)bomb2_xpm);
+  sprite_t *sp = sprite_constructor((const char* const*)explosion_xpm);
   ret->sp = sp;
   ret->r = sprite_get_width(sp);
   ret->x_map = 0;
@@ -280,7 +281,7 @@ bomb_t* (bomb_constructor)(){
     sprite_set_pos(explosion->sp, 10, 10);
     explosions[i] = explosion;
   }
-  sprite_t* sp = sprite_constructor((const char* const*)bomb2_xpm);
+  sprite_t* sp = sprite_constructor((const char* const*)bomb_xpm);
   bomb->sp = sp;
   bomb->exploded = true;
   bomb->r = sprite_get_width(sp)/2;
