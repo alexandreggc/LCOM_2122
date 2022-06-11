@@ -15,10 +15,10 @@ typedef enum{
 
 typedef struct player player_t;
 typedef struct bot bot_t;
+typedef struct explosion explosion_t;
 typedef struct bomb bomb_t;
 typedef struct wall wall_t;
 typedef struct map map_t;
-typedef struct explosion explosion_t;
 
 
 // PLAYER FUNCTIONS
@@ -61,7 +61,6 @@ explosion_t* (explosion_constructor)();
 void (explosion_destructor)(explosion_t* bombs);
 void (explosion_set_map_pos)(explosion_t *explosion, map_t* map, int xmap, int ymap);
 void (explosion_draw)(explosion_t *explosion);
-void (explosions_draw)(explosion_t **explosion);
 bool (explosion_ended)(explosion_t *explosion);
 void (explosion_expand)(explosion_t *explosion);
 
@@ -73,13 +72,15 @@ bomb_t* (bomb_constructor)();
 void (bombs_destructor)(bomb_t** bombs);
 void (bomb_destructor)(bomb_t* bomb);
 void (bombs_draw)(bomb_t** bombs);
+void (bomb_draw_explosions)(bomb_t* bomb);
 bool (bomb_exploded)(bomb_t* b);
 int (bomb_get_xmap)(bomb_t* b);
 int (bomb_get_ymap)(bomb_t* b);
 void (bomb_explode)(bomb_t* b);
 void (bomb_populate)(bomb_t** bombs);
 void (check_bomb_click)(bomb_t** bombs, sprite_t* mouse, int click, int* bombsUsed);
-
+void (bomb_set_explosions)(bomb_t *bomb, map_t* map);
+void (bomb_set_map_pos)(bomb_t *bomb, int xmap, int ymap, int x_px, int y_px);
 
 // WALL FUNCTIONS
 

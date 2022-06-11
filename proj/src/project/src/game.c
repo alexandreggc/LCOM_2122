@@ -154,7 +154,6 @@ int(mainLoop)(){
                     bot_move(bots[i]);
                     bot_draw(bots[i]);
                   }
-                  map_update_player_grid(map, player);     
                   if(mouse_refresh){
                     sprite_set_speed(mouse, get_mouse_x_speed(), get_mouse_y_speed());
                     sprite_update_pos(mouse);
@@ -163,6 +162,7 @@ int(mainLoop)(){
                   }
                   player_set_speed(player, curr_keys);
                   map_test_collisions(map, player);
+                  map_update_player_grid(map, player);  
                   if(keyboard_refresh){  
                     keyboard_refresh = 0;
                     if(bombsUsed<NUMBER_OF_BOMBS) {

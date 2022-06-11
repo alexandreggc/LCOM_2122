@@ -10,7 +10,7 @@
 #define NUMBER_OF_BOTS 6
 #define NUMBER_OF_BOMBS 3
 
-#define BOMB_RANGE 1
+#define BOMB_RANGE 2
 #define EXPLOSION_TIME 50
 
 #define UP      -1
