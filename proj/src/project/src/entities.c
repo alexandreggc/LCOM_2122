@@ -133,7 +133,7 @@ void (bot_destructor)(bot_t** bots){
 }
 
 void (bot_draw)(bot_t* p){
-  sprite_draw(p->sp);
+  if (p->life) sprite_draw(p->sp);
 }
 int (bot_get_x)(bot_t* p){
   return sprite_get_xpos(p->sp);
@@ -669,8 +669,10 @@ void (map_test_explosion_collisions)(player_t *player, bot_t** bots, bomb_t** bo
         }
         // Check bots collisions
         for (int bot=0; bot<NUMBER_OF_BOTS; bot++){
-          if (bots[bot]->x_map == xmap && bots[bot]->y_map == ymap && bot_alive(bots[bot])){
-            bot_set_dead(bots[i]);
+          int bx_map = bot_get_mapx(bots[bot]);
+          int by_map = bot_get_mapy(bots[bot]);
+          if (bx_map == xmap && by_map == ymap && bot_alive(bots[bot])){
+            bot_set_dead(bots[bot]);
           }
         }
       }

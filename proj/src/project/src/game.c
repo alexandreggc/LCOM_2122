@@ -177,6 +177,7 @@ int(mainLoop)(){
                   map_test_player_collisions(map, player);
                   map_update_player_grid(map, player);
                   map_test_player_bot_collisions(player, bots);
+                  map_test_explosion_collisions(player, bots, bombs);
                   if(keyboard_refresh){
                     keyboard_refresh = 0;
                     if(bombsUsed<NUMBER_OF_BOMBS) {
@@ -200,6 +201,13 @@ int(mainLoop)(){
                           if((mouse_refresh = update_mouse(&pp)) == 1)
                             check_bomb_click(bombs, mouse, pp.lb, &bombsUsed);
                       }
+                 }
+                 if(gameState == MENU){
+                    bombsUsed = 0;
+                    map_destructor(map);
+                    player_destructor(player);
+                    bot_destructor(bots);
+                    bombs_destructor(bombs);
                  }
                  break;
              default:
@@ -227,10 +235,6 @@ int(mainLoop)(){
       return 1;
   }
   vg_exit();
-  map_destructor(map);
-  player_destructor(player);
-  bot_destructor(bots);
-  bombs_destructor(bombs);
   sprite_destructor(mouse);
   font_dtor(font);
   menu_dtor(main_menu);
