@@ -114,7 +114,7 @@ void (map_update_bot_grid)(map_t *map, bot_t *bot);
 void (map_test_player_collisions)(map_t *map, player_t *player);
 void (map_test_player_bot_collisions)(player_t *player, bot_t** bots);
 void (map_test_bot_collisions)(map_t *map, bot_t *bot);
-void (map_test_explosion_collisions)(map_t *map, player_t *player, bot_t** bots, bomb_t** bombs);
+void (map_test_explosion_collisions)(map_t *map, player_t *player, bot_t** bots, bomb_t** bombs, int *bombsUsed);
 void (map_place_bots)(map_t *map, bot_t** bots);
 void (map_place_bomb)(map_t *map, bomb_t* bomb, int xmap, int ymap);
 int (map_get_Xpixel_pos)(map_t *map, int xmap);

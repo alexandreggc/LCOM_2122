@@ -179,7 +179,7 @@ int(mainLoop)(){
                   map_test_player_collisions(map, player);
                   map_update_player_grid(map, player);
                   map_test_player_bot_collisions(player, bots);
-                  map_test_explosion_collisions(map, player, bots, bombs);
+                  map_test_explosion_collisions(map, player, bots, bombs, &bombsUsed);
                   if(keyboard_refresh){
                     keyboard_refresh = 0;
                     if(bombsUsed<NUMBER_OF_BOMBS) {

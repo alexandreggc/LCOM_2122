@@ -665,7 +665,7 @@ int (map_get_Ypixel_pos)(map_t *map, int ymap){
   return y_px;
 }
 
-void (map_test_explosion_collisions)(map_t *map, player_t *player, bot_t** bots, bomb_t** bombs){
+void (map_test_explosion_collisions)(map_t *map, player_t *player, bot_t** bots, bomb_t** bombs, int *bombsUsed){
   for (int i=0; i<NUMBER_OF_BOMBS; i++){
     bomb_t* b = bombs[i];
     for (int expl=0; expl < b->num_explosion; expl++){
@@ -673,12 +673,12 @@ void (map_test_explosion_collisions)(map_t *map, player_t *player, bot_t** bots,
       if (!explosion_ended(explosion)){
         int xmap = explosion->x_map;
         int ymap = explosion->y_map;
-        // Check player collsion
+        /** Check player collsion */
         if (player->x_map == xmap && player->y_map == ymap){
           player->life = 0;
         }
 
-        // Check bots collisions
+        /** Check bots collisions */
         for (int bot=0; bot<NUMBER_OF_BOTS; bot++){
           int bx_map = bot_get_mapx(bots[bot]);
           int by_map = bot_get_mapy(bots[bot]);
@@ -687,13 +687,24 @@ void (map_test_explosion_collisions)(map_t *map, player_t *player, bot_t** bots,
           }
         }
 
-        // Check wall collisions
+        /** Check wall collisions */
         for (int wl=0; wl < map->size_map; wl++){
           wall_t *wall = map->walls[wl];
           int wx_map = wall_get_xmap(wall);
           int wy_map = wall_get_ymap(wall);
           if (wx_map == xmap && wy_map == ymap && !wall_broken(wall)){
             wall_set_broken(wall);
+          }
+        }
+
+        /** Check bomb collisions */
+        for (int bb=0; bb < NUMBER_OF_BOMBS; bb++){
+          bomb_t *bomb2 = bombs[bb];
+          int bx_map = bomb_get_xmap(bomb2);
+          int by_map = bomb_get_ymap(bomb2);
+          if (bx_map == xmap && by_map == ymap && !bomb_exploded(bomb2)){
+            bomb_explode(bomb2);
+            (*bombsUsed)--;
           }
         }
       }
