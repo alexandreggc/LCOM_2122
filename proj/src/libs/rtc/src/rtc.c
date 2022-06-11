@@ -148,10 +148,24 @@ void (rtc_get_real_time(char *string)){
     break;
   }
    char *day = (char *)malloc(4 * sizeof(char));
-   sprintf(day,"%d",(BCD_FIRST(date_s.day))*10     + BCD_SECOND(date_s.day));
+   if((BCD_FIRST(date_s.day))*10     + BCD_SECOND(date_s.day) < 10){
+    *day = '0';
+    sprintf(day + 1,"%d", BCD_SECOND(date_s.day));
+
+  }
+  else{
+    sprintf(day,"%d",(BCD_FIRST(date_s.day))*10     + BCD_SECOND(date_s.day));
+  }
    strcat(day, "/");
   char *month = (char *)malloc(4 * sizeof(char));
-  sprintf(month,"%d",(BCD_FIRST(date_s.month))*10     + BCD_SECOND(date_s.month));
+  if((BCD_FIRST(date_s.month))*10     + BCD_SECOND(date_s.month) < 10){
+    *month = '0';
+    sprintf(month + 1,"%d", BCD_SECOND(date_s.month));
+
+  }
+  else{
+    sprintf(month,"%d",(BCD_FIRST(date_s.month))*10     + BCD_SECOND(date_s.month));
+  }
   strcat(month, "/");
 
   char *year = (char *)malloc(6 * sizeof(char));
