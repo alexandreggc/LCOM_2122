@@ -129,7 +129,7 @@ void rtc_ih() {
 }
 
 void (rtc_get_real_time(char *string)){
-  char *aux = (char *)malloc(32 * sizeof(char));
+  char *aux = (char *)malloc(38 * sizeof(char));
     
   char *weekday = (char *)malloc(12 * sizeof(char));
 
@@ -147,19 +147,19 @@ void (rtc_get_real_time(char *string)){
   case 6: weekday = "SATURDAY, "; break;
     break;
   }
-   char *day = (char *)malloc(3 * sizeof(char));
+   char *day = (char *)malloc(4 * sizeof(char));
    sprintf(day,"%d",(BCD_FIRST(date_s.day))*10     + BCD_SECOND(date_s.day));
    strcat(day, " ");
-  char *month = (char *)malloc(3 * sizeof(char));
+  char *month = (char *)malloc(4 * sizeof(char));
   sprintf(month,"%d",(BCD_FIRST(date_s.month))*10     + BCD_SECOND(date_s.month));
   strcat(month, " ");
 
-  char *year = (char *)malloc(5 * sizeof(char));
+  char *year = (char *)malloc(6 * sizeof(char));
   sprintf(year,"%d",2000 +(BCD_FIRST(date_s.year))*10     + BCD_SECOND(date_s.year));
   strcat(year, " ");
 
 
-  char *hour = (char *)malloc(3 * sizeof(char));
+  char *hour = (char *)malloc(4 * sizeof(char));
   if((BCD_FIRST(time_s.hour))*10     + BCD_SECOND(time_s.hour) < 10){
     *hour = '0';
     sprintf(hour + 1,"%d", BCD_SECOND(time_s.hour));
@@ -170,7 +170,7 @@ void (rtc_get_real_time(char *string)){
   }
   *(hour + 2) = ':';
 
-  char *minute = (char *)malloc(3 * sizeof(char));
+  char *minute = (char *)malloc(4 * sizeof(char));
   if((BCD_FIRST(time_s.min))*10     + BCD_SECOND(time_s.min) < 10){
     *minute = '0';
     sprintf(minute + 1,"%d", BCD_SECOND(time_s.min));
@@ -182,9 +182,9 @@ void (rtc_get_real_time(char *string)){
   *(minute + 2) = ':';
 
 
-  char *second = (char *)malloc(2 * sizeof(char));
+  char *second = (char *)malloc(4 * sizeof(char));
   if((BCD_FIRST(time_s.sec))*10     + BCD_SECOND(time_s.sec) < 10){
-    second = "0";
+    *second = '0';
     sprintf(second + 1,"%d", BCD_SECOND(time_s.sec));
 
   }
@@ -220,6 +220,7 @@ free(month);
 free(year);
 free(hour);
 free(minute);
+free(second);
 
 memcpy(string, aux, sz1 + sz2 + sz3 + sz4 + sz5 + sz6 + sz7);
 free(aux);
