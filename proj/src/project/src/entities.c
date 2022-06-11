@@ -9,6 +9,8 @@
 #include "bomberman.xpm"
 #include "bomb.xpm"
 #include "bomb2.xpm"
+#include "stone.xpm"
+#include "door.xpm"
 #include "keys.h"
 
 
@@ -102,6 +104,11 @@ void (player_check_place_bomb)(map_t* map, player_t *player, keys_t *keys, bomb_
   }
 }
 
+bool (player_test_exit_door)(player_t *player, door_t *door){
+  int door_xmap = door_get_xmap_pos(door);
+  int door_ymap = door_get_ymap_pos(door);
+  return (player->x_map == door_xmap && player->y_map == door_ymap);
+}
 
 
 //BOT FUNCTIONS
@@ -416,15 +423,18 @@ struct wall{
 
 wall_t* (wall_constructor)(int x, int y){
   wall_t* wall = malloc(sizeof(wall_t));
-  sprite_t* sp = sprite_constructor((const char* const*)wall_xpm);
+  sprite_t* wall_sp = sprite_constructor((const char* const*)wall_xpm);
+  sprite_t* steel_sp = sprite_constructor((const char* const*)stone_xpm);
   wall->x_map = x;
   wall->y_map = y;
-  wall->sp = sp;
+  wall->sp = wall_sp;
   wall->broken = false;
-  wall->r = sprite_get_width(sp)/2;
+  wall->r = sprite_get_width(wall_sp)/2;
   if ((x==1&&y==1) || (x==2&&y==1) || (x==1&&y==2)) wall->broken = true;
-  if (x==0 || y==0 || x==MAP_BLOCKS_SIZE-1 || y==MAP_BLOCKS_SIZE-1){
+  if (x==0 || y==0 || x==MAP_BLOCKS_SIZE-1 || y==MAP_BLOCKS_SIZE-1 || (x%2 == 0 && y%2 == 0)){
     wall->steel = true;
+    sprite_destructor(wall->sp);
+    wall->sp = steel_sp;
   }else{ wall->steel = false; }
   return wall;
 }
@@ -655,7 +665,7 @@ int (map_get_Ypixel_pos)(map_t *map, int ymap){
   return y_px;
 }
 
-void (map_test_explosion_collisions)(player_t *player, bot_t** bots, bomb_t** bombs){
+void (map_test_explosion_collisions)(map_t *map, player_t *player, bot_t** bots, bomb_t** bombs){
   for (int i=0; i<NUMBER_OF_BOMBS; i++){
     bomb_t* b = bombs[i];
     for (int expl=0; expl < b->num_explosion; expl++){
@@ -667,6 +677,7 @@ void (map_test_explosion_collisions)(player_t *player, bot_t** bots, bomb_t** bo
         if (player->x_map == xmap && player->y_map == ymap){
           player->life = 0;
         }
+
         // Check bots collisions
         for (int bot=0; bot<NUMBER_OF_BOTS; bot++){
           int bx_map = bot_get_mapx(bots[bot]);
@@ -675,8 +686,59 @@ void (map_test_explosion_collisions)(player_t *player, bot_t** bots, bomb_t** bo
             bot_set_dead(bots[bot]);
           }
         }
+
+        // Check wall collisions
+        for (int wl=0; wl < map->size_map; wl++){
+          wall_t *wall = map->walls[wl];
+          int wx_map = wall_get_xmap(wall);
+          int wy_map = wall_get_ymap(wall);
+          if (wx_map == xmap && wy_map == ymap && !wall_broken(wall)){
+            wall_set_broken(wall);
+          }
+        }
       }
     }
   }
+}
+
+// DOOR FUNCTIONS
+
+struct door {
+  sprite_t* sp;
+  int x_map, y_map;
+};
+
+door_t* (door_constructor)(map_t *map){
+  door_t *ret = malloc(sizeof(door_t));
+  sprite_t *sp = sprite_constructor((const char *const *)door_xpm);
+  int xmap = get_odd_random_in_range((map->w_map/2)-1, map->w_map-2);
+  int ymap = get_odd_random_in_range((map->h_map/2)-1, map->h_map-2);
+  int x_px = map_get_Xpixel_pos(map, xmap);
+  int y_px = map_get_Ypixel_pos(map, ymap);
+  sprite_set_pos(sp, x_px, y_px);
+  sprite_set_speed(sp, 0, 0);
+  ret->sp = sp;
+  ret->x_map = xmap;
+  ret->y_map = ymap;
+  wall_t *wall = map->walls[xmap+ymap*map->w_map];
+  wall->broken = false;
+  return ret;
+}
+
+void (door_destructor)(door_t *door){
+  sprite_destructor(door->sp);
+  free(door);
+}
+
+void (door_draw)(door_t *door){
+  sprite_draw(door->sp);
+}
+
+int (door_get_xmap_pos)(door_t *door){
+  return door->x_map;
+}
+
+int (door_get_ymap_pos)(door_t *door){
+  return door->y_map;
 }
 

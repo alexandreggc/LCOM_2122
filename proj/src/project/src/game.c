@@ -16,6 +16,7 @@ int(mainLoop)(){
   bomb_t** bombs = malloc(sizeof(bomb_t*)*NUMBER_OF_BOMBS);
   sprite_t *mouse = sprite_constructor((const char* const*)crosshair_xpm);
   map_t* map = map_constructor();
+  door_t* door = door_constructor(map);
   bomb_populate(bombs);
   map_place_bots(map,bots);
 
@@ -95,6 +96,7 @@ int(mainLoop)(){
                                 bots = malloc(sizeof(bot_t*)*NUMBER_OF_BOTS);
                                 bombs = malloc(sizeof(bomb_t*)*NUMBER_OF_BOMBS);
                                 map = map_constructor();
+                                door = door_constructor(map);
                                 bomb_populate(bombs);
                                 map_place_bots(map,bots);
                                 gameState = PLAY;
@@ -177,19 +179,25 @@ int(mainLoop)(){
                   map_test_player_collisions(map, player);
                   map_update_player_grid(map, player);
                   map_test_player_bot_collisions(player, bots);
-                  map_test_explosion_collisions(player, bots, bombs);
+                  map_test_explosion_collisions(map, player, bots, bombs);
                   if(keyboard_refresh){
                     keyboard_refresh = 0;
                     if(bombsUsed<NUMBER_OF_BOMBS) {
                       player_check_place_bomb(map, player, curr_keys, bombs, &bombsUsed);
                     }
-                  } 
+                  }
+                  door_draw(door);
                   map_draw(map);
                   bombs_draw(bombs);
                   player_draw(player);
                   sprite_draw(mouse);
                   vg_draw();
                   if (!player_alive(player)){
+                    // player lost
+                    gameState = MENU;
+                  }
+                  if (player_test_exit_door(player, door)){
+                    // player won
                     gameState = MENU;
                   }
                   }
@@ -208,6 +216,7 @@ int(mainLoop)(){
                     player_destructor(player);
                     bot_destructor(bots);
                     bombs_destructor(bombs);
+                    door_destructor(door);
                  }
                  break;
              default:

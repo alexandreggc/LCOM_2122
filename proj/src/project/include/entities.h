@@ -11,6 +11,7 @@ typedef enum{
 }element_t;
 
 
+typedef struct door door_t;
 typedef struct player player_t;
 typedef struct bot bot_t;
 typedef struct explosion explosion_t;
@@ -36,6 +37,7 @@ void (player_set_speed)(player_t *player, keys_t *keys);
 void (player_check_place_bomb)(map_t* map, player_t *player, keys_t *keys, bomb_t **bombs, int *bombsUsed);
 bool (player_alive)(player_t *player);
 void (player_set_alive)(player_t *player);
+bool (player_test_exit_door)(player_t *player, door_t *door);
 
 
 // BOT FUNCTIONS
@@ -93,6 +95,15 @@ int (wall_get_ymap)(wall_t* w);
 void (wall_set_broken)(wall_t* w);
 
 
+// DOOR FUNCTIONS
+
+door_t* (door_constructor)(map_t *map);
+void (door_destructor)(door_t *door);
+void (door_draw)(door_t *door);
+int (door_get_xmap_pos)(door_t *door);
+int (door_get_ymap_pos)(door_t *door);
+
+
 // MAP FUNCTIONS
 
 map_t* (map_constructor)();
@@ -103,10 +114,11 @@ void (map_update_bot_grid)(map_t *map, bot_t *bot);
 void (map_test_player_collisions)(map_t *map, player_t *player);
 void (map_test_player_bot_collisions)(player_t *player, bot_t** bots);
 void (map_test_bot_collisions)(map_t *map, bot_t *bot);
-void (map_test_explosion_collisions)(player_t *player, bot_t** bots, bomb_t** bombs);
+void (map_test_explosion_collisions)(map_t *map, player_t *player, bot_t** bots, bomb_t** bombs);
 void (map_place_bots)(map_t *map, bot_t** bots);
 void (map_place_bomb)(map_t *map, bomb_t* bomb, int xmap, int ymap);
 int (map_get_Xpixel_pos)(map_t *map, int xmap);
 int (map_get_Ypixel_pos)(map_t *map, int ymap);
+
 
 #endif
