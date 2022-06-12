@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Bomberman: project/include/game.h File Reference</title>
+<title>Bomberman: game</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -37,33 +37,14 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="dir_2d63037d3c90bbd3001cbce1db844cde.html">include</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">game.h File Reference</div></div>
+  <div class="headertitle"><div class="title">game<div class="ingroups"><a class="el" href="group__proj.html">proj</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;lcom/lcf.h&gt;</code><br />
-<code>#include &lt;lcom/proj.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="project__functions_8h_source.html">project_functions.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="videocard_8h_source.html">videocard.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="keyboard_8h_source.html">keyboard.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mouse_8h_source.html">mouse.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="timer_8h_source.html">timer.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="rtc_8h_source.html">rtc.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="leaderboard_8h_source.html">leaderboard.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="makecode__map_8h_source.html">makecode_map.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="utils_8h_source.html">utils.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="project__macros_8h_source.html">project_macros.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="keys_8h_source.html">keys.h</a>&quot;</code><br />
-</div>
-<p><a href="game_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -84,6 +65,50 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4da46823eeb8504fffcd2c23a7930258"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mouse_8h.html#af7e4cc29090bc70293888486e05303f4">int</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__game.html#ga4da46823eeb8504fffcd2c23a7930258">mainLoop</a> ()</td></tr>
 <tr class="separator:ga4da46823eeb8504fffcd2c23a7930258"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga7899b65f1ea0f655e4bbf8d2a5714285" name="ga7899b65f1ea0f655e4bbf8d2a5714285"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7899b65f1ea0f655e4bbf8d2a5714285">&#9670;&nbsp;</a></span>GameState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__game.html#ga7899b65f1ea0f655e4bbf8d2a5714285">GameState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Game state enumeration </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga7899b65f1ea0f655e4bbf8d2a5714285a4c40e60bc71a32b924ce1f08d57f9721" name="gga7899b65f1ea0f655e4bbf8d2a5714285a4c40e60bc71a32b924ce1f08d57f9721"></a>MENU&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga7899b65f1ea0f655e4bbf8d2a5714285a0352906d1ea1dfcd663c918f3a86755b" name="gga7899b65f1ea0f655e4bbf8d2a5714285a0352906d1ea1dfcd663c918f3a86755b"></a>PLAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga7899b65f1ea0f655e4bbf8d2a5714285a8ac6a0bc60a7a5faad394dc988be36eb" name="gga7899b65f1ea0f655e4bbf8d2a5714285a8ac6a0bc60a7a5faad394dc988be36eb"></a>LEADERBOARD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga7899b65f1ea0f655e4bbf8d2a5714285a5a0f1e556554ad597318089b65502872" name="gga7899b65f1ea0f655e4bbf8d2a5714285a5a0f1e556554ad597318089b65502872"></a>WON&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga7899b65f1ea0f655e4bbf8d2a5714285a339435bd0d4a842c6107333c908a5317" name="gga7899b65f1ea0f655e4bbf8d2a5714285a339435bd0d4a842c6107333c908a5317"></a>LOST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga7899b65f1ea0f655e4bbf8d2a5714285a7a10b5d68d31711288e1fe0fa17dbf4f" name="gga7899b65f1ea0f655e4bbf8d2a5714285a7a10b5d68d31711288e1fe0fa17dbf4f"></a>EXIT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga4da46823eeb8504fffcd2c23a7930258" name="ga4da46823eeb8504fffcd2c23a7930258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4da46823eeb8504fffcd2c23a7930258">&#9670;&nbsp;</a></span>mainLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mouse_8h.html#af7e4cc29090bc70293888486e05303f4">int</a>() mainLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Game main loop funtion </p><dl class="section return"><dt>Returns</dt><dd>0 if successful exit or 1 otherwise </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

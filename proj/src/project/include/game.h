@@ -16,6 +16,22 @@
 #include "project_macros.h"
 #include "keys.h"
 
-int(mainLoop)();
+/**
+ * @defgroup game game
+ * @ingroup proj
+ * @{
+ */
 
+/**
+ * Game state enumeration
+ */
+enum GameState{MENU, PLAY, LEADERBOARD, WON, LOST, EXIT};
+/**
+ * Game main loop funtion
+ * @return 0 if successful exit or 1 otherwise
+ */
+int(mainLoop)();
+/**
+ * @}
+ */
 #endif

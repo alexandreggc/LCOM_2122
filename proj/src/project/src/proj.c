@@ -29,7 +29,11 @@ int main(int argc, char *argv[]) {
 
   return 0;
 }
-
+/**
+ * @defgroup proj proj
+ *
+ * @{
+ */
 int(proj_main_loop)(int argc, char* argv[])
 {
   (void)argc; (void)argv;
@@ -45,4 +49,6 @@ int(proj_main_loop)(int argc, char* argv[])
 
   return OK;
 }
-
+/**
+ * @}
+ */

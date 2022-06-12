@@ -1,7 +1,6 @@
 #ifndef PROJ_MACROS_H_INCLUDED
 #define PROJ_MACROS_H_INCLUDED
 
-
 #define REFRESH_RATE 60
 #define BOT_SPEED 1
 #define PLAYER_SPEED 2

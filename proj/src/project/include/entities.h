@@ -3,38 +3,104 @@
 
 #include "project_functions.h"
 #include "keys.h"
-
 /**
- * Door struct
+ * @defgroup entities entities
+ * @ingroup proj
+ * @brief All entities used in the game
+ *
+ * @{@}
+ */
+/**
+ * @defgroup door door
+ * @ingroup entities
+ * @brief Door struct
+ *
+ * @{
  */
 typedef struct door door_t;
 /**
- * Player struct
+ * @}
+ */
+
+/**
+ * @defgroup player player
+ * @ingroup entities
+ * @brief Player struct
+ *
+ * @{
  */
 typedef struct player player_t;
 /**
- * Bot struct
+ * @}
+ */
+
+/**
+ * @defgroup bot bot
+ * @ingroup entities
+ * @brief Bot struct
+ *
+ * @{
  */
 typedef struct bot bot_t;
 /**
- * Explosion struct
+ * @}
+ */
+
+/**
+ * @defgroup explosion explosion
+ * @ingroup entities
+ * @brief Explosion struct
+ *
+ * @{
  */
 typedef struct explosion explosion_t;
 /**
- * Bomb struct
+ * @}
+ */
+
+/**
+ * @defgroup bomb bomb
+ * @ingroup entities
+ * @brief Bomb struct
+ *
+ * @{
  */
 typedef struct bomb bomb_t;
 /**
- * Wall struct
+ * @}
+ */
+
+/**
+ * @defgroup wall wall
+ * @ingroup entities
+ * @brief Wall struct
+ *
+ * @{
  */
 typedef struct wall wall_t;
 /**
- * Map struct
+ * @}
+ */
+
+/**
+ * @defgroup map map
+ * @ingroup entities
+ * @brief Map struct
+ *
+ * @{
  */
 typedef struct map map_t;
+/**
+ * @}
+ */
 
-
-// PLAYER FUNCTIONS
+/**
+ * @defgroup player player
+ * @ingroup entities
+ * @brief Player functions
+ *
+ * @{
+ */
 /**
  * Player constructor
  * @param x x position in pixels on screen
@@ -132,9 +198,17 @@ void (player_set_alive)(player_t *player);
  * @return true if player went through the door or false otherwise
  */
 bool (player_test_exit_door)(player_t *player, door_t *door);
+/**
+ * @}
+ */
 
-
-// BOT FUNCTIONS
+/**
+ * @defgroup bot boot
+ * @ingroup entities
+ * @brief Bot functions
+ *
+ * @{
+ */
 /**
  * Bot constructor
  * @param x x position in pixels on screen
@@ -213,9 +287,17 @@ void (bot_set_dead)(bot_t* bot);
  * @return true if bot is alive or false otherwise
  */
 bool (bot_alive)(bot_t* bot);
+/**
+ * @}
+ */
 
-
-// EXPLOSION FUNCTIONS
+/**
+ * @defgroup explosion explosion
+ * @ingroup entities
+ * @brief Explosion functions
+ *
+ * @{
+ */
 /**
  * Explosion constructor
  * @return explosion struct pointer
@@ -250,10 +332,17 @@ bool (explosion_ended)(explosion_t *explosion);
  * @param explosion explosion struct pointer
  */
 void (explosion_expand)(explosion_t *explosion);
+/**
+ * @}
+ */
 
-
-// BOMB FUNCTIONS
-
+/**
+ * @defgroup bomb bomb
+ * @ingroup entities
+ * @brief Bomb functions
+ *
+ * @{
+ */
 /**
  * Bomb constructor
  * @return bomb struct pointer
@@ -329,8 +418,17 @@ void (bomb_set_explosions)(bomb_t *bomb, map_t* map);
  * @param y_px bomb y position in pixels on screen
  */
 void (bomb_set_map_pos)(bomb_t *bomb, int xmap, int ymap, int x_px, int y_px);
+/**
+ * @}
+ */
 
-// WALL FUNCTIONS
+/**
+ * @defgroup wall wall
+ * @ingroup entities
+ * @brief Wall functions
+ *
+ * @{
+ */
 /**
  * Wall constructor
  * @param x wall x position in pixels on screen
@@ -371,9 +469,17 @@ int (wall_get_ymap)(wall_t* w);
  * @param w wall struct pointer
  */
 void (wall_set_broken)(wall_t* w);
+/**
+ * @}
+ */
 
-
-// DOOR FUNCTIONS
+/**
+ * @defgroup door door
+ * @ingroup entities
+ * @brief Door functions
+ *
+ * @{
+ */
 /**
  * Door constructor, setting door to random position on bottom left part of screen
  * @param map map struct pointer
@@ -402,9 +508,17 @@ int (door_get_xmap_pos)(door_t *door);
  * @return door y position in map matrix
  */
 int (door_get_ymap_pos)(door_t *door);
+/**
+ * @}
+ */
 
-
-// MAP FUNCTIONS
+/**
+ * @defgroup map map
+ * @ingroup entities
+ * @brief Map functions
+ *
+ * @{
+ */
 /**
  * Map constructor, with random position of breakable walls
  * @return map struct pointer
@@ -487,6 +601,8 @@ int (map_get_Xpixel_pos)(map_t *map, int xmap);
  * @return y position in pixels on screen
  */
 int (map_get_Ypixel_pos)(map_t *map, int ymap);
-
+/**
+ * @}
+ */
 
 #endif
