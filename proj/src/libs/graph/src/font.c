@@ -1,6 +1,7 @@
 #include <lcom/lcf.h>
 
 #include "font.h"
+#include "bomb.xpm"
 
 struct font {
     sprite_t **glyphs;
@@ -22,6 +23,10 @@ void (font_load_glyphs)(font_t *font){
     {
     case 44:{
       font->glyphs[i] = sprite_constructor((const char* const*)char44_xpm);
+      break;
+    }
+    case 98:{
+      font->glyphs[i] = sprite_constructor((const char* const*)bomb_xpm);
       break;
     }
     case 46:{

@@ -7,6 +7,8 @@
 
 #include "wall.xpm"
 #include "bomberman.xpm"
+#include "bomberman2.xpm"
+#include "bot2.xpm"
 #include "bomb.xpm"
 #include "bomb2.xpm"
 #include "stone.xpm"
@@ -123,7 +125,7 @@ struct bot{
 
 bot_t* (bot_constructor)(int x, int y){
   bot_t * ret = malloc(sizeof(bot_t));
-  sprite_t *sp = sprite_constructor((const char *const *)bomberman_xpm);
+  sprite_t *sp = sprite_constructor((const char *const *)bomberman2_xpm);
   sprite_set_pos(sp, x, y);
   ret->sp = sp;
   ret->x_map = 1;

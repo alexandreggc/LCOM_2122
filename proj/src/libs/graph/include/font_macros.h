@@ -2,7 +2,7 @@
 #define FONT_MACROS_H_INCLUDED
 
 #define SPACE_BAR_CODE 32
-#define NUM_SYMBOLS 90
+#define NUM_SYMBOLS 98
 
 
 #endif //MENU_H_INCLUDED

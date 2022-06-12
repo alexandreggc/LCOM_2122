@@ -39,7 +39,7 @@ int(mainLoop)(){
   char bombStr[50] = "/"; char t[50];
   sprintf(t,"%d",NUMBER_OF_BOMBS);
   strncat(bombStr,t,strlen(t));
-  strncat(bombStr," BOMBS",5);
+  strncat(bombStr," b",2);
 
   if(kbd_subscribe_int(&keyboard_sel))
     return 1;
