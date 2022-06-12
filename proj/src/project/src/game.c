@@ -214,12 +214,12 @@ int(mainLoop)(){
                   if (!player_alive(player)){
                     // player lost
                     memset(playerName, 0, 15);
-                    gameState = END;
+                    gameState = WON;
                   }
                   if (player_test_exit_door(player, door)){
                     // player won
                     memset(playerName, 0, 15);
-                    gameState = END;
+                    gameState = WON;
                   }
                   }
                 }
@@ -231,7 +231,7 @@ int(mainLoop)(){
                             check_bomb_click(bombs, mouse, pp.lb);
                       }
                  }
-                 if(gameState == END){
+                 if(gameState == LOST || gameState == WON){
                     bombsUsed = 0;
                     map_destructor(map);
                     player_destructor(player);
@@ -262,11 +262,10 @@ int(mainLoop)(){
                      if((timer_get_no_interrupts() * 60) % REFRESH_RATE == 0){ // atualiza a cada 1 segundo
                         timer_reset_no_interrupts();
                         vg_clear_screen();
-                        leaderboard_draw(leaderboard);
                         sprite_set_speed(mouse, get_mouse_x_speed(), get_mouse_y_speed());
                         sprite_update_pos(mouse);
                         reset_mouse_speed();
-                        sprite_draw(mouse);
+                        leaderboard_draw(leaderboard);
                         vg_draw();
                  }
                  }
@@ -297,7 +296,7 @@ int(mainLoop)(){
      }
     }
 
-    while( gameState == END ) { /* You may want to use a different condition */
+    while( gameState == WON || gameState == LOST) { /* You may want to use a different condition */
     rtc_update_real_time();
      /* Get a request message. */
      if ( (r = driver_receive(ANY, &msg, &ipc_status)) != 0 ) { 
@@ -312,20 +311,12 @@ int(mainLoop)(){
                      rtc_update_real_time();
                      if((timer_get_no_interrupts() * 60) % REFRESH_RATE == 0){ // atualiza a cada 1 segundo
                         vg_clear_screen();
-                        gameended_draw(leaderboard,playerName,player_alive(player));
                         sprite_set_speed(mouse, get_mouse_x_speed(), get_mouse_y_speed());
                         sprite_update_pos(mouse);
                         reset_mouse_speed();
-                        sprite_draw(mouse);
+                        gameended_draw(leaderboard,playerName,player_alive(player));
                         vg_draw();
                  }
-                 }
-                 if (msg.m_notify.interrupts & mouse_irq_set) { /* subscribed interrupt */
-                      mouse_ih();
-                      if(get_ih_counter() >= 3){
-                          mouse_parse_packet(&pp);           
-                          mouse_refresh = update_mouse(&pp);
-                      }
                  }
                  if (msg.m_notify.interrupts & kbc_irq_set) { /* subscribed interrupt */
                       kbc_ih();/* process it */
@@ -337,24 +328,30 @@ int(mainLoop)(){
                       if(keyboard_check_esc(bb)){
                         memset(playerName, 0, 15);
                         gameState = MENU;
-
-                      } else if(bb[0]==ENTER_M_CODE) {
-                        if(strlen(playerName) > 0){
-                          leaderboard_save_file(leaderboard,playerName,timeCounter);
-                          memset(playerName, 0, 15);
+                      } 
+                      else if(gameState == WON){
+                          if(bb[0]==ENTER_M_CODE) {
+                            if(strlen(playerName) > 0){
+                              leaderboard_save_file(leaderboard,playerName,timeCounter);
+                              memset(playerName, 0, 15);
+                            }
+                            gameState = MENU;
+                          } else if(bb[0]==BACKSPACE_M_CODE){
+                            playerName[strlen(playerName)-1] = '\0';
+                          } else {
+                            if(strlen(playerName) < 15) {
+                              char c = map_makecode(bb[0]);
+                              strncat(playerName,&c,sizeof(char));
+                          }
                         }
-                        gameState = MENU;
-
-                      } else if(bb[0]==BACKSPACE_M_CODE){
-                        playerName[strlen(playerName)-1] = '\0';
-
-                      } else {
-                        if(strlen(playerName) < 15) {
-                          char c = map_makecode(bb[0]);
-                          strncat(playerName,&c,sizeof(char));
-                        }
+                      }                    
+                 }
+                 if (msg.m_notify.interrupts & mouse_irq_set) { /* subscribed interrupt */
+                      mouse_ih();
+                      if(get_ih_counter() >= 3){
+                          mouse_parse_packet(&pp);           
+                          mouse_refresh = update_mouse(&pp);
                       }
-                     
                  }
                  break;
              default:

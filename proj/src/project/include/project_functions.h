@@ -15,7 +15,7 @@
 #include "utils.h"
 #include "project_macros.h"
 
-enum GameState{MENU, PLAY, LEADERBOARD, END, EXIT};
+enum GameState{MENU, PLAY, LEADERBOARD, WON, LOST, EXIT};
 
 int (point_distance)(int x0, int y0, int x, int y);
 int (get_odd_random_in_range)(int start, int end);

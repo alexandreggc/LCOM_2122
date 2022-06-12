@@ -42,11 +42,12 @@ void (leaderboard_draw)(leaderboard_t *lb) {
 void (gameended_draw)(leaderboard_t *lb, char* playerName, bool alive){
   if(alive) {
     font_draw_string(lb->font,"YOU WON",330,100);
+    font_draw_string(lb->font,"ENTER YOUR NAME",50,300);
+  font_draw_string(lb->font,playerName,50,400);
   } else{
     font_draw_string(lb->font,"YOU LOST",330,100);
   }
-  font_draw_string(lb->font,"ENTER YOUR NAME",50,300);
-  font_draw_string(lb->font,playerName,50,400);
+  font_draw_string(lb->font,"ESC TO GO BACK TO MENU",150,500);
 }
 
 void (leaderboard_save_file)(leaderboard_t *lb, char* playerName, int timeCounter){
