@@ -4,12 +4,6 @@
 #include "project_functions.h"
 #include "keys.h"
 
-typedef enum{
-  EMPTY,
-  PLAYER,
-  BOT
-}element_t;
-
 /**
  * Door struct
  */

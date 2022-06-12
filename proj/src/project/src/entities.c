@@ -586,7 +586,6 @@ struct map{
    * array of walls struct pointers
    */
   wall_t** walls;
-  element_t* elements;
   /**
    * map x position in pixels on screen
    */
@@ -617,13 +616,11 @@ map_t* (map_constructor)(){
     walls[i] = malloc(sizeof(wall_t));
   }
   wall_t* wall = wall_constructor(0,0);
-  element_t* el = malloc(sizeof(element_t)*map->size_map);
   map->x = map_x;
   map->y = map_y;
   map->h_map = MAP_BLOCKS_SIZE;
   map->w_map = MAP_BLOCKS_SIZE;
   map->size_map = map->h_map * map->w_map;
-  map->elements = el;
   int wall_pixel_w = sprite_get_width(wall->sp);
   int wall_pixel_h = sprite_get_height(wall->sp);
   wall_destructor(wall);
@@ -650,7 +647,6 @@ void (map_destructor)(map_t *map){
   for (int pos = 0; pos < map->size_map; pos++){
     wall_destructor(map->walls[pos]);
   }
-  free(map->elements);
   free(map);
 }
 
@@ -672,7 +668,6 @@ void (map_update_player_grid)(map_t *map, player_t *player){
   int player_ymap = (player_cy - map->y) / wall_px_h;
   player_set_map_pos(player, player_xmap, player_ymap);
   player_set_center(player, player_cx, player_cy);
-  //map->elements[player_xmap+player_ymap*map->w_map] = PLAYER;
 }
 
 void (map_update_bot_grid)(map_t *map, bot_t *bot){
