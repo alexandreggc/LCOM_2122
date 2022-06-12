@@ -8,6 +8,76 @@
   <UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="libs"><param name="Local" value="group__libs.html"><param name="ImageNumber" value="1"></OBJECT>
     <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc"><param name="Local" value="group__rtc.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="date_struct"><param name="Local" value="structdate__struct.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="day"><param name="Local" value="structdate__struct.html#a98571958fff7dc0413d71928e9330d08"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="month"><param name="Local" value="structdate__struct.html#a736882ec1fcfa94c6a990f88f895b350"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="weekday"><param name="Local" value="structdate__struct.html#ac2a54aa8df565a8ca4b6bcc87b791e6e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="year"><param name="Local" value="structdate__struct.html#a4c96069e482c6821f68b8ffe3e1d0ab3"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="time_struct"><param name="Local" value="structtime__struct.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="hour"><param name="Local" value="structtime__struct.html#aa587ac48c5adeb8323475637f4c922a8"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="min"><param name="Local" value="structtime__struct.html#a1ae914babe348440ce49b8e2093fefd4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="sec"><param name="Local" value="structtime__struct.html#ac7b0881cb0dd88262b9a56e6ddc2e32d"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="AF"><param name="Local" value="group__rtc.html#ga76ba789cde9c36cd57dbb390bdee7661"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="AIE"><param name="Local" value="group__rtc.html#ga113847820d539c6a6836993b84d22800"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="DM"><param name="Local" value="group__rtc.html#ga9a9aac904e687286501946469e2903d6"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="DSE"><param name="Local" value="group__rtc.html#ga2f2ba7be317f373f9a660f43b49c9d4e"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="HOUR_FORM"><param name="Local" value="group__rtc.html#ga97d04080050bd1fe2eecd9721b86cba4"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="IRQF"><param name="Local" value="group__rtc.html#ga8565773f11252b9d615f1b12ac73032d"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="PF"><param name="Local" value="group__rtc.html#gaa0e278c26c25558741febfadd7216caa"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="PIE"><param name="Local" value="group__rtc.html#gac40c2b49eb51e2adc237b530adfcadf4"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RS0"><param name="Local" value="group__rtc.html#ga7c51f1f956efe40fd156fbb01baedc4e"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RS1"><param name="Local" value="group__rtc.html#gaee48b563b7ff09121325a0ba4c21c6d3"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RS2"><param name="Local" value="group__rtc.html#gaf134a1920b448555168d4582f0ef49fb"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RS3"><param name="Local" value="group__rtc.html#ga845771ab99e0080611b483818553bfb2"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_ADDR_REG"><param name="Local" value="group__rtc.html#ga710b98232df2c563009e6f8a6cd18220"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_DATA_REG"><param name="Local" value="group__rtc.html#ga2f258a00c59c3f347c8d2d4a75471ce0"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_HOUR"><param name="Local" value="group__rtc.html#ga7264eac87ffc91cbdea1239d346a0ea4"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_HOUR_ALARM"><param name="Local" value="group__rtc.html#ga737b5ee081f79807f221932a06d7efca"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_IRQ"><param name="Local" value="group__rtc.html#ga4e22feb6ffbc1cda32fadff5c740dc51"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_MIN"><param name="Local" value="group__rtc.html#ga34fc4e7c0e5db231217aa3174e394c72"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_MIN_ALARM"><param name="Local" value="group__rtc.html#ga9eeae383df10aa2c8bf7f1d3273517f6"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_MONTH"><param name="Local" value="group__rtc.html#gabda0c877ee1a02b8351c0cfe72838088"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_MONTH_DAY"><param name="Local" value="group__rtc.html#ga8bc2a4a5d4ba7287830a39528fd454d6"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_REG_A"><param name="Local" value="group__rtc.html#gae5ffad506b363f28bed1bb5e5926bd2d"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_REG_B"><param name="Local" value="group__rtc.html#ga03954a63ead3f02b7790ce79e9877eea"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_REG_C"><param name="Local" value="group__rtc.html#ga1bd6f771dc313129723812fe7ac52d9e"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_REG_D"><param name="Local" value="group__rtc.html#ga34c8604ade07f4f7ff7e919f2d4c56b4"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_SEC"><param name="Local" value="group__rtc.html#ga2507e650d4ccc8a2bdf3001800a3e743"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_SEC_ALARM"><param name="Local" value="group__rtc.html#gae82828114248496fd0347ff2016edae3"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_WEEK_DAY"><param name="Local" value="group__rtc.html#gae8f4be79afb82f276915c6bd6b627508"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_YEAR"><param name="Local" value="group__rtc.html#ga1df5568e6774b73aa4c6e59fc40e9147"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SET"><param name="Local" value="group__rtc.html#ga59da1d65e87a723efe808dbabb4fc205"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SQWE"><param name="Local" value="group__rtc.html#ga3eb471417c5e9c54468288c45c6d138b"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="UF"><param name="Local" value="group__rtc.html#ga2657a76f02e47fa3f3320fa9c6353f31"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="UIE"><param name="Local" value="group__rtc.html#ga2c276876faf62c1b29fe2383ce4ccfda"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="UIP"><param name="Local" value="group__rtc.html#ga3289eebd69837790d4aacaccd18d46db"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="VRT"><param name="Local" value="group__rtc.html#ga23eb92fd11f6f00cb88b0a6e2197a92f"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_check_update"><param name="Local" value="group__rtc.html#ga219cc66613b3cdcbba8fbc340a6a0bb2"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_get_date"><param name="Local" value="group__rtc.html#ga17603ea7675aede07de0956dcddeed1c"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_get_real_time"><param name="Local" value="group__rtc.html#ga91b36f96d03de5eac31dfaa05e9f0b79"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_ih"><param name="Local" value="group__rtc.html#ga0b9ae809cf571f61e54712a23c65348e"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_date"><param name="Local" value="group__rtc.html#ga6871424e87609a2d17ed41bb3ed95aa7"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_day"><param name="Local" value="group__rtc.html#gaa95dae07fb324d959a8f24b7c9d22f46"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_hour"><param name="Local" value="group__rtc.html#ga1110b1e023dc64fbc8b32b113741d4c2"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_min"><param name="Local" value="group__rtc.html#gaad3f39050f9966dcbfea1f94d11b3084"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_month"><param name="Local" value="group__rtc.html#ga840f217562cd4caf082149b4296c7054"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_register"><param name="Local" value="group__rtc.html#gae14aebd417b41fa06aa5216ae54a173c"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_sec"><param name="Local" value="group__rtc.html#gabdfe200366d9c2628b25fca88af63675"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_time"><param name="Local" value="group__rtc.html#gace1a069b31e6ae271df090ddbd403d77"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_weekday"><param name="Local" value="group__rtc.html#gafbbce80242f92afb2e98b206f96751e5"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_year"><param name="Local" value="group__rtc.html#ga9a7140a1319360e977a8ce2258ea331d"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_set_updates"><param name="Local" value="group__rtc.html#ga87645c9664276e12c7adde63663d3e63"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_subscribe_int"><param name="Local" value="group__rtc.html#ga6bbe679f115cec90d36d50eb2aac1b89"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_unsubscribe_int"><param name="Local" value="group__rtc.html#ga9d4850bb2a488644672d43287f160622"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_update_real_time"><param name="Local" value="group__rtc.html#gad1f3af0bfb94335335527a11ef989918"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_write_register"><param name="Local" value="group__rtc.html#gacd417728720b71f278da9519dc8fc617"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="timer"><param name="Local" value="group__timer.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="SPEAKER_CTRL"><param name="Local" value="group__timer.html#ga51b3a5e3d4811ca063fe25e35560ab40"><param name="ImageNumber" value="11"></OBJECT>
@@ -723,101 +793,88 @@
           <UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc.h"><param name="Local" value="rtc_8h.html"><param name="ImageNumber" value="1"></OBJECT>
             <UL>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="date_struct"><param name="Local" value="structdate__struct.html"><param name="ImageNumber" value="1"></OBJECT>
-              <UL>
-              <LI><OBJECT type="text/sitemap"><param name="Name" value="day"><param name="Local" value="structdate__struct.html#a98571958fff7dc0413d71928e9330d08"><param name="ImageNumber" value="11"></OBJECT>
-              <LI><OBJECT type="text/sitemap"><param name="Name" value="month"><param name="Local" value="structdate__struct.html#a736882ec1fcfa94c6a990f88f895b350"><param name="ImageNumber" value="11"></OBJECT>
-              <LI><OBJECT type="text/sitemap"><param name="Name" value="weekday"><param name="Local" value="structdate__struct.html#ac2a54aa8df565a8ca4b6bcc87b791e6e"><param name="ImageNumber" value="11"></OBJECT>
-              <LI><OBJECT type="text/sitemap"><param name="Name" value="year"><param name="Local" value="structdate__struct.html#a4c96069e482c6821f68b8ffe3e1d0ab3"><param name="ImageNumber" value="11"></OBJECT>
-              </UL>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="time_struct"><param name="Local" value="structtime__struct.html"><param name="ImageNumber" value="1"></OBJECT>
-              <UL>
-              <LI><OBJECT type="text/sitemap"><param name="Name" value="hour"><param name="Local" value="structtime__struct.html#aa587ac48c5adeb8323475637f4c922a8"><param name="ImageNumber" value="11"></OBJECT>
-              <LI><OBJECT type="text/sitemap"><param name="Name" value="min"><param name="Local" value="structtime__struct.html#a1ae914babe348440ce49b8e2093fefd4"><param name="ImageNumber" value="11"></OBJECT>
-              <LI><OBJECT type="text/sitemap"><param name="Name" value="sec"><param name="Local" value="structtime__struct.html#ac7b0881cb0dd88262b9a56e6ddc2e32d"><param name="ImageNumber" value="11"></OBJECT>
-              </UL>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_check_update"><param name="Local" value="rtc_8h.html#a219cc66613b3cdcbba8fbc340a6a0bb2"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_get_date"><param name="Local" value="rtc_8h.html#a17603ea7675aede07de0956dcddeed1c"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_get_real_time"><param name="Local" value="rtc_8h.html#a91b36f96d03de5eac31dfaa05e9f0b79"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_ih"><param name="Local" value="rtc_8h.html#a0b9ae809cf571f61e54712a23c65348e"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_date"><param name="Local" value="rtc_8h.html#a6871424e87609a2d17ed41bb3ed95aa7"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_day"><param name="Local" value="rtc_8h.html#aa95dae07fb324d959a8f24b7c9d22f46"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_hour"><param name="Local" value="rtc_8h.html#a1110b1e023dc64fbc8b32b113741d4c2"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_min"><param name="Local" value="rtc_8h.html#aad3f39050f9966dcbfea1f94d11b3084"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_month"><param name="Local" value="rtc_8h.html#a840f217562cd4caf082149b4296c7054"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_register"><param name="Local" value="rtc_8h.html#ae14aebd417b41fa06aa5216ae54a173c"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_sec"><param name="Local" value="rtc_8h.html#abdfe200366d9c2628b25fca88af63675"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_time"><param name="Local" value="rtc_8h.html#ace1a069b31e6ae271df090ddbd403d77"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_weekday"><param name="Local" value="rtc_8h.html#afbbce80242f92afb2e98b206f96751e5"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_year"><param name="Local" value="rtc_8h.html#a9a7140a1319360e977a8ce2258ea331d"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_set_updates"><param name="Local" value="rtc_8h.html#a87645c9664276e12c7adde63663d3e63"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_subscribe_int"><param name="Local" value="rtc_8h.html#a6bbe679f115cec90d36d50eb2aac1b89"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_unsubscribe_int"><param name="Local" value="rtc_8h.html#a9d4850bb2a488644672d43287f160622"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_update_real_time"><param name="Local" value="rtc_8h.html#ad1f3af0bfb94335335527a11ef989918"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_write_register"><param name="Local" value="rtc_8h.html#acd417728720b71f278da9519dc8fc617"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_check_update"><param name="Local" value="group__rtc.html#ga219cc66613b3cdcbba8fbc340a6a0bb2"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_get_date"><param name="Local" value="group__rtc.html#ga17603ea7675aede07de0956dcddeed1c"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_get_real_time"><param name="Local" value="group__rtc.html#ga91b36f96d03de5eac31dfaa05e9f0b79"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_ih"><param name="Local" value="group__rtc.html#ga0b9ae809cf571f61e54712a23c65348e"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_date"><param name="Local" value="group__rtc.html#ga6871424e87609a2d17ed41bb3ed95aa7"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_day"><param name="Local" value="group__rtc.html#gaa95dae07fb324d959a8f24b7c9d22f46"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_hour"><param name="Local" value="group__rtc.html#ga1110b1e023dc64fbc8b32b113741d4c2"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_min"><param name="Local" value="group__rtc.html#gaad3f39050f9966dcbfea1f94d11b3084"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_month"><param name="Local" value="group__rtc.html#ga840f217562cd4caf082149b4296c7054"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_register"><param name="Local" value="group__rtc.html#gae14aebd417b41fa06aa5216ae54a173c"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_sec"><param name="Local" value="group__rtc.html#gabdfe200366d9c2628b25fca88af63675"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_time"><param name="Local" value="group__rtc.html#gace1a069b31e6ae271df090ddbd403d77"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_weekday"><param name="Local" value="group__rtc.html#gafbbce80242f92afb2e98b206f96751e5"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_year"><param name="Local" value="group__rtc.html#ga9a7140a1319360e977a8ce2258ea331d"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_set_updates"><param name="Local" value="group__rtc.html#ga87645c9664276e12c7adde63663d3e63"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_subscribe_int"><param name="Local" value="group__rtc.html#ga6bbe679f115cec90d36d50eb2aac1b89"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_unsubscribe_int"><param name="Local" value="group__rtc.html#ga9d4850bb2a488644672d43287f160622"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_update_real_time"><param name="Local" value="group__rtc.html#gad1f3af0bfb94335335527a11ef989918"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_write_register"><param name="Local" value="group__rtc.html#gacd417728720b71f278da9519dc8fc617"><param name="ImageNumber" value="11"></OBJECT>
             </UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_macros.h"><param name="Local" value="rtc__macros_8h.html"><param name="ImageNumber" value="1"></OBJECT>
             <UL>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="AF"><param name="Local" value="rtc__macros_8h.html#a76ba789cde9c36cd57dbb390bdee7661"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="AIE"><param name="Local" value="rtc__macros_8h.html#a113847820d539c6a6836993b84d22800"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="DM"><param name="Local" value="rtc__macros_8h.html#a9a9aac904e687286501946469e2903d6"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="DSE"><param name="Local" value="rtc__macros_8h.html#a2f2ba7be317f373f9a660f43b49c9d4e"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="HOUR_FORM"><param name="Local" value="rtc__macros_8h.html#a97d04080050bd1fe2eecd9721b86cba4"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="IRQF"><param name="Local" value="rtc__macros_8h.html#a8565773f11252b9d615f1b12ac73032d"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="PF"><param name="Local" value="rtc__macros_8h.html#aa0e278c26c25558741febfadd7216caa"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="PIE"><param name="Local" value="rtc__macros_8h.html#ac40c2b49eb51e2adc237b530adfcadf4"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RS0"><param name="Local" value="rtc__macros_8h.html#a7c51f1f956efe40fd156fbb01baedc4e"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RS1"><param name="Local" value="rtc__macros_8h.html#aee48b563b7ff09121325a0ba4c21c6d3"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RS2"><param name="Local" value="rtc__macros_8h.html#af134a1920b448555168d4582f0ef49fb"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RS3"><param name="Local" value="rtc__macros_8h.html#a845771ab99e0080611b483818553bfb2"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_ADDR_REG"><param name="Local" value="rtc__macros_8h.html#a710b98232df2c563009e6f8a6cd18220"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_DATA_REG"><param name="Local" value="rtc__macros_8h.html#a2f258a00c59c3f347c8d2d4a75471ce0"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_HOUR"><param name="Local" value="rtc__macros_8h.html#a7264eac87ffc91cbdea1239d346a0ea4"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_HOUR_ALARM"><param name="Local" value="rtc__macros_8h.html#a737b5ee081f79807f221932a06d7efca"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_IRQ"><param name="Local" value="rtc__macros_8h.html#a4e22feb6ffbc1cda32fadff5c740dc51"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_MIN"><param name="Local" value="rtc__macros_8h.html#a34fc4e7c0e5db231217aa3174e394c72"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_MIN_ALARM"><param name="Local" value="rtc__macros_8h.html#a9eeae383df10aa2c8bf7f1d3273517f6"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_MONTH"><param name="Local" value="rtc__macros_8h.html#abda0c877ee1a02b8351c0cfe72838088"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_MONTH_DAY"><param name="Local" value="rtc__macros_8h.html#a8bc2a4a5d4ba7287830a39528fd454d6"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_REG_A"><param name="Local" value="rtc__macros_8h.html#ae5ffad506b363f28bed1bb5e5926bd2d"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_REG_B"><param name="Local" value="rtc__macros_8h.html#a03954a63ead3f02b7790ce79e9877eea"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_REG_C"><param name="Local" value="rtc__macros_8h.html#a1bd6f771dc313129723812fe7ac52d9e"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_REG_D"><param name="Local" value="rtc__macros_8h.html#a34c8604ade07f4f7ff7e919f2d4c56b4"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_SEC"><param name="Local" value="rtc__macros_8h.html#a2507e650d4ccc8a2bdf3001800a3e743"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_SEC_ALARM"><param name="Local" value="rtc__macros_8h.html#ae82828114248496fd0347ff2016edae3"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_WEEK_DAY"><param name="Local" value="rtc__macros_8h.html#ae8f4be79afb82f276915c6bd6b627508"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_YEAR"><param name="Local" value="rtc__macros_8h.html#a1df5568e6774b73aa4c6e59fc40e9147"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="SET"><param name="Local" value="rtc__macros_8h.html#a59da1d65e87a723efe808dbabb4fc205"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="SQWE"><param name="Local" value="rtc__macros_8h.html#a3eb471417c5e9c54468288c45c6d138b"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="UF"><param name="Local" value="rtc__macros_8h.html#a2657a76f02e47fa3f3320fa9c6353f31"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="UIE"><param name="Local" value="rtc__macros_8h.html#a2c276876faf62c1b29fe2383ce4ccfda"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="UIP"><param name="Local" value="rtc__macros_8h.html#a3289eebd69837790d4aacaccd18d46db"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="VRT"><param name="Local" value="rtc__macros_8h.html#a23eb92fd11f6f00cb88b0a6e2197a92f"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="AF"><param name="Local" value="group__rtc.html#ga76ba789cde9c36cd57dbb390bdee7661"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="AIE"><param name="Local" value="group__rtc.html#ga113847820d539c6a6836993b84d22800"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="DM"><param name="Local" value="group__rtc.html#ga9a9aac904e687286501946469e2903d6"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="DSE"><param name="Local" value="group__rtc.html#ga2f2ba7be317f373f9a660f43b49c9d4e"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="HOUR_FORM"><param name="Local" value="group__rtc.html#ga97d04080050bd1fe2eecd9721b86cba4"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="IRQF"><param name="Local" value="group__rtc.html#ga8565773f11252b9d615f1b12ac73032d"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="PF"><param name="Local" value="group__rtc.html#gaa0e278c26c25558741febfadd7216caa"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="PIE"><param name="Local" value="group__rtc.html#gac40c2b49eb51e2adc237b530adfcadf4"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="RS0"><param name="Local" value="group__rtc.html#ga7c51f1f956efe40fd156fbb01baedc4e"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="RS1"><param name="Local" value="group__rtc.html#gaee48b563b7ff09121325a0ba4c21c6d3"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="RS2"><param name="Local" value="group__rtc.html#gaf134a1920b448555168d4582f0ef49fb"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="RS3"><param name="Local" value="group__rtc.html#ga845771ab99e0080611b483818553bfb2"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_ADDR_REG"><param name="Local" value="group__rtc.html#ga710b98232df2c563009e6f8a6cd18220"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_DATA_REG"><param name="Local" value="group__rtc.html#ga2f258a00c59c3f347c8d2d4a75471ce0"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_HOUR"><param name="Local" value="group__rtc.html#ga7264eac87ffc91cbdea1239d346a0ea4"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_HOUR_ALARM"><param name="Local" value="group__rtc.html#ga737b5ee081f79807f221932a06d7efca"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_IRQ"><param name="Local" value="group__rtc.html#ga4e22feb6ffbc1cda32fadff5c740dc51"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_MIN"><param name="Local" value="group__rtc.html#ga34fc4e7c0e5db231217aa3174e394c72"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_MIN_ALARM"><param name="Local" value="group__rtc.html#ga9eeae383df10aa2c8bf7f1d3273517f6"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_MONTH"><param name="Local" value="group__rtc.html#gabda0c877ee1a02b8351c0cfe72838088"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_MONTH_DAY"><param name="Local" value="group__rtc.html#ga8bc2a4a5d4ba7287830a39528fd454d6"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_REG_A"><param name="Local" value="group__rtc.html#gae5ffad506b363f28bed1bb5e5926bd2d"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_REG_B"><param name="Local" value="group__rtc.html#ga03954a63ead3f02b7790ce79e9877eea"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_REG_C"><param name="Local" value="group__rtc.html#ga1bd6f771dc313129723812fe7ac52d9e"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_REG_D"><param name="Local" value="group__rtc.html#ga34c8604ade07f4f7ff7e919f2d4c56b4"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_SEC"><param name="Local" value="group__rtc.html#ga2507e650d4ccc8a2bdf3001800a3e743"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_SEC_ALARM"><param name="Local" value="group__rtc.html#gae82828114248496fd0347ff2016edae3"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_WEEK_DAY"><param name="Local" value="group__rtc.html#gae8f4be79afb82f276915c6bd6b627508"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="RTC_YEAR"><param name="Local" value="group__rtc.html#ga1df5568e6774b73aa4c6e59fc40e9147"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="SET"><param name="Local" value="group__rtc.html#ga59da1d65e87a723efe808dbabb4fc205"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="SQWE"><param name="Local" value="group__rtc.html#ga3eb471417c5e9c54468288c45c6d138b"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="UF"><param name="Local" value="group__rtc.html#ga2657a76f02e47fa3f3320fa9c6353f31"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="UIE"><param name="Local" value="group__rtc.html#ga2c276876faf62c1b29fe2383ce4ccfda"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="UIP"><param name="Local" value="group__rtc.html#ga3289eebd69837790d4aacaccd18d46db"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="VRT"><param name="Local" value="group__rtc.html#ga23eb92fd11f6f00cb88b0a6e2197a92f"><param name="ImageNumber" value="11"></OBJECT>
             </UL>
           </UL>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="src"><param name="Local" value="dir_9131be51f2c56be164f73989a385e683.html"><param name="ImageNumber" value="1"></OBJECT>
           <UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc.c"><param name="Local" value="rtc_8c.html"><param name="ImageNumber" value="1"></OBJECT>
             <UL>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_check_update"><param name="Local" value="rtc_8c.html#a219cc66613b3cdcbba8fbc340a6a0bb2"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_get_date"><param name="Local" value="rtc_8c.html#a17603ea7675aede07de0956dcddeed1c"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_get_real_time"><param name="Local" value="rtc_8c.html#a988007c39b18d16fbcef2b4a097de9f2"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_ih"><param name="Local" value="rtc_8c.html#a75dad42881d64cf07cf1bdc2979a7056"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_date"><param name="Local" value="rtc_8c.html#a6871424e87609a2d17ed41bb3ed95aa7"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_day"><param name="Local" value="rtc_8c.html#aa95dae07fb324d959a8f24b7c9d22f46"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_hour"><param name="Local" value="rtc_8c.html#a1110b1e023dc64fbc8b32b113741d4c2"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_min"><param name="Local" value="rtc_8c.html#aad3f39050f9966dcbfea1f94d11b3084"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_month"><param name="Local" value="rtc_8c.html#a840f217562cd4caf082149b4296c7054"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_register"><param name="Local" value="rtc_8c.html#ae14aebd417b41fa06aa5216ae54a173c"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_sec"><param name="Local" value="rtc_8c.html#abdfe200366d9c2628b25fca88af63675"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_time"><param name="Local" value="rtc_8c.html#ace1a069b31e6ae271df090ddbd403d77"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_weekday"><param name="Local" value="rtc_8c.html#afbbce80242f92afb2e98b206f96751e5"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_year"><param name="Local" value="rtc_8c.html#a9a7140a1319360e977a8ce2258ea331d"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_set_updates"><param name="Local" value="rtc_8c.html#a73820036b9e19375947907268fff9439"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_subscribe_int"><param name="Local" value="rtc_8c.html#a6bbe679f115cec90d36d50eb2aac1b89"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_unsubscribe_int"><param name="Local" value="rtc_8c.html#a9d4850bb2a488644672d43287f160622"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_update_real_time"><param name="Local" value="rtc_8c.html#ad1f3af0bfb94335335527a11ef989918"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_write_register"><param name="Local" value="rtc_8c.html#acd417728720b71f278da9519dc8fc617"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_check_update"><param name="Local" value="group__rtc.html#ga219cc66613b3cdcbba8fbc340a6a0bb2"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_get_date"><param name="Local" value="group__rtc.html#ga17603ea7675aede07de0956dcddeed1c"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_get_real_time"><param name="Local" value="group__rtc.html#ga91b36f96d03de5eac31dfaa05e9f0b79"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_ih"><param name="Local" value="group__rtc.html#ga0b9ae809cf571f61e54712a23c65348e"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_date"><param name="Local" value="group__rtc.html#ga6871424e87609a2d17ed41bb3ed95aa7"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_day"><param name="Local" value="group__rtc.html#gaa95dae07fb324d959a8f24b7c9d22f46"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_hour"><param name="Local" value="group__rtc.html#ga1110b1e023dc64fbc8b32b113741d4c2"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_min"><param name="Local" value="group__rtc.html#gaad3f39050f9966dcbfea1f94d11b3084"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_month"><param name="Local" value="group__rtc.html#ga840f217562cd4caf082149b4296c7054"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_register"><param name="Local" value="group__rtc.html#gae14aebd417b41fa06aa5216ae54a173c"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_sec"><param name="Local" value="group__rtc.html#gabdfe200366d9c2628b25fca88af63675"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_time"><param name="Local" value="group__rtc.html#gace1a069b31e6ae271df090ddbd403d77"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_weekday"><param name="Local" value="group__rtc.html#gafbbce80242f92afb2e98b206f96751e5"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_read_year"><param name="Local" value="group__rtc.html#ga9a7140a1319360e977a8ce2258ea331d"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_set_updates"><param name="Local" value="group__rtc.html#ga87645c9664276e12c7adde63663d3e63"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_subscribe_int"><param name="Local" value="group__rtc.html#ga6bbe679f115cec90d36d50eb2aac1b89"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_unsubscribe_int"><param name="Local" value="group__rtc.html#ga9d4850bb2a488644672d43287f160622"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_update_real_time"><param name="Local" value="group__rtc.html#gad1f3af0bfb94335335527a11ef989918"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc_write_register"><param name="Local" value="group__rtc.html#gacd417728720b71f278da9519dc8fc617"><param name="ImageNumber" value="11"></OBJECT>
             </UL>
           </UL>
         </UL>

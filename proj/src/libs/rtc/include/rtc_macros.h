@@ -3,7 +3,13 @@
 
 #include <lcom/lcf.h>
 
-#define RTC_IRQ   8  /* @brief RTC IRQ Line */
+/**
+ * @defgroup rtc rtc
+ * @ingroup libs
+ *
+ * @{
+ */
+#define RTC_IRQ   8  /** @brief RTC IRQ Line */
 
 #define RTC_ADDR_REG        0x70
 #define RTC_DATA_REG        0x71
@@ -55,5 +61,7 @@
 
 #define VRT     BIT(7)  /** @brief Valid RAM/time - If set to 0 RTC reading aren't valid */
 
-
+/**
+ * @}
+ */
 #endif
