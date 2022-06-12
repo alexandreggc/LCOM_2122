@@ -29,11 +29,12 @@ void (leaderboard_draw)(leaderboard_t *lb) {
   if(file==NULL) {
     font_draw_string(lb->font,"CANNOT OPEN FILE",280,200);
   } else {
-    char c[20]; int y = 200;
+    char c[50]; int y = 200;
     while(fscanf(file, "%[^\n] ", c) != EOF) {
-      font_draw_string(lb->font,c,250,y);
+      font_draw_string(lb->font,c,10,y);
       y+=50;
     }
+    free(c);
     fclose(file);
   }
 }
@@ -44,12 +45,49 @@ void (gameended_draw)(leaderboard_t *lb, char* playerName){
   font_draw_string(lb->font,playerName,50,400);
 }
 
-void (leaderboard_save_file)(leaderboard_t *lb, char* playerName){
+void (leaderboard_save_file)(leaderboard_t *lb, char* playerName, int timeCounter){
   FILE *file = fopen(lb->file_location, "a");
 
   if(file==NULL) return;
-  
-  fprintf(file, "%s\n", playerName);
+
+  char* result = playerName;
+
+  char *time = (char *)malloc(38 * sizeof(char));
+  rtc_get_real_time(time);
+
+  char date[10];
+  rtc_get_date(date);
+
+  char* timeCounterString = "";
+  sprintf(timeCounterString, "%d", (timeCounter/REFRESH_RATE));
+  strcat(timeCounterString,"S");
+
+  while(strlen(result) != 16){
+    strncat(result," ",1);
+  }
+
+
+  // for(unsigned int i=0; i<(16-strlen(playerName)); i++){
+  //   strncat(result," ",1);
+  // } 
+  strncat(result,timeCounterString,strlen(timeCounterString));
+
+  while((strlen(result)+10) != 36){
+    strncat(result," ",1);
+  }
+
+
+  // for(unsigned int i=0; i<(20-strlen(timeCounterString)-strlen(date)); i++){
+  //   strncat(result," ",1);
+  // }
+  strncat(result,date,10);
+
+
+  fprintf(file, "%s\n", result);
+  free(result);
+  free(timeCounterString);
+  free(date);
+  free(time);
   fclose(file);
 }
 

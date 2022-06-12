@@ -5,11 +5,11 @@
 #include "font.h"
 
 
-extern int no_interrupts;
+
 
 int(mainLoop)(){  
   enum GameState gameState = MENU;
-  int bombsUsed = 0;
+  int bombsUsed = 0; int timeCounter = 0;
   player_t *player = player_constructor(195, 85);
   bot_t** bots = malloc(sizeof(bot_t*)*NUMBER_OF_BOTS);
   bomb_t** bombs = malloc(sizeof(bomb_t*)*NUMBER_OF_BOMBS);
@@ -20,7 +20,7 @@ int(mainLoop)(){
   sprite_set_pos(mouse, 100, 100);
   sprite_draw(mouse);
 
-  font_t *font = font_ctor(NUM_SYMBOLS);
+  font_t *font = font_ctor();
  
   int ipc_status, r;
   uint8_t keyboard_sel;
@@ -32,7 +32,7 @@ int(mainLoop)(){
   menu_add_button(main_menu, 225, 400, 350, 75, "EXIT");
 
   leaderboard_t *leaderboard = leaderboard_constructor(font);
-  char playerName[20] = "";
+  char playerName[15] = "";
 
   if(kbd_subscribe_int(&keyboard_sel))
     return 1;
@@ -55,10 +55,11 @@ int(mainLoop)(){
   struct packet pp;
   int keyboard_refresh = 1;
   keys_t *curr_keys = keys_ctor();
-
+  int mouse_refresh = 1;
   while(gameState != EXIT){
-      int mouse_refresh = 1;
+      
       while( gameState == MENU ) { /* You may want to use a different condition */
+      rtc_update_real_time();
      /* Get a request message. */
      if ( (r = driver_receive(ANY, &msg, &ipc_status)) != 0 ) { 
          printf("driver_receive failed with: %d", r);
@@ -66,11 +67,12 @@ int(mainLoop)(){
      }
      if (is_ipc_notify(ipc_status)) { /* received notification */
          switch (_ENDPOINT_P(msg.m_source)) {
-             case HARDWARE: /* hardware interrupt notification */       
+             case HARDWARE: /* hardware interrupt notification */    
                  if (msg.m_notify.interrupts & timer_irq_set) { /* subscribed interrupt */
-                     timer_int_handler();   /* process it */
-                     if((timer_get_no_interrupts() * 60) % REFRESH_RATE == 0){ // atualiza a cada 1 segundo
-                        timer_reset_no_interrupts();
+                     timer_int_handler();   /* process it */     
+                    if((timer_get_no_interrupts() * 60) % REFRESH_RATE == 0){ // atualiza a cada 1 segundo
+                        rtc_update_real_time();
+                        timer_reset_no_interrupts();  
                         if(mouse_refresh){
                           vg_clear_screen();
                           menu_draw(main_menu);
@@ -80,7 +82,8 @@ int(mainLoop)(){
                           mouse_refresh = 0;
                           sprite_draw(mouse);
                           vg_draw();
-                        }      
+                        }  
+
                  }
                  }
                  if (msg.m_notify.interrupts & mouse_irq_set) { /* subscribed interrupt */
@@ -92,6 +95,7 @@ int(mainLoop)(){
                             switch (menu_update_state(main_menu, mouse, pp.lb)){
                               case 1: {
                                 gameState = PLAY;
+                                timeCounter = 0;
                                 break;
                               }
                               case 2: {
@@ -99,7 +103,7 @@ int(mainLoop)(){
                                 break;
                               }
                               case 3:
-                                gameState = END;
+                                gameState = EXIT;
                                 break;
                               default:
                                 break;
@@ -144,7 +148,7 @@ int(mainLoop)(){
                       uint8_t bb[2];
                       keyboard_get_key(bb);
                       if(player_process_key(bb, kbd_get_size_bb(), curr_keys)){
-                          gameState = MENU;
+                          gameState = END;
                         }
                       else
                         keyboard_refresh = 1;
@@ -154,6 +158,8 @@ int(mainLoop)(){
                   timer_int_handler();   /* process it */
                   if((timer_get_no_interrupts() * 60) % REFRESH_RATE == 0){
                   timer_reset_no_interrupts();
+                  rtc_update_real_time();
+                  timeCounter++;
                   vg_clear_screen();
                   for(int i=0; i<NUMBER_OF_BOTS; i++) {
                     map_update_bot_grid(map,bots[i]);
@@ -168,16 +174,16 @@ int(mainLoop)(){
                     reset_mouse_speed();
                     mouse_refresh = 0;
                   }
-                  if(keyboard_refresh){
-                    player_set_speed(player, curr_keys);
-                    map_test_collisions(map, player);
+                  player_set_speed(player, curr_keys);
+                  map_test_collisions(map, player);
+                  if(keyboard_refresh){  
                     keyboard_refresh = 0;
                     if(bombsUsed<NUMBER_OF_BOMBS) {
-                      player_check_place_bomb(player, curr_keys, bombs[bombsUsed], &bombsUsed);
-                  }
+                      player_check_place_bomb(map, player, curr_keys, bombs, &bombsUsed);
+                    }
                   } 
                   map_draw(map);
-                  bomb_draw(bombs);
+                  bombs_draw(bombs);
                   player_draw(player);
                   sprite_draw(mouse);
                   vg_draw();
@@ -213,16 +219,13 @@ int(mainLoop)(){
                      timer_int_handler();   /* process it */
                      if((timer_get_no_interrupts() * 60) % REFRESH_RATE == 0){ // atualiza a cada 1 segundo
                         timer_reset_no_interrupts();
-                        if(mouse_refresh){
-                          vg_clear_screen();
-                          leaderboard_draw(leaderboard);
-                          sprite_set_speed(mouse, get_mouse_x_speed(), get_mouse_y_speed());
-                          sprite_update_pos(mouse);
-                          reset_mouse_speed();
-                          mouse_refresh = 0;
-                          sprite_draw(mouse);
-                          vg_draw();
-                        }      
+                        vg_clear_screen();
+                        leaderboard_draw(leaderboard);
+                        sprite_set_speed(mouse, get_mouse_x_speed(), get_mouse_y_speed());
+                        sprite_update_pos(mouse);
+                        reset_mouse_speed();
+                        sprite_draw(mouse);
+                        vg_draw();
                  }
                  }
                  if (msg.m_notify.interrupts & mouse_irq_set) { /* subscribed interrupt */
@@ -265,12 +268,12 @@ int(mainLoop)(){
                      timer_int_handler();   /* process it */
                      if((timer_get_no_interrupts() * 60) % REFRESH_RATE == 0){ // atualiza a cada 1 segundo
                         timer_reset_no_interrupts();
+                        rtc_update_real_time();
                           vg_clear_screen();
                           gameended_draw(leaderboard,playerName);
                           sprite_set_speed(mouse, get_mouse_x_speed(), get_mouse_y_speed());
                           sprite_update_pos(mouse);
                           reset_mouse_speed();
-                          mouse_refresh = 0;
                           sprite_draw(mouse);
                           vg_draw();
                  }
@@ -290,20 +293,24 @@ int(mainLoop)(){
                       uint8_t bb[2];
                       keyboard_get_key(bb);
                       if(keyboard_check_esc(bb)){
-                        memset(playerName, 0, 20);
+                        memset(playerName, 0, 15);
                         gameState = MENU;
 
                       } else if(bb[0]==ENTER_M_CODE) {
-                        leaderboard_save_file(leaderboard,playerName);
-                        memset(playerName, 0, 20);
+                        if(strlen(playerName) != 0){
+                          leaderboard_save_file(leaderboard,playerName,timeCounter);
+                          memset(playerName, 0, 15);
+                        }
                         gameState = MENU;
 
                       } else if(bb[0]==BACKSPACE_M_CODE){
                         playerName[strlen(playerName)-1] = '\0';
 
                       } else {
-                        char c = map_makecode(bb[0]);
-                        strncat(playerName,&c,sizeof(char));
+                        if(strlen(playerName) < 15) {
+                          char c = map_makecode(bb[0]);
+                          strncat(playerName,&c,sizeof(char));
+                        }
                       }
                      
                  }
@@ -337,7 +344,7 @@ int(mainLoop)(){
   map_destructor(map);
   player_destructor(player);
   bot_destructor(bots);
-  bomb_destructor(bombs);
+  bombs_destructor(bombs);
   sprite_destructor(mouse);
   font_dtor(font);
   menu_dtor(main_menu);

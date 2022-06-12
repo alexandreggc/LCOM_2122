@@ -8,7 +8,8 @@ typedef enum{
   EMPTY,
   PLAYER,
   ENEMY,
-  WALL
+  WALL, 
+  EXPLOSION
 }element_t;
 
 
@@ -17,6 +18,7 @@ typedef struct bot bot_t;
 typedef struct bomb bomb_t;
 typedef struct wall wall_t;
 typedef struct map map_t;
+typedef struct explosion explosion_t;
 
 
 // PLAYER FUNCTIONS
@@ -34,7 +36,7 @@ void (player_set_center)(player_t* p, int cx, int cy);
 int (player_process_key)(uint8_t bbyte[2], int size, keys_t *keys);
 void (player_set_speed)(player_t *player, keys_t *keys);
 
-void (player_check_place_bomb)(player_t *player, keys_t *keys, bomb_t *bomb, int *bombsUsed);
+void (player_check_place_bomb)(map_t* map, player_t *player, keys_t *keys, bomb_t **bombs, int *bombsUsed);
 
 
 
@@ -53,19 +55,30 @@ void (bot_set_center)(bot_t* p, int cx, int cy);
 void (bot_move)(bot_t* bot);
 
 
+// EXPLOSION FUNCTIONS
+
+explosion_t* (explosion_constructor)();
+void (explosion_destructor)(explosion_t* bombs);
+void (explosion_set_map_pos)(explosion_t *explosion, map_t* map, int xmap, int ymap);
+void (explosion_draw)(explosion_t *explosion);
+void (explosions_draw)(explosion_t **explosion);
+bool (explosion_ended)(explosion_t *explosion);
+void (explosion_expand)(explosion_t *explosion);
+
+
 // BOMB FUNCTIONS
 
 
 bomb_t* (bomb_constructor)();
-void (bomb_destructor)(bomb_t** bombs);
-void (bomb_draw)(bomb_t** bombs);
+void (bombs_destructor)(bomb_t** bombs);
+void (bomb_destructor)(bomb_t* bomb);
+void (bombs_draw)(bomb_t** bombs);
 bool (bomb_exploded)(bomb_t* b);
 int (bomb_get_xmap)(bomb_t* b);
 int (bomb_get_ymap)(bomb_t* b);
-void (bomb_place)(bomb_t *b, int x, int y);
 void (bomb_explode)(bomb_t* b);
-void bomb_populate(bomb_t** bombs);
-void check_bomb_click(bomb_t** bombs, sprite_t* mouse, int click);
+void (bomb_populate)(bomb_t** bombs);
+void (check_bomb_click)(bomb_t** bombs, sprite_t* mouse, int click);
 
 
 // WALL FUNCTIONS
@@ -89,5 +102,8 @@ void (map_update_bot_grid)(map_t *map, bot_t *bot);
 void (map_test_collisions)(map_t *map, player_t *player);
 void (map_test_bot_collisions)(map_t *map, bot_t *bot);
 void (map_place_bots)(map_t *map, bot_t** bots);
+void (map_place_bomb)(map_t *map, bomb_t* bomb, int xmap, int ymap);
+int (map_get_Xpixel_pos)(map_t *map, int xmap);
+int (map_get_Ypixel_pos)(map_t *map, int ymap);
 
 #endif

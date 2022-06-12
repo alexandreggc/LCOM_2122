@@ -3,6 +3,7 @@
 #include "menu.h"
 #include "rectangle.h"
 #include "font.h"
+#include "rtc.h"
 struct menu {
     rectangle_t **buttons;
     font_t *font;
@@ -11,7 +12,7 @@ struct menu {
 };
 
 menu_t* (menu_ctor)(font_t *font, size_t n_buttons){
-    menu_t *ret = (menu_t*)malloc(sizeof(menu_t));
+    menu_t *ret = malloc(sizeof(menu_t));
     if (ret == NULL) return NULL;
     ret->buttons = (rectangle_t**)malloc(n_buttons * sizeof(rectangle_t*));
     ret->font = font;
@@ -44,6 +45,10 @@ void (menu_draw)(menu_t *menu) {
     for (size_t i = 0; i < menu->sz; i++){
         rectangle_draw(menu->buttons[i]);
     }
+    char *time = (char *)malloc(38 * sizeof(char));
+    rtc_get_real_time(time);
+    font_draw_string(menu->font, time, 100, 550);
+    free(time);
 }
 
 void (menu_dtor)(menu_t *menu){
@@ -51,5 +56,6 @@ void (menu_dtor)(menu_t *menu){
         rectangle_dtor(menu->buttons[i]);
     }
     free(menu->buttons);
+    free(menu->font);
     free(menu);
 }
