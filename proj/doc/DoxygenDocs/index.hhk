@@ -4,100 +4,100 @@
 <param name="FrameName" value="right">
 </OBJECT>
 <UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a6f6489887e08bff4887d0bc5dcf214d8"><param name="Name" value="ACK"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#aeb9e52bb9b02951f750c523dc373fcb8"><param name="Name" value="ACKS_DELAY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga6f6489887e08bff4887d0bc5dcf214d8"><param name="Name" value="ACK"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gaeb9e52bb9b02951f750c523dc373fcb8"><param name="Name" value="ACKS_DELAY"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__rtc.html#ga76ba789cde9c36cd57dbb390bdee7661"><param name="Name" value="AF"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__rtc.html#ga113847820d539c6a6836993b84d22800"><param name="Name" value="AIE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a24093a219cd0fc10addf85ac9730007f"><param name="Name" value="ARROWDOWN_B_CODE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a826424b1ca784e806ff56d936520ca81"><param name="Name" value="ARROWDOWN_M_CODE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a32e2666e39a3def0df7db352dc02549c"><param name="Name" value="ARROWLEFT_B_CODE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a08dcb4808e0b0efbaf481471de4edc2e"><param name="Name" value="ARROWLEFT_M_CODE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#adbeccc034ece3dd451695d21b00b3382"><param name="Name" value="ARROWRIGHT_B_CODE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a221ebf3cd38d96202ee1eff4b3966d26"><param name="Name" value="ARROWRIGHT_M_CODE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a6a7ff03326906dc31e2bd4662b6fd60c"><param name="Name" value="ARROWUP_B_CODE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a057ee8527d8fbdb5d903146d849cc266"><param name="Name" value="ARROWUP_M_CODE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a2d87a4296d8ac7763da0206a022fbca8"><param name="Name" value="AUX_MOUSE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a468bb07d0a2499d16da78e403119abcd"><param name="Name" value="A_B_CODE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#afa3b88809d1d7489b7b549055ce2da9c"><param name="Name" value="A_M_CODE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a8b06a029330943ad0d5afc9656cbc63d"><param name="Name" value="BACKSPACE_B_CODE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a226e16059eaca696ee1979284711bc66"><param name="Name" value="BACKSPACE_M_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga24093a219cd0fc10addf85ac9730007f"><param name="Name" value="ARROWDOWN_B_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga826424b1ca784e806ff56d936520ca81"><param name="Name" value="ARROWDOWN_M_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga32e2666e39a3def0df7db352dc02549c"><param name="Name" value="ARROWLEFT_B_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga08dcb4808e0b0efbaf481471de4edc2e"><param name="Name" value="ARROWLEFT_M_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gadbeccc034ece3dd451695d21b00b3382"><param name="Name" value="ARROWRIGHT_B_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga221ebf3cd38d96202ee1eff4b3966d26"><param name="Name" value="ARROWRIGHT_M_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga6a7ff03326906dc31e2bd4662b6fd60c"><param name="Name" value="ARROWUP_B_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga057ee8527d8fbdb5d903146d849cc266"><param name="Name" value="ARROWUP_M_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga2d87a4296d8ac7763da0206a022fbca8"><param name="Name" value="AUX_MOUSE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga468bb07d0a2499d16da78e403119abcd"><param name="Name" value="A_B_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gafa3b88809d1d7489b7b549055ce2da9c"><param name="Name" value="A_M_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga8b06a029330943ad0d5afc9656cbc63d"><param name="Name" value="BACKSPACE_B_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga226e16059eaca696ee1979284711bc66"><param name="Name" value="BACKSPACE_M_CODE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__utils.html#ga37c7b083cf9f77698e97585944f33db4"><param name="Name" value="BCD_FIRST"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__utils.html#gaece6988c5bc43cccb9c273043be771f6"><param name="Name" value="BCD_SECOND"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="graphics__card__macros_8h.html#a7b3b25cba33b07c303f3060fe41887f6"><param name="Name" value="BLACK"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__proj.html#ga6801e11940757f8de443c066180f8a9c"><param name="Name" value="BOMB_RANGE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__proj.html#gaef46e2616e7bc0069d667ec00877cad3"><param name="Name" value="BOT_SPEED"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#abf7206ca2181c36ef04b795c9b64e886"><param name="Name" value="CMD_REG"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a5a4a54453c9ef3337620a36939380cd3"><param name="Name" value="CTRL_REG"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a1a522aa19bcb695a9df30032a893bee3"><param name="Name" value="DELAY_US"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gabf7206ca2181c36ef04b795c9b64e886"><param name="Name" value="CMD_REG"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga5a4a54453c9ef3337620a36939380cd3"><param name="Name" value="CTRL_REG"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga1a522aa19bcb695a9df30032a893bee3"><param name="Name" value="DELAY_US"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="graphics__card__macros_8h.html#ae37f82f4bd973b5466ce2c8df918a3da"><param name="Name" value="DIRECT_1280_1024_565"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="graphics__card__macros_8h.html#a56b61cd9dd5db78ad31f894a9ea4481a"><param name="Name" value="DIRECT_1280_1024_888"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="graphics__card__macros_8h.html#a725ddc2613ead012efa716d5644a0563"><param name="Name" value="DIRECT_640_480"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="graphics__card__macros_8h.html#a051e6b47323761dcfdaf731b7a9df327"><param name="Name" value="DIRECT_800_600"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#ad374b510092499b5961d3771abf9c66e"><param name="Name" value="DISABLE_DATA_REPORT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gad374b510092499b5961d3771abf9c66e"><param name="Name" value="DISABLE_DATA_REPORT"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__rtc.html#ga9a9aac904e687286501946469e2903d6"><param name="Name" value="DM"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__proj.html#ga4193cd1c8c2e6ebd0e056fa2364a663f"><param name="Name" value="DOWN"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__rtc.html#ga2f2ba7be317f373f9a660f43b49c9d4e"><param name="Name" value="DSE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a318aacff9ad4d3ec65aed570aac43f69"><param name="Name" value="D_B_CODE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a0d59739e060a8d5da518a1f8ee41a246"><param name="Name" value="D_M_CODE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a1c22608f41bd715500d0333001079a8a"><param name="Name" value="ENABLE_DATA_REPORT"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#aaf8afca952b7a55a55688111b109663f"><param name="Name" value="ENTER_B_CODE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a15e27eb51e6bd4a4970b1d1a41db25e4"><param name="Name" value="ENTER_M_CODE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a8fe83ac76edc595f6b98cd4a4127aed5"><param name="Name" value="ERROR"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga318aacff9ad4d3ec65aed570aac43f69"><param name="Name" value="D_B_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga0d59739e060a8d5da518a1f8ee41a246"><param name="Name" value="D_M_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga1c22608f41bd715500d0333001079a8a"><param name="Name" value="ENABLE_DATA_REPORT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gaaf8afca952b7a55a55688111b109663f"><param name="Name" value="ENTER_B_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga15e27eb51e6bd4a4970b1d1a41db25e4"><param name="Name" value="ENTER_M_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga8fe83ac76edc595f6b98cd4a4127aed5"><param name="Name" value="ERROR"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__makecode__map.html#gaca162232980dee2d78056fc244ac84fb"><param name="Name" value="ERROR_CODE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a1fcc741eee840546be6a01b7a96d745c"><param name="Name" value="ERR_BYTE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#ad0716f47f10771ff28de10a72eda0ebc"><param name="Name" value="ESC_B_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga1fcc741eee840546be6a01b7a96d745c"><param name="Name" value="ERR_BYTE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gad0716f47f10771ff28de10a72eda0ebc"><param name="Name" value="ESC_B_CODE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__game.html#gga7899b65f1ea0f655e4bbf8d2a5714285a7a10b5d68d31711288e1fe0fa17dbf4f"><param name="Name" value="EXIT"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__proj.html#gad450c32e3b95cb6907a2238245f35671"><param name="Name" value="EXPLOSION_TIME"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#acf8440b3511e95097baf55d14b9a51c3"><param name="Name" value="FIRST_BYTE_ID"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gacf8440b3511e95097baf55d14b9a51c3"><param name="Name" value="FIRST_BYTE_ID"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="graphics__card__macros_8h.html#a75843763a880805c52f5713dac46cd1e"><param name="Name" value="GET_BLU"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="graphics__card__macros_8h.html#add275be0112f1d2af5e7dbc03ab221a8"><param name="Name" value="GET_GRE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="graphics__card__macros_8h.html#a20a8c4bd352d15a0e1e2349eec2e9710"><param name="Name" value="GET_RED"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__game.html#ga7899b65f1ea0f655e4bbf8d2a5714285"><param name="Name" value="GameState"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__rtc.html#ga97d04080050bd1fe2eecd9721b86cba4"><param name="Name" value="HOUR_FORM"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a0cfb144c907a65519a9fd11dc37463e1"><param name="Name" value="IBF_FULL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga0cfb144c907a65519a9fd11dc37463e1"><param name="Name" value="IBF_FULL"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="graphics__card__macros_8h.html#ac2d4dc066c8ba9dae1cf9eb948649d00"><param name="Name" value="INDEXED_1024_768"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a783be5698cf07b1daaf126ef89c19063"><param name="Name" value="IN_BUF"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga783be5698cf07b1daaf126ef89c19063"><param name="Name" value="IN_BUF"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__rtc.html#ga8565773f11252b9d615f1b12ac73032d"><param name="Name" value="IRQF"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a5dc0dab045473a5563c7903cb6484416"><param name="Name" value="IRQ_LINE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a835369bb79d880e569cefdced4641b1c"><param name="Name" value="KBC_ENABLE_INT"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a01be3e103b959ac623cc97a88b22cc5d"><param name="Name" value="KBC_NUM_TRIES"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#aea2ef6dda1aabebf291eeee29b66c04a"><param name="Name" value="KBC_PAR_ERR"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#ae31c3653f5881b02cbfdd4ccbb7ccf50"><param name="Name" value="KBC_TO_ERR"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#ae36fc325bc821e866e90d0e66f9cc168"><param name="Name" value="KB_IRQ"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga5dc0dab045473a5563c7903cb6484416"><param name="Name" value="IRQ_LINE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga835369bb79d880e569cefdced4641b1c"><param name="Name" value="KBC_ENABLE_INT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga01be3e103b959ac623cc97a88b22cc5d"><param name="Name" value="KBC_NUM_TRIES"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gaea2ef6dda1aabebf291eeee29b66c04a"><param name="Name" value="KBC_PAR_ERR"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gae31c3653f5881b02cbfdd4ccbb7ccf50"><param name="Name" value="KBC_TO_ERR"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gae36fc325bc821e866e90d0e66f9cc168"><param name="Name" value="KB_IRQ"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="utils_8c.html#a8aa285292f13d752b8bcf4e4bc2493b5"><param name="Name" value="LAB3a"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__game.html#gga7899b65f1ea0f655e4bbf8d2a5714285a8ac6a0bc60a7a5faad394dc988be36eb"><param name="Name" value="LEADERBOARD"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__proj.html#ga437ef08681e7210d6678427030446a54"><param name="Name" value="LEFT"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#abbc8382ae4ea521f03c119a14478b759"><param name="Name" value="LEFT_BUTTON"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gabbc8382ae4ea521f03c119a14478b759"><param name="Name" value="LEFT_BUTTON"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="graphics__card__macros_8h.html#a2ad5615058ac50633e1425fddffcb07d"><param name="Name" value="LINEAR_FRAME_BUFFER_MD"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__game.html#gga7899b65f1ea0f655e4bbf8d2a5714285a339435bd0d4a842c6107333c908a5317"><param name="Name" value="LOST"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="entities_8c.html#a39d4ce04647d0b1c2f361597c8bcefc9"><param name="Name" value="MAP_BLOCKS_SIZE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__game.html#gga7899b65f1ea0f655e4bbf8d2a5714285a4c40e60bc71a32b924ce1f08d57f9721"><param name="Name" value="MENU"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#aea4935ff922fa4fbbc0f03fc250e268b"><param name="Name" value="MIDDLE_BUTTON"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gaea4935ff922fa4fbbc0f03fc250e268b"><param name="Name" value="MIDDLE_BUTTON"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#affe8d332d06f58a994aed49ecc20415a"><param name="Name" value="MOUSE_H_INCLUDED"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__proj.html#gaffc4bab3e6779cefc6e6bac56bd2d193"><param name="Name" value="MOUSE_SPEED"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a8ce6c569566fb74aad808aaac6fdc1f0"><param name="Name" value="MOUSE_WRITE_CMD"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a958518a45b12053ae33606ee7cb68a55"><param name="Name" value="NACK"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga8ce6c569566fb74aad808aaac6fdc1f0"><param name="Name" value="MOUSE_WRITE_CMD"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga958518a45b12053ae33606ee7cb68a55"><param name="Name" value="NACK"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__proj.html#gaf38bf6cd0f19bb8fb47359def7f6f3f2"><param name="Name" value="NUMBER_OF_BOMBS"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__proj.html#gab3dc4a54e2bd25758773171fce85a85d"><param name="Name" value="NUMBER_OF_BOTS"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="font__macros_8h.html#af64260d4171a8e4b9020403dc9b4972c"><param name="Name" value="NUM_SYMBOLS"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#af0c5e1f42d64aad97b4240ea019e2356"><param name="Name" value="OBF_FULL"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#acfb42dde389e8ca36ab267002fbf5c6a"><param name="Name" value="OUT_BUF"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gaf0c5e1f42d64aad97b4240ea019e2356"><param name="Name" value="OBF_FULL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gacfb42dde389e8ca36ab267002fbf5c6a"><param name="Name" value="OUT_BUF"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#acfb42dde389e8ca36ab267002fbf5c6a"><param name="Name" value="keyboard_macros.h"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gacfb42dde389e8ca36ab267002fbf5c6a"><param name="Name" value="keyboard"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#acfb42dde389e8ca36ab267002fbf5c6a"><param name="Name" value="OUT_BUF"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gacfb42dde389e8ca36ab267002fbf5c6a"><param name="Name" value="OUT_BUF"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#acfb42dde389e8ca36ab267002fbf5c6a"><param name="Name" value="mouse_macros.h"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gacfb42dde389e8ca36ab267002fbf5c6a"><param name="Name" value="mouse"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__rtc.html#gaa0e278c26c25558741febfadd7216caa"><param name="Name" value="PF"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__rtc.html#gac40c2b49eb51e2adc237b530adfcadf4"><param name="Name" value="PIE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__game.html#gga7899b65f1ea0f655e4bbf8d2a5714285a0352906d1ea1dfcd663c918f3a86755b"><param name="Name" value="PLAY"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__proj.html#gaf49bad41acef45feb40939c0cf9d5d35"><param name="Name" value="PLAYER_SPEED"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a3edb96ff4ed65c98f514852bcdd4f944"><param name="Name" value="READ_CMD_BYTE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga3edb96ff4ed65c98f514852bcdd4f944"><param name="Name" value="READ_CMD_BYTE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__proj.html#gabc2b684fcc127e93aee54a3a45e25a7c"><param name="Name" value="REFRESH_RATE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__proj.html#gaf61315e1c4a04436923a5c52196cdd3c"><param name="Name" value="REST"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__proj.html#ga80fb826a684cf3f0d306b22aa100ddac"><param name="Name" value="RIGHT"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#aeb17351958162535ab6af2cd6b030955"><param name="Name" value="RIGHT_BUTTON"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gaeb17351958162535ab6af2cd6b030955"><param name="Name" value="RIGHT_BUTTON"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__rtc.html#ga7c51f1f956efe40fd156fbb01baedc4e"><param name="Name" value="RS0"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__rtc.html#gaee48b563b7ff09121325a0ba4c21c6d3"><param name="Name" value="RS1"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__rtc.html#gaf134a1920b448555168d4582f0ef49fb"><param name="Name" value="RS2"></OBJECT>
@@ -124,23 +124,23 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="graphics__card__macros_8h.html#a67e10ca508bfbe5f2ea25c46dec6a24f"><param name="Name" value="SET_COLOR"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="graphics__card__macros_8h.html#acc20c705a3b018810e24d4c1818c965c"><param name="Name" value="SET_GRE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="graphics__card__macros_8h.html#add486ade6cb226273a0e3741ec0e63d1"><param name="Name" value="SET_RED"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a203272f4561d20e665482fabec7beec1"><param name="Name" value="SPACEBAR_B_CODE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a5f45ad6235b059f93e8d5d5d153d72f8"><param name="Name" value="SPACEBAR_M_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga203272f4561d20e665482fabec7beec1"><param name="Name" value="SPACEBAR_B_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga5f45ad6235b059f93e8d5d5d153d72f8"><param name="Name" value="SPACEBAR_M_CODE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="font__macros_8h.html#af82fccdc5d35347c5d60e9acb58e4fd0"><param name="Name" value="SPACE_BAR_CODE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__timer.html#ga51b3a5e3d4811ca063fe25e35560ab40"><param name="Name" value="SPEAKER_CTRL"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__rtc.html#ga3eb471417c5e9c54468288c45c6d138b"><param name="Name" value="SQWE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#aee88783cf6f7e32d4e8e63b092598980"><param name="Name" value="STATUS_REG_ERR"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a89c4d098b53809674457b1660b1af780"><param name="Name" value="STAT_REG"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gaee88783cf6f7e32d4e8e63b092598980"><param name="Name" value="STATUS_REG_ERR"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga89c4d098b53809674457b1660b1af780"><param name="Name" value="STAT_REG"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a89c4d098b53809674457b1660b1af780"><param name="Name" value="keyboard_macros.h"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga89c4d098b53809674457b1660b1af780"><param name="Name" value="keyboard"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a89c4d098b53809674457b1660b1af780"><param name="Name" value="STAT_REG"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga89c4d098b53809674457b1660b1af780"><param name="Name" value="STAT_REG"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a89c4d098b53809674457b1660b1af780"><param name="Name" value="mouse_macros.h"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga89c4d098b53809674457b1660b1af780"><param name="Name" value="mouse"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a8275709ed9c5d17487693f1758f59409"><param name="Name" value="SUC_BYTE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#aef4e71205c088ab237806fc5d2094f29"><param name="Name" value="S_B_CODE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a143a513f72a8e3ac6a54c0c1d61b81e2"><param name="Name" value="S_M_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga8275709ed9c5d17487693f1758f59409"><param name="Name" value="SUC_BYTE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gaef4e71205c088ab237806fc5d2094f29"><param name="Name" value="S_B_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga143a513f72a8e3ac6a54c0c1d61b81e2"><param name="Name" value="S_M_CODE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__timer.html#ga30bf84c312af248cb81bb224e09f9ba8"><param name="Name" value="TIMER0_IRQ"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__timer.html#gacc9ff9df4a9674a1ce9ba08fc4a4679e"><param name="Name" value="TIMER_0"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__timer.html#gac62c99c2a9289891c1b83052242cca49"><param name="Name" value="TIMER_1"></OBJECT>
@@ -162,21 +162,21 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__timer.html#ga8349623fd8d99f9cc5d8ae29d78594fc"><param name="Name" value="TIMER_SEL1"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__timer.html#ga142a255de0dbc48aeabd45fc10c33672"><param name="Name" value="TIMER_SEL2"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__timer.html#ga4745cbf21da3d3fea5dbb080b2b73bac"><param name="Name" value="TIMER_SQR_WAVE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a2877405e9b042d1e29cc09bcc8daccfa"><param name="Name" value="TWO_BYTE_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga2877405e9b042d1e29cc09bcc8daccfa"><param name="Name" value="TWO_BYTE_CODE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__rtc.html#ga2657a76f02e47fa3f3320fa9c6353f31"><param name="Name" value="UF"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__rtc.html#ga2c276876faf62c1b29fe2383ce4ccfda"><param name="Name" value="UIE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__rtc.html#ga3289eebd69837790d4aacaccd18d46db"><param name="Name" value="UIP"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__proj.html#ga1965eaca47dbf3f87acdafc2208f04eb"><param name="Name" value="UP"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__rtc.html#ga23eb92fd11f6f00cb88b0a6e2197a92f"><param name="Name" value="VRT"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__game.html#gga7899b65f1ea0f655e4bbf8d2a5714285a5a0f1e556554ad597318089b65502872"><param name="Name" value="WON"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a6bbab0e165f6f55c8f1371fd18ce9a0e"><param name="Name" value="WRITE_CMD_BYTE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#accda38b09f856ff41a392a50fe82b99d"><param name="Name" value="WRITE_KBC"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a50a2f71ad556faa8026b28f51667339b"><param name="Name" value="W_B_CODE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a615f154a0150f705b45458ec6e7b9e94"><param name="Name" value="W_M_CODE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#af329f104f7167317fe4d99fc6819501d"><param name="Name" value="X_OVFL"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a181f1c2860e4d7fd7788990378061137"><param name="Name" value="X_SIGN"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#ad49b33d3abadec53a57d09a7f255315f"><param name="Name" value="Y_OVFL"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a2a0064e2f0979eea21b81e4fe6b2ac32"><param name="Name" value="Y_SIGN"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga6bbab0e165f6f55c8f1371fd18ce9a0e"><param name="Name" value="WRITE_CMD_BYTE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gaccda38b09f856ff41a392a50fe82b99d"><param name="Name" value="WRITE_KBC"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga50a2f71ad556faa8026b28f51667339b"><param name="Name" value="W_B_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga615f154a0150f705b45458ec6e7b9e94"><param name="Name" value="W_M_CODE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gaf329f104f7167317fe4d99fc6819501d"><param name="Name" value="X_OVFL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga181f1c2860e4d7fd7788990378061137"><param name="Name" value="X_SIGN"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gad49b33d3abadec53a57d09a7f255315f"><param name="Name" value="Y_OVFL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga2a0064e2f0979eea21b81e4fe6b2ac32"><param name="Name" value="Y_SIGN"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a1c7ad00b93291685903f210382bd4c7d"><param name="Name" value="bb"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a1c7ad00b93291685903f210382bd4c7d"><param name="Name" value="keyboard.c"></OBJECT>
@@ -389,14 +389,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structwall.html#a559d69fc6f60b54d658bbdd9df45537f"><param name="Name" value="broken"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structmenu.html#a6c599ffb2e5ea10856c4cda5db6f6a2c"><param name="Name" value="buttons"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bomb.html#ga20334459eff282dc2a7c1b498d8261a1"><param name="Name" value="check_bomb_click"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8c.html#ab8194281d55a22374cc21f661c3e286a"><param name="Name" value="clear_keys"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8c.html#ab8194281d55a22374cc21f661c3e286a"><param name="Name" value="keys.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8h.html#ab8194281d55a22374cc21f661c3e286a"><param name="Name" value="clear_keys"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8h.html#ab8194281d55a22374cc21f661c3e286a"><param name="Name" value="keys.h"></OBJECT>
-  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keys.html#gab8194281d55a22374cc21f661c3e286a"><param name="Name" value="clear_keys"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structrectangle.html#aa6cd5481a411bfa1cc869e3634854206"><param name="Name" value="color"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structexplosion.html#a484cc12d99c7e3e85cf1769e204748f9"><param name="Name" value="counter"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structbot.html#ae3b5ae735412c9bb0eb351010a92f122"><param name="Name" value="cx"></OBJECT>
@@ -433,14 +426,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structdate__struct.html#a4c96069e482c6821f68b8ffe3e1d0ab3"><param name="Name" value="year"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structdate__struct.html#a98571958fff7dc0413d71928e9330d08"><param name="Name" value="day"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a213d5f0c93d25fe21ae6ee3ba7b50a15"><param name="Name" value="disable_data_reporting"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a213d5f0c93d25fe21ae6ee3ba7b50a15"><param name="Name" value="mouse.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a213d5f0c93d25fe21ae6ee3ba7b50a15"><param name="Name" value="disable_data_reporting"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a213d5f0c93d25fe21ae6ee3ba7b50a15"><param name="Name" value="mouse.h"></OBJECT>
-  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga213d5f0c93d25fe21ae6ee3ba7b50a15"><param name="Name" value="disable_data_reporting"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#af6aab2e9582c2102a19358170de32711"><param name="Name" value="disable_irq"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structdoor.html"><param name="Name" value="door"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__door.html"><param name="Name" value="door"></OBJECT>
@@ -733,30 +719,9 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="videocard_8h.html#a5136aae96dcc4763688583a7c0fad82b"><param name="Name" value="videocard.h"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a0ddcae30a7b2668d759df0b49c30fae8"><param name="Name" value="get_ih_counter"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a0ddcae30a7b2668d759df0b49c30fae8"><param name="Name" value="mouse.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a0ddcae30a7b2668d759df0b49c30fae8"><param name="Name" value="get_ih_counter"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a0ddcae30a7b2668d759df0b49c30fae8"><param name="Name" value="mouse.h"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#aa5f78bf37007fd431444ada69e576c25"><param name="Name" value="get_mouse_x_speed"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#aa5f78bf37007fd431444ada69e576c25"><param name="Name" value="mouse.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a3492a22488887b309534c8ea0a713970"><param name="Name" value="get_mouse_x_speed"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a3492a22488887b309534c8ea0a713970"><param name="Name" value="mouse.h"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#aaa7358307be74877f191a6fba3bdfbd4"><param name="Name" value="get_mouse_y_speed"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#aaa7358307be74877f191a6fba3bdfbd4"><param name="Name" value="mouse.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#acd4fb153c9379736047a078056b5409d"><param name="Name" value="get_mouse_y_speed"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#acd4fb153c9379736047a078056b5409d"><param name="Name" value="mouse.h"></OBJECT>
-  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga0ddcae30a7b2668d759df0b49c30fae8"><param name="Name" value="get_ih_counter"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga3492a22488887b309534c8ea0a713970"><param name="Name" value="get_mouse_x_speed"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gacd4fb153c9379736047a078056b5409d"><param name="Name" value="get_mouse_y_speed"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__project__functions.html#ga6360a927b93bbab65f4683fde291732f"><param name="Name" value="get_odd_random_in_range"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="videocard_8c.html#a1bf59d83a78c9d97f770a4ef64e6f425"><param name="Name" value="get_rectangles_height"></OBJECT>
   <UL>
@@ -837,104 +802,32 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="timer_8c.html#a96f78a87d064e47d627d222f67a8d012"><param name="Name" value="hook_id"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structtime__struct.html#aa587ac48c5adeb8323475637f4c922a8"><param name="Name" value="hour"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structsprite.html#a4bc4962a5fdba7a82322aa2546450fcf"><param name="Name" value="img"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#aea686410621c1656f04f8ba3d27ba883"><param name="Name" value="int"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gaea686410621c1656f04f8ba3d27ba883"><param name="Name" value="int"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#aea686410621c1656f04f8ba3d27ba883"><param name="Name" value="mouse.h"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gaea686410621c1656f04f8ba3d27ba883"><param name="Name" value="mouse"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#af7e4cc29090bc70293888486e05303f4"><param name="Name" value="int"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gaf7e4cc29090bc70293888486e05303f4"><param name="Name" value="int"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#af7e4cc29090bc70293888486e05303f4"><param name="Name" value="mouse.h"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gaf7e4cc29090bc70293888486e05303f4"><param name="Name" value="mouse"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a19a8f528f8c0db507314b4cee9093361"><param name="Name" value="is_two_byte"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a19a8f528f8c0db507314b4cee9093361"><param name="Name" value="keyboard.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#a19a8f528f8c0db507314b4cee9093361"><param name="Name" value="is_two_byte"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#a19a8f528f8c0db507314b4cee9093361"><param name="Name" value="keyboard.h"></OBJECT>
-  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga19a8f528f8c0db507314b4cee9093361"><param name="Name" value="is_two_byte"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__kbc.html"><param name="Name" value="kbc"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#aea970a154161a35f6894898a092ed70a"><param name="Name" value="kbc_ih"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#ae39c3d8b6a1faff702ef621f9428034b"><param name="Name" value="kbd_enable_int"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#ae39c3d8b6a1faff702ef621f9428034b"><param name="Name" value="keyboard.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#ae39c3d8b6a1faff702ef621f9428034b"><param name="Name" value="kbd_enable_int"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#ae39c3d8b6a1faff702ef621f9428034b"><param name="Name" value="keyboard.h"></OBJECT>
-  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gae39c3d8b6a1faff702ef621f9428034b"><param name="Name" value="kbd_enable_int"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a036d7c9ef9559f586bf12d3c85290792"><param name="Name" value="kbd_error"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a50c3284f5c168b20d60a74fe4db376a1"><param name="Name" value="kbd_error_occured"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a50c3284f5c168b20d60a74fe4db376a1"><param name="Name" value="keyboard.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#a50c3284f5c168b20d60a74fe4db376a1"><param name="Name" value="kbd_error_occured"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#a50c3284f5c168b20d60a74fe4db376a1"><param name="Name" value="keyboard.h"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a18fe9216c6ed12e82691a6de009412c3"><param name="Name" value="kbd_get_size_bb"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a18fe9216c6ed12e82691a6de009412c3"><param name="Name" value="keyboard.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#a18fe9216c6ed12e82691a6de009412c3"><param name="Name" value="kbd_get_size_bb"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#a18fe9216c6ed12e82691a6de009412c3"><param name="Name" value="keyboard.h"></OBJECT>
-  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga50c3284f5c168b20d60a74fe4db376a1"><param name="Name" value="kbd_error_occured"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga18fe9216c6ed12e82691a6de009412c3"><param name="Name" value="kbd_get_size_bb"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a74708534432e98d4ab30ba40e2e5dcc3"><param name="Name" value="kbd_hook_id"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a8ef1cf74c3296d936ea7cdf6716f492c"><param name="Name" value="kbd_polling"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a8ef1cf74c3296d936ea7cdf6716f492c"><param name="Name" value="keyboard.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#a8ef1cf74c3296d936ea7cdf6716f492c"><param name="Name" value="kbd_polling"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#a8ef1cf74c3296d936ea7cdf6716f492c"><param name="Name" value="keyboard.h"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#afa9954ea12c84b7d7c14bb5d53da1c81"><param name="Name" value="kbd_process_key"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#afa9954ea12c84b7d7c14bb5d53da1c81"><param name="Name" value="keyboard.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#afa9954ea12c84b7d7c14bb5d53da1c81"><param name="Name" value="kbd_process_key"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#afa9954ea12c84b7d7c14bb5d53da1c81"><param name="Name" value="keyboard.h"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#ac3abf18e739f9c6ad13a5dc027bef1c9"><param name="Name" value="kbd_read_outbuf"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#ac3abf18e739f9c6ad13a5dc027bef1c9"><param name="Name" value="keyboard.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#ac3abf18e739f9c6ad13a5dc027bef1c9"><param name="Name" value="kbd_read_outbuf"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#ac3abf18e739f9c6ad13a5dc027bef1c9"><param name="Name" value="keyboard.h"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a4ac9231a99a664d6a9f0b69767e0d707"><param name="Name" value="kbd_subscribe_int"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a4ac9231a99a664d6a9f0b69767e0d707"><param name="Name" value="keyboard.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#a4ac9231a99a664d6a9f0b69767e0d707"><param name="Name" value="kbd_subscribe_int"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#a4ac9231a99a664d6a9f0b69767e0d707"><param name="Name" value="keyboard.h"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#aee0a7b54ee426fade9c780418d110fe0"><param name="Name" value="kbd_unsubscribe_int"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#aee0a7b54ee426fade9c780418d110fe0"><param name="Name" value="keyboard.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#aee0a7b54ee426fade9c780418d110fe0"><param name="Name" value="kbd_unsubscribe_int"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#aee0a7b54ee426fade9c780418d110fe0"><param name="Name" value="keyboard.h"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#ad766e6f72c86ebd66165bcc03f23fd6b"><param name="Name" value="kbd_write_command"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#ad766e6f72c86ebd66165bcc03f23fd6b"><param name="Name" value="keyboard.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#ad766e6f72c86ebd66165bcc03f23fd6b"><param name="Name" value="kbd_write_command"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#ad766e6f72c86ebd66165bcc03f23fd6b"><param name="Name" value="keyboard.h"></OBJECT>
-  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga8ef1cf74c3296d936ea7cdf6716f492c"><param name="Name" value="kbd_polling"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gafa9954ea12c84b7d7c14bb5d53da1c81"><param name="Name" value="kbd_process_key"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gac3abf18e739f9c6ad13a5dc027bef1c9"><param name="Name" value="kbd_read_outbuf"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga4ac9231a99a664d6a9f0b69767e0d707"><param name="Name" value="kbd_subscribe_int"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gaee0a7b54ee426fade9c780418d110fe0"><param name="Name" value="kbd_unsubscribe_int"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gad766e6f72c86ebd66165bcc03f23fd6b"><param name="Name" value="kbd_write_command"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html"><param name="Name" value="keyboard.c"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a1c7ad00b93291685903f210382bd4c7d"><param name="Name" value="bb"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html"><param name="Name" value="keyboard.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a19a8f528f8c0db507314b4cee9093361"><param name="Name" value="is_two_byte"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html"><param name="Name" value="keyboard.c"></OBJECT>
   <UL>
@@ -942,63 +835,11 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html"><param name="Name" value="keyboard.c"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#ae39c3d8b6a1faff702ef621f9428034b"><param name="Name" value="kbd_enable_int"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html"><param name="Name" value="keyboard.c"></OBJECT>
-  <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a036d7c9ef9559f586bf12d3c85290792"><param name="Name" value="kbd_error"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html"><param name="Name" value="keyboard.c"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a50c3284f5c168b20d60a74fe4db376a1"><param name="Name" value="kbd_error_occured"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html"><param name="Name" value="keyboard.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a18fe9216c6ed12e82691a6de009412c3"><param name="Name" value="kbd_get_size_bb"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html"><param name="Name" value="keyboard.c"></OBJECT>
-  <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a74708534432e98d4ab30ba40e2e5dcc3"><param name="Name" value="kbd_hook_id"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html"><param name="Name" value="keyboard.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a8ef1cf74c3296d936ea7cdf6716f492c"><param name="Name" value="kbd_polling"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html"><param name="Name" value="keyboard.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#afa9954ea12c84b7d7c14bb5d53da1c81"><param name="Name" value="kbd_process_key"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html"><param name="Name" value="keyboard.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#ac3abf18e739f9c6ad13a5dc027bef1c9"><param name="Name" value="kbd_read_outbuf"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html"><param name="Name" value="keyboard.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a4ac9231a99a664d6a9f0b69767e0d707"><param name="Name" value="kbd_subscribe_int"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html"><param name="Name" value="keyboard.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#aee0a7b54ee426fade9c780418d110fe0"><param name="Name" value="kbd_unsubscribe_int"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html"><param name="Name" value="keyboard.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#ad766e6f72c86ebd66165bcc03f23fd6b"><param name="Name" value="kbd_write_command"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html"><param name="Name" value="keyboard.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a043275d13f1f746c8d7aced897cef9ea"><param name="Name" value="keyboard_check_esc"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html"><param name="Name" value="keyboard.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#afebbbe7d82c6dc58fdf0e97542c28eb3"><param name="Name" value="keyboard_get_code"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html"><param name="Name" value="keyboard.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a78f1795b7ccc1df9c9372b4d9f2c8e27"><param name="Name" value="keyboard_get_key"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html"><param name="Name" value="keyboard.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#abddbd5d96d5131280023cfaf2c1fc1a8"><param name="Name" value="process_scancode"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html"><param name="Name" value="keyboard.c"></OBJECT>
   <UL>
@@ -1008,287 +849,249 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a923796b48e02f0e0c16dfff48ca1cd84"><param name="Name" value="two_byte"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html"><param name="Name" value="keyboard.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#a19a8f528f8c0db507314b4cee9093361"><param name="Name" value="is_two_byte"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga24093a219cd0fc10addf85ac9730007f"><param name="Name" value="ARROWDOWN_B_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html"><param name="Name" value="keyboard.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#ae39c3d8b6a1faff702ef621f9428034b"><param name="Name" value="kbd_enable_int"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga826424b1ca784e806ff56d936520ca81"><param name="Name" value="ARROWDOWN_M_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html"><param name="Name" value="keyboard.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#a50c3284f5c168b20d60a74fe4db376a1"><param name="Name" value="kbd_error_occured"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga32e2666e39a3def0df7db352dc02549c"><param name="Name" value="ARROWLEFT_B_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html"><param name="Name" value="keyboard.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#a18fe9216c6ed12e82691a6de009412c3"><param name="Name" value="kbd_get_size_bb"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga08dcb4808e0b0efbaf481471de4edc2e"><param name="Name" value="ARROWLEFT_M_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html"><param name="Name" value="keyboard.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#a8ef1cf74c3296d936ea7cdf6716f492c"><param name="Name" value="kbd_polling"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gadbeccc034ece3dd451695d21b00b3382"><param name="Name" value="ARROWRIGHT_B_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html"><param name="Name" value="keyboard.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#afa9954ea12c84b7d7c14bb5d53da1c81"><param name="Name" value="kbd_process_key"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga221ebf3cd38d96202ee1eff4b3966d26"><param name="Name" value="ARROWRIGHT_M_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html"><param name="Name" value="keyboard.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#ac3abf18e739f9c6ad13a5dc027bef1c9"><param name="Name" value="kbd_read_outbuf"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga6a7ff03326906dc31e2bd4662b6fd60c"><param name="Name" value="ARROWUP_B_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html"><param name="Name" value="keyboard.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#a4ac9231a99a664d6a9f0b69767e0d707"><param name="Name" value="kbd_subscribe_int"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga057ee8527d8fbdb5d903146d849cc266"><param name="Name" value="ARROWUP_M_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html"><param name="Name" value="keyboard.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#aee0a7b54ee426fade9c780418d110fe0"><param name="Name" value="kbd_unsubscribe_int"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga2d87a4296d8ac7763da0206a022fbca8"><param name="Name" value="AUX_MOUSE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html"><param name="Name" value="keyboard.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#ad766e6f72c86ebd66165bcc03f23fd6b"><param name="Name" value="kbd_write_command"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga468bb07d0a2499d16da78e403119abcd"><param name="Name" value="A_B_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html"><param name="Name" value="keyboard.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#abfe1d0d953f11f8ebfda53e34987bb28"><param name="Name" value="keyboard_check_esc"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gafa3b88809d1d7489b7b549055ce2da9c"><param name="Name" value="A_M_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html"><param name="Name" value="keyboard.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#afebbbe7d82c6dc58fdf0e97542c28eb3"><param name="Name" value="keyboard_get_code"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga8b06a029330943ad0d5afc9656cbc63d"><param name="Name" value="BACKSPACE_B_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html"><param name="Name" value="keyboard.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#a78f1795b7ccc1df9c9372b4d9f2c8e27"><param name="Name" value="keyboard_get_key"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga226e16059eaca696ee1979284711bc66"><param name="Name" value="BACKSPACE_M_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html"><param name="Name" value="keyboard.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#aa3fa39de81163cea7324e28279256dcf"><param name="Name" value="keyboard_process_key"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gabf7206ca2181c36ef04b795c9b64e886"><param name="Name" value="CMD_REG"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html"><param name="Name" value="keyboard.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#abddbd5d96d5131280023cfaf2c1fc1a8"><param name="Name" value="process_scancode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga1a522aa19bcb695a9df30032a893bee3"><param name="Name" value="DELAY_US"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html"><param name="Name" value="keyboard.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#abde036f25e345f7d5174c719213f1d9f"><param name="Name" value="reset_vars"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga318aacff9ad4d3ec65aed570aac43f69"><param name="Name" value="D_B_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a043275d13f1f746c8d7aced897cef9ea"><param name="Name" value="keyboard_check_esc"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a043275d13f1f746c8d7aced897cef9ea"><param name="Name" value="keyboard.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga0d59739e060a8d5da518a1f8ee41a246"><param name="Name" value="D_M_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#abfe1d0d953f11f8ebfda53e34987bb28"><param name="Name" value="keyboard_check_esc"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#abfe1d0d953f11f8ebfda53e34987bb28"><param name="Name" value="keyboard.h"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gaaf8afca952b7a55a55688111b109663f"><param name="Name" value="ENTER_B_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#afebbbe7d82c6dc58fdf0e97542c28eb3"><param name="Name" value="keyboard_get_code"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#afebbbe7d82c6dc58fdf0e97542c28eb3"><param name="Name" value="keyboard.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga15e27eb51e6bd4a4970b1d1a41db25e4"><param name="Name" value="ENTER_M_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#afebbbe7d82c6dc58fdf0e97542c28eb3"><param name="Name" value="keyboard_get_code"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#afebbbe7d82c6dc58fdf0e97542c28eb3"><param name="Name" value="keyboard.h"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gad0716f47f10771ff28de10a72eda0ebc"><param name="Name" value="ESC_B_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a78f1795b7ccc1df9c9372b4d9f2c8e27"><param name="Name" value="keyboard_get_key"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a78f1795b7ccc1df9c9372b4d9f2c8e27"><param name="Name" value="keyboard.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga0cfb144c907a65519a9fd11dc37463e1"><param name="Name" value="IBF_FULL"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#a78f1795b7ccc1df9c9372b4d9f2c8e27"><param name="Name" value="keyboard_get_key"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#a78f1795b7ccc1df9c9372b4d9f2c8e27"><param name="Name" value="keyboard.h"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga835369bb79d880e569cefdced4641b1c"><param name="Name" value="KBC_ENABLE_INT"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a24093a219cd0fc10addf85ac9730007f"><param name="Name" value="ARROWDOWN_B_CODE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga01be3e103b959ac623cc97a88b22cc5d"><param name="Name" value="KBC_NUM_TRIES"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a826424b1ca784e806ff56d936520ca81"><param name="Name" value="ARROWDOWN_M_CODE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gaea2ef6dda1aabebf291eeee29b66c04a"><param name="Name" value="KBC_PAR_ERR"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a32e2666e39a3def0df7db352dc02549c"><param name="Name" value="ARROWLEFT_B_CODE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gae31c3653f5881b02cbfdd4ccbb7ccf50"><param name="Name" value="KBC_TO_ERR"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a08dcb4808e0b0efbaf481471de4edc2e"><param name="Name" value="ARROWLEFT_M_CODE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gae36fc325bc821e866e90d0e66f9cc168"><param name="Name" value="KB_IRQ"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#adbeccc034ece3dd451695d21b00b3382"><param name="Name" value="ARROWRIGHT_B_CODE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gaf0c5e1f42d64aad97b4240ea019e2356"><param name="Name" value="OBF_FULL"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a221ebf3cd38d96202ee1eff4b3966d26"><param name="Name" value="ARROWRIGHT_M_CODE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gacfb42dde389e8ca36ab267002fbf5c6a"><param name="Name" value="OUT_BUF"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a6a7ff03326906dc31e2bd4662b6fd60c"><param name="Name" value="ARROWUP_B_CODE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga3edb96ff4ed65c98f514852bcdd4f944"><param name="Name" value="READ_CMD_BYTE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a057ee8527d8fbdb5d903146d849cc266"><param name="Name" value="ARROWUP_M_CODE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga203272f4561d20e665482fabec7beec1"><param name="Name" value="SPACEBAR_B_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a2d87a4296d8ac7763da0206a022fbca8"><param name="Name" value="AUX_MOUSE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga5f45ad6235b059f93e8d5d5d153d72f8"><param name="Name" value="SPACEBAR_M_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a468bb07d0a2499d16da78e403119abcd"><param name="Name" value="A_B_CODE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gaee88783cf6f7e32d4e8e63b092598980"><param name="Name" value="STATUS_REG_ERR"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#afa3b88809d1d7489b7b549055ce2da9c"><param name="Name" value="A_M_CODE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga89c4d098b53809674457b1660b1af780"><param name="Name" value="STAT_REG"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a8b06a029330943ad0d5afc9656cbc63d"><param name="Name" value="BACKSPACE_B_CODE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gaef4e71205c088ab237806fc5d2094f29"><param name="Name" value="S_B_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a226e16059eaca696ee1979284711bc66"><param name="Name" value="BACKSPACE_M_CODE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga143a513f72a8e3ac6a54c0c1d61b81e2"><param name="Name" value="S_M_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#abf7206ca2181c36ef04b795c9b64e886"><param name="Name" value="CMD_REG"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga2877405e9b042d1e29cc09bcc8daccfa"><param name="Name" value="TWO_BYTE_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a1a522aa19bcb695a9df30032a893bee3"><param name="Name" value="DELAY_US"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga6bbab0e165f6f55c8f1371fd18ce9a0e"><param name="Name" value="WRITE_CMD_BYTE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a318aacff9ad4d3ec65aed570aac43f69"><param name="Name" value="D_B_CODE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gaccda38b09f856ff41a392a50fe82b99d"><param name="Name" value="WRITE_KBC"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a0d59739e060a8d5da518a1f8ee41a246"><param name="Name" value="D_M_CODE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga50a2f71ad556faa8026b28f51667339b"><param name="Name" value="W_B_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#aaf8afca952b7a55a55688111b109663f"><param name="Name" value="ENTER_B_CODE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga615f154a0150f705b45458ec6e7b9e94"><param name="Name" value="W_M_CODE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a15e27eb51e6bd4a4970b1d1a41db25e4"><param name="Name" value="ENTER_M_CODE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga19a8f528f8c0db507314b4cee9093361"><param name="Name" value="is_two_byte"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#ad0716f47f10771ff28de10a72eda0ebc"><param name="Name" value="ESC_B_CODE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gae39c3d8b6a1faff702ef621f9428034b"><param name="Name" value="kbd_enable_int"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a0cfb144c907a65519a9fd11dc37463e1"><param name="Name" value="IBF_FULL"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga50c3284f5c168b20d60a74fe4db376a1"><param name="Name" value="kbd_error_occured"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a835369bb79d880e569cefdced4641b1c"><param name="Name" value="KBC_ENABLE_INT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga18fe9216c6ed12e82691a6de009412c3"><param name="Name" value="kbd_get_size_bb"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a01be3e103b959ac623cc97a88b22cc5d"><param name="Name" value="KBC_NUM_TRIES"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga8ef1cf74c3296d936ea7cdf6716f492c"><param name="Name" value="kbd_polling"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#aea2ef6dda1aabebf291eeee29b66c04a"><param name="Name" value="KBC_PAR_ERR"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gafa9954ea12c84b7d7c14bb5d53da1c81"><param name="Name" value="kbd_process_key"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#ae31c3653f5881b02cbfdd4ccbb7ccf50"><param name="Name" value="KBC_TO_ERR"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gac3abf18e739f9c6ad13a5dc027bef1c9"><param name="Name" value="kbd_read_outbuf"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#ae36fc325bc821e866e90d0e66f9cc168"><param name="Name" value="KB_IRQ"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga4ac9231a99a664d6a9f0b69767e0d707"><param name="Name" value="kbd_subscribe_int"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#af0c5e1f42d64aad97b4240ea019e2356"><param name="Name" value="OBF_FULL"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gaee0a7b54ee426fade9c780418d110fe0"><param name="Name" value="kbd_unsubscribe_int"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#acfb42dde389e8ca36ab267002fbf5c6a"><param name="Name" value="OUT_BUF"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gad766e6f72c86ebd66165bcc03f23fd6b"><param name="Name" value="kbd_write_command"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a3edb96ff4ed65c98f514852bcdd4f944"><param name="Name" value="READ_CMD_BYTE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gabfe1d0d953f11f8ebfda53e34987bb28"><param name="Name" value="keyboard_check_esc"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a203272f4561d20e665482fabec7beec1"><param name="Name" value="SPACEBAR_B_CODE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gafebbbe7d82c6dc58fdf0e97542c28eb3"><param name="Name" value="keyboard_get_code"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a5f45ad6235b059f93e8d5d5d153d72f8"><param name="Name" value="SPACEBAR_M_CODE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga78f1795b7ccc1df9c9372b4d9f2c8e27"><param name="Name" value="keyboard_get_key"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#aee88783cf6f7e32d4e8e63b092598980"><param name="Name" value="STATUS_REG_ERR"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gabddbd5d96d5131280023cfaf2c1fc1a8"><param name="Name" value="process_scancode"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html"><param name="Name" value="keyboard"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a89c4d098b53809674457b1660b1af780"><param name="Name" value="STAT_REG"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gabde036f25e345f7d5174c719213f1d9f"><param name="Name" value="reset_vars"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#aef4e71205c088ab237806fc5d2094f29"><param name="Name" value="S_B_CODE"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a143a513f72a8e3ac6a54c0c1d61b81e2"><param name="Name" value="S_M_CODE"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a2877405e9b042d1e29cc09bcc8daccfa"><param name="Name" value="TWO_BYTE_CODE"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a6bbab0e165f6f55c8f1371fd18ce9a0e"><param name="Name" value="WRITE_CMD_BYTE"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#accda38b09f856ff41a392a50fe82b99d"><param name="Name" value="WRITE_KBC"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a50a2f71ad556faa8026b28f51667339b"><param name="Name" value="W_B_CODE"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html"><param name="Name" value="keyboard_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard__macros_8h.html#a615f154a0150f705b45458ec6e7b9e94"><param name="Name" value="W_M_CODE"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#aa3fa39de81163cea7324e28279256dcf"><param name="Name" value="keyboard_process_key"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gabfe1d0d953f11f8ebfda53e34987bb28"><param name="Name" value="keyboard_check_esc"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gafebbbe7d82c6dc58fdf0e97542c28eb3"><param name="Name" value="keyboard_get_code"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#ga78f1795b7ccc1df9c9372b4d9f2c8e27"><param name="Name" value="keyboard_get_key"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structkeys.html"><param name="Name" value="keys"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8c.html"><param name="Name" value="keys.c"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keys.html"><param name="Name" value="keys"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8c.html#ab8194281d55a22374cc21f661c3e286a"><param name="Name" value="clear_keys"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8c.html"><param name="Name" value="keys.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8c.html#a87fd193d122c1b7e6236b8ad3d307438"><param name="Name" value="keys_ctor"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8c.html"><param name="Name" value="keys.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8c.html#a5b2506a2d1b0fac1f9a9b5b627614fff"><param name="Name" value="keys_dtor"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8h.html"><param name="Name" value="keys.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8h.html#ab8194281d55a22374cc21f661c3e286a"><param name="Name" value="clear_keys"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8h.html"><param name="Name" value="keys.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8h.html#a87fd193d122c1b7e6236b8ad3d307438"><param name="Name" value="keys_ctor"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8h.html"><param name="Name" value="keys.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8h.html#a5b2506a2d1b0fac1f9a9b5b627614fff"><param name="Name" value="keys_dtor"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8h.html"><param name="Name" value="keys.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8h.html#a7e73507e11719429d41bacdb8e73d1ee"><param name="Name" value="keys_t"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keys.html#gab8194281d55a22374cc21f661c3e286a"><param name="Name" value="clear_keys"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structkeys.html"><param name="Name" value="keys"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structkeys.html#a1f1cc7ce04a922a51e6f747a2b1a7965"><param name="Name" value="down_pressed"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keys.html"><param name="Name" value="keys"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keys.html#ga87fd193d122c1b7e6236b8ad3d307438"><param name="Name" value="keys_ctor"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keys.html"><param name="Name" value="keys"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keys.html#ga5b2506a2d1b0fac1f9a9b5b627614fff"><param name="Name" value="keys_dtor"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keys.html"><param name="Name" value="keys"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keys.html#ga7e73507e11719429d41bacdb8e73d1ee"><param name="Name" value="keys_t"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structkeys.html"><param name="Name" value="keys"></OBJECT>
   <UL>
@@ -1306,23 +1109,9 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structkeys.html#a92c3d4e35f5e38c2cd96f43438234021"><param name="Name" value="up_pressed"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8c.html#a87fd193d122c1b7e6236b8ad3d307438"><param name="Name" value="keys_ctor"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8c.html#a87fd193d122c1b7e6236b8ad3d307438"><param name="Name" value="keys.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8h.html#a87fd193d122c1b7e6236b8ad3d307438"><param name="Name" value="keys_ctor"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8h.html#a87fd193d122c1b7e6236b8ad3d307438"><param name="Name" value="keys.h"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8c.html#a5b2506a2d1b0fac1f9a9b5b627614fff"><param name="Name" value="keys_dtor"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8c.html#a5b2506a2d1b0fac1f9a9b5b627614fff"><param name="Name" value="keys.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8h.html#a5b2506a2d1b0fac1f9a9b5b627614fff"><param name="Name" value="keys_dtor"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8h.html#a5b2506a2d1b0fac1f9a9b5b627614fff"><param name="Name" value="keys.h"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keys_8h.html#a7e73507e11719429d41bacdb8e73d1ee"><param name="Name" value="keys_t"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keys.html#ga87fd193d122c1b7e6236b8ad3d307438"><param name="Name" value="keys_ctor"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keys.html#ga5b2506a2d1b0fac1f9a9b5b627614fff"><param name="Name" value="keys_dtor"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keys.html#ga7e73507e11719429d41bacdb8e73d1ee"><param name="Name" value="keys_t"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structleaderboard.html"><param name="Name" value="leaderboard"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structleaderboard.html"><param name="Name" value="leaderboard"></OBJECT>
   <UL>
@@ -1592,13 +1381,10 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structtime__struct.html#a1ae914babe348440ce49b8e2093fefd4"><param name="Name" value="min"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__utils.html#gafe09c65569d928fb6e323b26fc4e6d3d"><param name="Name" value="min_16"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structdate__struct.html#a736882ec1fcfa94c6a990f88f895b350"><param name="Name" value="month"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html"><param name="Name" value="mouse.c"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a580064d1d56cac83953ff8394a071361"><param name="Name" value="bb"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html"><param name="Name" value="mouse.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a213d5f0c93d25fe21ae6ee3ba7b50a15"><param name="Name" value="disable_data_reporting"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html"><param name="Name" value="mouse.c"></OBJECT>
   <UL>
@@ -1610,47 +1396,11 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html"><param name="Name" value="mouse.c"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a0ddcae30a7b2668d759df0b49c30fae8"><param name="Name" value="get_ih_counter"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html"><param name="Name" value="mouse.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#aa5f78bf37007fd431444ada69e576c25"><param name="Name" value="get_mouse_x_speed"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html"><param name="Name" value="mouse.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#aaa7358307be74877f191a6fba3bdfbd4"><param name="Name" value="get_mouse_y_speed"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html"><param name="Name" value="mouse.c"></OBJECT>
-  <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a37cad7cad93664f8a1ed1b0258fe958b"><param name="Name" value="mouse_hook_id"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html"><param name="Name" value="mouse.c"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a210374b50462acdedab00df64d5cea3c"><param name="Name" value="mouse_ih"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html"><param name="Name" value="mouse.c"></OBJECT>
-  <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#ad25735efbc541124a1c2593159f7f47b"><param name="Name" value="mouse_ih_counter"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html"><param name="Name" value="mouse.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a17f6a309e34b241931cc44259a3afda6"><param name="Name" value="mouse_issue_cmd"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html"><param name="Name" value="mouse.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a4ef6e9b3fe6752ceb423f88fd49c232d"><param name="Name" value="mouse_parse_packet"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html"><param name="Name" value="mouse.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a7c0b89b2552784fdc6cf5143d0fff378"><param name="Name" value="mouse_read_byte"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html"><param name="Name" value="mouse.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a20285aed4b3ef45812cd967532dd09db"><param name="Name" value="mouse_subscribe_int"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html"><param name="Name" value="mouse.c"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a3ecf823d80520009ae5e0d76ae40a3c3"><param name="Name" value="mouse_unsubscribe_int"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html"><param name="Name" value="mouse.c"></OBJECT>
   <UL>
@@ -1662,214 +1412,161 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html"><param name="Name" value="mouse.c"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a3e4446c79874fdcc5eb978b7313a419e"><param name="Name" value="reset_mouse_speed"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html"><param name="Name" value="mouse.c"></OBJECT>
-  <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#ade818037fd6c985038ff29656089758d"><param name="Name" value="status"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html"><param name="Name" value="mouse.c"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#affe8d332d06f58a994aed49ecc20415a"><param name="Name" value="mouse.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a0be1f5aa04af8f966ae6f49d81e2d1d6"><param name="Name" value="update_mouse"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga6f6489887e08bff4887d0bc5dcf214d8"><param name="Name" value="ACK"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html"><param name="Name" value="mouse.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#affe8d332d06f58a994aed49ecc20415a"><param name="Name" value="MOUSE_H_INCLUDED"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gaeb9e52bb9b02951f750c523dc373fcb8"><param name="Name" value="ACKS_DELAY"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html"><param name="Name" value="mouse.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a213d5f0c93d25fe21ae6ee3ba7b50a15"><param name="Name" value="disable_data_reporting"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga5a4a54453c9ef3337620a36939380cd3"><param name="Name" value="CTRL_REG"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html"><param name="Name" value="mouse.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a0ddcae30a7b2668d759df0b49c30fae8"><param name="Name" value="get_ih_counter"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gad374b510092499b5961d3771abf9c66e"><param name="Name" value="DISABLE_DATA_REPORT"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html"><param name="Name" value="mouse.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a3492a22488887b309534c8ea0a713970"><param name="Name" value="get_mouse_x_speed"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga1c22608f41bd715500d0333001079a8a"><param name="Name" value="ENABLE_DATA_REPORT"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html"><param name="Name" value="mouse.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#acd4fb153c9379736047a078056b5409d"><param name="Name" value="get_mouse_y_speed"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga8fe83ac76edc595f6b98cd4a4127aed5"><param name="Name" value="ERROR"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html"><param name="Name" value="mouse.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#aea686410621c1656f04f8ba3d27ba883"><param name="Name" value="int"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga1fcc741eee840546be6a01b7a96d745c"><param name="Name" value="ERR_BYTE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html"><param name="Name" value="mouse.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#af7e4cc29090bc70293888486e05303f4"><param name="Name" value="int"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gacf8440b3511e95097baf55d14b9a51c3"><param name="Name" value="FIRST_BYTE_ID"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html"><param name="Name" value="mouse.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a210374b50462acdedab00df64d5cea3c"><param name="Name" value="mouse_ih"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga783be5698cf07b1daaf126ef89c19063"><param name="Name" value="IN_BUF"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html"><param name="Name" value="mouse.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a17f6a309e34b241931cc44259a3afda6"><param name="Name" value="mouse_issue_cmd"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga5dc0dab045473a5563c7903cb6484416"><param name="Name" value="IRQ_LINE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html"><param name="Name" value="mouse.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a4ef6e9b3fe6752ceb423f88fd49c232d"><param name="Name" value="mouse_parse_packet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gabbc8382ae4ea521f03c119a14478b759"><param name="Name" value="LEFT_BUTTON"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html"><param name="Name" value="mouse.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a7c0b89b2552784fdc6cf5143d0fff378"><param name="Name" value="mouse_read_byte"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gaea4935ff922fa4fbbc0f03fc250e268b"><param name="Name" value="MIDDLE_BUTTON"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html"><param name="Name" value="mouse.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a20285aed4b3ef45812cd967532dd09db"><param name="Name" value="mouse_subscribe_int"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga8ce6c569566fb74aad808aaac6fdc1f0"><param name="Name" value="MOUSE_WRITE_CMD"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html"><param name="Name" value="mouse.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a3ecf823d80520009ae5e0d76ae40a3c3"><param name="Name" value="mouse_unsubscribe_int"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga958518a45b12053ae33606ee7cb68a55"><param name="Name" value="NACK"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html"><param name="Name" value="mouse.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a3e4446c79874fdcc5eb978b7313a419e"><param name="Name" value="reset_mouse_speed"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gacfb42dde389e8ca36ab267002fbf5c6a"><param name="Name" value="OUT_BUF"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html"><param name="Name" value="mouse.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#aaf378d0600dad5b1596e9e9c0fddea55"><param name="Name" value="update_mouse"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gaeb17351958162535ab6af2cd6b030955"><param name="Name" value="RIGHT_BUTTON"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga89c4d098b53809674457b1660b1af780"><param name="Name" value="STAT_REG"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga8275709ed9c5d17487693f1758f59409"><param name="Name" value="SUC_BYTE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gaf329f104f7167317fe4d99fc6819501d"><param name="Name" value="X_OVFL"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga181f1c2860e4d7fd7788990378061137"><param name="Name" value="X_SIGN"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gad49b33d3abadec53a57d09a7f255315f"><param name="Name" value="Y_OVFL"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga2a0064e2f0979eea21b81e4fe6b2ac32"><param name="Name" value="Y_SIGN"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga213d5f0c93d25fe21ae6ee3ba7b50a15"><param name="Name" value="disable_data_reporting"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga0ddcae30a7b2668d759df0b49c30fae8"><param name="Name" value="get_ih_counter"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga3492a22488887b309534c8ea0a713970"><param name="Name" value="get_mouse_x_speed"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gacd4fb153c9379736047a078056b5409d"><param name="Name" value="get_mouse_y_speed"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gaea686410621c1656f04f8ba3d27ba883"><param name="Name" value="int"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gaf7e4cc29090bc70293888486e05303f4"><param name="Name" value="int"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga210374b50462acdedab00df64d5cea3c"><param name="Name" value="mouse_ih"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga17f6a309e34b241931cc44259a3afda6"><param name="Name" value="mouse_issue_cmd"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga4ef6e9b3fe6752ceb423f88fd49c232d"><param name="Name" value="mouse_parse_packet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga7c0b89b2552784fdc6cf5143d0fff378"><param name="Name" value="mouse_read_byte"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga20285aed4b3ef45812cd967532dd09db"><param name="Name" value="mouse_subscribe_int"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga3ecf823d80520009ae5e0d76ae40a3c3"><param name="Name" value="mouse_unsubscribe_int"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga3e4446c79874fdcc5eb978b7313a419e"><param name="Name" value="reset_mouse_speed"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html"><param name="Name" value="mouse"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gaaf378d0600dad5b1596e9e9c0fddea55"><param name="Name" value="update_mouse"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a37cad7cad93664f8a1ed1b0258fe958b"><param name="Name" value="mouse_hook_id"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a210374b50462acdedab00df64d5cea3c"><param name="Name" value="mouse_ih"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a210374b50462acdedab00df64d5cea3c"><param name="Name" value="mouse.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a210374b50462acdedab00df64d5cea3c"><param name="Name" value="mouse_ih"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a210374b50462acdedab00df64d5cea3c"><param name="Name" value="mouse.h"></OBJECT>
-  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga210374b50462acdedab00df64d5cea3c"><param name="Name" value="mouse_ih"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#ad25735efbc541124a1c2593159f7f47b"><param name="Name" value="mouse_ih_counter"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a17f6a309e34b241931cc44259a3afda6"><param name="Name" value="mouse_issue_cmd"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a17f6a309e34b241931cc44259a3afda6"><param name="Name" value="mouse.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a17f6a309e34b241931cc44259a3afda6"><param name="Name" value="mouse_issue_cmd"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a17f6a309e34b241931cc44259a3afda6"><param name="Name" value="mouse.h"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html"><param name="Name" value="mouse_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a6f6489887e08bff4887d0bc5dcf214d8"><param name="Name" value="ACK"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html"><param name="Name" value="mouse_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#aeb9e52bb9b02951f750c523dc373fcb8"><param name="Name" value="ACKS_DELAY"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html"><param name="Name" value="mouse_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a5a4a54453c9ef3337620a36939380cd3"><param name="Name" value="CTRL_REG"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html"><param name="Name" value="mouse_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#ad374b510092499b5961d3771abf9c66e"><param name="Name" value="DISABLE_DATA_REPORT"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html"><param name="Name" value="mouse_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a1c22608f41bd715500d0333001079a8a"><param name="Name" value="ENABLE_DATA_REPORT"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html"><param name="Name" value="mouse_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a8fe83ac76edc595f6b98cd4a4127aed5"><param name="Name" value="ERROR"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html"><param name="Name" value="mouse_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a1fcc741eee840546be6a01b7a96d745c"><param name="Name" value="ERR_BYTE"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html"><param name="Name" value="mouse_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#acf8440b3511e95097baf55d14b9a51c3"><param name="Name" value="FIRST_BYTE_ID"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html"><param name="Name" value="mouse_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a783be5698cf07b1daaf126ef89c19063"><param name="Name" value="IN_BUF"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html"><param name="Name" value="mouse_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a5dc0dab045473a5563c7903cb6484416"><param name="Name" value="IRQ_LINE"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html"><param name="Name" value="mouse_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#abbc8382ae4ea521f03c119a14478b759"><param name="Name" value="LEFT_BUTTON"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html"><param name="Name" value="mouse_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#aea4935ff922fa4fbbc0f03fc250e268b"><param name="Name" value="MIDDLE_BUTTON"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html"><param name="Name" value="mouse_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a8ce6c569566fb74aad808aaac6fdc1f0"><param name="Name" value="MOUSE_WRITE_CMD"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html"><param name="Name" value="mouse_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a958518a45b12053ae33606ee7cb68a55"><param name="Name" value="NACK"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html"><param name="Name" value="mouse_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#acfb42dde389e8ca36ab267002fbf5c6a"><param name="Name" value="OUT_BUF"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html"><param name="Name" value="mouse_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#aeb17351958162535ab6af2cd6b030955"><param name="Name" value="RIGHT_BUTTON"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html"><param name="Name" value="mouse_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a89c4d098b53809674457b1660b1af780"><param name="Name" value="STAT_REG"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html"><param name="Name" value="mouse_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a8275709ed9c5d17487693f1758f59409"><param name="Name" value="SUC_BYTE"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html"><param name="Name" value="mouse_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#af329f104f7167317fe4d99fc6819501d"><param name="Name" value="X_OVFL"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html"><param name="Name" value="mouse_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a181f1c2860e4d7fd7788990378061137"><param name="Name" value="X_SIGN"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html"><param name="Name" value="mouse_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#ad49b33d3abadec53a57d09a7f255315f"><param name="Name" value="Y_OVFL"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html"><param name="Name" value="mouse_macros.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse__macros_8h.html#a2a0064e2f0979eea21b81e4fe6b2ac32"><param name="Name" value="Y_SIGN"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a4ef6e9b3fe6752ceb423f88fd49c232d"><param name="Name" value="mouse_parse_packet"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a4ef6e9b3fe6752ceb423f88fd49c232d"><param name="Name" value="mouse.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a4ef6e9b3fe6752ceb423f88fd49c232d"><param name="Name" value="mouse_parse_packet"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a4ef6e9b3fe6752ceb423f88fd49c232d"><param name="Name" value="mouse.h"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a7c0b89b2552784fdc6cf5143d0fff378"><param name="Name" value="mouse_read_byte"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a7c0b89b2552784fdc6cf5143d0fff378"><param name="Name" value="mouse.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a7c0b89b2552784fdc6cf5143d0fff378"><param name="Name" value="mouse_read_byte"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a7c0b89b2552784fdc6cf5143d0fff378"><param name="Name" value="mouse.h"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a20285aed4b3ef45812cd967532dd09db"><param name="Name" value="mouse_subscribe_int"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a20285aed4b3ef45812cd967532dd09db"><param name="Name" value="mouse.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a20285aed4b3ef45812cd967532dd09db"><param name="Name" value="mouse_subscribe_int"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a20285aed4b3ef45812cd967532dd09db"><param name="Name" value="mouse.h"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a3ecf823d80520009ae5e0d76ae40a3c3"><param name="Name" value="mouse_unsubscribe_int"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a3ecf823d80520009ae5e0d76ae40a3c3"><param name="Name" value="mouse.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a3ecf823d80520009ae5e0d76ae40a3c3"><param name="Name" value="mouse_unsubscribe_int"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a3ecf823d80520009ae5e0d76ae40a3c3"><param name="Name" value="mouse.h"></OBJECT>
-  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga17f6a309e34b241931cc44259a3afda6"><param name="Name" value="mouse_issue_cmd"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga4ef6e9b3fe6752ceb423f88fd49c232d"><param name="Name" value="mouse_parse_packet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga7c0b89b2552784fdc6cf5143d0fff378"><param name="Name" value="mouse_read_byte"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga20285aed4b3ef45812cd967532dd09db"><param name="Name" value="mouse_subscribe_int"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga3ecf823d80520009ae5e0d76ae40a3c3"><param name="Name" value="mouse_unsubscribe_int"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a3b0204a87f8ef863dbf4af7d03ccc865"><param name="Name" value="mouse_x_speed"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a7b5879675acfa53d3b87acd82aa04bdd"><param name="Name" value="mouse_y_speed"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="timer_8c.html#a4ec79c7a92ad220b5bf1daa87814f869"><param name="Name" value="no_interrupts"></OBJECT>
@@ -1990,14 +1687,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__player.html#ga9df65ef34efcf40007091fa0e679ea0c"><param name="Name" value="player_t"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__player.html#ga4750014857f88ea4d671029619f7f91d"><param name="Name" value="player_test_exit_door"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__project__functions.html#ga64ba10670b954fa711657ebafda0579d"><param name="Name" value="point_distance"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#abddbd5d96d5131280023cfaf2c1fc1a8"><param name="Name" value="process_scancode"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#abddbd5d96d5131280023cfaf2c1fc1a8"><param name="Name" value="keyboard.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#abddbd5d96d5131280023cfaf2c1fc1a8"><param name="Name" value="process_scancode"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#abddbd5d96d5131280023cfaf2c1fc1a8"><param name="Name" value="keyboard.h"></OBJECT>
-  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gabddbd5d96d5131280023cfaf2c1fc1a8"><param name="Name" value="process_scancode"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__proj.html"><param name="Name" value="proj"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="proj_8c.html#a0ddf1224851353fc92bfbff6f499fa97"><param name="Name" value="proj.c"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__proj.html"><param name="Name" value="proj"></OBJECT>
@@ -2323,15 +2013,8 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="rectangle_8h.html#afc148b3f3d5c794f322b097006438412"><param name="Name" value="rectangle.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="rectangle_8h.html#aff07785ed98bda5b560c363c7ad2ba07"><param name="Name" value="rectangle_t"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a3e4446c79874fdcc5eb978b7313a419e"><param name="Name" value="reset_mouse_speed"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a3e4446c79874fdcc5eb978b7313a419e"><param name="Name" value="mouse.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a3e4446c79874fdcc5eb978b7313a419e"><param name="Name" value="reset_mouse_speed"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#a3e4446c79874fdcc5eb978b7313a419e"><param name="Name" value="mouse.h"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8h.html#abde036f25e345f7d5174c719213f1d9f"><param name="Name" value="reset_vars"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#ga3e4446c79874fdcc5eb978b7313a419e"><param name="Name" value="reset_mouse_speed"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__keyboard.html#gabde036f25e345f7d5174c719213f1d9f"><param name="Name" value="reset_vars"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structkeys.html#a850837540d8f14d450178c580f0f71d1"><param name="Name" value="right_pressed"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__rtc.html"><param name="Name" value="rtc"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__rtc.html"><param name="Name" value="rtc"></OBJECT>
@@ -2994,14 +2677,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__timer.html#gafabd21de449be154dd65d5fdb2d8045d"><param name="Name" value="timer_unsubscribe_int"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="keyboard_8c.html#a923796b48e02f0e0c16dfff48ca1cd84"><param name="Name" value="two_byte"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structkeys.html#a92c3d4e35f5e38c2cd96f43438234021"><param name="Name" value="up_pressed"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a0be1f5aa04af8f966ae6f49d81e2d1d6"><param name="Name" value="update_mouse"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8c.html#a0be1f5aa04af8f966ae6f49d81e2d1d6"><param name="Name" value="mouse.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#aaf378d0600dad5b1596e9e9c0fddea55"><param name="Name" value="update_mouse"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mouse_8h.html#aaf378d0600dad5b1596e9e9c0fddea55"><param name="Name" value="mouse.h"></OBJECT>
-  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__mouse.html#gaaf378d0600dad5b1596e9e9c0fddea55"><param name="Name" value="update_mouse"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__utils.html#ga81621440b3d65680979425e39aa8c789"><param name="Name" value="util_get_LSB"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__utils.html#ga6a880076cd2ec468834438b6e0c58836"><param name="Name" value="util_get_MSB"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4"><param name="Name" value="util_sys_inb"></OBJECT>

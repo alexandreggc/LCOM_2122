@@ -8,6 +8,121 @@
   <UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="libs"><param name="Local" value="group__libs.html"><param name="ImageNumber" value="1"></OBJECT>
     <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="kbc"><param name="Local" value="group__kbc.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="keyboard"><param name="Local" value="group__keyboard.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="A_B_CODE"><param name="Local" value="group__keyboard.html#ga468bb07d0a2499d16da78e403119abcd"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="A_M_CODE"><param name="Local" value="group__keyboard.html#gafa3b88809d1d7489b7b549055ce2da9c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWDOWN_B_CODE"><param name="Local" value="group__keyboard.html#ga24093a219cd0fc10addf85ac9730007f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWDOWN_M_CODE"><param name="Local" value="group__keyboard.html#ga826424b1ca784e806ff56d936520ca81"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWLEFT_B_CODE"><param name="Local" value="group__keyboard.html#ga32e2666e39a3def0df7db352dc02549c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWLEFT_M_CODE"><param name="Local" value="group__keyboard.html#ga08dcb4808e0b0efbaf481471de4edc2e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWRIGHT_B_CODE"><param name="Local" value="group__keyboard.html#gadbeccc034ece3dd451695d21b00b3382"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWRIGHT_M_CODE"><param name="Local" value="group__keyboard.html#ga221ebf3cd38d96202ee1eff4b3966d26"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWUP_B_CODE"><param name="Local" value="group__keyboard.html#ga6a7ff03326906dc31e2bd4662b6fd60c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWUP_M_CODE"><param name="Local" value="group__keyboard.html#ga057ee8527d8fbdb5d903146d849cc266"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AUX_MOUSE"><param name="Local" value="group__keyboard.html#ga2d87a4296d8ac7763da0206a022fbca8"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="BACKSPACE_B_CODE"><param name="Local" value="group__keyboard.html#ga8b06a029330943ad0d5afc9656cbc63d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="BACKSPACE_M_CODE"><param name="Local" value="group__keyboard.html#ga226e16059eaca696ee1979284711bc66"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CMD_REG"><param name="Local" value="group__keyboard.html#gabf7206ca2181c36ef04b795c9b64e886"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="D_B_CODE"><param name="Local" value="group__keyboard.html#ga318aacff9ad4d3ec65aed570aac43f69"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="D_M_CODE"><param name="Local" value="group__keyboard.html#ga0d59739e060a8d5da518a1f8ee41a246"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DELAY_US"><param name="Local" value="group__keyboard.html#ga1a522aa19bcb695a9df30032a893bee3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ENTER_B_CODE"><param name="Local" value="group__keyboard.html#gaaf8afca952b7a55a55688111b109663f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ENTER_M_CODE"><param name="Local" value="group__keyboard.html#ga15e27eb51e6bd4a4970b1d1a41db25e4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ESC_B_CODE"><param name="Local" value="group__keyboard.html#gad0716f47f10771ff28de10a72eda0ebc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="IBF_FULL"><param name="Local" value="group__keyboard.html#ga0cfb144c907a65519a9fd11dc37463e1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="KB_IRQ"><param name="Local" value="group__keyboard.html#gae36fc325bc821e866e90d0e66f9cc168"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="KBC_ENABLE_INT"><param name="Local" value="group__keyboard.html#ga835369bb79d880e569cefdced4641b1c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="KBC_NUM_TRIES"><param name="Local" value="group__keyboard.html#ga01be3e103b959ac623cc97a88b22cc5d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="KBC_PAR_ERR"><param name="Local" value="group__keyboard.html#gaea2ef6dda1aabebf291eeee29b66c04a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="KBC_TO_ERR"><param name="Local" value="group__keyboard.html#gae31c3653f5881b02cbfdd4ccbb7ccf50"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="OBF_FULL"><param name="Local" value="group__keyboard.html#gaf0c5e1f42d64aad97b4240ea019e2356"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="OUT_BUF"><param name="Local" value="group__keyboard.html#gacfb42dde389e8ca36ab267002fbf5c6a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="READ_CMD_BYTE"><param name="Local" value="group__keyboard.html#ga3edb96ff4ed65c98f514852bcdd4f944"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="S_B_CODE"><param name="Local" value="group__keyboard.html#gaef4e71205c088ab237806fc5d2094f29"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="S_M_CODE"><param name="Local" value="group__keyboard.html#ga143a513f72a8e3ac6a54c0c1d61b81e2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SPACEBAR_B_CODE"><param name="Local" value="group__keyboard.html#ga203272f4561d20e665482fabec7beec1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SPACEBAR_M_CODE"><param name="Local" value="group__keyboard.html#ga5f45ad6235b059f93e8d5d5d153d72f8"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="STAT_REG"><param name="Local" value="group__keyboard.html#ga89c4d098b53809674457b1660b1af780"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="STATUS_REG_ERR"><param name="Local" value="group__keyboard.html#gaee88783cf6f7e32d4e8e63b092598980"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="TWO_BYTE_CODE"><param name="Local" value="group__keyboard.html#ga2877405e9b042d1e29cc09bcc8daccfa"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="W_B_CODE"><param name="Local" value="group__keyboard.html#ga50a2f71ad556faa8026b28f51667339b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="W_M_CODE"><param name="Local" value="group__keyboard.html#ga615f154a0150f705b45458ec6e7b9e94"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="WRITE_CMD_BYTE"><param name="Local" value="group__keyboard.html#ga6bbab0e165f6f55c8f1371fd18ce9a0e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="WRITE_KBC"><param name="Local" value="group__keyboard.html#gaccda38b09f856ff41a392a50fe82b99d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="is_two_byte"><param name="Local" value="group__keyboard.html#ga19a8f528f8c0db507314b4cee9093361"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_enable_int"><param name="Local" value="group__keyboard.html#gae39c3d8b6a1faff702ef621f9428034b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_error_occured"><param name="Local" value="group__keyboard.html#ga50c3284f5c168b20d60a74fe4db376a1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_get_size_bb"><param name="Local" value="group__keyboard.html#ga18fe9216c6ed12e82691a6de009412c3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_polling"><param name="Local" value="group__keyboard.html#ga8ef1cf74c3296d936ea7cdf6716f492c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_process_key"><param name="Local" value="group__keyboard.html#gafa9954ea12c84b7d7c14bb5d53da1c81"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_read_outbuf"><param name="Local" value="group__keyboard.html#gac3abf18e739f9c6ad13a5dc027bef1c9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_subscribe_int"><param name="Local" value="group__keyboard.html#ga4ac9231a99a664d6a9f0b69767e0d707"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_unsubscribe_int"><param name="Local" value="group__keyboard.html#gaee0a7b54ee426fade9c780418d110fe0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_write_command"><param name="Local" value="group__keyboard.html#gad766e6f72c86ebd66165bcc03f23fd6b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="keyboard_check_esc"><param name="Local" value="group__keyboard.html#gabfe1d0d953f11f8ebfda53e34987bb28"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="keyboard_get_code"><param name="Local" value="group__keyboard.html#gafebbbe7d82c6dc58fdf0e97542c28eb3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="keyboard_get_key"><param name="Local" value="group__keyboard.html#ga78f1795b7ccc1df9c9372b4d9f2c8e27"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="process_scancode"><param name="Local" value="group__keyboard.html#gabddbd5d96d5131280023cfaf2c1fc1a8"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="reset_vars"><param name="Local" value="group__keyboard.html#gabde036f25e345f7d5174c719213f1d9f"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="keys"><param name="Local" value="group__keys.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="keys"><param name="Local" value="structkeys.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="down_pressed"><param name="Local" value="structkeys.html#a1f1cc7ce04a922a51e6f747a2b1a7965"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="left_pressed"><param name="Local" value="structkeys.html#ab73e4793d0595a86a0932e570d4cbb71"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="right_pressed"><param name="Local" value="structkeys.html#a850837540d8f14d450178c580f0f71d1"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="space_pressed"><param name="Local" value="structkeys.html#af8300074e82a3ffa5f57257646169a11"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="up_pressed"><param name="Local" value="structkeys.html#a92c3d4e35f5e38c2cd96f43438234021"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="keys_t"><param name="Local" value="group__keys.html#ga7e73507e11719429d41bacdb8e73d1ee"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="clear_keys"><param name="Local" value="group__keys.html#gab8194281d55a22374cc21f661c3e286a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="keys_ctor"><param name="Local" value="group__keys.html#ga87fd193d122c1b7e6236b8ad3d307438"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="keys_dtor"><param name="Local" value="group__keys.html#ga5b2506a2d1b0fac1f9a9b5b627614fff"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse"><param name="Local" value="group__mouse.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ACK"><param name="Local" value="group__mouse.html#ga6f6489887e08bff4887d0bc5dcf214d8"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ACKS_DELAY"><param name="Local" value="group__mouse.html#gaeb9e52bb9b02951f750c523dc373fcb8"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CTRL_REG"><param name="Local" value="group__mouse.html#ga5a4a54453c9ef3337620a36939380cd3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DISABLE_DATA_REPORT"><param name="Local" value="group__mouse.html#gad374b510092499b5961d3771abf9c66e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ENABLE_DATA_REPORT"><param name="Local" value="group__mouse.html#ga1c22608f41bd715500d0333001079a8a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ERR_BYTE"><param name="Local" value="group__mouse.html#ga1fcc741eee840546be6a01b7a96d745c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ERROR"><param name="Local" value="group__mouse.html#ga8fe83ac76edc595f6b98cd4a4127aed5"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="FIRST_BYTE_ID"><param name="Local" value="group__mouse.html#gacf8440b3511e95097baf55d14b9a51c3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="IN_BUF"><param name="Local" value="group__mouse.html#ga783be5698cf07b1daaf126ef89c19063"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="IRQ_LINE"><param name="Local" value="group__mouse.html#ga5dc0dab045473a5563c7903cb6484416"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="LEFT_BUTTON"><param name="Local" value="group__mouse.html#gabbc8382ae4ea521f03c119a14478b759"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="MIDDLE_BUTTON"><param name="Local" value="group__mouse.html#gaea4935ff922fa4fbbc0f03fc250e268b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="MOUSE_WRITE_CMD"><param name="Local" value="group__mouse.html#ga8ce6c569566fb74aad808aaac6fdc1f0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="NACK"><param name="Local" value="group__mouse.html#ga958518a45b12053ae33606ee7cb68a55"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="OUT_BUF"><param name="Local" value="group__mouse.html#gacfb42dde389e8ca36ab267002fbf5c6a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="RIGHT_BUTTON"><param name="Local" value="group__mouse.html#gaeb17351958162535ab6af2cd6b030955"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="STAT_REG"><param name="Local" value="group__mouse.html#ga89c4d098b53809674457b1660b1af780"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SUC_BYTE"><param name="Local" value="group__mouse.html#ga8275709ed9c5d17487693f1758f59409"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="X_OVFL"><param name="Local" value="group__mouse.html#gaf329f104f7167317fe4d99fc6819501d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="X_SIGN"><param name="Local" value="group__mouse.html#ga181f1c2860e4d7fd7788990378061137"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Y_OVFL"><param name="Local" value="group__mouse.html#gad49b33d3abadec53a57d09a7f255315f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Y_SIGN"><param name="Local" value="group__mouse.html#ga2a0064e2f0979eea21b81e4fe6b2ac32"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="disable_data_reporting"><param name="Local" value="group__mouse.html#ga213d5f0c93d25fe21ae6ee3ba7b50a15"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="get_ih_counter"><param name="Local" value="group__mouse.html#ga0ddcae30a7b2668d759df0b49c30fae8"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="get_mouse_x_speed"><param name="Local" value="group__mouse.html#ga3492a22488887b309534c8ea0a713970"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="get_mouse_y_speed"><param name="Local" value="group__mouse.html#gacd4fb153c9379736047a078056b5409d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="int"><param name="Local" value="group__mouse.html#gaea686410621c1656f04f8ba3d27ba883"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="int"><param name="Local" value="group__mouse.html#gaf7e4cc29090bc70293888486e05303f4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_ih"><param name="Local" value="group__mouse.html#ga210374b50462acdedab00df64d5cea3c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_issue_cmd"><param name="Local" value="group__mouse.html#ga17f6a309e34b241931cc44259a3afda6"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_parse_packet"><param name="Local" value="group__mouse.html#ga4ef6e9b3fe6752ceb423f88fd49c232d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_read_byte"><param name="Local" value="group__mouse.html#ga7c0b89b2552784fdc6cf5143d0fff378"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_subscribe_int"><param name="Local" value="group__mouse.html#ga20285aed4b3ef45812cd967532dd09db"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_unsubscribe_int"><param name="Local" value="group__mouse.html#ga3ecf823d80520009ae5e0d76ae40a3c3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="reset_mouse_speed"><param name="Local" value="group__mouse.html#ga3e4446c79874fdcc5eb978b7313a419e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="update_mouse"><param name="Local" value="group__mouse.html#gaaf378d0600dad5b1596e9e9c0fddea55"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="rtc"><param name="Local" value="group__rtc.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="date_struct"><param name="Local" value="structdate__struct.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -612,144 +727,135 @@
           <UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="keyboard.h"><param name="Local" value="keyboard_8h.html"><param name="ImageNumber" value="1"></OBJECT>
             <UL>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="is_two_byte"><param name="Local" value="keyboard_8h.html#a19a8f528f8c0db507314b4cee9093361"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_enable_int"><param name="Local" value="keyboard_8h.html#ae39c3d8b6a1faff702ef621f9428034b"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_error_occured"><param name="Local" value="keyboard_8h.html#a50c3284f5c168b20d60a74fe4db376a1"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_get_size_bb"><param name="Local" value="keyboard_8h.html#a18fe9216c6ed12e82691a6de009412c3"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_polling"><param name="Local" value="keyboard_8h.html#a8ef1cf74c3296d936ea7cdf6716f492c"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_process_key"><param name="Local" value="keyboard_8h.html#afa9954ea12c84b7d7c14bb5d53da1c81"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_read_outbuf"><param name="Local" value="keyboard_8h.html#ac3abf18e739f9c6ad13a5dc027bef1c9"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_subscribe_int"><param name="Local" value="keyboard_8h.html#a4ac9231a99a664d6a9f0b69767e0d707"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_unsubscribe_int"><param name="Local" value="keyboard_8h.html#aee0a7b54ee426fade9c780418d110fe0"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_write_command"><param name="Local" value="keyboard_8h.html#ad766e6f72c86ebd66165bcc03f23fd6b"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="keyboard_check_esc"><param name="Local" value="keyboard_8h.html#abfe1d0d953f11f8ebfda53e34987bb28"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="keyboard_get_code"><param name="Local" value="keyboard_8h.html#afebbbe7d82c6dc58fdf0e97542c28eb3"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="keyboard_get_key"><param name="Local" value="keyboard_8h.html#a78f1795b7ccc1df9c9372b4d9f2c8e27"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="keyboard_process_key"><param name="Local" value="keyboard_8h.html#aa3fa39de81163cea7324e28279256dcf"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="process_scancode"><param name="Local" value="keyboard_8h.html#abddbd5d96d5131280023cfaf2c1fc1a8"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="reset_vars"><param name="Local" value="keyboard_8h.html#abde036f25e345f7d5174c719213f1d9f"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="is_two_byte"><param name="Local" value="group__keyboard.html#ga19a8f528f8c0db507314b4cee9093361"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_enable_int"><param name="Local" value="group__keyboard.html#gae39c3d8b6a1faff702ef621f9428034b"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_error_occured"><param name="Local" value="group__keyboard.html#ga50c3284f5c168b20d60a74fe4db376a1"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_get_size_bb"><param name="Local" value="group__keyboard.html#ga18fe9216c6ed12e82691a6de009412c3"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_polling"><param name="Local" value="group__keyboard.html#ga8ef1cf74c3296d936ea7cdf6716f492c"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_process_key"><param name="Local" value="group__keyboard.html#gafa9954ea12c84b7d7c14bb5d53da1c81"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_read_outbuf"><param name="Local" value="group__keyboard.html#gac3abf18e739f9c6ad13a5dc027bef1c9"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_subscribe_int"><param name="Local" value="group__keyboard.html#ga4ac9231a99a664d6a9f0b69767e0d707"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_unsubscribe_int"><param name="Local" value="group__keyboard.html#gaee0a7b54ee426fade9c780418d110fe0"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_write_command"><param name="Local" value="group__keyboard.html#gad766e6f72c86ebd66165bcc03f23fd6b"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="keyboard_check_esc"><param name="Local" value="group__keyboard.html#gabfe1d0d953f11f8ebfda53e34987bb28"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="keyboard_get_code"><param name="Local" value="group__keyboard.html#gafebbbe7d82c6dc58fdf0e97542c28eb3"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="keyboard_get_key"><param name="Local" value="group__keyboard.html#ga78f1795b7ccc1df9c9372b4d9f2c8e27"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="process_scancode"><param name="Local" value="group__keyboard.html#gabddbd5d96d5131280023cfaf2c1fc1a8"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="reset_vars"><param name="Local" value="group__keyboard.html#gabde036f25e345f7d5174c719213f1d9f"><param name="ImageNumber" value="11"></OBJECT>
             </UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="keyboard_macros.h"><param name="Local" value="keyboard__macros_8h.html"><param name="ImageNumber" value="1"></OBJECT>
             <UL>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="A_B_CODE"><param name="Local" value="keyboard__macros_8h.html#a468bb07d0a2499d16da78e403119abcd"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="A_M_CODE"><param name="Local" value="keyboard__macros_8h.html#afa3b88809d1d7489b7b549055ce2da9c"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWDOWN_B_CODE"><param name="Local" value="keyboard__macros_8h.html#a24093a219cd0fc10addf85ac9730007f"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWDOWN_M_CODE"><param name="Local" value="keyboard__macros_8h.html#a826424b1ca784e806ff56d936520ca81"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWLEFT_B_CODE"><param name="Local" value="keyboard__macros_8h.html#a32e2666e39a3def0df7db352dc02549c"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWLEFT_M_CODE"><param name="Local" value="keyboard__macros_8h.html#a08dcb4808e0b0efbaf481471de4edc2e"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWRIGHT_B_CODE"><param name="Local" value="keyboard__macros_8h.html#adbeccc034ece3dd451695d21b00b3382"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWRIGHT_M_CODE"><param name="Local" value="keyboard__macros_8h.html#a221ebf3cd38d96202ee1eff4b3966d26"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWUP_B_CODE"><param name="Local" value="keyboard__macros_8h.html#a6a7ff03326906dc31e2bd4662b6fd60c"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWUP_M_CODE"><param name="Local" value="keyboard__macros_8h.html#a057ee8527d8fbdb5d903146d849cc266"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="AUX_MOUSE"><param name="Local" value="keyboard__macros_8h.html#a2d87a4296d8ac7763da0206a022fbca8"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="BACKSPACE_B_CODE"><param name="Local" value="keyboard__macros_8h.html#a8b06a029330943ad0d5afc9656cbc63d"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="BACKSPACE_M_CODE"><param name="Local" value="keyboard__macros_8h.html#a226e16059eaca696ee1979284711bc66"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="CMD_REG"><param name="Local" value="keyboard__macros_8h.html#abf7206ca2181c36ef04b795c9b64e886"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="D_B_CODE"><param name="Local" value="keyboard__macros_8h.html#a318aacff9ad4d3ec65aed570aac43f69"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="D_M_CODE"><param name="Local" value="keyboard__macros_8h.html#a0d59739e060a8d5da518a1f8ee41a246"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="DELAY_US"><param name="Local" value="keyboard__macros_8h.html#a1a522aa19bcb695a9df30032a893bee3"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ENTER_B_CODE"><param name="Local" value="keyboard__macros_8h.html#aaf8afca952b7a55a55688111b109663f"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ENTER_M_CODE"><param name="Local" value="keyboard__macros_8h.html#a15e27eb51e6bd4a4970b1d1a41db25e4"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ESC_B_CODE"><param name="Local" value="keyboard__macros_8h.html#ad0716f47f10771ff28de10a72eda0ebc"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="IBF_FULL"><param name="Local" value="keyboard__macros_8h.html#a0cfb144c907a65519a9fd11dc37463e1"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="KB_IRQ"><param name="Local" value="keyboard__macros_8h.html#ae36fc325bc821e866e90d0e66f9cc168"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="KBC_ENABLE_INT"><param name="Local" value="keyboard__macros_8h.html#a835369bb79d880e569cefdced4641b1c"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="KBC_NUM_TRIES"><param name="Local" value="keyboard__macros_8h.html#a01be3e103b959ac623cc97a88b22cc5d"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="KBC_PAR_ERR"><param name="Local" value="keyboard__macros_8h.html#aea2ef6dda1aabebf291eeee29b66c04a"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="KBC_TO_ERR"><param name="Local" value="keyboard__macros_8h.html#ae31c3653f5881b02cbfdd4ccbb7ccf50"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="OBF_FULL"><param name="Local" value="keyboard__macros_8h.html#af0c5e1f42d64aad97b4240ea019e2356"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="OUT_BUF"><param name="Local" value="keyboard__macros_8h.html#acfb42dde389e8ca36ab267002fbf5c6a"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="READ_CMD_BYTE"><param name="Local" value="keyboard__macros_8h.html#a3edb96ff4ed65c98f514852bcdd4f944"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="S_B_CODE"><param name="Local" value="keyboard__macros_8h.html#aef4e71205c088ab237806fc5d2094f29"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="S_M_CODE"><param name="Local" value="keyboard__macros_8h.html#a143a513f72a8e3ac6a54c0c1d61b81e2"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="SPACEBAR_B_CODE"><param name="Local" value="keyboard__macros_8h.html#a203272f4561d20e665482fabec7beec1"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="SPACEBAR_M_CODE"><param name="Local" value="keyboard__macros_8h.html#a5f45ad6235b059f93e8d5d5d153d72f8"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="STAT_REG"><param name="Local" value="keyboard__macros_8h.html#a89c4d098b53809674457b1660b1af780"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="STATUS_REG_ERR"><param name="Local" value="keyboard__macros_8h.html#aee88783cf6f7e32d4e8e63b092598980"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="TWO_BYTE_CODE"><param name="Local" value="keyboard__macros_8h.html#a2877405e9b042d1e29cc09bcc8daccfa"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="W_B_CODE"><param name="Local" value="keyboard__macros_8h.html#a50a2f71ad556faa8026b28f51667339b"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="W_M_CODE"><param name="Local" value="keyboard__macros_8h.html#a615f154a0150f705b45458ec6e7b9e94"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="WRITE_CMD_BYTE"><param name="Local" value="keyboard__macros_8h.html#a6bbab0e165f6f55c8f1371fd18ce9a0e"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="WRITE_KBC"><param name="Local" value="keyboard__macros_8h.html#accda38b09f856ff41a392a50fe82b99d"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="A_B_CODE"><param name="Local" value="group__keyboard.html#ga468bb07d0a2499d16da78e403119abcd"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="A_M_CODE"><param name="Local" value="group__keyboard.html#gafa3b88809d1d7489b7b549055ce2da9c"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWDOWN_B_CODE"><param name="Local" value="group__keyboard.html#ga24093a219cd0fc10addf85ac9730007f"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWDOWN_M_CODE"><param name="Local" value="group__keyboard.html#ga826424b1ca784e806ff56d936520ca81"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWLEFT_B_CODE"><param name="Local" value="group__keyboard.html#ga32e2666e39a3def0df7db352dc02549c"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWLEFT_M_CODE"><param name="Local" value="group__keyboard.html#ga08dcb4808e0b0efbaf481471de4edc2e"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWRIGHT_B_CODE"><param name="Local" value="group__keyboard.html#gadbeccc034ece3dd451695d21b00b3382"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWRIGHT_M_CODE"><param name="Local" value="group__keyboard.html#ga221ebf3cd38d96202ee1eff4b3966d26"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWUP_B_CODE"><param name="Local" value="group__keyboard.html#ga6a7ff03326906dc31e2bd4662b6fd60c"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="ARROWUP_M_CODE"><param name="Local" value="group__keyboard.html#ga057ee8527d8fbdb5d903146d849cc266"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="AUX_MOUSE"><param name="Local" value="group__keyboard.html#ga2d87a4296d8ac7763da0206a022fbca8"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="BACKSPACE_B_CODE"><param name="Local" value="group__keyboard.html#ga8b06a029330943ad0d5afc9656cbc63d"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="BACKSPACE_M_CODE"><param name="Local" value="group__keyboard.html#ga226e16059eaca696ee1979284711bc66"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="CMD_REG"><param name="Local" value="group__keyboard.html#gabf7206ca2181c36ef04b795c9b64e886"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="D_B_CODE"><param name="Local" value="group__keyboard.html#ga318aacff9ad4d3ec65aed570aac43f69"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="D_M_CODE"><param name="Local" value="group__keyboard.html#ga0d59739e060a8d5da518a1f8ee41a246"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="DELAY_US"><param name="Local" value="group__keyboard.html#ga1a522aa19bcb695a9df30032a893bee3"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="ENTER_B_CODE"><param name="Local" value="group__keyboard.html#gaaf8afca952b7a55a55688111b109663f"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="ENTER_M_CODE"><param name="Local" value="group__keyboard.html#ga15e27eb51e6bd4a4970b1d1a41db25e4"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="ESC_B_CODE"><param name="Local" value="group__keyboard.html#gad0716f47f10771ff28de10a72eda0ebc"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="IBF_FULL"><param name="Local" value="group__keyboard.html#ga0cfb144c907a65519a9fd11dc37463e1"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="KB_IRQ"><param name="Local" value="group__keyboard.html#gae36fc325bc821e866e90d0e66f9cc168"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="KBC_ENABLE_INT"><param name="Local" value="group__keyboard.html#ga835369bb79d880e569cefdced4641b1c"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="KBC_NUM_TRIES"><param name="Local" value="group__keyboard.html#ga01be3e103b959ac623cc97a88b22cc5d"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="KBC_PAR_ERR"><param name="Local" value="group__keyboard.html#gaea2ef6dda1aabebf291eeee29b66c04a"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="KBC_TO_ERR"><param name="Local" value="group__keyboard.html#gae31c3653f5881b02cbfdd4ccbb7ccf50"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="OBF_FULL"><param name="Local" value="group__keyboard.html#gaf0c5e1f42d64aad97b4240ea019e2356"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="OUT_BUF"><param name="Local" value="group__keyboard.html#gacfb42dde389e8ca36ab267002fbf5c6a"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="READ_CMD_BYTE"><param name="Local" value="group__keyboard.html#ga3edb96ff4ed65c98f514852bcdd4f944"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="S_B_CODE"><param name="Local" value="group__keyboard.html#gaef4e71205c088ab237806fc5d2094f29"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="S_M_CODE"><param name="Local" value="group__keyboard.html#ga143a513f72a8e3ac6a54c0c1d61b81e2"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="SPACEBAR_B_CODE"><param name="Local" value="group__keyboard.html#ga203272f4561d20e665482fabec7beec1"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="SPACEBAR_M_CODE"><param name="Local" value="group__keyboard.html#ga5f45ad6235b059f93e8d5d5d153d72f8"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="STAT_REG"><param name="Local" value="group__keyboard.html#ga89c4d098b53809674457b1660b1af780"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="STATUS_REG_ERR"><param name="Local" value="group__keyboard.html#gaee88783cf6f7e32d4e8e63b092598980"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="TWO_BYTE_CODE"><param name="Local" value="group__keyboard.html#ga2877405e9b042d1e29cc09bcc8daccfa"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="W_B_CODE"><param name="Local" value="group__keyboard.html#ga50a2f71ad556faa8026b28f51667339b"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="W_M_CODE"><param name="Local" value="group__keyboard.html#ga615f154a0150f705b45458ec6e7b9e94"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="WRITE_CMD_BYTE"><param name="Local" value="group__keyboard.html#ga6bbab0e165f6f55c8f1371fd18ce9a0e"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="WRITE_KBC"><param name="Local" value="group__keyboard.html#gaccda38b09f856ff41a392a50fe82b99d"><param name="ImageNumber" value="11"></OBJECT>
             </UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="keys.h"><param name="Local" value="keys_8h.html"><param name="ImageNumber" value="1"></OBJECT>
             <UL>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="keys"><param name="Local" value="structkeys.html"><param name="ImageNumber" value="1"></OBJECT>
-              <UL>
-              <LI><OBJECT type="text/sitemap"><param name="Name" value="down_pressed"><param name="Local" value="structkeys.html#a1f1cc7ce04a922a51e6f747a2b1a7965"><param name="ImageNumber" value="11"></OBJECT>
-              <LI><OBJECT type="text/sitemap"><param name="Name" value="left_pressed"><param name="Local" value="structkeys.html#ab73e4793d0595a86a0932e570d4cbb71"><param name="ImageNumber" value="11"></OBJECT>
-              <LI><OBJECT type="text/sitemap"><param name="Name" value="right_pressed"><param name="Local" value="structkeys.html#a850837540d8f14d450178c580f0f71d1"><param name="ImageNumber" value="11"></OBJECT>
-              <LI><OBJECT type="text/sitemap"><param name="Name" value="space_pressed"><param name="Local" value="structkeys.html#af8300074e82a3ffa5f57257646169a11"><param name="ImageNumber" value="11"></OBJECT>
-              <LI><OBJECT type="text/sitemap"><param name="Name" value="up_pressed"><param name="Local" value="structkeys.html#a92c3d4e35f5e38c2cd96f43438234021"><param name="ImageNumber" value="11"></OBJECT>
-              </UL>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="keys_t"><param name="Local" value="keys_8h.html#a7e73507e11719429d41bacdb8e73d1ee"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="clear_keys"><param name="Local" value="keys_8h.html#ab8194281d55a22374cc21f661c3e286a"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="keys_ctor"><param name="Local" value="keys_8h.html#a87fd193d122c1b7e6236b8ad3d307438"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="keys_dtor"><param name="Local" value="keys_8h.html#a5b2506a2d1b0fac1f9a9b5b627614fff"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="keys_t"><param name="Local" value="group__keys.html#ga7e73507e11719429d41bacdb8e73d1ee"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="clear_keys"><param name="Local" value="group__keys.html#gab8194281d55a22374cc21f661c3e286a"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="keys_ctor"><param name="Local" value="group__keys.html#ga87fd193d122c1b7e6236b8ad3d307438"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="keys_dtor"><param name="Local" value="group__keys.html#ga5b2506a2d1b0fac1f9a9b5b627614fff"><param name="ImageNumber" value="11"></OBJECT>
             </UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse.h"><param name="Local" value="mouse_8h.html"><param name="ImageNumber" value="1"></OBJECT>
             <UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="MOUSE_H_INCLUDED"><param name="Local" value="mouse_8h.html#affe8d332d06f58a994aed49ecc20415a"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="disable_data_reporting"><param name="Local" value="mouse_8h.html#a213d5f0c93d25fe21ae6ee3ba7b50a15"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="get_ih_counter"><param name="Local" value="mouse_8h.html#a0ddcae30a7b2668d759df0b49c30fae8"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="get_mouse_x_speed"><param name="Local" value="mouse_8h.html#a3492a22488887b309534c8ea0a713970"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="get_mouse_y_speed"><param name="Local" value="mouse_8h.html#acd4fb153c9379736047a078056b5409d"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="int"><param name="Local" value="mouse_8h.html#aea686410621c1656f04f8ba3d27ba883"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="int"><param name="Local" value="mouse_8h.html#af7e4cc29090bc70293888486e05303f4"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_ih"><param name="Local" value="mouse_8h.html#a210374b50462acdedab00df64d5cea3c"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_issue_cmd"><param name="Local" value="mouse_8h.html#a17f6a309e34b241931cc44259a3afda6"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_parse_packet"><param name="Local" value="mouse_8h.html#a4ef6e9b3fe6752ceb423f88fd49c232d"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_read_byte"><param name="Local" value="mouse_8h.html#a7c0b89b2552784fdc6cf5143d0fff378"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_subscribe_int"><param name="Local" value="mouse_8h.html#a20285aed4b3ef45812cd967532dd09db"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_unsubscribe_int"><param name="Local" value="mouse_8h.html#a3ecf823d80520009ae5e0d76ae40a3c3"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="reset_mouse_speed"><param name="Local" value="mouse_8h.html#a3e4446c79874fdcc5eb978b7313a419e"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="update_mouse"><param name="Local" value="mouse_8h.html#aaf378d0600dad5b1596e9e9c0fddea55"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="disable_data_reporting"><param name="Local" value="group__mouse.html#ga213d5f0c93d25fe21ae6ee3ba7b50a15"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="get_ih_counter"><param name="Local" value="group__mouse.html#ga0ddcae30a7b2668d759df0b49c30fae8"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="get_mouse_x_speed"><param name="Local" value="group__mouse.html#ga3492a22488887b309534c8ea0a713970"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="get_mouse_y_speed"><param name="Local" value="group__mouse.html#gacd4fb153c9379736047a078056b5409d"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="int"><param name="Local" value="group__mouse.html#gaea686410621c1656f04f8ba3d27ba883"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="int"><param name="Local" value="group__mouse.html#gaf7e4cc29090bc70293888486e05303f4"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_ih"><param name="Local" value="group__mouse.html#ga210374b50462acdedab00df64d5cea3c"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_issue_cmd"><param name="Local" value="group__mouse.html#ga17f6a309e34b241931cc44259a3afda6"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_parse_packet"><param name="Local" value="group__mouse.html#ga4ef6e9b3fe6752ceb423f88fd49c232d"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_read_byte"><param name="Local" value="group__mouse.html#ga7c0b89b2552784fdc6cf5143d0fff378"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_subscribe_int"><param name="Local" value="group__mouse.html#ga20285aed4b3ef45812cd967532dd09db"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_unsubscribe_int"><param name="Local" value="group__mouse.html#ga3ecf823d80520009ae5e0d76ae40a3c3"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="reset_mouse_speed"><param name="Local" value="group__mouse.html#ga3e4446c79874fdcc5eb978b7313a419e"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="update_mouse"><param name="Local" value="group__mouse.html#gaaf378d0600dad5b1596e9e9c0fddea55"><param name="ImageNumber" value="11"></OBJECT>
             </UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_macros.h"><param name="Local" value="mouse__macros_8h.html"><param name="ImageNumber" value="1"></OBJECT>
             <UL>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ACK"><param name="Local" value="mouse__macros_8h.html#a6f6489887e08bff4887d0bc5dcf214d8"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ACKS_DELAY"><param name="Local" value="mouse__macros_8h.html#aeb9e52bb9b02951f750c523dc373fcb8"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="CTRL_REG"><param name="Local" value="mouse__macros_8h.html#a5a4a54453c9ef3337620a36939380cd3"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="DISABLE_DATA_REPORT"><param name="Local" value="mouse__macros_8h.html#ad374b510092499b5961d3771abf9c66e"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ENABLE_DATA_REPORT"><param name="Local" value="mouse__macros_8h.html#a1c22608f41bd715500d0333001079a8a"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ERR_BYTE"><param name="Local" value="mouse__macros_8h.html#a1fcc741eee840546be6a01b7a96d745c"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ERROR"><param name="Local" value="mouse__macros_8h.html#a8fe83ac76edc595f6b98cd4a4127aed5"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="FIRST_BYTE_ID"><param name="Local" value="mouse__macros_8h.html#acf8440b3511e95097baf55d14b9a51c3"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="IN_BUF"><param name="Local" value="mouse__macros_8h.html#a783be5698cf07b1daaf126ef89c19063"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="IRQ_LINE"><param name="Local" value="mouse__macros_8h.html#a5dc0dab045473a5563c7903cb6484416"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="LEFT_BUTTON"><param name="Local" value="mouse__macros_8h.html#abbc8382ae4ea521f03c119a14478b759"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="MIDDLE_BUTTON"><param name="Local" value="mouse__macros_8h.html#aea4935ff922fa4fbbc0f03fc250e268b"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="MOUSE_WRITE_CMD"><param name="Local" value="mouse__macros_8h.html#a8ce6c569566fb74aad808aaac6fdc1f0"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="NACK"><param name="Local" value="mouse__macros_8h.html#a958518a45b12053ae33606ee7cb68a55"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="OUT_BUF"><param name="Local" value="mouse__macros_8h.html#acfb42dde389e8ca36ab267002fbf5c6a"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RIGHT_BUTTON"><param name="Local" value="mouse__macros_8h.html#aeb17351958162535ab6af2cd6b030955"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="STAT_REG"><param name="Local" value="mouse__macros_8h.html#a89c4d098b53809674457b1660b1af780"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="SUC_BYTE"><param name="Local" value="mouse__macros_8h.html#a8275709ed9c5d17487693f1758f59409"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="X_OVFL"><param name="Local" value="mouse__macros_8h.html#af329f104f7167317fe4d99fc6819501d"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="X_SIGN"><param name="Local" value="mouse__macros_8h.html#a181f1c2860e4d7fd7788990378061137"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="Y_OVFL"><param name="Local" value="mouse__macros_8h.html#ad49b33d3abadec53a57d09a7f255315f"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="Y_SIGN"><param name="Local" value="mouse__macros_8h.html#a2a0064e2f0979eea21b81e4fe6b2ac32"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="ACK"><param name="Local" value="group__mouse.html#ga6f6489887e08bff4887d0bc5dcf214d8"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="ACKS_DELAY"><param name="Local" value="group__mouse.html#gaeb9e52bb9b02951f750c523dc373fcb8"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="CTRL_REG"><param name="Local" value="group__mouse.html#ga5a4a54453c9ef3337620a36939380cd3"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="DISABLE_DATA_REPORT"><param name="Local" value="group__mouse.html#gad374b510092499b5961d3771abf9c66e"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="ENABLE_DATA_REPORT"><param name="Local" value="group__mouse.html#ga1c22608f41bd715500d0333001079a8a"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="ERR_BYTE"><param name="Local" value="group__mouse.html#ga1fcc741eee840546be6a01b7a96d745c"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="ERROR"><param name="Local" value="group__mouse.html#ga8fe83ac76edc595f6b98cd4a4127aed5"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="FIRST_BYTE_ID"><param name="Local" value="group__mouse.html#gacf8440b3511e95097baf55d14b9a51c3"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="IN_BUF"><param name="Local" value="group__mouse.html#ga783be5698cf07b1daaf126ef89c19063"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="IRQ_LINE"><param name="Local" value="group__mouse.html#ga5dc0dab045473a5563c7903cb6484416"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="LEFT_BUTTON"><param name="Local" value="group__mouse.html#gabbc8382ae4ea521f03c119a14478b759"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="MIDDLE_BUTTON"><param name="Local" value="group__mouse.html#gaea4935ff922fa4fbbc0f03fc250e268b"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="MOUSE_WRITE_CMD"><param name="Local" value="group__mouse.html#ga8ce6c569566fb74aad808aaac6fdc1f0"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="NACK"><param name="Local" value="group__mouse.html#ga958518a45b12053ae33606ee7cb68a55"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="OUT_BUF"><param name="Local" value="group__mouse.html#gacfb42dde389e8ca36ab267002fbf5c6a"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="RIGHT_BUTTON"><param name="Local" value="group__mouse.html#gaeb17351958162535ab6af2cd6b030955"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="STAT_REG"><param name="Local" value="group__mouse.html#ga89c4d098b53809674457b1660b1af780"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="SUC_BYTE"><param name="Local" value="group__mouse.html#ga8275709ed9c5d17487693f1758f59409"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="X_OVFL"><param name="Local" value="group__mouse.html#gaf329f104f7167317fe4d99fc6819501d"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="X_SIGN"><param name="Local" value="group__mouse.html#ga181f1c2860e4d7fd7788990378061137"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="Y_OVFL"><param name="Local" value="group__mouse.html#gad49b33d3abadec53a57d09a7f255315f"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="Y_SIGN"><param name="Local" value="group__mouse.html#ga2a0064e2f0979eea21b81e4fe6b2ac32"><param name="ImageNumber" value="11"></OBJECT>
             </UL>
           </UL>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="src"><param name="Local" value="dir_273179fa98b49cae384741c9788658db.html"><param name="ImageNumber" value="1"></OBJECT>
           <UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="keyboard.c"><param name="Local" value="keyboard_8c.html"><param name="ImageNumber" value="1"></OBJECT>
             <UL>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="is_two_byte"><param name="Local" value="keyboard_8c.html#a19a8f528f8c0db507314b4cee9093361"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="is_two_byte"><param name="Local" value="group__keyboard.html#ga19a8f528f8c0db507314b4cee9093361"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="kbc_ih"><param name="Local" value="keyboard_8c.html#aea970a154161a35f6894898a092ed70a"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_enable_int"><param name="Local" value="keyboard_8c.html#ae39c3d8b6a1faff702ef621f9428034b"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_error_occured"><param name="Local" value="keyboard_8c.html#a50c3284f5c168b20d60a74fe4db376a1"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_get_size_bb"><param name="Local" value="keyboard_8c.html#a18fe9216c6ed12e82691a6de009412c3"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_polling"><param name="Local" value="keyboard_8c.html#a8ef1cf74c3296d936ea7cdf6716f492c"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_process_key"><param name="Local" value="keyboard_8c.html#afa9954ea12c84b7d7c14bb5d53da1c81"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_read_outbuf"><param name="Local" value="keyboard_8c.html#ac3abf18e739f9c6ad13a5dc027bef1c9"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_subscribe_int"><param name="Local" value="keyboard_8c.html#a4ac9231a99a664d6a9f0b69767e0d707"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_unsubscribe_int"><param name="Local" value="keyboard_8c.html#aee0a7b54ee426fade9c780418d110fe0"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_write_command"><param name="Local" value="keyboard_8c.html#ad766e6f72c86ebd66165bcc03f23fd6b"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="keyboard_check_esc"><param name="Local" value="keyboard_8c.html#a043275d13f1f746c8d7aced897cef9ea"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="keyboard_get_code"><param name="Local" value="keyboard_8c.html#afebbbe7d82c6dc58fdf0e97542c28eb3"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="keyboard_get_key"><param name="Local" value="keyboard_8c.html#a78f1795b7ccc1df9c9372b4d9f2c8e27"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="process_scancode"><param name="Local" value="keyboard_8c.html#abddbd5d96d5131280023cfaf2c1fc1a8"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_enable_int"><param name="Local" value="group__keyboard.html#gae39c3d8b6a1faff702ef621f9428034b"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_error_occured"><param name="Local" value="group__keyboard.html#ga50c3284f5c168b20d60a74fe4db376a1"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_get_size_bb"><param name="Local" value="group__keyboard.html#ga18fe9216c6ed12e82691a6de009412c3"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_polling"><param name="Local" value="group__keyboard.html#ga8ef1cf74c3296d936ea7cdf6716f492c"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_process_key"><param name="Local" value="group__keyboard.html#gafa9954ea12c84b7d7c14bb5d53da1c81"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_read_outbuf"><param name="Local" value="group__keyboard.html#gac3abf18e739f9c6ad13a5dc027bef1c9"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_subscribe_int"><param name="Local" value="group__keyboard.html#ga4ac9231a99a664d6a9f0b69767e0d707"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_unsubscribe_int"><param name="Local" value="group__keyboard.html#gaee0a7b54ee426fade9c780418d110fe0"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_write_command"><param name="Local" value="group__keyboard.html#gad766e6f72c86ebd66165bcc03f23fd6b"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="keyboard_check_esc"><param name="Local" value="group__keyboard.html#gabfe1d0d953f11f8ebfda53e34987bb28"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="keyboard_get_code"><param name="Local" value="group__keyboard.html#gafebbbe7d82c6dc58fdf0e97542c28eb3"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="keyboard_get_key"><param name="Local" value="group__keyboard.html#ga78f1795b7ccc1df9c9372b4d9f2c8e27"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="process_scancode"><param name="Local" value="group__keyboard.html#gabddbd5d96d5131280023cfaf2c1fc1a8"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="bb"><param name="Local" value="keyboard_8c.html#a1c7ad00b93291685903f210382bd4c7d"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_error"><param name="Local" value="keyboard_8c.html#a036d7c9ef9559f586bf12d3c85290792"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="kbd_hook_id"><param name="Local" value="keyboard_8c.html#a74708534432e98d4ab30ba40e2e5dcc3"><param name="ImageNumber" value="11"></OBJECT>
@@ -758,26 +864,26 @@
             </UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="keys.c"><param name="Local" value="keys_8c.html"><param name="ImageNumber" value="1"></OBJECT>
             <UL>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="clear_keys"><param name="Local" value="keys_8c.html#ab8194281d55a22374cc21f661c3e286a"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="keys_ctor"><param name="Local" value="keys_8c.html#a87fd193d122c1b7e6236b8ad3d307438"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="keys_dtor"><param name="Local" value="keys_8c.html#a5b2506a2d1b0fac1f9a9b5b627614fff"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="clear_keys"><param name="Local" value="group__keys.html#gab8194281d55a22374cc21f661c3e286a"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="keys_ctor"><param name="Local" value="group__keys.html#ga87fd193d122c1b7e6236b8ad3d307438"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="keys_dtor"><param name="Local" value="group__keys.html#ga5b2506a2d1b0fac1f9a9b5b627614fff"><param name="ImageNumber" value="11"></OBJECT>
             </UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse.c"><param name="Local" value="mouse_8c.html"><param name="ImageNumber" value="1"></OBJECT>
             <UL>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="disable_data_reporting"><param name="Local" value="mouse_8c.html#a213d5f0c93d25fe21ae6ee3ba7b50a15"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="disable_data_reporting"><param name="Local" value="group__mouse.html#ga213d5f0c93d25fe21ae6ee3ba7b50a15"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="disable_irq"><param name="Local" value="mouse_8c.html#af6aab2e9582c2102a19358170de32711"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="enable_irq"><param name="Local" value="mouse_8c.html#a8d41699f95cd36359a31d3acb5899d5f"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="get_ih_counter"><param name="Local" value="mouse_8c.html#a0ddcae30a7b2668d759df0b49c30fae8"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="get_mouse_x_speed"><param name="Local" value="mouse_8c.html#aa5f78bf37007fd431444ada69e576c25"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="get_mouse_y_speed"><param name="Local" value="mouse_8c.html#aaa7358307be74877f191a6fba3bdfbd4"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_ih"><param name="Local" value="mouse_8c.html#a210374b50462acdedab00df64d5cea3c"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_issue_cmd"><param name="Local" value="mouse_8c.html#a17f6a309e34b241931cc44259a3afda6"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_parse_packet"><param name="Local" value="mouse_8c.html#a4ef6e9b3fe6752ceb423f88fd49c232d"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_read_byte"><param name="Local" value="mouse_8c.html#a7c0b89b2552784fdc6cf5143d0fff378"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_subscribe_int"><param name="Local" value="mouse_8c.html#a20285aed4b3ef45812cd967532dd09db"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_unsubscribe_int"><param name="Local" value="mouse_8c.html#a3ecf823d80520009ae5e0d76ae40a3c3"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="reset_mouse_speed"><param name="Local" value="mouse_8c.html#a3e4446c79874fdcc5eb978b7313a419e"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="update_mouse"><param name="Local" value="mouse_8c.html#a0be1f5aa04af8f966ae6f49d81e2d1d6"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="get_ih_counter"><param name="Local" value="group__mouse.html#ga0ddcae30a7b2668d759df0b49c30fae8"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="get_mouse_x_speed"><param name="Local" value="group__mouse.html#ga3492a22488887b309534c8ea0a713970"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="get_mouse_y_speed"><param name="Local" value="group__mouse.html#gacd4fb153c9379736047a078056b5409d"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_ih"><param name="Local" value="group__mouse.html#ga210374b50462acdedab00df64d5cea3c"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_issue_cmd"><param name="Local" value="group__mouse.html#ga17f6a309e34b241931cc44259a3afda6"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_parse_packet"><param name="Local" value="group__mouse.html#ga4ef6e9b3fe6752ceb423f88fd49c232d"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_read_byte"><param name="Local" value="group__mouse.html#ga7c0b89b2552784fdc6cf5143d0fff378"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_subscribe_int"><param name="Local" value="group__mouse.html#ga20285aed4b3ef45812cd967532dd09db"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_unsubscribe_int"><param name="Local" value="group__mouse.html#ga3ecf823d80520009ae5e0d76ae40a3c3"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="reset_mouse_speed"><param name="Local" value="group__mouse.html#ga3e4446c79874fdcc5eb978b7313a419e"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="update_mouse"><param name="Local" value="group__mouse.html#gaaf378d0600dad5b1596e9e9c0fddea55"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="bb"><param name="Local" value="mouse_8c.html#a580064d1d56cac83953ff8394a071361"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_hook_id"><param name="Local" value="mouse_8c.html#a37cad7cad93664f8a1ed1b0258fe958b"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="mouse_ih_counter"><param name="Local" value="mouse_8c.html#ad25735efbc541124a1c2593159f7f47b"><param name="ImageNumber" value="11"></OBJECT>

@@ -4,7 +4,11 @@
 #include <lcom/lcf.h>
 #include "keys.h"
 
-
+/**
+ * @defgroup keys keys
+ * @ingroup kbc
+ * @{
+ */
 
 typedef struct keys keys_t;
 struct keys{
@@ -15,12 +19,23 @@ struct keys{
     uint8_t space_pressed;
 };
 
-
+/**
+ * Keys constructor
+ * @return keys struct pointer
+ */
 keys_t* (keys_ctor)();
-
+/**
+ * Keys destructor
+ * @param keys keys struct pointer
+ */
 void (keys_dtor)(keys_t *keys);
-
+/**
+ * Clear the keys struct, resetting keys to unpressed state
+ * @param keys keys struct pointer
+ */
 void(clear_keys)(keys_t *keys);
 
-
+/**
+ * @}
+ */
 #endif

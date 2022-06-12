@@ -2,7 +2,11 @@
 #define MOUSE_MACROS_H_INCLUDED
 
 #include <lcom/lcf.h>
-
+/**
+ * @defgroup mouse mouse
+ * @ingroup kbc
+ * @{
+ */
 #define IRQ_LINE 12
 #define STAT_REG 0x64
 #define CTRL_REG 0x64
@@ -33,4 +37,7 @@
 #define ERROR 0xFC // second consecutive invalid byte
 #define ACKS_DELAY 20000
 
+/**
+ * @}
+ */
 #endif // MOUSE_MACROS_H_INCLUDED

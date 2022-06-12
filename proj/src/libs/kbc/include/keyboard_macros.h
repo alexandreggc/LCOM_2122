@@ -3,6 +3,12 @@
 
 #include <lcom/lcf.h>
 
+/**
+ * @defgroup keyboard keyboard
+ * @ingroup kbc
+ * @{
+ */
+
 #define KBC_NUM_TRIES 3
 #define KB_IRQ 1 /**< @brief Keyboard IRQ line */
 
@@ -55,7 +61,8 @@
 
 #define KBC_ENABLE_INT BIT(0)
 
-
-
+/**
+ * @}
+ */
 
 #endif

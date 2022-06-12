@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Bomberman: libs/kbc/include/keys.h File Reference</title>
+<title>Bomberman: keys</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -37,23 +37,15 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_e7752f8df5af073e074e9c1aba56fcdb.html">kbc</a></li><li class="navelem"><a class="el" href="dir_f131d9c30dba4b35db09ce4174edda89.html">include</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">keys.h File Reference</div></div>
+  <div class="headertitle"><div class="title">keys<div class="ingroups"><a class="el" href="group__libs.html">libs</a> &raquo; <a class="el" href="group__kbc.html">kbc</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;lcom/lcf.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="keys_8h_source.html">keys.h</a>&quot;</code><br />
-</div>
-<p><a href="keys_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -74,6 +66,89 @@ Functions</h2></td></tr>
 <tr class="memitem:gab8194281d55a22374cc21f661c3e286a"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__keys.html#gab8194281d55a22374cc21f661c3e286a">clear_keys</a> (<a class="el" href="group__keys.html#ga7e73507e11719429d41bacdb8e73d1ee">keys_t</a> *<a class="el" href="structkeys.html">keys</a>)</td></tr>
 <tr class="separator:gab8194281d55a22374cc21f661c3e286a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga7e73507e11719429d41bacdb8e73d1ee" name="ga7e73507e11719429d41bacdb8e73d1ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7e73507e11719429d41bacdb8e73d1ee">&#9670;&nbsp;</a></span>keys_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structkeys.html">keys</a> <a class="el" href="group__keys.html#ga7e73507e11719429d41bacdb8e73d1ee">keys_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="gab8194281d55a22374cc21f661c3e286a" name="gab8194281d55a22374cc21f661c3e286a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab8194281d55a22374cc21f661c3e286a">&#9670;&nbsp;</a></span>clear_keys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void() clear_keys </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__keys.html#ga7e73507e11719429d41bacdb8e73d1ee">keys_t</a> *&#160;</td>
+          <td class="paramname"><em>keys</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Clear the keys struct, resetting keys to unpressed state </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keys</td><td>keys struct pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga87fd193d122c1b7e6236b8ad3d307438" name="ga87fd193d122c1b7e6236b8ad3d307438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga87fd193d122c1b7e6236b8ad3d307438">&#9670;&nbsp;</a></span>keys_ctor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__keys.html#ga7e73507e11719429d41bacdb8e73d1ee">keys_t</a> *() keys_ctor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Keys constructor </p><dl class="section return"><dt>Returns</dt><dd>keys struct pointer </dd></dl>
+
+</div>
+</div>
+<a id="ga5b2506a2d1b0fac1f9a9b5b627614fff" name="ga5b2506a2d1b0fac1f9a9b5b627614fff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b2506a2d1b0fac1f9a9b5b627614fff">&#9670;&nbsp;</a></span>keys_dtor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void() keys_dtor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__keys.html#ga7e73507e11719429d41bacdb8e73d1ee">keys_t</a> *&#160;</td>
+          <td class="paramname"><em>keys</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Keys destructor </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keys</td><td>keys struct pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -49,14 +49,14 @@ $(function() {
 <a href="utils_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef UTILS_H_INCLUDED</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define UTILS_H_INCLUDED</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><a class="code hl_function" href="mouse_8h.html#aea686410621c1656f04f8ba3d27ba883">int</a>(<a class="code hl_function" href="group__utils.html#ga81621440b3d65680979425e39aa8c789">util_get_LSB</a>)(uint16_t val, uint8_t *lsb);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><a class="code hl_function" href="mouse_8h.html#aea686410621c1656f04f8ba3d27ba883">int</a>(<a class="code hl_function" href="group__utils.html#ga6a880076cd2ec468834438b6e0c58836">util_get_MSB</a>)(uint16_t val, uint8_t *msb);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><a class="code hl_function" href="group__mouse.html#gaea686410621c1656f04f8ba3d27ba883">int</a>(<a class="code hl_function" href="group__utils.html#ga81621440b3d65680979425e39aa8c789">util_get_LSB</a>)(uint16_t val, uint8_t *lsb);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><a class="code hl_function" href="group__mouse.html#gaea686410621c1656f04f8ba3d27ba883">int</a>(<a class="code hl_function" href="group__utils.html#ga6a880076cd2ec468834438b6e0c58836">util_get_MSB</a>)(uint16_t val, uint8_t *msb);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#ifdef LAB3</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>   <span class="keywordtype">int</span> getCounter();</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><a class="code hl_function" href="mouse_8h.html#aea686410621c1656f04f8ba3d27ba883">int</a> (<a class="code hl_function" href="group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4">util_sys_inb</a>)(<span class="keywordtype">int</span> port, uint8_t *value);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><a class="code hl_function" href="group__mouse.html#gaea686410621c1656f04f8ba3d27ba883">int</a> (<a class="code hl_function" href="group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4">util_sys_inb</a>)(<span class="keywordtype">int</span> port, uint8_t *value);</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>int16_t <a class="code hl_function" href="group__utils.html#ga87d0a2b65334656b47c807fbaa0526e7">max_16</a>(int16_t a, int16_t b);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>int16_t <a class="code hl_function" href="group__utils.html#gafe09c65569d928fb6e323b26fc4e6d3d">min_16</a>(int16_t a, int16_t b);</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
@@ -64,12 +64,12 @@ $(function() {
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="group__utils.html#gaece6988c5bc43cccb9c273043be771f6">   51</a></span><span class="preprocessor">#define BCD_SECOND(n)    (n &amp; 0x0F)</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif </span><span class="comment">//UTILS_H_INCLUDED</span></div>
+<div class="ttc" id="agroup__mouse_html_gaea686410621c1656f04f8ba3d27ba883"><div class="ttname"><a href="group__mouse.html#gaea686410621c1656f04f8ba3d27ba883">int</a></div><div class="ttdeci">int(disable_irq())</div></div>
 <div class="ttc" id="agroup__utils_html_ga6a880076cd2ec468834438b6e0c58836"><div class="ttname"><a href="group__utils.html#ga6a880076cd2ec468834438b6e0c58836">util_get_MSB</a></div><div class="ttdeci">int() util_get_MSB(uint16_t val, uint8_t *msb)</div><div class="ttdef"><b>Definition:</b> utils.c:11</div></div>
 <div class="ttc" id="agroup__utils_html_ga79a031a8611f5b2d6afa4158e92b0fb4"><div class="ttname"><a href="group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4">util_sys_inb</a></div><div class="ttdeci">int() util_sys_inb(int port, uint8_t *value)</div><div class="ttdef"><b>Definition:</b> utils.c:23</div></div>
 <div class="ttc" id="agroup__utils_html_ga81621440b3d65680979425e39aa8c789"><div class="ttname"><a href="group__utils.html#ga81621440b3d65680979425e39aa8c789">util_get_LSB</a></div><div class="ttdeci">int() util_get_LSB(uint16_t val, uint8_t *lsb)</div><div class="ttdef"><b>Definition:</b> utils.c:6</div></div>
 <div class="ttc" id="agroup__utils_html_ga87d0a2b65334656b47c807fbaa0526e7"><div class="ttname"><a href="group__utils.html#ga87d0a2b65334656b47c807fbaa0526e7">max_16</a></div><div class="ttdeci">int16_t max_16(int16_t a, int16_t b)</div><div class="ttdef"><b>Definition:</b> utils.c:34</div></div>
 <div class="ttc" id="agroup__utils_html_gafe09c65569d928fb6e323b26fc4e6d3d"><div class="ttname"><a href="group__utils.html#gafe09c65569d928fb6e323b26fc4e6d3d">min_16</a></div><div class="ttdeci">int16_t min_16(int16_t a, int16_t b)</div><div class="ttdef"><b>Definition:</b> utils.c:38</div></div>
-<div class="ttc" id="amouse_8h_html_aea686410621c1656f04f8ba3d27ba883"><div class="ttname"><a href="mouse_8h.html#aea686410621c1656f04f8ba3d27ba883">int</a></div><div class="ttdeci">int(disable_irq())</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
