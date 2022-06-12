@@ -50,8 +50,9 @@ int (rtc_read_date)(struct date_struct *d);
 
 int (rtc_set_updates)(bool enable);
 
-void (rtc_get_real_time(char *string));
+char* (rtc_get_real_time());
 
 void(rtc_update_real_time)();
+
 
 #endif /* end of include guard: RTC_H_INCLUDED */
