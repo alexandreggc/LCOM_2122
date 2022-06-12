@@ -75,33 +75,37 @@ $(function() {
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#adbeccc034ece3dd451695d21b00b3382">   28</a></span><span class="preprocessor">#define ARROWRIGHT_B_CODE  0xE0CD</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#a5f45ad6235b059f93e8d5d5d153d72f8">   29</a></span><span class="preprocessor">#define SPACEBAR_M_CODE  0x39</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#a203272f4561d20e665482fabec7beec1">   30</a></span><span class="preprocessor">#define SPACEBAR_B_CODE  0xB9</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#aee88783cf6f7e32d4e8e63b092598980">   34</a></span><span class="preprocessor">#define STATUS_REG_ERR 0x2</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#a15e27eb51e6bd4a4970b1d1a41db25e4">   31</a></span><span class="preprocessor">#define ENTER_M_CODE  0x1C</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#aaf8afca952b7a55a55688111b109663f">   32</a></span><span class="preprocessor">#define ENTER_B_CODE  0x9C</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#a226e16059eaca696ee1979284711bc66">   33</a></span><span class="preprocessor">#define BACKSPACE_M_CODE  0x0E</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#a8b06a029330943ad0d5afc9656cbc63d">   34</a></span><span class="preprocessor">#define BACKSPACE_B_CODE  0x8E</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#a89c4d098b53809674457b1660b1af780">   36</a></span><span class="preprocessor">#define STAT_REG 0x64</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#abf7206ca2181c36ef04b795c9b64e886">   37</a></span><span class="preprocessor">#define CMD_REG 0x64</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#a3edb96ff4ed65c98f514852bcdd4f944">   39</a></span><span class="preprocessor">#define READ_CMD_BYTE 0x20</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#a6bbab0e165f6f55c8f1371fd18ce9a0e">   40</a></span><span class="preprocessor">#define WRITE_CMD_BYTE 0X60</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#accda38b09f856ff41a392a50fe82b99d">   42</a></span><span class="preprocessor">#define WRITE_KBC 0x60</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#a0cfb144c907a65519a9fd11dc37463e1">   44</a></span><span class="preprocessor">#define IBF_FULL BIT(1)</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#af0c5e1f42d64aad97b4240ea019e2356">   45</a></span><span class="preprocessor">#define OBF_FULL BIT(0)</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#aea2ef6dda1aabebf291eeee29b66c04a">   46</a></span><span class="preprocessor">#define KBC_PAR_ERR BIT(7)</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#ae31c3653f5881b02cbfdd4ccbb7ccf50">   47</a></span><span class="preprocessor">#define KBC_TO_ERR BIT(6)</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#a2d87a4296d8ac7763da0206a022fbca8">   48</a></span><span class="preprocessor">#define AUX_MOUSE BIT(5)</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#a1a522aa19bcb695a9df30032a893bee3">   50</a></span><span class="preprocessor">#define DELAY_US 20000</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#a835369bb79d880e569cefdced4641b1c">   52</a></span><span class="preprocessor">#define KBC_ENABLE_INT BIT(0)</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#aee88783cf6f7e32d4e8e63b092598980">   38</a></span><span class="preprocessor">#define STATUS_REG_ERR 0x2</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#a89c4d098b53809674457b1660b1af780">   40</a></span><span class="preprocessor">#define STAT_REG 0x64</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#abf7206ca2181c36ef04b795c9b64e886">   41</a></span><span class="preprocessor">#define CMD_REG 0x64</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#a3edb96ff4ed65c98f514852bcdd4f944">   43</a></span><span class="preprocessor">#define READ_CMD_BYTE 0x20</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#a6bbab0e165f6f55c8f1371fd18ce9a0e">   44</a></span><span class="preprocessor">#define WRITE_CMD_BYTE 0X60</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#accda38b09f856ff41a392a50fe82b99d">   46</a></span><span class="preprocessor">#define WRITE_KBC 0x60</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#a0cfb144c907a65519a9fd11dc37463e1">   48</a></span><span class="preprocessor">#define IBF_FULL BIT(1)</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#af0c5e1f42d64aad97b4240ea019e2356">   49</a></span><span class="preprocessor">#define OBF_FULL BIT(0)</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#aea2ef6dda1aabebf291eeee29b66c04a">   50</a></span><span class="preprocessor">#define KBC_PAR_ERR BIT(7)</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#ae31c3653f5881b02cbfdd4ccbb7ccf50">   51</a></span><span class="preprocessor">#define KBC_TO_ERR BIT(6)</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#a2d87a4296d8ac7763da0206a022fbca8">   52</a></span><span class="preprocessor">#define AUX_MOUSE BIT(5)</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#a1a522aa19bcb695a9df30032a893bee3">   54</a></span><span class="preprocessor">#define DELAY_US 20000</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="keyboard__macros_8h.html#a835369bb79d880e569cefdced4641b1c">   56</a></span><span class="preprocessor">#define KBC_ENABLE_INT BIT(0)</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

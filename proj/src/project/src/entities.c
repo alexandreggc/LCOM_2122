@@ -23,9 +23,33 @@
 //PLAYER FUNCTIONS
 
 struct player{
+  /**
+   * player sprite struct pointer
+   */
   sprite_t* sp;
-  int cx, cy, r;
-  int x_map, y_map;
+  /**
+   * x center position
+   */
+  int cx;
+  /**
+   * y center position
+   */
+  int cy;
+  /**
+   * player sprite radius
+   */
+  int r;
+  /**
+   * player x map matrix position
+   */
+  int x_map;
+  /**
+   * player y map matrix position
+   */
+  int y_map;
+  /**
+   * player's life
+   */
   int life;
 };
 
@@ -117,9 +141,33 @@ bool (player_test_exit_door)(player_t *player, door_t *door){
 //BOT FUNCTIONS
 
 struct bot{
+  /**
+   * bot sprite pointer
+   */
   sprite_t* sp;
-  int cx, cy, r;
-  int x_map, y_map;
+  /**
+   * bot x center position in pixels on screen
+   */
+  int cx;
+  /**
+   * bot y center position in pixels on screen
+   */
+  int cy;
+  /**
+   * bot sprite radius
+   */
+  int r;
+  /**
+   * bot x position in map matrix
+   */
+  int x_map;
+  /**
+   * bot y position in map matrix
+   */
+  int y_map;
+  /**
+   * bot life integer
+   */
   int life;
 };
 
@@ -211,10 +259,29 @@ bool (bot_alive)(bot_t* bot){
 // EXPLOSION FUNCTIONS
 
 struct explosion{
+  /**
+   * explosion sprite struct pointer
+   */
   sprite_t* sp;
-  int x_map, y_map;
+  /**
+   * explosion x map position matrix
+   */
+  int x_map;
+  /**
+   * explosion y map position matrix
+   */
+  int y_map;
+  /**
+   * explosion sprite radius
+   */
   int r;
+  /**
+   * explosion duration in ticks
+   */
   int duration;
+  /**
+   * explosion counter duration
+   */
   int counter;
 };
 
@@ -264,12 +331,37 @@ bool (explosion_ended)(explosion_t *explosion){
 // BOMB FUNCTIONS
 
 struct bomb{
+  /**
+   * bomb sprite pointer
+   */
   sprite_t* sp;
+  /**
+   * array of the bomb explosions
+   */
   explosion_t** explosions;
-  int x_map, y_map;
+  /**
+   * bomb x position in map matrix
+   */
+  int x_map;
+  /**
+   * bomb y position in map matrix
+   */
+  int y_map;
+  /**
+   * bomb sprite radius
+   */
   int r;
+  /**
+   * exploded bollean variable
+   */
   bool exploded;
+  /**
+   * size of the explosions array
+   */
   int num_explosion;
+  /**
+   * range of the explosion
+   */
   int range;
 };
 
@@ -416,10 +508,29 @@ void (bomb_set_map_pos)(bomb_t *bomb, int xmap, int ymap, int x_px, int y_px){
 // WALL FUNCTIONS
 
 struct wall{
+  /**
+   * wall sprite struct pointer
+   */
   sprite_t* sp;
-  int x_map, y_map;
+  /**
+   * wall x position in map matrix
+   */
+  int x_map;
+  /**
+   * wall y position in map matrix
+   */
+  int y_map;
+  /**
+   * wall sprite radius
+   */
   int r;
+  /**
+   * true is wall broken false otherwise
+   */
   bool broken;
+  /**
+   * true if wall is unbreakable or false otherwise
+   */
   bool steel;
 };
 
@@ -471,10 +582,30 @@ void (wall_set_broken)(wall_t* w){
 // MAP FUNCTIONS
 
 struct map{
+  /**
+   * array of walls struct pointers
+   */
   wall_t** walls;
   element_t* elements;
-  int x,y;
-  int w_map, h_map;
+  /**
+   * map x position in pixels on screen
+   */
+  int x;
+  /**
+   * map y position in pixels on screen
+   */
+  int y;
+  /**
+   * map matrix width
+   */
+  int w_map;
+  /**
+   * map matrix height
+   */
+  int h_map;
+  /**
+   * number of blocks in the map matrix
+   */
   int size_map;
 };
 
@@ -718,8 +849,18 @@ void (map_test_explosion_collisions)(map_t *map, player_t *player, bot_t** bots,
 // DOOR FUNCTIONS
 
 struct door {
+  /**
+   * door sprite pointer
+   */
   sprite_t* sp;
-  int x_map, y_map;
+  /**
+   * door x position in the map matrix
+   */
+  int x_map;
+  /**
+   * door y position in the map matrix
+   */
+  int y_map;
 };
 
 door_t* (door_constructor)(map_t *map){

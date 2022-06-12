@@ -64,6 +64,7 @@ globals_func_f.html
 globals_func_g.html
 globals_func_i.html
 globals_func_k.html
+globals_func_l.html
 globals_func_m.html
 globals_func_p.html
 globals_func_r.html
@@ -94,6 +95,7 @@ globals_y.html
 graphics__card__macros_8h.html
 graphics__card__macros_8h_source.html
 group__i8254.html
+group__makecode__map.html
 i8254_8h.html
 i8254_8h_source.html
 index.html
@@ -105,8 +107,14 @@ keyboard__macros_8h_source.html
 keys_8c.html
 keys_8h.html
 keys_8h_source.html
+leaderboard_8c.html
+leaderboard_8h.html
+leaderboard_8h_source.html
 libs_8h.html
 libs_8h_source.html
+makecode__map_8c.html
+makecode__map_8h.html
+makecode__map_8h_source.html
 menu_8c.html
 menu_8h.html
 menu_8h_source.html
@@ -147,6 +155,8 @@ structfont-members.html
 structfont.html
 structkeys-members.html
 structkeys.html
+structleaderboard-members.html
+structleaderboard.html
 structmap-members.html
 structmap.html
 structmenu-members.html

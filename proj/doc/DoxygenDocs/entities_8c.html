@@ -57,6 +57,8 @@ $(function() {
 <code>#include &quot;<a class="el" href="libs_8h_source.html">libs.h</a>&quot;</code><br />
 <code>#include &quot;wall.xpm&quot;</code><br />
 <code>#include &quot;bomberman.xpm&quot;</code><br />
+<code>#include &quot;bomberman2.xpm&quot;</code><br />
+<code>#include &quot;bot2.xpm&quot;</code><br />
 <code>#include &quot;bomb.xpm&quot;</code><br />
 <code>#include &quot;bomb2.xpm&quot;</code><br />
 <code>#include &quot;stone.xpm&quot;</code><br />
@@ -176,8 +178,8 @@ Functions</h2></td></tr>
 <tr class="separator:a344556e8b8922c227a6326f5a6748e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a875b18fd8830e65fab6d4c5c14df4e57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entities_8c.html#a875b18fd8830e65fab6d4c5c14df4e57">bomb_populate</a> (<a class="el" href="entities_8h.html#af892628a2075e49d6e4961f993bf02b3">bomb_t</a> **bombs)</td></tr>
 <tr class="separator:a875b18fd8830e65fab6d4c5c14df4e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaeea297c5af313511c9f7b155cdea71a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entities_8c.html#aaeea297c5af313511c9f7b155cdea71a">check_bomb_click</a> (<a class="el" href="entities_8h.html#af892628a2075e49d6e4961f993bf02b3">bomb_t</a> **bombs, <a class="el" href="sprite_8h.html#aab4f7e34894259f3dc700a86476c02bf">sprite_t</a> *mouse, <a class="el" href="mouse_8h.html#af7e4cc29090bc70293888486e05303f4">int</a> click, <a class="el" href="mouse_8h.html#af7e4cc29090bc70293888486e05303f4">int</a> *bombsUsed)</td></tr>
-<tr class="separator:aaeea297c5af313511c9f7b155cdea71a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad68b0dedb74e9817ec4382e3ab044da0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entities_8c.html#ad68b0dedb74e9817ec4382e3ab044da0">check_bomb_click</a> (<a class="el" href="entities_8h.html#af892628a2075e49d6e4961f993bf02b3">bomb_t</a> **bombs, <a class="el" href="sprite_8h.html#aab4f7e34894259f3dc700a86476c02bf">sprite_t</a> *mouse, <a class="el" href="mouse_8h.html#af7e4cc29090bc70293888486e05303f4">int</a> click)</td></tr>
+<tr class="separator:ad68b0dedb74e9817ec4382e3ab044da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbfba1d25efbd7f536e2a1f9c172c6af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entities_8c.html#acbfba1d25efbd7f536e2a1f9c172c6af">bomb_set_explosions</a> (<a class="el" href="entities_8h.html#af892628a2075e49d6e4961f993bf02b3">bomb_t</a> *<a class="el" href="structbomb.html">bomb</a>, <a class="el" href="entities_8h.html#a3b2ae5fc86c11f192bf536c2f96060c3">map_t</a> *<a class="el" href="structmap.html">map</a>)</td></tr>
 <tr class="separator:acbfba1d25efbd7f536e2a1f9c172c6af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bb03427857b24f53cb6eb382079ce52"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entities_8c.html#a9bb03427857b24f53cb6eb382079ce52">bomb_set_map_pos</a> (<a class="el" href="entities_8h.html#af892628a2075e49d6e4961f993bf02b3">bomb_t</a> *<a class="el" href="structbomb.html">bomb</a>, <a class="el" href="mouse_8h.html#af7e4cc29090bc70293888486e05303f4">int</a> xmap, <a class="el" href="mouse_8h.html#af7e4cc29090bc70293888486e05303f4">int</a> ymap, <a class="el" href="mouse_8h.html#af7e4cc29090bc70293888486e05303f4">int</a> x_px, <a class="el" href="mouse_8h.html#af7e4cc29090bc70293888486e05303f4">int</a> y_px)</td></tr>
@@ -960,8 +962,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aaeea297c5af313511c9f7b155cdea71a" name="aaeea297c5af313511c9f7b155cdea71a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaeea297c5af313511c9f7b155cdea71a">&#9670;&nbsp;</a></span>check_bomb_click()</h2>
+<a id="ad68b0dedb74e9817ec4382e3ab044da0" name="ad68b0dedb74e9817ec4382e3ab044da0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad68b0dedb74e9817ec4382e3ab044da0">&#9670;&nbsp;</a></span>check_bomb_click()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -982,13 +984,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="mouse_8h.html#af7e4cc29090bc70293888486e05303f4">int</a>&#160;</td>
-          <td class="paramname"><em>click</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="mouse_8h.html#af7e4cc29090bc70293888486e05303f4">int</a> *&#160;</td>
-          <td class="paramname"><em>bombsUsed</em>&#160;</td>
+          <td class="paramname"><em>click</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -997,12 +993,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Checks for each bomb in the array if it was clicked and making it explode and updating the number of used bombs </p><dl class="params"><dt>Parameters</dt><dd>
+<p >Checks for each bomb in the array if it was clicked and making it explode </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bombs</td><td>array of bomb struct pointer </td></tr>
     <tr><td class="paramname">mouse</td><td>mouse struct pointer </td></tr>
     <tr><td class="paramname">click</td><td>true if there was a click or false otherwise </td></tr>
-    <tr><td class="paramname">bombsUsed</td><td>number of used bombs passed by reference </td></tr>
   </table>
   </dd>
 </dl>
