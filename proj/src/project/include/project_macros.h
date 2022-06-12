@@ -8,7 +8,7 @@
 #define MOUSE_SPEED 1
 
 #define NUMBER_OF_BOTS 6
-#define NUMBER_OF_BOMBS 10
+#define NUMBER_OF_BOMBS 3
 
 #define BOMB_RANGE 2
 #define EXPLOSION_TIME 50

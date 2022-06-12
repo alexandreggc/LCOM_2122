@@ -666,8 +666,10 @@ int (map_get_Ypixel_pos)(map_t *map, int ymap){
 }
 
 void (map_test_explosion_collisions)(map_t *map, player_t *player, bot_t** bots, bomb_t** bombs, int *bombsUsed){
+  (*bombsUsed) = 0;
   for (int i=0; i<NUMBER_OF_BOMBS; i++){
     bomb_t* b = bombs[i];
+    if (!bomb_exploded(b)) (*bombsUsed)++;
     for (int expl=0; expl < b->num_explosion; expl++){
       explosion_t* explosion = b->explosions[expl];
       if (!explosion_ended(explosion)){
@@ -704,7 +706,6 @@ void (map_test_explosion_collisions)(map_t *map, player_t *player, bot_t** bots,
           int by_map = bomb_get_ymap(bomb2);
           if (bx_map == xmap && by_map == ymap && !bomb_exploded(bomb2)){
             bomb_explode(bomb2);
-            (*bombsUsed)--;
           }
         }
       }

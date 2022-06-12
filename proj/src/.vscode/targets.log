@@ -8,7 +8,7 @@ Makefile:20: *** missing separator.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jun 12 03:18:58 2022
+# Make data base, printed on Sun Jun 12 16:11:16 2022
 
 # Variables
 
@@ -23,7 +23,7 @@ SNAP_INSTANCE_KEY =
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-40045737-9ad0-43b6-83a7-6adb688d2761.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-a6d87611-dfe3-49e8-89c7-d1a17f839855.sock
 # environment
 LC_NAME = pt_PT.UTF-8
 # environment
@@ -69,7 +69,7 @@ VSCODE_CODE_CACHE_PATH = /home/alexandre/.config/Code/CachedData/4af164ea3a06f70
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.FA6NN1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.84FQN1
 # default
 .LOADED := 
 # environment
@@ -117,7 +117,7 @@ SNAP_REEXEC =
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 201037
+VSCODE_PID = 6753
 # environment
 MOZ_ENABLE_WAYLAND = 1
 # environment
@@ -127,7 +127,7 @@ XDG_SESSION_TYPE = wayland
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/lenovopc:@/tmp/.ICE-unix/1440,unix/lenovopc:/tmp/.ICE-unix/1440
+SESSION_MANAGER = local/lenovopc:@/tmp/.ICE-unix/1628,unix/lenovopc:/tmp/.ICE-unix/1628
 # automatic
 *F = $(notdir $*)
 # environment
@@ -181,7 +181,7 @@ LESS_TERMCAP_mb = [01;32m
 # environment
 SNAP = /snap/code/98
 # environment
-INVOCATION_ID = 7829f8404d8d4687b2abaec24b4fde84
+INVOCATION_ID = dd7096c38d364bd4bc2ad338f0555e59
 # environment
 SNAP_REVISION = 98
 # environment
@@ -223,7 +223,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 1456
+SYSTEMD_EXEC_PID = 1644
 # environment
 EDITOR = /usr/bin/nano
 # environment
@@ -239,11 +239,11 @@ SNAP_DATA = /var/snap/code/98
 # environment
 SNAP_CONTEXT = sE3dGMsiInrwMuMNqp1t6wW42HqhiVwxULMlFMIAF33Hvb0BKxoV
 # environment
-MANAGERPID = 1394
+MANAGERPID = 1581
 # environment
 LC_MEASUREMENT = pt_PT.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 200948
+GIO_LAUNCHED_DESKTOP_FILE_PID = 6710
 # environment
 _ = /usr/bin/make
 # environment
@@ -253,7 +253,7 @@ XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/alexandre/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:28311
+JOURNAL_STREAM = 8:23370
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -280,6 +280,7 @@ GSETTINGS_SCHEMA_DIR = /snap/code/98/usr/share/glib-2.0/schemas
 SNAP_VERSION = 4af164ea
 # default
 SUFFIXES := 
+ 
 # environment
 QT_AUTO_SCREEN_SCALE_FACTOR = 1
 # environment
@@ -291,7 +292,6 @@ SNAP_COMMON = /var/snap/code/common
 # environment
 LS_OPTIONS = --color=auto
 # default
- 
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
 # environment
 SNAP_USER_DATA = /home/alexandre/snap/code/98
@@ -316,9 +316,9 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# . (device 66306, inode 1972966): 26 files, no impossibilities.
+# . (device 66306, inode 1972966): 27 files, no impossibilities.
 
-# 26 files, no impossibilities in 1 directories.
+# 27 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -400,12 +400,12 @@ all:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 39 / storage = 376 B / avg = 9 B
-# current buf: size = 8162 B / used = 376 B / count = 39 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 40 / storage = 387 B / avg = 9 B
+# current buf: size = 8162 B / used = 387 B / count = 40 / avg = 9 B
 
-# strcache performance: lookups = 56 / hit rate = 30%
+# strcache performance: lookups = 57 / hit rate = 29%
 # hash-table stats:
-# Load=39/8192=0%, Rehash=0, Collisions=0/56=0%
-# Finished Make data base on Sun Jun 12 03:18:58 2022
+# Load=40/8192=0%, Rehash=0, Collisions=0/57=0%
+# Finished Make data base on Sun Jun 12 16:11:16 2022
 
  
