@@ -6,6 +6,7 @@
 #include "utils.h"
 #include "sprite.h"
 #include "project_macros.h"
+#include "keys.h"
 
 int (kbd_get_size_bb)();
 int (kbd_subscribe_int)(uint8_t *bit_no);
@@ -22,7 +23,7 @@ void (reset_vars)();
 int is_two_byte();
 int kbd_error_occured(); 
 void keyboard_get_key(uint8_t *key);
-
+int (kbd_process_key)(uint8_t bbyte[2], keys_t *keys);
 int (keyboard_check_esc)(uint8_t bb[2]);
 
 

@@ -1,3 +1,8 @@
 DUARTE          4S        12/06/2022
 DUARTE 2        14S       12/06/2022
 DUARTE LOPES    5S        12/06/2022
+TESTE TESTE 2   29S       12/06/2022
+OOPS            28S       12/06/2022
+YESSS I WON     50S       12/06/2022
+I LOST          7S        12/06/2022
+FINAL TESTE PFV 51S       12/06/2022

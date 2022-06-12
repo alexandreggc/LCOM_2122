@@ -45,8 +45,7 @@ void (menu_draw)(menu_t *menu) {
     for (size_t i = 0; i < menu->sz; i++){
         rectangle_draw(menu->buttons[i]);
     }
-    char *time = (char *)malloc(38 * sizeof(char));
-    rtc_get_real_time(time);
+    char *time = rtc_get_real_time();
     font_draw_string(menu->font, time, 100, 550);
     free(time);
 }

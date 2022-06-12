@@ -4,9 +4,9 @@
 
 #include "utils.h"
 
-int hook_id_rtc = 8;
-struct time_struct time_s;
-struct date_struct date_s;
+static int hook_id_rtc = 8;
+static struct time_struct time_s;
+static struct date_struct date_s;
 
 int (rtc_subscribe_int)(uint8_t *bit_no) {
   *bit_no = hook_id_rtc;
@@ -128,14 +128,13 @@ void rtc_ih() {
   } */
 }
 
-void (rtc_get_real_time(char *string)){
-  char *aux = (char *)malloc(38 * sizeof(char));
-    
-  char *weekday = (char *)malloc(12 * sizeof(char));
+void (rtc_update_real_time)(){
+  rtc_read_date(&date_s);
+  rtc_read_time(&time_s);
+}
 
-  
-
-
+char* (rtc_get_real_time)(){
+  char * weekday;
   switch (date_s.weekday)
   {
   case 0: weekday = "SUNDAY, "; break;
@@ -147,102 +146,63 @@ void (rtc_get_real_time(char *string)){
   case 6: weekday = "SATURDAY, "; break;
     break;
   }
-   char *day = (char *)malloc(4 * sizeof(char));
-   if((BCD_FIRST(date_s.day))*10     + BCD_SECOND(date_s.day) < 10){
-    *day = '0';
-    sprintf(day + 1,"%d", BCD_SECOND(date_s.day));
 
-  }
-  else{
-    sprintf(day,"%d",(BCD_FIRST(date_s.day))*10     + BCD_SECOND(date_s.day));
-  }
-   strcat(day, "/");
-  char *month = (char *)malloc(4 * sizeof(char));
-  if((BCD_FIRST(date_s.month))*10     + BCD_SECOND(date_s.month) < 10){
-    *month = '0';
-    sprintf(month + 1,"%d", BCD_SECOND(date_s.month));
+  char *day1 = malloc(sizeof(char)*100);
+  sprintf(day1,"%d", BCD_FIRST(date_s.day));
+  char *day2 = malloc(sizeof(char)*100);
+  sprintf(day2,"%d", BCD_SECOND(date_s.day));
+  strcat(day1, day2);
 
-  }
-  else{
-    sprintf(month,"%d",(BCD_FIRST(date_s.month))*10     + BCD_SECOND(date_s.month));
-  }
-  strcat(month, "/");
+  char *month1 = malloc(sizeof(char)*100);
+  sprintf(month1,"%d", BCD_FIRST(date_s.month));
+  char *month2 = malloc(sizeof(char)*100);
+  sprintf(month2,"%d", BCD_SECOND(date_s.month));
+  strcat(month1, month2);
 
-  char *year = (char *)malloc(6 * sizeof(char));
-  sprintf(year,"%d",2000 +(BCD_FIRST(date_s.year))*10     + BCD_SECOND(date_s.year));
-  strcat(year, " ");
+  char *year1 = malloc(sizeof(char)*100);
+  sprintf(year1,"%d", BCD_FIRST(date_s.year));
+  char *year2 = malloc(sizeof(char)*100);
+  sprintf(year2,"%d", BCD_SECOND(date_s.year));
+  strcat(year1, year2);
+  
+  char *hour1 = malloc(sizeof(char)*100);
+  sprintf(hour1,"%d", BCD_FIRST(time_s.hour));
+  char *hour2 = malloc(sizeof(char)*100);
+  sprintf(hour2,"%d", BCD_SECOND(time_s.hour));
+  strcat(hour1, hour2);
 
+  char *min1 = malloc(sizeof(char)*100);
+  sprintf(min1,"%d", BCD_FIRST(time_s.min));
+  char *min2 = malloc(sizeof(char)*100);
+  sprintf(min2,"%d", BCD_SECOND(time_s.min));
+  strcat(min1, min2);
 
-  char *hour = (char *)malloc(4 * sizeof(char));
-  if((BCD_FIRST(time_s.hour))*10     + BCD_SECOND(time_s.hour) < 10){
-    *hour = '0';
-    sprintf(hour + 1,"%d", BCD_SECOND(time_s.hour));
+  char *sec1 = malloc(sizeof(char)*100);
+  sprintf(sec1,"%d", BCD_FIRST(time_s.sec));
+  char *sec2 = malloc(sizeof(char)*100);
+  sprintf(sec2,"%d", BCD_SECOND(time_s.sec));
+  strcat(sec1, sec2);
 
-  }
-  else{
-    sprintf(hour,"%d",(BCD_FIRST(time_s.hour))*10     + BCD_SECOND(time_s.hour));
-  }
-  *(hour + 2) = ':';
-
-  char *minute = (char *)malloc(4 * sizeof(char));
-  if((BCD_FIRST(time_s.min))*10     + BCD_SECOND(time_s.min) < 10){
-    *minute = '0';
-    sprintf(minute + 1,"%d", BCD_SECOND(time_s.min));
-
-  }
-  else{
-    sprintf(minute,"%d",(BCD_FIRST(time_s.min))*10     + BCD_SECOND(time_s.min));
-  }
-  *(minute + 2) = ':';
-
-
-  char *second = (char *)malloc(4 * sizeof(char));
-  if((BCD_FIRST(time_s.sec))*10     + BCD_SECOND(time_s.sec) < 10){
-    *second = '0';
-    sprintf(second + 1,"%d", BCD_SECOND(time_s.sec));
-
-  }
-  else{
-    sprintf(second,"%d",(BCD_FIRST(time_s.sec))*10     + BCD_SECOND(time_s.sec));
-  }
-
-
- unsigned int const sz1  = strlen(weekday);
-  unsigned int const sz2  = strlen(day);
-  unsigned int const sz3  = strlen(month);
-  unsigned int const sz4  = strlen(year);
-  unsigned int const sz5  = strlen(hour);
-  unsigned int const sz6  = strlen(minute);
-  unsigned int const sz7  = strlen(second);
-   
-
-
-
-memcpy(aux , weekday  , sz1 );
-memcpy(aux + sz1       , day  , sz2 );
-memcpy(aux + sz1 + sz2       , month  , sz3 );
-memcpy(aux + sz1 + sz2 + sz3      , year  , sz4 );
-memcpy(aux + sz1 + sz2 + sz3 + sz4    , hour , sz5 );
-memcpy(aux + sz1 + sz2 + sz3 + sz4 + sz5    , minute , sz6 );
-memcpy(aux + sz1 + sz2 + sz3 + sz4 + sz5 + sz6, second , sz7);
-
-aux[sz1 + sz2 + sz3 + sz4 + sz5 + sz6 + sz7] = '\0'; 
-
-free(weekday);
-free(day);
-free(month);
-free(year);
-free(hour);
-free(minute);
-free(second);
-
-memcpy(string, aux, sz1 + sz2 + sz3 + sz4 + sz5 + sz6 + sz7);
-free(aux);
-}
-
-void (rtc_update_real_time)(){
-  rtc_read_date(&date_s);
-  rtc_read_time(&time_s);
+  char* datetime = malloc(sizeof(char)*100);
+  strcpy(datetime, weekday);
+  strcat(datetime, day1);
+  strcat(datetime, "/");
+  strcat(datetime, month1);
+  strcat(datetime, "/20");
+  strcat(datetime, year1);
+  strcat(datetime, "  ");
+  strcat(datetime, hour1);
+  strcat(datetime, ":");
+  strcat(datetime, min1);
+  strcat(datetime, ":");
+  strcat(datetime, sec1);
+  free(day1); free(day2);
+  free(month1); free(month2);
+  free(year1); free(year2);
+  free(hour1); free(hour2);
+  free(min1); free(min2);
+  free(sec1); free(sec2);
+  return datetime;
 }
 
 
