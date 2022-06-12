@@ -100,13 +100,15 @@ group__door.html
 group__entities.html
 group__explosion.html
 group__game.html
-group__i8254.html
 group__leaderboard.html
+group__libs.html
 group__makecode__map.html
 group__map.html
 group__player.html
 group__proj.html
 group__project__functions.html
+group__timer.html
+group__utils.html
 group__wall.html
 i8254_8h.html
 i8254_8h_source.html

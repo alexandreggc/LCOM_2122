@@ -49,27 +49,22 @@ $(function() {
 <a href="timer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef TIMER_H_INCLUDED</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define TIMER_H_INCLUDED</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="i8254_8h.html">i8254.h</a>&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><a class="code hl_function" href="mouse_8h.html#aea686410621c1656f04f8ba3d27ba883">int</a> (<a class="code hl_function" href="timer_8h.html#ac57a7e1140a7e00ad95ac5488d2a671b">timer_subscribe_int</a>)(uint8_t *bit_no);</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><a class="code hl_function" href="mouse_8h.html#aea686410621c1656f04f8ba3d27ba883">int</a> (<a class="code hl_function" href="timer_8h.html#afabd21de449be154dd65d5fdb2d8045d">timer_unsubscribe_int</a>)();</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="i8254_8h.html">i8254.h</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>void (<a class="code hl_function" href="timer_8h.html#a91a2072306c68353712a6b771287dc2c">timer_int_handler</a>)();</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>void (<a class="code hl_function" href="timer_8h.html#af8a350bdc3817f06eb51034dac4cab6c">timer_reset_no_interrupts</a>)();</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>uint32_t (<a class="code hl_function" href="timer_8h.html#acf6dd692b50d94f94c6114e559b95101">timer_get_no_interrupts</a>)();</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><a class="code hl_function" href="mouse_8h.html#aea686410621c1656f04f8ba3d27ba883">int</a> (<a class="code hl_function" href="group__timer.html#gac57a7e1140a7e00ad95ac5488d2a671b">timer_subscribe_int</a>)(uint8_t *bit_no);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><a class="code hl_function" href="mouse_8h.html#aea686410621c1656f04f8ba3d27ba883">int</a> (<a class="code hl_function" href="group__timer.html#gafabd21de449be154dd65d5fdb2d8045d">timer_unsubscribe_int</a>)();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>void (<a class="code hl_function" href="group__timer.html#ga91a2072306c68353712a6b771287dc2c">timer_int_handler</a>)();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>void (<a class="code hl_function" href="group__timer.html#gaf8a350bdc3817f06eb51034dac4cab6c">timer_reset_no_interrupts</a>)();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>uint32_t (<a class="code hl_function" href="group__timer.html#gacf6dd692b50d94f94c6114e559b95101">timer_get_no_interrupts</a>)();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="agroup__timer_html_ga91a2072306c68353712a6b771287dc2c"><div class="ttname"><a href="group__timer.html#ga91a2072306c68353712a6b771287dc2c">timer_int_handler</a></div><div class="ttdeci">void() timer_int_handler()</div><div class="ttdef"><b>Definition:</b> timer.c:55</div></div>
+<div class="ttc" id="agroup__timer_html_gac57a7e1140a7e00ad95ac5488d2a671b"><div class="ttname"><a href="group__timer.html#gac57a7e1140a7e00ad95ac5488d2a671b">timer_subscribe_int</a></div><div class="ttdeci">int() timer_subscribe_int(uint8_t *bit_no)</div><div class="ttdef"><b>Definition:</b> timer.c:46</div></div>
+<div class="ttc" id="agroup__timer_html_gacf6dd692b50d94f94c6114e559b95101"><div class="ttname"><a href="group__timer.html#gacf6dd692b50d94f94c6114e559b95101">timer_get_no_interrupts</a></div><div class="ttdeci">uint32_t() timer_get_no_interrupts()</div><div class="ttdef"><b>Definition:</b> timer.c:84</div></div>
+<div class="ttc" id="agroup__timer_html_gaf8a350bdc3817f06eb51034dac4cab6c"><div class="ttname"><a href="group__timer.html#gaf8a350bdc3817f06eb51034dac4cab6c">timer_reset_no_interrupts</a></div><div class="ttdeci">void() timer_reset_no_interrupts()</div><div class="ttdef"><b>Definition:</b> timer.c:80</div></div>
+<div class="ttc" id="agroup__timer_html_gafabd21de449be154dd65d5fdb2d8045d"><div class="ttname"><a href="group__timer.html#gafabd21de449be154dd65d5fdb2d8045d">timer_unsubscribe_int</a></div><div class="ttdeci">int() timer_unsubscribe_int()</div><div class="ttdef"><b>Definition:</b> timer.c:51</div></div>
 <div class="ttc" id="ai8254_8h_html"><div class="ttname"><a href="i8254_8h.html">i8254.h</a></div></div>
 <div class="ttc" id="amouse_8h_html_aea686410621c1656f04f8ba3d27ba883"><div class="ttname"><a href="mouse_8h.html#aea686410621c1656f04f8ba3d27ba883">int</a></div><div class="ttdeci">int(disable_irq())</div></div>
-<div class="ttc" id="atimer_8h_html_a91a2072306c68353712a6b771287dc2c"><div class="ttname"><a href="timer_8h.html#a91a2072306c68353712a6b771287dc2c">timer_int_handler</a></div><div class="ttdeci">void() timer_int_handler()</div><div class="ttdef"><b>Definition:</b> timer.c:55</div></div>
-<div class="ttc" id="atimer_8h_html_ac57a7e1140a7e00ad95ac5488d2a671b"><div class="ttname"><a href="timer_8h.html#ac57a7e1140a7e00ad95ac5488d2a671b">timer_subscribe_int</a></div><div class="ttdeci">int() timer_subscribe_int(uint8_t *bit_no)</div><div class="ttdef"><b>Definition:</b> timer.c:46</div></div>
-<div class="ttc" id="atimer_8h_html_acf6dd692b50d94f94c6114e559b95101"><div class="ttname"><a href="timer_8h.html#acf6dd692b50d94f94c6114e559b95101">timer_get_no_interrupts</a></div><div class="ttdeci">uint32_t() timer_get_no_interrupts()</div><div class="ttdef"><b>Definition:</b> timer.c:84</div></div>
-<div class="ttc" id="atimer_8h_html_af8a350bdc3817f06eb51034dac4cab6c"><div class="ttname"><a href="timer_8h.html#af8a350bdc3817f06eb51034dac4cab6c">timer_reset_no_interrupts</a></div><div class="ttdeci">void() timer_reset_no_interrupts()</div><div class="ttdef"><b>Definition:</b> timer.c:80</div></div>
-<div class="ttc" id="atimer_8h_html_afabd21de449be154dd65d5fdb2d8045d"><div class="ttname"><a href="timer_8h.html#afabd21de449be154dd65d5fdb2d8045d">timer_unsubscribe_int</a></div><div class="ttdeci">int() timer_unsubscribe_int()</div><div class="ttdef"><b>Definition:</b> timer.c:51</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
