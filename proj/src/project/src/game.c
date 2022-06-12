@@ -104,6 +104,7 @@ int(mainLoop)(){
                                 bombs = malloc(sizeof(bomb_t*)*NUMBER_OF_BOMBS);
                                 map = map_constructor();
                                 door = door_constructor(map);
+                                curr_keys = keys_ctor();
                                 bomb_populate(bombs);
                                 map_place_bots(map,bots);
                                 gameState = PLAY;
@@ -238,6 +239,7 @@ int(mainLoop)(){
                     bot_destructor(bots);
                     bombs_destructor(bombs);
                     door_destructor(door);
+                    keys_dtor(curr_keys);
                  }
                  break;
              default:
