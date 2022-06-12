@@ -56,7 +56,7 @@ void (leaderboard_save_file)(leaderboard_t *lb, char* playerName, int timeCounte
 
   char* result = playerName;
 
-  char date[10];
+  char *date = (char *)malloc(14 * sizeof(char));
   rtc_get_date(date);
 
   char* timeCounterString = "";

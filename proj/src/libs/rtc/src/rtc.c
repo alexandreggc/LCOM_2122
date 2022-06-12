@@ -207,7 +207,7 @@ char* (rtc_get_real_time)(){
 
 
 void (rtc_get_date)(char* string){
-  char *aux = (char *)malloc(38 * sizeof(char));
+  char *aux = (char *)malloc(14 * sizeof(char));
 
   char *day = (char *)malloc(4 * sizeof(char));
    if((BCD_FIRST(date_s.day))*10     + BCD_SECOND(date_s.day) < 10){
