@@ -1,0 +1,8 @@
+<map id="sprite_get_yspeed" name="sprite_get_yspeed">
+<area shape="rect" id="node1" title=" " alt="" coords="557,56,699,83"/>
+<area shape="rect" id="node2" href="$group__bot.html#ga2d99ae161b6e90ab7e4a120876058f21" title=" " alt="" coords="367,5,453,32"/>
+<area shape="rect" id="node5" href="$group__map.html#gacd29e05a7f152e239641b29e56ac7682" title=" " alt="" coords="321,56,499,83"/>
+<area shape="rect" id="node6" href="$group__map.html#ga7d2afcf083150fb92ede9908ca1b4049" title=" " alt="" coords="311,107,509,133"/>
+<area shape="rect" id="node3" href="$group__game.html#ga4da46823eeb8504fffcd2c23a7930258" title=" " alt="" coords="176,56,263,83"/>
+<area shape="rect" id="node4" href="$group__proj.html#ga2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,56,128,83"/>
+</map>

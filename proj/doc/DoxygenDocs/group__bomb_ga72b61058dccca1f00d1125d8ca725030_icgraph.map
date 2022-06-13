@@ -1,0 +1,7 @@
+<map id="bomb_exploded" name="bomb_exploded">
+<area shape="rect" id="node1" title=" " alt="" coords="553,42,680,69"/>
+<area shape="rect" id="node2" href="$group__map.html#ga6b4ab7e4315160ec06ca4ce6d17524e6" title=" " alt="" coords="331,5,485,47"/>
+<area shape="rect" id="node5" href="$group__player.html#ga0722342668529c649779f077051d36e3" title=" " alt="" coords="311,71,505,98"/>
+<area shape="rect" id="node3" href="$group__game.html#ga4da46823eeb8504fffcd2c23a7930258" title=" " alt="" coords="176,42,263,69"/>
+<area shape="rect" id="node4" href="$group__proj.html#ga2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,42,128,69"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="bombs_draw" name="bombs_draw">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,111,57"/>
+<area shape="rect" id="node2" href="$group__bomb.html#gaf58d841d3603b19debf1e51bdc1e60b3" title=" " alt="" coords="159,5,333,32"/>
+<area shape="rect" id="node4" href="$group__sprite.html#ga2eebe1d97488a8c527342d0fa8a79f2f" title=" " alt="" coords="553,31,652,57"/>
+<area shape="rect" id="node3" href="$group__explosion.html#gaabeffad430082e10b5cea91829348773" title=" " alt="" coords="381,5,505,32"/>
+<area shape="rect" id="node5" href="$group__videocard.html#ga502312d5a3b5a9f689ccee2eb6c82020" title=" " alt="" coords="700,31,845,57"/>
+</map>

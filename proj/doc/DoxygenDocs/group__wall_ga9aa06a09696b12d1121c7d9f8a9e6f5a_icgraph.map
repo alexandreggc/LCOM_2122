@@ -1,0 +1,7 @@
+<map id="wall_set_broken" name="wall_set_broken">
+<area shape="rect" id="node1" title=" " alt="" coords="512,35,639,61"/>
+<area shape="rect" id="node2" href="$group__map.html#ga002f347fe448abbf0ed9eda318f47631" title=" " alt="" coords="322,5,453,32"/>
+<area shape="rect" id="node5" href="$group__map.html#ga6b4ab7e4315160ec06ca4ce6d17524e6" title=" " alt="" coords="311,57,464,98"/>
+<area shape="rect" id="node3" href="$group__game.html#ga4da46823eeb8504fffcd2c23a7930258" title=" " alt="" coords="176,35,263,61"/>
+<area shape="rect" id="node4" href="$group__proj.html#ga2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,35,128,61"/>
+</map>

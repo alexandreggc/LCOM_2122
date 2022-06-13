@@ -1,0 +1,11 @@
+<map id="map_update_bot_grid" name="map_update_bot_grid">
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,168,159"/>
+<area shape="rect" id="node2" href="$group__bot.html#ga0d87f0e56b0175550ad94fb875c0d687" title=" " alt="" coords="241,5,327,32"/>
+<area shape="rect" id="node4" href="$group__bot.html#gaff7d1facdb546dba237a283cf0546ee6" title=" " alt="" coords="241,56,327,83"/>
+<area shape="rect" id="node6" href="$group__bot.html#gadf56bbb7dc094a87d06e0c3d3edf8c5e" title=" " alt="" coords="225,107,343,133"/>
+<area shape="rect" id="node7" href="$group__bot.html#ga66dfe9622dd6d422857b3db568523c8e" title=" " alt="" coords="216,157,352,184"/>
+<area shape="rect" id="node8" href="$group__sprite.html#gad4fbb378240b634982deb4c6cf0edaca" title=" " alt="" coords="217,208,351,235"/>
+<area shape="rect" id="node9" href="$group__sprite.html#ga59f08c1a8f12966f09023eacd4f25331" title=" " alt="" coords="219,259,349,285"/>
+<area shape="rect" id="node3" href="$group__sprite.html#ga0d4b4d21ae1ca8f0c33a712c7e335426" title=" " alt="" coords="400,5,525,32"/>
+<area shape="rect" id="node5" href="$group__sprite.html#ga7db44275ba0615f760bbb82a1f9bbe06" title=" " alt="" coords="400,56,525,83"/>
+</map>

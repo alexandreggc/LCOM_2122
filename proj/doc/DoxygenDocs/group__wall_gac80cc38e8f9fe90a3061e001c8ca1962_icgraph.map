@@ -1,0 +1,7 @@
+<map id="wall_destructor" name="wall_destructor">
+<area shape="rect" id="node1" title=" " alt="" coords="489,31,612,57"/>
+<area shape="rect" id="node2" href="$group__map.html#ga002f347fe448abbf0ed9eda318f47631" title=" " alt="" coords="311,5,441,32"/>
+<area shape="rect" id="node5" href="$group__map.html#gacce24d3a1e48ef9cdf2884070b0cd94b" title=" " alt="" coords="314,56,438,83"/>
+<area shape="rect" id="node3" href="$group__game.html#ga4da46823eeb8504fffcd2c23a7930258" title=" " alt="" coords="176,31,263,57"/>
+<area shape="rect" id="node4" href="$group__proj.html#ga2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,31,128,57"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="map_get_Xpixel_pos" name="map_get_Xpixel_pos">
+<area shape="rect" id="node1" title=" " alt="" coords="1176,56,1332,83"/>
+<area shape="rect" id="node2" href="$group__door.html#ga3bcbedbf11161f40dda6cecf214b9589" title=" " alt="" coords="755,5,885,32"/>
+<area shape="rect" id="node5" href="$group__explosion.html#gad6f94fde07337ec1b2f631c96cf817ec" title=" " alt="" coords="949,56,1128,83"/>
+<area shape="rect" id="node7" href="$group__map.html#ga4b0c2c93258524da2b80710da741c2fe" title=" " alt="" coords="553,56,691,83"/>
+<area shape="rect" id="node3" href="$group__game.html#ga4da46823eeb8504fffcd2c23a7930258" title=" " alt="" coords="176,31,263,57"/>
+<area shape="rect" id="node4" href="$group__proj.html#ga2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,31,128,57"/>
+<area shape="rect" id="node6" href="$group__bomb.html#ga92ba89f6278acb689f071f42587adf77" title=" " alt="" coords="739,56,901,83"/>
+<area shape="rect" id="node8" href="$group__player.html#ga0722342668529c649779f077051d36e3" title=" " alt="" coords="311,56,505,83"/>
+</map>

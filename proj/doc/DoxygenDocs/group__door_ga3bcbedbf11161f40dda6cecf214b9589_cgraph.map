@@ -1,0 +1,12 @@
+<map id="door_constructor" name="door_constructor">
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,136,159"/>
+<area shape="rect" id="node2" href="$group__project__functions.html#ga6360a927b93bbab65f4683fde291732f" title=" " alt="" coords="184,5,379,32"/>
+<area shape="rect" id="node3" href="$group__map.html#ga2e31031b85c499a690d72cef364a1fda" title=" " alt="" coords="203,56,359,83"/>
+<area shape="rect" id="node5" href="$group__map.html#ga7119d2da06a4bfb132126a40ddfcc115" title=" " alt="" coords="204,107,359,133"/>
+<area shape="rect" id="node7" href="$group__sprite.html#gafdd51ad5e05d19496c82ce75e4245020" title=" " alt="" coords="212,157,351,184"/>
+<area shape="rect" id="node9" href="$group__sprite.html#ga2bcd8be5d18d2a3be69d2294c86805d7" title=" " alt="" coords="223,208,339,235"/>
+<area shape="rect" id="node10" href="$group__sprite.html#gac3a6066af80d862a245715fb8cd87d50" title=" " alt="" coords="215,259,347,285"/>
+<area shape="rect" id="node4" href="$group__sprite.html#ga59f08c1a8f12966f09023eacd4f25331" title=" " alt="" coords="429,56,559,83"/>
+<area shape="rect" id="node6" href="$group__sprite.html#gad4fbb378240b634982deb4c6cf0edaca" title=" " alt="" coords="427,107,561,133"/>
+<area shape="rect" id="node8" href="$group__sprite.html#ga4b97baa89f63a9917d1937ed0f8e863a" title=" " alt="" coords="428,157,560,184"/>
+</map>

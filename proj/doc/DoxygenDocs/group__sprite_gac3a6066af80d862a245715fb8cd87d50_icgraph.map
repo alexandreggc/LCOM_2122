@@ -1,0 +1,13 @@
+<map id="sprite_set_speed" name="sprite_set_speed">
+<area shape="rect" id="node1" title=" " alt="" coords="984,157,1116,184"/>
+<area shape="rect" id="node2" href="$group__bomb.html#ga9bb03427857b24f53cb6eb382079ce52" title=" " alt="" coords="784,5,936,32"/>
+<area shape="rect" id="node5" href="$group__game.html#ga4da46823eeb8504fffcd2c23a7930258" title=" " alt="" coords="176,157,263,184"/>
+<area shape="rect" id="node7" href="$group__bot.html#ga2d99ae161b6e90ab7e4a120876058f21" title=" " alt="" coords="603,107,690,133"/>
+<area shape="rect" id="node8" href="$group__door.html#ga3bcbedbf11161f40dda6cecf214b9589" title=" " alt="" coords="345,157,475,184"/>
+<area shape="rect" id="node9" href="$group__map.html#gacd29e05a7f152e239641b29e56ac7682" title=" " alt="" coords="557,208,736,235"/>
+<area shape="rect" id="node10" href="$group__map.html#ga7d2afcf083150fb92ede9908ca1b4049" title=" " alt="" coords="311,259,509,285"/>
+<area shape="rect" id="node11" href="$group__player.html#gab578caf295993e1990ba1d6259dc658e" title=" " alt="" coords="792,309,928,336"/>
+<area shape="rect" id="node3" href="$group__map.html#ga4b0c2c93258524da2b80710da741c2fe" title=" " alt="" coords="578,5,715,32"/>
+<area shape="rect" id="node4" href="$group__player.html#ga0722342668529c649779f077051d36e3" title=" " alt="" coords="313,5,507,32"/>
+<area shape="rect" id="node6" href="$group__proj.html#ga2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,157,128,184"/>
+</map>

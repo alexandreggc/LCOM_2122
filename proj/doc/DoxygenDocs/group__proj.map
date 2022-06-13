@@ -1,0 +1,8 @@
+<map id="proj" name="proj">
+<area shape="rect" id="node1" href="$group__entities.html" title="All entities used in the game." alt="" coords="132,5,203,31"/>
+<area shape="rect" id="node2" href="$group__game.html" title=" " alt="" coords="138,55,197,80"/>
+<area shape="rect" id="node3" href="$group__leaderboard.html" title="Leaderboard struct and functions." alt="" coords="117,104,217,129"/>
+<area shape="rect" id="node4" href="$group__makecode__map.html" title="Makecode map." alt="" coords="105,153,230,179"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,104,52,129"/>
+<area shape="rect" id="node6" href="$group__project__functions.html" title="External functions used in the project." alt="" coords="100,203,235,228"/>
+</map>

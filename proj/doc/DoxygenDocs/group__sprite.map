@@ -1,0 +1,4 @@
+<map id="sprite" name="sprite">
+<area shape="rect" id="node1" href="$group__graph.html" title=" " alt="" coords="5,5,64,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="112,5,171,31"/>
+</map>

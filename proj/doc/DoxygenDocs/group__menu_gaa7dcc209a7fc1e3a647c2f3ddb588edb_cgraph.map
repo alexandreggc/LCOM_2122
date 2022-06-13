@@ -1,0 +1,18 @@
+<map id="menu_draw" name="menu_draw">
+<area shape="rect" id="node1" title=" " alt="" coords="5,157,104,184"/>
+<area shape="rect" id="node2" href="$group__font.html#gae1f8edc6a0cd9ebd606878b4fe703e0f" title=" " alt="" coords="358,107,489,133"/>
+<area shape="rect" id="node7" href="$rectangle_8c.html#aa68a8a38476d9a162f8923ed6c179fad" title=" " alt="" coords="159,157,281,184"/>
+<area shape="rect" id="node16" href="$group__rtc.html#ga91b36f96d03de5eac31dfaa05e9f0b79" title=" " alt="" coords="152,208,288,235"/>
+<area shape="rect" id="node3" href="$group__sprite.html#ga2eebe1d97488a8c527342d0fa8a79f2f" title=" " alt="" coords="589,5,687,32"/>
+<area shape="rect" id="node5" href="$group__sprite.html#ga59f08c1a8f12966f09023eacd4f25331" title=" " alt="" coords="773,107,903,133"/>
+<area shape="rect" id="node6" href="$group__sprite.html#ga2bcd8be5d18d2a3be69d2294c86805d7" title=" " alt="" coords="580,107,696,133"/>
+<area shape="rect" id="node4" href="$group__videocard.html#ga502312d5a3b5a9f689ccee2eb6c82020" title=" " alt="" coords="765,5,911,32"/>
+<area shape="rect" id="node8" href="$rectangle_8c.html#afd71ef9059d6ecf8ce8c84196a04b554" title=" " alt="" coords="336,157,511,184"/>
+<area shape="rect" id="node10" href="$rectangle_8c.html#a0e288f64f4e25aced9eedfaf3774d3a6" title=" " alt="" coords="336,208,511,235"/>
+<area shape="rect" id="node13" href="$group__videocard.html#ga99d2da2559e11200c6b40c469e9977ec" title=" " alt="" coords="351,259,496,285"/>
+<area shape="rect" id="node9" href="$group__font.html#ga012b22acba7ec67e30e00f258692ae34" title=" " alt="" coords="561,157,715,184"/>
+<area shape="rect" id="node11" href="$group__font.html#ga9816e7737802b0a85bee2544d1602914" title=" " alt="" coords="559,208,717,235"/>
+<area shape="rect" id="node12" href="$group__sprite.html#gad4fbb378240b634982deb4c6cf0edaca" title=" " alt="" coords="771,208,905,235"/>
+<area shape="rect" id="node14" href="$group__videocard.html#ga1677f4b59f9e0584d82e0b655e4b7fc9" title=" " alt="" coords="580,259,696,285"/>
+<area shape="rect" id="node15" href="$group__videocard.html#ga08c498ffeb0a3962e3b7711b57397741" title=" " alt="" coords="781,259,895,285"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="gameended_draw" name="gameended_draw">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,144,83"/>
+<area shape="rect" id="node2" href="$group__font.html#gae1f8edc6a0cd9ebd606878b4fe703e0f" title=" " alt="" coords="192,56,323,83"/>
+<area shape="rect" id="node3" href="$group__sprite.html#ga2eebe1d97488a8c527342d0fa8a79f2f" title=" " alt="" coords="387,5,485,32"/>
+<area shape="rect" id="node5" href="$group__sprite.html#ga59f08c1a8f12966f09023eacd4f25331" title=" " alt="" coords="371,56,501,83"/>
+<area shape="rect" id="node6" href="$group__sprite.html#ga2bcd8be5d18d2a3be69d2294c86805d7" title=" " alt="" coords="378,107,494,133"/>
+<area shape="rect" id="node4" href="$group__videocard.html#ga502312d5a3b5a9f689ccee2eb6c82020" title=" " alt="" coords="549,5,695,32"/>
+</map>

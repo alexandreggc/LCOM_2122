@@ -1,0 +1,9 @@
+<map id="graph" name="graph">
+<area shape="rect" id="node1" href="$group__font.html" title=" " alt="" coords="225,5,273,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="99,104,157,129"/>
+<area shape="rect" id="node4" href="$group__menu.html" title=" " alt="" coords="219,55,278,80"/>
+<area shape="rect" id="node5" href="$group__rectangle.html" title=" " alt="" coords="207,104,290,129"/>
+<area shape="rect" id="node6" href="$group__sprite.html" title=" " alt="" coords="219,153,278,179"/>
+<area shape="rect" id="node7" href="$group__videocard.html" title=" " alt="" coords="205,203,292,228"/>
+<area shape="rect" id="node3" href="$group__libs.html" title=" " alt="" coords="5,104,51,129"/>
+</map>

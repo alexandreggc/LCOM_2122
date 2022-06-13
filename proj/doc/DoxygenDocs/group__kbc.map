@@ -1,0 +1,7 @@
+<map id="kbc" name="kbc">
+<area shape="rect" id="node1" title=" " alt="" coords="99,55,144,80"/>
+<area shape="rect" id="node2" href="$group__keyboard.html" title=" " alt="" coords="192,5,275,31"/>
+<area shape="rect" id="node3" href="$group__keys.html" title=" " alt="" coords="207,55,259,80"/>
+<area shape="rect" id="node5" href="$group__mouse.html" title=" " alt="" coords="200,104,267,129"/>
+<area shape="rect" id="node4" href="$group__libs.html" title=" " alt="" coords="5,55,51,80"/>
+</map>

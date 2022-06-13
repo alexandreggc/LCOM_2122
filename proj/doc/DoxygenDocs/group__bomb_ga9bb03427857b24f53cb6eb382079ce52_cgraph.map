@@ -1,0 +1,5 @@
+<map id="bomb_set_map_pos" name="bomb_set_map_pos">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,157,57"/>
+<area shape="rect" id="node2" href="$group__sprite.html#ga2bcd8be5d18d2a3be69d2294c86805d7" title=" " alt="" coords="213,5,329,32"/>
+<area shape="rect" id="node3" href="$group__sprite.html#gac3a6066af80d862a245715fb8cd87d50" title=" " alt="" coords="205,56,337,83"/>
+</map>

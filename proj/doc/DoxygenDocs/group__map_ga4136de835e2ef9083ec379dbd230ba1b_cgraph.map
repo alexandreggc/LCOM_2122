@@ -1,0 +1,6 @@
+<map id="map_draw" name="map_draw">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,96,32"/>
+<area shape="rect" id="node2" href="$group__wall.html#gabf3ae7ed2cc84b064e9092fafb2b535d" title=" " alt="" coords="144,5,232,32"/>
+<area shape="rect" id="node3" href="$group__sprite.html#ga2eebe1d97488a8c527342d0fa8a79f2f" title=" " alt="" coords="280,5,379,32"/>
+<area shape="rect" id="node4" href="$group__videocard.html#ga502312d5a3b5a9f689ccee2eb6c82020" title=" " alt="" coords="427,5,572,32"/>
+</map>

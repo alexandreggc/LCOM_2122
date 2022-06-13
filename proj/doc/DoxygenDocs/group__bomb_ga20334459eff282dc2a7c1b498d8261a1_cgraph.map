@@ -1,0 +1,9 @@
+<map id="check_bomb_click" name="check_bomb_click">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,147,133"/>
+<area shape="rect" id="node2" href="$group__bomb.html#ga344556e8b8922c227a6326f5a6748e2c" title=" " alt="" coords="203,5,321,32"/>
+<area shape="rect" id="node4" href="$group__sprite.html#gad4fbb378240b634982deb4c6cf0edaca" title=" " alt="" coords="195,56,329,83"/>
+<area shape="rect" id="node5" href="$group__sprite.html#ga59f08c1a8f12966f09023eacd4f25331" title=" " alt="" coords="197,107,327,133"/>
+<area shape="rect" id="node6" href="$group__sprite.html#ga0d4b4d21ae1ca8f0c33a712c7e335426" title=" " alt="" coords="199,157,325,184"/>
+<area shape="rect" id="node7" href="$group__sprite.html#ga7db44275ba0615f760bbb82a1f9bbe06" title=" " alt="" coords="199,208,325,235"/>
+<area shape="rect" id="node3" href="$group__explosion.html#ga0714df77acb5705e7cb89d69fca5964b" title=" " alt="" coords="377,5,517,32"/>
+</map>

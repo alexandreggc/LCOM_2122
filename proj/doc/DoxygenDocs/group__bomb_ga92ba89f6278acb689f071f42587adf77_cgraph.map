@@ -1,0 +1,11 @@
+<map id="bomb_set_explosions" name="bomb_set_explosions">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,168,83"/>
+<area shape="rect" id="node2" href="$group__bomb.html#gaaa34821b04b2589ed361860db65068b4" title=" " alt="" coords="240,5,371,32"/>
+<area shape="rect" id="node3" href="$group__bomb.html#ga044b86caafcf09a2d0c7fb0e097f72de" title=" " alt="" coords="240,56,371,83"/>
+<area shape="rect" id="node4" href="$group__explosion.html#gad6f94fde07337ec1b2f631c96cf817ec" title=" " alt="" coords="216,107,395,133"/>
+<area shape="rect" id="node5" href="$group__map.html#ga2e31031b85c499a690d72cef364a1fda" title=" " alt="" coords="443,56,599,83"/>
+<area shape="rect" id="node7" href="$group__map.html#ga7119d2da06a4bfb132126a40ddfcc115" title=" " alt="" coords="443,107,598,133"/>
+<area shape="rect" id="node9" href="$group__sprite.html#ga2bcd8be5d18d2a3be69d2294c86805d7" title=" " alt="" coords="463,157,579,184"/>
+<area shape="rect" id="node6" href="$group__sprite.html#ga59f08c1a8f12966f09023eacd4f25331" title=" " alt="" coords="649,56,779,83"/>
+<area shape="rect" id="node8" href="$group__sprite.html#gad4fbb378240b634982deb4c6cf0edaca" title=" " alt="" coords="647,107,781,133"/>
+</map>

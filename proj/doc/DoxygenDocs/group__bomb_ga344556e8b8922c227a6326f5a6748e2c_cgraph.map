@@ -1,0 +1,4 @@
+<map id="bomb_explode" name="bomb_explode">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,124,32"/>
+<area shape="rect" id="node2" href="$group__explosion.html#ga0714df77acb5705e7cb89d69fca5964b" title=" " alt="" coords="172,5,312,32"/>
+</map>

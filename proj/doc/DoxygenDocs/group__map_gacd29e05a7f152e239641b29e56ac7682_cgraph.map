@@ -1,0 +1,15 @@
+<map id="map_test_bot_collisions" name="map_test_bot_collisions">
+<area shape="rect" id="node1" title=" " alt="" coords="5,233,184,260"/>
+<area shape="rect" id="node2" href="$group__bot.html#gadfc10db688051d9380e83e4b86c58b04" title=" " alt="" coords="245,5,360,32"/>
+<area shape="rect" id="node3" href="$group__bot.html#gad1c327386f9b7e2a50ad2ba450cd2334" title=" " alt="" coords="245,56,360,83"/>
+<area shape="rect" id="node4" href="$group__project__functions.html#ga64ba10670b954fa711657ebafda0579d" title=" " alt="" coords="244,107,361,133"/>
+<area shape="rect" id="node5" href="$group__sprite.html#ga0d4b4d21ae1ca8f0c33a712c7e335426" title=" " alt="" coords="240,157,365,184"/>
+<area shape="rect" id="node6" href="$group__sprite.html#ga176872c49d258ae5f890717395afb5ec" title=" " alt="" coords="232,208,373,235"/>
+<area shape="rect" id="node7" href="$group__sprite.html#ga7db44275ba0615f760bbb82a1f9bbe06" title=" " alt="" coords="240,259,365,285"/>
+<area shape="rect" id="node8" href="$group__sprite.html#ga619c17c6442384230a14d77166d5661d" title=" " alt="" coords="232,309,373,336"/>
+<area shape="rect" id="node9" href="$group__sprite.html#gac3a6066af80d862a245715fb8cd87d50" title=" " alt="" coords="237,360,369,387"/>
+<area shape="rect" id="node10" href="$group__sprite.html#ga1c61f61af31cb639eb02a30dd9c61676" title=" " alt="" coords="232,411,373,437"/>
+<area shape="rect" id="node13" href="$group__wall.html#gacbc6e785b04da37a156fd4d0070722bb" title=" " alt="" coords="253,461,353,488"/>
+<area shape="rect" id="node11" href="$group__videocard.html#ga3e22a38b674d03478ce8151567f8036e" title=" " alt="" coords="421,385,551,412"/>
+<area shape="rect" id="node12" href="$group__videocard.html#ga5136aae96dcc4763688583a7c0fad82b" title=" " alt="" coords="421,436,551,463"/>
+</map>
