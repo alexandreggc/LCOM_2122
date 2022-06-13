@@ -74,7 +74,7 @@ digraph "project/src/entities.c"
   Node1 -> Node72 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node72 [label="bomberman2.xpm",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node1 -> Node73 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node73 [label="bot2.xpm",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node73 [label="bot.xpm",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node1 -> Node74 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node74 [label="bomb.xpm",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node1 -> Node75 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

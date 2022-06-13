@@ -46,8 +46,20 @@ void (gameended_draw)(leaderboard_t *lb, char* playerName, bool alive);
  * @param timeCounter time used by the player
  */
 void (leaderboard_save_file)(leaderboard_t *lb, char* playerName, int timeCounter);
+/**
+ * Sort the leaderboard entries using qsort funtion and entry struct
+ * @param lb Leaderboard struct pointer
+ */
 void(leaderboard_sort_entries)(leaderboard_t *lb);
+/**
+ * Entry constructor
+ * @param time time in the leaderboard entry
+ * @param line c string of the entire entry line 
+ */
 entry_t* (entry_constructor)(int time, char* line);
+/**
+ * Entry destructor 
+ */
 void (entry_destructor)(entry_t* entry);
 
 /**

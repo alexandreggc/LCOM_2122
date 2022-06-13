@@ -60,8 +60,8 @@ digraph "proj_main_loop"
   Node55 [label="kbd_subscribe_int",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__keyboard.html#ga4ac9231a99a664d6a9f0b69767e0d707",tooltip=" "];
   Node2 -> Node56 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node56 [label="kbd_unsubscribe_int",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__keyboard.html#gaee0a7b54ee426fade9c780418d110fe0",tooltip=" "];
-  Node1 -> Node161 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node161 [label="map_vram",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__videocard.html#ga78d147fc7fb3c4f1a4b9dcf8c585b032",tooltip=" "];
-  Node1 -> Node162 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node162 [label="set_graphics_mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__videocard.html#ga29e12d989ec405e661e02556aa1a12d9",tooltip=" "];
+  Node1 -> Node165 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node165 [label="map_vram",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__videocard.html#ga78d147fc7fb3c4f1a4b9dcf8c585b032",tooltip=" "];
+  Node1 -> Node166 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node166 [label="set_graphics_mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__videocard.html#ga29e12d989ec405e661e02556aa1a12d9",tooltip=" "];
 }

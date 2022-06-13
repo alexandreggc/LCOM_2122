@@ -62,6 +62,8 @@ Collaboration diagram for leaderboard:</div>
 Typedefs</h2></td></tr>
 <tr class="memitem:gad99c847dbe2c9345bbcd667430995aad"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structleaderboard.html">leaderboard</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__leaderboard.html#gad99c847dbe2c9345bbcd667430995aad">leaderboard_t</a></td></tr>
 <tr class="separator:gad99c847dbe2c9345bbcd667430995aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga167a7ea47fbb39b436dc877f1a2a91b1"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structentry.html">entry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__leaderboard.html#ga167a7ea47fbb39b436dc877f1a2a91b1">entry_t</a></td></tr>
+<tr class="separator:ga167a7ea47fbb39b436dc877f1a2a91b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -75,10 +77,30 @@ Functions</h2></td></tr>
 <tr class="separator:gafa1486a16dcf9a0c9988b8dd3f097d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac6160d4e6e2a6446b29c968679e28a5d"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__leaderboard.html#gac6160d4e6e2a6446b29c968679e28a5d">leaderboard_save_file</a> (<a class="el" href="group__leaderboard.html#gad99c847dbe2c9345bbcd667430995aad">leaderboard_t</a> *lb, char *playerName, <a class="el" href="group__mouse.html#gaf7e4cc29090bc70293888486e05303f4">int</a> timeCounter)</td></tr>
 <tr class="separator:gac6160d4e6e2a6446b29c968679e28a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga020c63c2214a58a5c33ce4b05e00daf4"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__leaderboard.html#ga020c63c2214a58a5c33ce4b05e00daf4">leaderboard_sort_entries</a> (<a class="el" href="group__leaderboard.html#gad99c847dbe2c9345bbcd667430995aad">leaderboard_t</a> *lb)</td></tr>
+<tr class="separator:ga020c63c2214a58a5c33ce4b05e00daf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae033941005a093768579bba72a700e8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__leaderboard.html#ga167a7ea47fbb39b436dc877f1a2a91b1">entry_t</a> *()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__leaderboard.html#gae033941005a093768579bba72a700e8a">entry_constructor</a> (<a class="el" href="group__mouse.html#gaf7e4cc29090bc70293888486e05303f4">int</a> time, char *line)</td></tr>
+<tr class="separator:gae033941005a093768579bba72a700e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1bad7f798c823381d3dead1e418ba825"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__leaderboard.html#ga1bad7f798c823381d3dead1e418ba825">entry_destructor</a> (<a class="el" href="group__leaderboard.html#ga167a7ea47fbb39b436dc877f1a2a91b1">entry_t</a> *<a class="el" href="structentry.html">entry</a>)</td></tr>
+<tr class="separator:ga1bad7f798c823381d3dead1e418ba825"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >Leaderboard struct and functions. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga167a7ea47fbb39b436dc877f1a2a91b1" name="ga167a7ea47fbb39b436dc877f1a2a91b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga167a7ea47fbb39b436dc877f1a2a91b1">&#9670;&nbsp;</a></span>entry_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structentry.html">entry</a> <a class="el" href="group__leaderboard.html#ga167a7ea47fbb39b436dc877f1a2a91b1">entry_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="gad99c847dbe2c9345bbcd667430995aad" name="gad99c847dbe2c9345bbcd667430995aad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad99c847dbe2c9345bbcd667430995aad">&#9670;&nbsp;</a></span>leaderboard_t</h2>
 
@@ -94,6 +116,82 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gae033941005a093768579bba72a700e8a" name="gae033941005a093768579bba72a700e8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae033941005a093768579bba72a700e8a">&#9670;&nbsp;</a></span>entry_constructor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__leaderboard.html#ga167a7ea47fbb39b436dc877f1a2a91b1">entry_t</a> *() entry_constructor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__mouse.html#gaf7e4cc29090bc70293888486e05303f4">int</a>&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>line</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Entry constructor </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time</td><td>time in the leaderboard entry </td></tr>
+    <tr><td class="paramname">line</td><td>c string of the entire entry line </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__leaderboard_gae033941005a093768579bba72a700e8a_icgraph.png" border="0" usemap="#agroup__leaderboard_gae033941005a093768579bba72a700e8a_icgraph" alt=""/></div>
+<map name="agroup__leaderboard_gae033941005a093768579bba72a700e8a_icgraph" id="agroup__leaderboard_gae033941005a093768579bba72a700e8a_icgraph">
+<area shape="rect" title=" " alt="" coords="543,5,679,32"/>
+<area shape="rect" href="group__leaderboard.html#ga020c63c2214a58a5c33ce4b05e00daf4" title=" " alt="" coords="311,5,495,32"/>
+<area shape="rect" href="group__game.html#ga4da46823eeb8504fffcd2c23a7930258" title=" " alt="" coords="176,5,263,32"/>
+<area shape="rect" href="group__proj.html#ga2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,5,128,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ga1bad7f798c823381d3dead1e418ba825" name="ga1bad7f798c823381d3dead1e418ba825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1bad7f798c823381d3dead1e418ba825">&#9670;&nbsp;</a></span>entry_destructor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void() entry_destructor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__leaderboard.html#ga167a7ea47fbb39b436dc877f1a2a91b1">entry_t</a> *&#160;</td>
+          <td class="paramname"><em>entry</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Entry destructor </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__leaderboard_ga1bad7f798c823381d3dead1e418ba825_icgraph.png" border="0" usemap="#agroup__leaderboard_ga1bad7f798c823381d3dead1e418ba825_icgraph" alt=""/></div>
+<map name="agroup__leaderboard_ga1bad7f798c823381d3dead1e418ba825_icgraph" id="agroup__leaderboard_ga1bad7f798c823381d3dead1e418ba825_icgraph">
+<area shape="rect" title=" " alt="" coords="543,5,672,32"/>
+<area shape="rect" href="group__leaderboard.html#ga020c63c2214a58a5c33ce4b05e00daf4" title=" " alt="" coords="311,5,495,32"/>
+<area shape="rect" href="group__game.html#ga4da46823eeb8504fffcd2c23a7930258" title=" " alt="" coords="176,5,263,32"/>
+<area shape="rect" href="group__proj.html#ga2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,5,128,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="gafa1486a16dcf9a0c9988b8dd3f097d6d" name="gafa1486a16dcf9a0c9988b8dd3f097d6d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gafa1486a16dcf9a0c9988b8dd3f097d6d">&#9670;&nbsp;</a></span>gameended_draw()</h2>
 
@@ -329,6 +427,51 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="group__leaderboard_gac6160d4e6e2a6446b29c968679e28a5d_icgraph.png" border="0" usemap="#agroup__leaderboard_gac6160d4e6e2a6446b29c968679e28a5d_icgraph" alt=""/></div>
 <map name="agroup__leaderboard_gac6160d4e6e2a6446b29c968679e28a5d_icgraph" id="agroup__leaderboard_gac6160d4e6e2a6446b29c968679e28a5d_icgraph">
 <area shape="rect" title=" " alt="" coords="311,5,476,32"/>
+<area shape="rect" href="group__game.html#ga4da46823eeb8504fffcd2c23a7930258" title=" " alt="" coords="176,5,263,32"/>
+<area shape="rect" href="group__proj.html#ga2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,5,128,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ga020c63c2214a58a5c33ce4b05e00daf4" name="ga020c63c2214a58a5c33ce4b05e00daf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga020c63c2214a58a5c33ce4b05e00daf4">&#9670;&nbsp;</a></span>leaderboard_sort_entries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void() leaderboard_sort_entries </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__leaderboard.html#gad99c847dbe2c9345bbcd667430995aad">leaderboard_t</a> *&#160;</td>
+          <td class="paramname"><em>lb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Sort the leaderboard entries using qsort funtion and entry struct </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lb</td><td>Leaderboard struct pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__leaderboard_ga020c63c2214a58a5c33ce4b05e00daf4_cgraph.png" border="0" usemap="#agroup__leaderboard_ga020c63c2214a58a5c33ce4b05e00daf4_cgraph" alt=""/></div>
+<map name="agroup__leaderboard_ga020c63c2214a58a5c33ce4b05e00daf4_cgraph" id="agroup__leaderboard_ga020c63c2214a58a5c33ce4b05e00daf4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,56,189,83"/>
+<area shape="rect" href="leaderboard_8c.html#a4ffbd7d116c633fda2c1957ca42cadb9" title=" " alt="" coords="266,5,345,32"/>
+<area shape="rect" href="group__leaderboard.html#gae033941005a093768579bba72a700e8a" title=" " alt="" coords="237,56,373,83"/>
+<area shape="rect" href="group__leaderboard.html#ga1bad7f798c823381d3dead1e418ba825" title=" " alt="" coords="241,107,370,133"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__leaderboard_ga020c63c2214a58a5c33ce4b05e00daf4_icgraph.png" border="0" usemap="#agroup__leaderboard_ga020c63c2214a58a5c33ce4b05e00daf4_icgraph" alt=""/></div>
+<map name="agroup__leaderboard_ga020c63c2214a58a5c33ce4b05e00daf4_icgraph" id="agroup__leaderboard_ga020c63c2214a58a5c33ce4b05e00daf4_icgraph">
+<area shape="rect" title=" " alt="" coords="311,5,495,32"/>
 <area shape="rect" href="group__game.html#ga4da46823eeb8504fffcd2c23a7930258" title=" " alt="" coords="176,5,263,32"/>
 <area shape="rect" href="group__proj.html#ga2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,5,128,32"/>
 </map>

@@ -1,0 +1,14 @@
+digraph "entry_constructor"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="entry_constructor",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="leaderboard_sort_entries",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__leaderboard.html#ga020c63c2214a58a5c33ce4b05e00daf4",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mainLoop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__game.html#ga4da46823eeb8504fffcd2c23a7930258",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="proj_main_loop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__proj.html#ga2a16f651eccbd248e1ad3b3b924b143b",tooltip=" "];
+}

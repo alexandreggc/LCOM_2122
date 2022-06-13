@@ -94,9 +94,15 @@ Include dependency graph for leaderboard.c:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structleaderboard.html">leaderboard</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentry.html">entry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga1bad7f798c823381d3dead1e418ba825"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__leaderboard.html#ga1bad7f798c823381d3dead1e418ba825">entry_destructor</a> (<a class="el" href="group__leaderboard.html#ga167a7ea47fbb39b436dc877f1a2a91b1">entry_t</a> *<a class="el" href="structentry.html">entry</a>)</td></tr>
+<tr class="separator:ga1bad7f798c823381d3dead1e418ba825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae033941005a093768579bba72a700e8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__leaderboard.html#ga167a7ea47fbb39b436dc877f1a2a91b1">entry_t</a> *()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__leaderboard.html#gae033941005a093768579bba72a700e8a">entry_constructor</a> (<a class="el" href="group__mouse.html#gaf7e4cc29090bc70293888486e05303f4">int</a> time, char *line)</td></tr>
+<tr class="separator:gae033941005a093768579bba72a700e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8126e5c09dd963593f93d6a17a1356d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__leaderboard.html#gad99c847dbe2c9345bbcd667430995aad">leaderboard_t</a> *()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__leaderboard.html#ga8126e5c09dd963593f93d6a17a1356d7">leaderboard_constructor</a> (<a class="el" href="group__font.html#ga4869d6f320684d34e65d214f59af7a8c">font_t</a> *<a class="el" href="structfont.html">font</a>)</td></tr>
 <tr class="separator:ga8126e5c09dd963593f93d6a17a1356d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga93d0e417be2751c9ab5fedbee29462ea"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__leaderboard.html#ga93d0e417be2751c9ab5fedbee29462ea">leaderboard_destructor</a> (<a class="el" href="group__leaderboard.html#gad99c847dbe2c9345bbcd667430995aad">leaderboard_t</a> *lb)</td></tr>
@@ -107,7 +113,51 @@ Functions</h2></td></tr>
 <tr class="separator:gafa1486a16dcf9a0c9988b8dd3f097d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac6160d4e6e2a6446b29c968679e28a5d"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__leaderboard.html#gac6160d4e6e2a6446b29c968679e28a5d">leaderboard_save_file</a> (<a class="el" href="group__leaderboard.html#gad99c847dbe2c9345bbcd667430995aad">leaderboard_t</a> *lb, char *playerName, <a class="el" href="group__mouse.html#gaf7e4cc29090bc70293888486e05303f4">int</a> timeCounter)</td></tr>
 <tr class="separator:gac6160d4e6e2a6446b29c968679e28a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ffbd7d116c633fda2c1957ca42cadb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mouse.html#gaf7e4cc29090bc70293888486e05303f4">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="leaderboard_8c.html#a4ffbd7d116c633fda2c1957ca42cadb9">cmpfunc</a> (const void *a, const void *b)</td></tr>
+<tr class="separator:a4ffbd7d116c633fda2c1957ca42cadb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga020c63c2214a58a5c33ce4b05e00daf4"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__leaderboard.html#ga020c63c2214a58a5c33ce4b05e00daf4">leaderboard_sort_entries</a> (<a class="el" href="group__leaderboard.html#gad99c847dbe2c9345bbcd667430995aad">leaderboard_t</a> *lb)</td></tr>
+<tr class="separator:ga020c63c2214a58a5c33ce4b05e00daf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a4ffbd7d116c633fda2c1957ca42cadb9" name="a4ffbd7d116c633fda2c1957ca42cadb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ffbd7d116c633fda2c1957ca42cadb9">&#9670;&nbsp;</a></span>cmpfunc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__mouse.html#gaf7e4cc29090bc70293888486e05303f4">int</a> cmpfunc </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="leaderboard_8c_a4ffbd7d116c633fda2c1957ca42cadb9_icgraph.png" border="0" usemap="#aleaderboard_8c_a4ffbd7d116c633fda2c1957ca42cadb9_icgraph" alt=""/></div>
+<map name="aleaderboard_8c_a4ffbd7d116c633fda2c1957ca42cadb9_icgraph" id="aleaderboard_8c_a4ffbd7d116c633fda2c1957ca42cadb9_icgraph">
+<area shape="rect" title=" " alt="" coords="543,5,621,32"/>
+<area shape="rect" href="group__leaderboard.html#ga020c63c2214a58a5c33ce4b05e00daf4" title=" " alt="" coords="311,5,495,32"/>
+<area shape="rect" href="group__game.html#ga4da46823eeb8504fffcd2c23a7930258" title=" " alt="" coords="176,5,263,32"/>
+<area shape="rect" href="group__proj.html#ga2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,5,128,32"/>
+</map>
+</div>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
