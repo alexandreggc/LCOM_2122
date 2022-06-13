@@ -13,6 +13,9 @@
  */
 
 typedef struct leaderboard leaderboard_t;
+
+typedef struct entry entry_t;
+
 /**
  * Leaderboard constructor
  * @param font font struct pointer
@@ -43,6 +46,9 @@ void (gameended_draw)(leaderboard_t *lb, char* playerName, bool alive);
  * @param timeCounter time used by the player
  */
 void (leaderboard_save_file)(leaderboard_t *lb, char* playerName, int timeCounter);
+void(leaderboard_sort_entries)(leaderboard_t *lb);
+entry_t* (entry_constructor)(int time, char* line);
+void (entry_destructor)(entry_t* entry);
 
 /**
  * @}

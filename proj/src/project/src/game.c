@@ -335,6 +335,7 @@ int(mainLoop)(){
                           if(bb[0]==ENTER_M_CODE) {
                             if(strlen(playerName) > 0){
                               leaderboard_save_file(leaderboard,playerName,timeCounter);
+                              leaderboard_sort_entries(leaderboard);
                               memset(playerName, 0, 15);
                             }
                             gameState = MENU;

@@ -8,6 +8,24 @@ struct leaderboard {
     char* file_location;
 };
 
+struct entry {
+    int seconds;
+    char* line;
+};
+
+void (entry_destructor)(entry_t* entry){
+  free(entry->line);
+  free(entry);
+}
+
+entry_t*(entry_constructor)(int time, char* line){
+  entry_t *ret = malloc(sizeof(entry_t));
+  ret->seconds = time;
+  ret->line = malloc(sizeof(char)*100);
+  strcpy(ret->line, line);
+  //ret->line = line;
+  return ret;
+}
 
 leaderboard_t* (leaderboard_constructor)(font_t *font){
   leaderboard_t *ret = (leaderboard_t*)malloc(sizeof(leaderboard_t));
@@ -62,7 +80,7 @@ void (leaderboard_save_file)(leaderboard_t *lb, char* playerName, int timeCounte
 
   char* timeCounterString = "";
   sprintf(timeCounterString, "%d", (timeCounter/REFRESH_RATE));
-  strcat(timeCounterString,"S");
+  strcat(timeCounterString," S");
 
   while(strlen(result) != 16){
     strncat(result," ",1);
@@ -82,5 +100,47 @@ void (leaderboard_save_file)(leaderboard_t *lb, char* playerName, int timeCounte
   free(timeCounterString);
   free(date);
   fclose(file);
+  
 }
 
+int cmpfunc (const void * a, const void * b) {
+  entry_t *a1 = *(entry_t**)a;
+  entry_t *b1 = *(entry_t**)b;
+  return ( a1->seconds - b1->seconds );
+}
+
+void(leaderboard_sort_entries)(leaderboard_t *lb){
+
+  FILE *file = fopen(lb->file_location, "r");
+
+  char *line = malloc(sizeof(char)*100);
+  entry_t** entries = malloc(sizeof(entry_t*));
+  int size = 0;
+
+  while(fscanf(file, "%[^\n] ", line) != EOF) {
+    char name[100]; char rest[100]; char time[100];
+
+    sscanf(line, "%15[^\n] %s %s", name, time, rest);
+    int t = atoi(time);
+
+    entries[size] = entry_constructor(t,line);
+    size++;
+    entries = realloc(entries, sizeof(entry_t*)*(size+1));
+  }
+
+  free(line);
+  fclose(file);
+
+  qsort(entries, size, sizeof(entry_t*), &cmpfunc);
+
+  file = fopen(lb->file_location, "w");
+  for(int j=0 ; j<size; j++){
+    fprintf(file, "%s\n", entries[j]->line);
+  }
+  fclose(file);
+
+  for(int l=1 ; l<size; l++){
+    entry_destructor(entries[l]);
+  }
+  free(entries);
+}
