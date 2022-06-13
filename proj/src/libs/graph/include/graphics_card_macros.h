@@ -1,6 +1,9 @@
 #ifndef GRAPHICS_CARD_MACROS_H_INCLUDED
 #define GRAPHICS_CARD_MACROS_H_INCLUDED
-
+/**
+ * @defgroup videocard videocard
+ * @{
+ */
 // Graphics modes
 #define INDEXED_1024_768        0x105
 #define DIRECT_640_480          0x110
@@ -21,5 +24,7 @@
 
 // Colors
 #define BLACK 0x00
-
+/**
+ * @}
+ */
 #endif

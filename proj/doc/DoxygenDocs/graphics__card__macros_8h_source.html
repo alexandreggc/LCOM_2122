@@ -48,29 +48,27 @@ $(function() {
 <div class="contents">
 <a href="graphics__card__macros_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef GRAPHICS_CARD_MACROS_H_INCLUDED</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define GRAPHICS_CARD_MACROS_H_INCLUDED</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// Graphics modes</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="graphics__card__macros_8h.html#ac2d4dc066c8ba9dae1cf9eb948649d00">    5</a></span><span class="preprocessor">#define INDEXED_1024_768        0x105</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="graphics__card__macros_8h.html#a725ddc2613ead012efa716d5644a0563">    6</a></span><span class="preprocessor">#define DIRECT_640_480          0x110</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="graphics__card__macros_8h.html#a051e6b47323761dcfdaf731b7a9df327">    7</a></span><span class="preprocessor">#define DIRECT_800_600          0x115</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="graphics__card__macros_8h.html#ae37f82f4bd973b5466ce2c8df918a3da">    8</a></span><span class="preprocessor">#define DIRECT_1280_1024_565    0x11A</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="graphics__card__macros_8h.html#a56b61cd9dd5db78ad31f894a9ea4481a">    9</a></span><span class="preprocessor">#define DIRECT_1280_1024_888    0x11B</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="graphics__card__macros_8h.html#a2ad5615058ac50633e1425fddffcb07d">   10</a></span><span class="preprocessor">#define LINEAR_FRAME_BUFFER_MD  BIT(14)</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="graphics__card__macros_8h.html#a20a8c4bd352d15a0e1e2349eec2e9710">   13</a></span><span class="preprocessor">#define GET_RED(n)          (0xFF &amp; ((n) &gt;&gt; 16))</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="graphics__card__macros_8h.html#add275be0112f1d2af5e7dbc03ab221a8">   14</a></span><span class="preprocessor">#define GET_GRE(n)          (0xFF &amp; ((n) &gt;&gt;  8))</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="graphics__card__macros_8h.html#a75843763a880805c52f5713dac46cd1e">   15</a></span><span class="preprocessor">#define GET_BLU(n)          (0xFF &amp; (n))</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="graphics__card__macros_8h.html#add486ade6cb226273a0e3741ec0e63d1">   16</a></span><span class="preprocessor">#define SET_RED(n)          (((n)&amp;0xFF) &lt;&lt; 16)</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="graphics__card__macros_8h.html#acc20c705a3b018810e24d4c1818c965c">   17</a></span><span class="preprocessor">#define SET_GRE(n)          (((n)&amp;0xFF) &lt;&lt;  8)</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="graphics__card__macros_8h.html#aced4f5e0671e588794cc1e0bd72ae820">   18</a></span><span class="preprocessor">#define SET_BLU(n)          (((n)&amp;0xFF))</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="graphics__card__macros_8h.html#a67e10ca508bfbe5f2ea25c46dec6a24f">   19</a></span><span class="preprocessor">#define SET_COLOR(r,g,b)    (SET_RED(r) | SET_GRE(g) | SET_BLU(b))</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// Colors</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="graphics__card__macros_8h.html#a7b3b25cba33b07c303f3060fe41887f6">   23</a></span><span class="preprocessor">#define BLACK 0x00</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// Graphics modes</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="group__videocard.html#gac2d4dc066c8ba9dae1cf9eb948649d00">    8</a></span><span class="preprocessor">#define INDEXED_1024_768        0x105</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="group__videocard.html#ga725ddc2613ead012efa716d5644a0563">    9</a></span><span class="preprocessor">#define DIRECT_640_480          0x110</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="group__videocard.html#ga051e6b47323761dcfdaf731b7a9df327">   10</a></span><span class="preprocessor">#define DIRECT_800_600          0x115</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="group__videocard.html#gae37f82f4bd973b5466ce2c8df918a3da">   11</a></span><span class="preprocessor">#define DIRECT_1280_1024_565    0x11A</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="group__videocard.html#ga56b61cd9dd5db78ad31f894a9ea4481a">   12</a></span><span class="preprocessor">#define DIRECT_1280_1024_888    0x11B</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="group__videocard.html#ga2ad5615058ac50633e1425fddffcb07d">   13</a></span><span class="preprocessor">#define LINEAR_FRAME_BUFFER_MD  BIT(14)</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="group__videocard.html#ga20a8c4bd352d15a0e1e2349eec2e9710">   16</a></span><span class="preprocessor">#define GET_RED(n)          (0xFF &amp; ((n) &gt;&gt; 16))</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="group__videocard.html#gadd275be0112f1d2af5e7dbc03ab221a8">   17</a></span><span class="preprocessor">#define GET_GRE(n)          (0xFF &amp; ((n) &gt;&gt;  8))</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="group__videocard.html#ga75843763a880805c52f5713dac46cd1e">   18</a></span><span class="preprocessor">#define GET_BLU(n)          (0xFF &amp; (n))</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="group__videocard.html#gadd486ade6cb226273a0e3741ec0e63d1">   19</a></span><span class="preprocessor">#define SET_RED(n)          (((n)&amp;0xFF) &lt;&lt; 16)</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="group__videocard.html#gacc20c705a3b018810e24d4c1818c965c">   20</a></span><span class="preprocessor">#define SET_GRE(n)          (((n)&amp;0xFF) &lt;&lt;  8)</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="group__videocard.html#gaced4f5e0671e588794cc1e0bd72ae820">   21</a></span><span class="preprocessor">#define SET_BLU(n)          (((n)&amp;0xFF))</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="group__videocard.html#ga67e10ca508bfbe5f2ea25c46dec6a24f">   22</a></span><span class="preprocessor">#define SET_COLOR(r,g,b)    (SET_RED(r) | SET_GRE(g) | SET_BLU(b))</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// Colors</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="group__videocard.html#ga7b3b25cba33b07c303f3060fe41887f6">   26</a></span><span class="preprocessor">#define BLACK 0x00</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

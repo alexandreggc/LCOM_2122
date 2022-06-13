@@ -11,8 +11,6 @@ static int bytes_per_line;
 
 
 
-
-/* Set default text mode */
 int (set_graphics_mode)(uint16_t mode) {
   reg86_t r86;
    

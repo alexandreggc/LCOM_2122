@@ -5,10 +5,10 @@
 #include <stdio.h>
 
 struct sprite{
-  int x, y; // current position
-  int width, height; // dimensions
-  int xspeed, yspeed; // current speed
-  xpm_image_t *img; // the pixmap
+  int x, y; /** current position*/
+  int width, height; /**dimensions*/
+  int xspeed, yspeed; /**current speed*/
+  xpm_image_t *img; /** the pixmap*/
 };
 
 sprite_t* (sprite_constructor)(const char *const *xpm){

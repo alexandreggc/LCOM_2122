@@ -45,39 +45,51 @@
 #include "char89.xpm"
 #include "char90.xpm"
 
-typedef struct font font_t;
-
+/**
+ * @defgroup font font
+ * @ingroup graph
+ * @{
+ */
 
 /**
- * @brief Construct menu.
- * @param   fnt Font to use when rendering menu options text
- * @return      Pointer to constructed menu, or NULL if failed.
+ * Font struct definition
+ */
+typedef struct font font_t;
+
+/**
+ * Font constructor
+ * @return font struct pointer
  */
 font_t* (font_ctor)();
 /**
- * @brief Destruct menu.
- * @param   p   Pointer to menu to destruct
+ * Font destructor
+ * @param font font struct pointer
  */
 void (font_dtor)(font_t *font);
 /**
- * @brief Update menu state.
- *
- * This function allows to check if the mouse is hovering over an item, and knowing
- * if an item was clicked.
- * @param   menu    Pointer to menu
- * @param   click   0 if mouse right button is clicked, other value otherwise
- * @return  selected option if clicked, -1 otherwise
- */
-/**
- * @brief Draw menu on screen buffer.
- * @param   menu    Pointer to menu to be drawn
+ * Load each xpm img of each character to the array of sprites in the font struct
+ * @param font font struct pointer
  */
 void (font_load_glyphs)(font_t *font);
-
+/**
+ * Draw a c string to the screen
+ * @param font font struct pointer
+ * @param phrase c string to be drawn
+ * @param x x position in pixels
+ * @param y y position in pixels
+ */
 void (font_draw_string)(font_t *font, char* phrase, uint16_t x, uint16_t y);
-
+/**
+ * Get width of each character in the font
+ * @param font font struct pointer
+ * @return width of a character
+ */
 int (font_get_char_width)(font_t *font);
-
+/**
+ * Get height of each character in the font
+ * @param font font struct pointer
+ * @return height of a character
+ */
 int (font_get_char_height)(font_t *font);
 
 
