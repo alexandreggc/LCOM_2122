@@ -18,7 +18,7 @@
 
 
 #define MAP_BLOCKS_SIZE 12
-
+int cpb = 1;
 
 //PLAYER FUNCTIONS
 
@@ -111,7 +111,7 @@ void (player_set_speed)(player_t *player, keys_t *keys){
 void (player_check_place_bomb)(map_t* map, player_t *player, keys_t *keys, bomb_t **bombs, int *bombsUsed){
   int new_x_map = player_get_mapx(player);
   int new_y_map = player_get_mapy(player);
-  if(keys->space_pressed == 1){
+  if(keys->space_pressed == 1 && cpb){
     for (int i=0; i<NUMBER_OF_BOMBS; i++){
       bomb_t *b = bombs[i];
       int bomb_x_map = bomb_get_xmap(b);
@@ -317,6 +317,8 @@ void (explosion_draw)(explosion_t *explosion){
     sprite_draw(explosion->sp);
     explosion->counter++;  
   }
+  else
+    cpb = 1;
 }
 
 void (explosion_expand)(explosion_t *explosion){
@@ -465,6 +467,7 @@ void bomb_set_explosions(bomb_t *bomb, map_t* map){
   int ymap = bomb_get_ymap(bomb);
   int dir = 0; int expl=0;
   while (expl < bomb->num_explosion){
+    
     explosion_t* explosion = bomb->explosions[expl];
     if (expl == 0){
       explosion_set_map_pos(explosion, map, xmap, ymap);
@@ -801,6 +804,7 @@ void (map_test_explosion_collisions)(map_t *map, player_t *player, bot_t** bots,
     for (int expl=0; expl < b->num_explosion; expl++){
       explosion_t* explosion = b->explosions[expl];
       if (!explosion_ended(explosion)){
+        cpb = 0;
         int xmap = explosion->x_map;
         int ymap = explosion->y_map;
         /** Check player collsion */
